@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata:
+  name: price-oracle-cassandra
+deploy:
+  helm:
+    releases:
+      - name: price-oracle-cassandra
+        remoteChart: oci://registry-1.docker.io/bitnamicharts/cassandra
+        upgradeOnChange: true
+        createNamespace: true
+        namespace: price-oracle
+#        valuesFiles:
+#          - ./values.yaml
+portForward:
+- resourceType: service
+  resourceName: prime-oracle-cassandra
+  namespace: price-oracle
+  port: 9042
+  localPort: 9042

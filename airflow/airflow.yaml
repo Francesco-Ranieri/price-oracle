@@ -1,7 +1,7 @@
 apiVersion: skaffold/v2beta29
 kind: Config
 metadata:
-  name: price-oracle
+  name: price-oracle-airflow
 build:
   artifacts:
     - image: price-oracle-airflow

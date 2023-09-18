@@ -1,5 +1,5 @@
 apiVersion: skaffold/v2beta29
 kind: Config
 requires:
-  - path: airflow/airflow.yaml
-  #- path: cassandra/cassandra.yaml
+  - path: cassandra/cassandra.yaml
+  #- path: airflow/airflow.yaml
