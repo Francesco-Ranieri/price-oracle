@@ -10,11 +10,11 @@ deploy:
         upgradeOnChange: true
         createNamespace: true
         namespace: price-oracle
-#        valuesFiles:
-#          - ./values.yaml
+        valuesFiles:
+         - ./values.yaml
 portForward:
 - resourceType: service
-  resourceName: prime-oracle-cassandra
+  resourceName: price-oracle-cassandra
   namespace: price-oracle
   port: 9042
   localPort: 9042

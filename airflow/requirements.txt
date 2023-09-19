@@ -1,0 +1,2 @@
+cassandra-driver
+apache-airflow-providers-apache-cassandra

@@ -4,7 +4,7 @@ executor: "CeleryExecutor"
 
 dags:
   gitSync:
-    enabled: true
+    enabled: false
 
     # git repo clone url
     # ssh example: git@github.com:apache/airflow.git
@@ -26,7 +26,7 @@ dags:
 
 config:
   core:
-    test_connection: 'Enable'
+    test_connection: 'Enabled'
     dag_discovery_safe_mode: false
 
   webserver:
