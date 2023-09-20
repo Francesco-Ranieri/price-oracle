@@ -1,24 +1,9 @@
 import logging
-from datetime import datetime
 from typing import List
 
 import requests
-from pydantic import BaseModel
 
-
-# Define a Pydantic model for the PriceCandlestick DTO
-class PriceCandlestickDTO(BaseModel):
-    close_time: int
-    open_price: float
-    high_price: float
-    low_price: float
-    close_price: float
-    volume: float
-    quote_volume: float
-    coin: str
-
-    def __repr__(self):
-        return f"PriceCandlestickDTO({self.close_time}, {self.open_price}, {self.high_price}, {self.low_price}, {self.close_price}, {self.volume}, {self.quote_volume}, {self.coin})"
+from dtos.PriceCandlestick import PriceCandlestick
 
 
 # Define a custom exception for HTTP errors
@@ -27,7 +12,6 @@ class HTTPError(Exception):
         self.status_code = status_code
         super().__init__(f"HTTP request failed with status code {status_code}")
 
-
 class CryptoWatchClient:
     def __init__(self, exchange="binance"):
         self.PRICES_BASE_URL = "https://api.cryptowat.ch"
@@ -35,7 +19,7 @@ class CryptoWatchClient:
         self.PRICES_PERIODS = 3600
         self.exchange = exchange
 
-    def fetch_ohlc_data(self, coin_pair="BTCUSDT", after=None, before=None):
+    def fetch_ohlc_data(self, coin_pair="BTCUSDT", after=None, before=None) -> PriceCandlestick:
         url = self.PRICES_BASE_URL + self.PRICES_OHLC_PATH.replace(
             ":exchange", self.exchange
         ).replace(":pair", coin_pair)
@@ -55,10 +39,10 @@ class CryptoWatchClient:
             logging.error(response.json())
             raise HTTPError(response.status_code)
 
-    def map_to_dto(self, ohlc_data, coin):
+    def map_to_dto(self, ohlc_data, coin) -> PriceCandlestick:
         candlestick_dtos = []
         for row in ohlc_data:
-            candlestick = PriceCandlestickDTO(
+            candlestick = PriceCandlestick(
                 close_time=row[0],
                 open_price=row[1],
                 high_price=row[2],
