@@ -1,0 +1,3 @@
+dbUser:
+  user: cassandra
+  existingSecret: cassandra-secret
