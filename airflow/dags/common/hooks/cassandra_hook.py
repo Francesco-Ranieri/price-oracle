@@ -8,6 +8,7 @@ from cassandra.cluster import Cluster, Session
 class CassandraHook:
     def __init__(self, cassandra_conn_id: str = "cassandra_default") -> None:
         self.cassandra_conn_id = cassandra_conn_id
+        self.session = self.get_conn()
 
     def get_conn(self) -> Session:
         conn = self.get_connection(self.cassandra_conn_id)
@@ -43,5 +44,4 @@ class CassandraHook:
         return conn
 
     def run_query(self, query: str, parameters: dict = None) -> None:
-        with self.get_conn() as session:
-            session.execute(query, parameters=parameters)
+        self.session.execute(query, parameters=parameters)

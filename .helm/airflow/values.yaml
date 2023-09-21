@@ -28,6 +28,8 @@ config:
   core:
     test_connection: 'Enabled'
     dag_discovery_safe_mode: false
+    allowed_deserialization_classes: common\.*
+    max_active_tasks_per_dag: 64
 
   webserver:
     expose_config: true
