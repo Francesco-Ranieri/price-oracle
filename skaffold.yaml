@@ -2,5 +2,6 @@ apiVersion: skaffold/v2beta29
 kind: Config
 requires:
   - path: .skaffold/secrets.yaml
+  - path: .skaffold/configmaps.yaml
   - path: .skaffold/cassandra.yaml
   - path: .skaffold/airflow.yaml

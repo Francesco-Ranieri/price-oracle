@@ -11,7 +11,7 @@ deploy:
         createNamespace: true
         namespace: price-oracle
         valuesFiles:
-         - ../.helm/cassandra/values.yaml
+          - ../.helm/cassandra/values.yaml
 portForward:
 - resourceType: service
   resourceName: price-oracle-cassandra

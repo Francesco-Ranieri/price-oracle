@@ -1,5 +1,6 @@
 from pydantic import BaseModel, PositiveInt
 
+
 class PriceCandlestick(BaseModel):
     close_time: PositiveInt
     open_price: float

@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: init-db
+  namespace: price-oracle
+data:
+  "01-init.cql": |
+    
+    CREATE KEYSPACE mykeyspace
+      WITH replication = {
+        'class': 'SimpleStrategy',
+        'replication_factor': 3
+
+    USE mykeyspace;
+
+    CREATE TABLE IF NOT EXISTS price_candlestick (
+        coin text,
+        close_time_date timestamp,
+        close_time bigint,
+        open_price double,
+        high_price double,
+        low_price double,
+        close_price double,
+        volume double,
+        quote_volume double,
+        PRIMARY KEY (coin, close_time)
+    );

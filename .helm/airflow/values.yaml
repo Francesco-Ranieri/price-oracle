@@ -33,4 +33,4 @@ config:
     expose_config: true
 
   scheduler:
-    dag_dir_list_interval: 60
+    dag_dir_list_interval: 5

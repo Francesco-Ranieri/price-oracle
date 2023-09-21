@@ -1,20 +1,16 @@
 import logging
-import os
 from datetime import datetime, timedelta
 
-import cryptowatch
 from airflow.decorators import task
-from airflow.operators.python import PythonOperator
-from cassandra.auth import PlainTextAuthProvider
-from cassandra.cluster import Cluster
+from common.api.cryptowatch import CryptoWatchClient
+from common.dtos.price_candlestick import PriceCandlestick
 
 from airflow import DAG
-from dtos.PriceCandlestick import PriceCandlestick
 
 
 @task
 def fetch_data(**kwargs) -> PriceCandlestick:
-    crypto_client = cryptowatch.CryptoWatchClient(exchange="binance")
+    crypto_client = CryptoWatchClient(exchange="binance")
     coin_pair = "BTCUSDT"
 
     # after paramter should be the logical start date of the DAG
@@ -28,31 +24,24 @@ def fetch_data(**kwargs) -> PriceCandlestick:
         coin_pair=coin_pair, after=after, before=before
     )
     logging.info(ohlc_data)
-    return ohlc_data
+    return ohlc_data[0].__dict__
 
-@task 
-def upload_to_cassandra(data: PriceCandlestick):
 
-    if not data:
-        raise ValueError("Invalid Data")
-    
-    cassandra_host = os.getenv('PRICE_ORACLE_CASSANDRA_SERVICE_HOST')
-    cassandra_port = os.getenv('PRICE_ORACLE_CASSANDRA_SERVICE_PORT')
+@task
+def insert_into_cassandra(data: dict):
+    from common.hooks.cassandra_hook import CassandraHook
 
-    if not cassandra_host or not cassandra_port:
-        raise Exception('Cassandra host or port not found')
+    cassandra_hook = CassandraHook()
 
-    auth_provider = PlainTextAuthProvider(username="cassandra", password="phaqt2dnxy")
-    
-    with Cluster([cassandra_host],auth_provider = auth_provider) as cluster:
-        with cluster.connect('mykeyspace') as session:
-            
-            insert_query = """
-            INSERT INTO price_candlestick (coin)
-            VALUES (%(coin)s)
-            """
+    # convert timestamp to datetime
+    data["close_time_date"] = datetime.fromtimestamp(data["close_time"])
 
-            session.execute(insert_query, data)
+    insert_query = """
+    INSERT INTO price_candlestick (close_time, close_time_date, open_price, high_price, low_price, close_price, volume, quote_volume, coin)
+    VALUES (%(close_time)s, %(close_time_date)s, %(open_price)s, %(high_price)s, %(low_price)s, %(close_price)s, %(volume)s, %(quote_volume)s, %(coin)s)
+    """
+
+    cassandra_hook.run_query(insert_query, parameters=data)
 
 
 with DAG(
@@ -68,4 +57,4 @@ with DAG(
     },
 ) as dag:
     ohlc_data = fetch_data()
-    upload_to_cassandra(ohlc_data)
+    insert_into_cassandra(ohlc_data)

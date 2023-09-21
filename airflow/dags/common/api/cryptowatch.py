@@ -1,9 +1,7 @@
 import logging
-from typing import List
 
 import requests
-
-from dtos.PriceCandlestick import PriceCandlestick
+from common.dtos.price_candlestick import PriceCandlestick
 
 
 # Define a custom exception for HTTP errors
@@ -12,6 +10,7 @@ class HTTPError(Exception):
         self.status_code = status_code
         super().__init__(f"HTTP request failed with status code {status_code}")
 
+
 class CryptoWatchClient:
     def __init__(self, exchange="binance"):
         self.PRICES_BASE_URL = "https://api.cryptowat.ch"
@@ -19,7 +18,9 @@ class CryptoWatchClient:
         self.PRICES_PERIODS = 3600
         self.exchange = exchange
 
-    def fetch_ohlc_data(self, coin_pair="BTCUSDT", after=None, before=None) -> PriceCandlestick:
+    def fetch_ohlc_data(
+        self, coin_pair="BTCUSDT", after=None, before=None
+    ) -> PriceCandlestick:
         url = self.PRICES_BASE_URL + self.PRICES_OHLC_PATH.replace(
             ":exchange", self.exchange
         ).replace(":pair", coin_pair)
