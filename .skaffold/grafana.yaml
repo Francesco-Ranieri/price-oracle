@@ -14,5 +14,5 @@ portForward:
 - resourceType: service
   resourceName: price-oracle-grafana
   namespace: price-oracle
-  port: 80
-  localPort: 8081
+  port: 3000
+  localPort: 3000

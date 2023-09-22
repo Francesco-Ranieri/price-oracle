@@ -20,7 +20,8 @@ def fetch_data(**kwargs) -> PriceCandlestick:
     # after paramter should be the logical start date of the DAG
     # before parameter should be 1 hour after the logical start date of the DAG
     after = int(datetime.timestamp(kwargs["logical_date"]))
-    before = int(datetime.timestamp(kwargs["logical_date"] + timedelta(weeks=1)))
+    before = int(datetime.timestamp(
+        kwargs["logical_date"] + timedelta(weeks=1)))
 
     logging.info(after)
     logging.info(before)
@@ -33,6 +34,7 @@ def fetch_data(**kwargs) -> PriceCandlestick:
 
 @task
 def insert_into_cassandra(data: List[PriceCandlestick]):
+    
     from common.hooks.cassandra_hook import CassandraHook
 
     cassandra_hook = CassandraHook()
@@ -54,10 +56,10 @@ def insert_into_cassandra(data: List[PriceCandlestick]):
                 %(period_name)s
             )
     """
-
+    
     for row in data:
         cassandra_hook.run_query(
-            insert_query,
+            insert_query, 
             parameters={
                 "close_time": row.close_time,
                 "close_time_date": row.close_time_date,
@@ -69,8 +71,8 @@ def insert_into_cassandra(data: List[PriceCandlestick]):
                 "quote_volume": row.quote_volume,
                 "coin": row.coin,
                 "period": row.period,
-                "period_name": row.period_name,
-            },
+                "period_name": row.period_name
+            }
         )
 
 
