@@ -3,9 +3,9 @@ from typing import Any, Dict, List
 
 from pydantic import BaseModel, PositiveInt
 
-
-class PriceCandlestick(BaseModel):
+class PriceCandleStick(BaseModel):
     close_time: PositiveInt
+    _close_time_date: datetime
     open_price: float
     high_price: float
     low_price: float
@@ -17,9 +17,12 @@ class PriceCandlestick(BaseModel):
 
     @property
     def close_time_date(self) -> str:
-        return datetime.strftime(
-            datetime.fromtimestamp(self.close_time), "%Y-%m-%d %H:%M:%S"
-        )
+        if not getattr(self, "_close_time_date"):
+            self._close_time_date = datetime.strftime(
+                self.close_time,
+                datetime.fromtimestamp(self.close_time), "%Y-%m-%d %H:%M:%S"
+            )
+        return self._close_time_date
 
     @property
     def period_name(self) -> str:
@@ -41,9 +44,4 @@ class PriceCandlestick(BaseModel):
         }.get(self.period, "Unknown")
 
     def __repr__(self):
-        return f"PriceCandlestick({self.close_time}, {self.open_price}, {self.high_price}, {self.low_price}, {self.close_price}, {self.volume}, {self.quote_volume}, {self.coin})"
-
-
-class PriceCandleStickDTO(BaseModel):
-    result: Dict[str, List[List[float]]]
-    allowance: Dict[str, Any]
+        return f"PriceCandleStick({self.close_time}, {self.open_price}, {self.high_price}, {self.low_price}, {self.close_price}, {self.volume}, {self.quote_volume}, {self.coin})"

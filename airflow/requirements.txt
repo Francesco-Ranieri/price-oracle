@@ -2,3 +2,4 @@ cassandra-driver
 apache-airflow-providers-apache-cassandra
 requests
 pydantic
+pandas

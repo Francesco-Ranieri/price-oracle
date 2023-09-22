@@ -2,7 +2,7 @@ import logging
 from typing import List
 
 import requests
-from common.entities.price_candlestick import PriceCandlestick, PriceCandleStickDTO
+from common.entities.price_candlestick import PriceCandleStick, PriceCandleStickDTO
 
 
 # Define a custom exception for HTTP errors
@@ -20,7 +20,7 @@ class CryptoWatchClient:
 
     def fetch_ohlc_data(
         self, coin_pair="BTCUSDT", after=None, before=None
-    ) -> List[PriceCandlestick]:
+    ) -> List[PriceCandleStick]:
         data = self.__fetch_ohlc_data__(coin_pair, after, before)
         return self.map_to_model(data, coin_pair)
 
@@ -50,22 +50,4 @@ class CryptoWatchClient:
         ohlc_data = PriceCandleStickDTO.model_validate(response.json())
         return ohlc_data
 
-    def map_to_model(self, ohlc_data, coin) -> List[PriceCandlestick]:
-        candlesticks = []
-        for period, candles in ohlc_data.result.items():
-            for row in candles:
-                candlestick = PriceCandlestick.model_validate(
-                    {
-                        "close_time": row[0],
-                        "open_price": row[1],
-                        "high_price": row[2],
-                        "low_price": row[3],
-                        "close_price": row[4],
-                        "volume": row[5],
-                        "quote_volume": row[6],
-                        "coin": coin,
-                        "period": period,
-                    }
-                )
-                candlesticks.append(candlestick)
-        return candlesticks
+
