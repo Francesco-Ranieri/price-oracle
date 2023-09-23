@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List
 
 from airflow.decorators import task
@@ -23,10 +23,11 @@ def fetch_data(file_path: str) -> PriceCandleStick:
 
     df = pd.read_csv(file_path)
     data = df.to_dict("records") 
-    data: List[CryptoDataDTO] = [CryptoDataDTO.model_validate(item) for item in data]
+    data: List[CryptoDataDTO] = [CryptoDataDTO.parse_obj(item) for item in data]
     data: List[PriceCandleStick] = [CryptoDataMapper.to_price_candlestick(item) for item in data]
 
     return data
+
 
 with DAG(
     "initial_data_loading_btcusdt",
@@ -45,10 +46,10 @@ with DAG(
     "initial_data_loading_ethusdt",
     schedule="@once",
     catchup=True,
-    start_date=datetime.now(),
+    start_date=datetime.now() - timedelta(days=1),
     default_args={
         "owner": "ranierifr"
     },
-) as dag:
-    ohlc_data = fetch_data("assets/Gemini_BTCUSD_1h.csv")
+) as test_dag:
+    ohlc_data = fetch_data("assets/Gemini_ETHUSD_1h.csv")
     insert_into_cassandra(ohlc_data)

@@ -10,7 +10,7 @@ COPY requirements.txt /
 # apache-airflow for you, so adding it explicitly is a good practice - this way if you have conflicting requirements, you will 
 # get an error message with conflict information, rather than a surprise downgrade or upgrade of airflow. If you upgrade 
 # airflow base image, you should also update the version to match the new version of airflow.0
-RUN pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" -r /requirements.txt
+RUN pip install --no-cache-dir -r /requirements.txt
 
 COPY dags dags
 COPY assets assets

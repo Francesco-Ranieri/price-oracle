@@ -23,12 +23,10 @@ def fetch_data(**kwargs) -> PriceCandleStick:
     before = int(datetime.timestamp(
         kwargs["logical_date"] + timedelta(weeks=1)))
 
-    logging.info(after)
-    logging.info(before)
     ohlc_data = crypto_client.fetch_ohlc_data(
         coin_pair=coin_pair, after=after, before=before
     )
-    logging.info(ohlc_data)
+
     return ohlc_data
 
 with DAG(
@@ -40,7 +38,6 @@ with DAG(
     default_args={
         "owner": "gianfranco",
         "depends_on_past": False,
-        # 'retries': 10,
         "retry_delay": timedelta(minutes=5),
     },
 ) as dag:

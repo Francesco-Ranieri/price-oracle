@@ -8,7 +8,7 @@ class CryptoWatchMapper:
         candlesticks = []
         for period, candles in ohlc_data.result.items():
             for row in candles:
-                candlestick = PriceCandleStick.model_validate(
+                candlestick = PriceCandleStick.parse_obj(
                     {
                         "close_time": row[0],
                         "open_price": row[1],

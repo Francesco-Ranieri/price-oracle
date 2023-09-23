@@ -2,10 +2,8 @@ from datetime import datetime
 from typing import Any, Dict, List
 
 from pydantic import BaseModel, PositiveInt
-
-class PriceCandleStick(BaseModel):
+class PriceCandleStick(BaseModel, extra="allow"):
     close_time: PositiveInt
-    _close_time_date: datetime
     open_price: float
     high_price: float
     low_price: float
@@ -17,9 +15,8 @@ class PriceCandleStick(BaseModel):
 
     @property
     def close_time_date(self) -> str:
-        if not getattr(self, "_close_time_date"):
+        if not hasattr(self, "_close_time_date"):
             self._close_time_date = datetime.strftime(
-                self.close_time,
                 datetime.fromtimestamp(self.close_time), "%Y-%m-%d %H:%M:%S"
             )
         return self._close_time_date

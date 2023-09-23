@@ -2,6 +2,8 @@ from typing import List
 
 from airflow.decorators import task
 from common.entities.price_candlestick import PriceCandleStick
+from tqdm import tqdm
+
 
 @task
 def insert_into_cassandra(data: List[PriceCandleStick]):
@@ -28,7 +30,7 @@ def insert_into_cassandra(data: List[PriceCandleStick]):
             )
     """
     
-    for row in data:
+    for row in tqdm(data):
         cassandra_hook.run_query(
             insert_query, 
             parameters={

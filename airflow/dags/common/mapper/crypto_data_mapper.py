@@ -9,9 +9,9 @@ class CryptoDataMapper:
 
     @staticmethod
     def to_price_candlestick(candle: CryptoDataDTO) -> List[PriceCandleStick]:
-        return PriceCandleStick.model_validate(
+        return PriceCandleStick.parse_obj(
             {
-                "close_time": candle.unix,
+                "close_time": candle.unix/1000, # convert timestamp to seconds
                 "open_price": candle.open,
                 "high_price": candle.high,
                 "low_price": candle.low,

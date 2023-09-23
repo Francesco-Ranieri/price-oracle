@@ -12,7 +12,10 @@
             "name": "cassandra",
             "database": "mykeyspace",
             "username": "cassandra",
-            "password": "l1Lc£C9eKFR5"
+            "password": "cassandra"
         }
-    ]
+    ],
+    "python.autoComplete.extraPaths": [
+        "/home/gianfranco/Desktop/uni/price-oracle/airflow/dags"
+    ],
 }

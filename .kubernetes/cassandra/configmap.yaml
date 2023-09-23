@@ -24,7 +24,7 @@ data:
         close_price double,
         volume double,
         quote_volume double,
-        period int,
+        period text,
         period_name text,
         PRIMARY KEY (coin, close_time)
     );

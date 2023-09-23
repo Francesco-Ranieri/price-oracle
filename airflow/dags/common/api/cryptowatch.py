@@ -46,7 +46,7 @@ class CryptoWatchClient:
             logging.error(response.json())
             raise HTTPError(response.status_code)
 
-        ohlc_data = PriceCandleStick.model_validate(response.json())
+        ohlc_data = PriceCandleStick.parse_obj(response.json())
         return ohlc_data
 
 
