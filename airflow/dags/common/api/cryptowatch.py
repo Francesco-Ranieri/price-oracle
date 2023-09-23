@@ -2,8 +2,7 @@ import logging
 from typing import List
 
 import requests
-from common.entities.price_candlestick import PriceCandleStick, PriceCandleStickDTO
-
+from common.entities.price_candlestick import PriceCandleStick
 
 # Define a custom exception for HTTP errors
 class HTTPError(Exception):
@@ -26,7 +25,7 @@ class CryptoWatchClient:
 
     def __fetch_ohlc_data__(
         self, coin_pair="BTCUSDT", after=None, before=None
-    ) -> PriceCandleStickDTO:
+    ) -> PriceCandleStick:
         url = self.PRICES_BASE_URL + self.PRICES_OHLC_PATH.replace(
             ":exchange", self.exchange
         ).replace(":pair", coin_pair)
@@ -47,7 +46,7 @@ class CryptoWatchClient:
             logging.error(response.json())
             raise HTTPError(response.status_code)
 
-        ohlc_data = PriceCandleStickDTO.model_validate(response.json())
+        ohlc_data = PriceCandleStick.model_validate(response.json())
         return ohlc_data
 
 

@@ -4,5 +4,5 @@ requires:
   - path: .skaffold/secrets.yaml
   - path: .skaffold/configmaps.yaml
   - path: .skaffold/cassandra.yaml
-  #- path: .skaffold/airflow.yaml
+  - path: .skaffold/airflow.yaml
   - path: .skaffold/grafana.yaml

@@ -2,6 +2,10 @@
 # One of: LocalExecutor, LocalKubernetesExecutor, CeleryExecutor, KubernetesExecutor, CeleryKubernetesExecutor
 executor: "CeleryExecutor"
 
+extraEnvFrom: |
+  - secretRef:
+      name: 'airflow-connections'
+
 dags:
   gitSync:
     enabled: false

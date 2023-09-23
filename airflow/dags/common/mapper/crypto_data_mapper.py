@@ -4,14 +4,14 @@ from common.dtos.crypto_data_dto import CryptoDataDTO
 
 class CryptoDataMapper:
     @staticmethod
-    def to_price_candlesticks(cls, ohlc_data: List[CryptoDataDTO]) -> List[PriceCandleStick]:
+    def to_price_candlesticks(ohlc_data: List[CryptoDataDTO]) -> List[PriceCandleStick]:
         return list(map(CryptoDataMapper.to_price_candlestick, ohlc_data))
 
     @staticmethod
-    def to_price_candlestick(cls, candle: CryptoDataDTO) -> List[PriceCandleStick]:
+    def to_price_candlestick(candle: CryptoDataDTO) -> List[PriceCandleStick]:
         return PriceCandleStick.model_validate(
             {
-                "close_time": candle.close,
+                "close_time": candle.unix,
                 "open_price": candle.open,
                 "high_price": candle.high,
                 "low_price": candle.low,
