@@ -1,2 +1,4 @@
 black
+dvc
+mlflow
 flake8

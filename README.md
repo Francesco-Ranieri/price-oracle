@@ -18,3 +18,8 @@ skaffold dev --status-check=false
 3) Run `airflow connections add cassandra_default --conn-uri cassandra://cassandra:l1Lc%C2%A3C9eKFR5@localhost:9042/mykeyspace`
 4) Run `airflow db migrate`
 5) Debug the dag file as usual
+
+
+## DATA
+
+https://www.cryptodatadownload.com/data/cexio/
