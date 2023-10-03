@@ -1,3 +1,4 @@
+import os
 import logging
 from datetime import datetime, timedelta
 from typing import List
@@ -29,27 +30,18 @@ def fetch_data(file_path: str) -> PriceCandleStick:
     return data
 
 
-with DAG(
-    "initial_data_loading_btcusdt",
-    schedule="@once",
-    catchup=True,
-    start_date=datetime.now(),
-    default_args={
-        "owner": "ranierifr"
-    },
-) as dag:
-    ohlc_data = fetch_data("assets/Gemini_BTCUSD_1h.csv")
-    insert_into_cassandra(ohlc_data)
+file_names = os.listdir("assets")
 
-
-with DAG(
-    "initial_data_loading_ethusdt",
-    schedule="@once",
-    catchup=True,
-    start_date=datetime.now() - timedelta(days=1),
-    default_args={
-        "owner": "ranierifr"
-    },
-) as test_dag:
-    ohlc_data = fetch_data("assets/Gemini_ETHUSD_1h.csv")
-    insert_into_cassandra(ohlc_data)
+for file_name in file_names:
+    coin_name = file_name.split("_")[1].lower()
+    with DAG(
+        f"initial_data_loading_{coin_name}",
+        schedule="@once",
+        catchup=True,
+        start_date=datetime.now(),
+        default_args={
+            "owner": "ranierifr"
+        },
+    ) as dag:
+        ohlc_data = fetch_data(f"assets/{file_name}")
+        insert_into_cassandra(ohlc_data)
