@@ -2,3 +2,7 @@ dbUser:
   user: cassandra
   existingSecret: cassandra-secret
 initDBConfigMap: init-db
+
+# resources:
+#   limits:
+#     memory: 4Gi
