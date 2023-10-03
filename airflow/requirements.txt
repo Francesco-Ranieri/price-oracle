@@ -2,6 +2,6 @@ apache-airflow-providers-apache-cassandra
 apache-airflow==2.7.1
 cassandra-driver
 requests
-pydantic==1.10.12
+pydantic==2.4.2
 pandas
 tqdm

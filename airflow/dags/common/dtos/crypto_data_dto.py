@@ -1,7 +1,7 @@
 from datetime import datetime
-from typing import Any, Dict, List
-
 from pydantic import BaseModel, PositiveInt
+from pydantic.functional_validators import field_validator
+from dateutil.parser import parse
 
 class CryptoDataDTO(BaseModel):
     unix: PositiveInt 
@@ -14,3 +14,8 @@ class CryptoDataDTO(BaseModel):
     volume_crypto: float
     volume_usd: float
     period: str = "3600"
+
+    @field_validator('date', mode='before')
+    @classmethod
+    def str_to_datetime(cls, v: str) -> datetime:
+        return parse(v) 

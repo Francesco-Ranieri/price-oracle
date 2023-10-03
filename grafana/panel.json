@@ -23,7 +23,7 @@
         "datasourceId": 1,
         "queryType": "query",
         "rawQuery": true,
-        "target": "SELECT coin, high_price, close_time_date FROM price_candlestick WHERE period = '43200' ALLOW FILTERING;"
+        "target": "SELECT coin, high_price, close_time_date FROM price_candlestick;"
       }
     ],
     "options": {
