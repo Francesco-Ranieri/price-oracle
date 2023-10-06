@@ -8,7 +8,7 @@ class CryptoDataMapper:
         return list(map(CryptoDataMapper.to_price_candlestick, ohlc_data))
 
     @staticmethod
-    def to_price_candlestick(candle: CryptoDataDTO) -> List[PriceCandleStick]:
+    def to_price_candlestick(candle: CryptoDataDTO) -> PriceCandleStick:
         return PriceCandleStick.model_validate(
             {
                 "close_time": candle.unix,
