@@ -2,3 +2,10 @@ black
 dvc
 mlflow
 flake8
+
+# Notebooks
+pandas
+matplotlib
+seaborn
+fastdtw
+mlflow
