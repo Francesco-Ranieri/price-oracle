@@ -2,5 +2,4 @@
 *.pyc
 /data
 .env
-/mlruns
 /mlflow
