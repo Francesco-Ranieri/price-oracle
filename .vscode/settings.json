@@ -18,4 +18,7 @@
     "python.autoComplete.extraPaths": [
         "/home/gianfranco/Desktop/uni/price-oracle/airflow/dags"
     ],
+    "python.analysis.extraPaths": [
+        "/home/gianfranco/Desktop/uni/price-oracle/airflow/dags"
+    ],
 }
