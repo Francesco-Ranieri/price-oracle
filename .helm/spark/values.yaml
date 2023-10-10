@@ -1,0 +1,6 @@
+service:
+  type: NodePort
+worker:
+  extraEnvVars: 
+  - name: PYSPARK_PYTHON
+    value: "3.10"

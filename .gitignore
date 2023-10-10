@@ -3,3 +3,5 @@
 /data
 .env
 /airflow/assets
+elastic/elasticsearch.yaml
+elastic/kibana.yaml
