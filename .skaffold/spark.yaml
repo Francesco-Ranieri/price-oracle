@@ -7,7 +7,7 @@ build:
     - image: price-oracle-spark
       context: ../.docker
       docker:
-        dockerfile: Dockerfile
+        dockerfile: Spark.Dockerfile
 deploy:
   helm:
     releases:
@@ -17,8 +17,9 @@ deploy:
         createNamespace: true
         namespace: price-oracle
         setValueTemplates:
-          images.airflow.repository: "{{.IMAGE_REPO_price_oracle_spark}}"
-          images.airflow.tag: "{{.IMAGE_TAG_price_oracle_airflow}}@{{.IMAGE_DIGEST_price_oracle_spark}}"
+          image.registry: ""
+          image.repository: "{{.IMAGE_REPO_price_oracle_spark}}"
+          image.tag: "{{.IMAGE_TAG_price_oracle_spark}}@{{.IMAGE_DIGEST_price_oracle_spark}}"
         valuesFiles:
           - ../.helm/spark/values.yaml
 portForward:
