@@ -4,7 +4,7 @@ requires:
   - path: .skaffold/namespace.yaml
   - path: .skaffold/secrets.yaml
   - path: .skaffold/configmaps.yaml
-  # - path: .skaffold/cassandra.yaml
+  - path: .skaffold/cassandra.yaml
   - path: .skaffold/spark.yaml
-  # - path: .skaffold/airflow.yaml
-  # - path: .skaffold/grafana.yaml
+  - path: .skaffold/airflow.yaml
+  - path: .skaffold/grafana.yaml

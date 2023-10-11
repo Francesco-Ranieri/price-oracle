@@ -10,3 +10,4 @@ seaborn
 fastdtw
 mlflow
 scikit-learn-extra
+pyspark
