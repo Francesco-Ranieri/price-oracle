@@ -1,5 +1,6 @@
 # Use the official Apache Airflow image as the base image
-FROM apache/airflow:2.7.1-python3.11 AS base
+FROM apache/airflow:2.7.2-python3.9 AS base
+
 
 COPY requirements.txt /
 # Install additional Python packages using pip
@@ -10,7 +11,10 @@ COPY requirements.txt /
 # apache-airflow for you, so adding it explicitly is a good practice - this way if you have conflicting requirements, you will 
 # get an error message with conflict information, rather than a surprise downgrade or upgrade of airflow. If you upgrade 
 # airflow base image, you should also update the version to match the new version of airflow.0
-RUN pip install --no-cache-dir -r /requirements.txt
+RUN pip install -r /requirements.txt
+
+USER root
+RUN apt-get update && apt-get install -y openjdk-11-jre
 
 COPY dags dags
 COPY assets assets

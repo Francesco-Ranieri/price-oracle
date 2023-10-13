@@ -1,5 +1,6 @@
-apache-airflow-providers-apache-cassandra
 apache-airflow==2.7.1
+apache-airflow-providers-apache-cassandra
+# apache-airflow-providers-apache-spark
 cassandra-driver
 requests
 pydantic==2.4.2

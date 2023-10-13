@@ -34,9 +34,11 @@ config:
     dag_discovery_safe_mode: false
     allowed_deserialization_classes: common\.*
     max_active_tasks_per_dag: 64
+    #logging_level: 'DEBUG'
 
   webserver:
     expose_config: true
 
   scheduler:
     dag_dir_list_interval: 5
+
