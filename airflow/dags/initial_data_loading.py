@@ -8,7 +8,7 @@ from airflow import DAG
 
 logging.basicConfig(level=logging.DEBUG)
 
-file_names = os.listdir("assets")
+file_names = [file_name for file_name in os.listdir("assets") if file_name.endswith(".csv")]
 for file_name in file_names:
     coin_name = file_name.split("_")[1].lower()
     with DAG(

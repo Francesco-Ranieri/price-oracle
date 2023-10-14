@@ -11,7 +11,7 @@ class CassandraHook:
         self.session = self.get_conn()
 
     def get_conn(self) -> Session:
-        conn = self.get_connection(self.cassandra_conn_id)
+        conn = CassandraHook.get_connection(self.cassandra_conn_id)
         cluster = Cluster(
             contact_points=conn.host.split(","),
             port=conn.port,
@@ -23,7 +23,8 @@ class CassandraHook:
         session.set_keyspace(conn.schema)
         return session
 
-    def get_connection(self, conn_id: str) -> Connection:
+    @classmethod
+    def get_connection(cls, conn_id: str) -> Connection:
         conn = BaseHook.get_connection(conn_id)
         if not conn.host:
             raise AirflowException(
