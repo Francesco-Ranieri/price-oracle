@@ -1,3 +1,4 @@
+import os
 import logging
 from datetime import date, datetime, timedelta
 
@@ -20,26 +21,36 @@ def spark_task():
     #     verbose=True,  # Set to True for debugging
     # ).execute(context=None)
 
+    os.environ['PYSPARK_SUBMIT_ARGS'] = '--packages com.datastax.spark:spark-cassandra-connector_2.11:2.3.0'
+    
     spark = SparkSession.builder \
                 .appName("CassandraSpark") \
                 .master("spark://price-oracle-spark-master-svc:7077") \
                 .getOrCreate()
-    pandas_df = pd.DataFrame({
-    'a': [1, 2, 3],
-    'b': [2., 3., 4.],
-    'c': ['string1', 'string2', 'string3'],
-    'd': [date(2000, 1, 1), date(2000, 2, 1), date(2000, 3, 1)],
-    'e': [datetime(2000, 1, 1, 12, 0), datetime(2000, 1, 2, 12, 0), datetime(2000, 1, 3, 12, 0)]
-    })
-    df = spark.createDataFrame(pandas_df)
+    
+    # connect to cassandra and read table
+    df = spark.read.format("org.apache.spark.sql.cassandra") \
+            .options(table="price_candlestick", keyspace="mykeyspace") \
+            .option("spark.cassandra.auth.username", "cassandra") \
+            .option("spark.cassandra.auth.password", "Y2Fzc2FuZHJh") \
+            .load()
+    
+    # pandas_df = pd.DataFrame({
+    # 'a': [1, 2, 3],
+    # 'b': [2., 3., 4.],
+    # 'c': ['string1', 'string2', 'string3'],
+    # 'd': [date(2000, 1, 1), date(2000, 2, 1), date(2000, 3, 1)],
+    # 'e': [datetime(2000, 1, 1, 12, 0), datetime(2000, 1, 2, 12, 0), datetime(2000, 1, 3, 12, 0)]
+    # })
+    # df = spark.createDataFrame(pandas_df)
 
     # All DataFrames above result same.
     df.show()
     df.printSchema()
     df.show(1)
 
-    logging.info("Full dataframe:")
-    df.show()
+    # logging.info("Full dataframe:")
+    # df.show()
 
     # df = spark.read.format("org.apache.spark.sql.cassandra") \
     #         .options(table="price_candlestick", keyspace="mykeyspace") \
