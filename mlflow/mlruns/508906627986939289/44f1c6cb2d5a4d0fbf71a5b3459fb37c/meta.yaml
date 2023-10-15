@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/508906627986939289/44f1c6cb2d5a4d0fbf71a5b3459fb37c/artifacts
+end_time: 1697371498030
+entry_point_name: ''
+experiment_id: '508906627986939289'
+lifecycle_stage: active
+run_id: 44f1c6cb2d5a4d0fbf71a5b3459fb37c
+run_name: Scores_logging
+run_uuid: 44f1c6cb2d5a4d0fbf71a5b3459fb37c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697371497633
+status: 3
+tags: []
+user_id: Francesco-Ranieri
