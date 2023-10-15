@@ -1,6 +1,7 @@
 artifact_location: mlflow-artifacts:/553362447716180536
 creation_time: 1696789643659
 experiment_id: '553362447716180536'
-last_update_time: 1696789643659
-lifecycle_stage: active
+last_update_time: 1697059227276
+lifecycle_stage: deleted
 name: g_KMeans_Clustering_cropped_scaled_filtered
+tags: {}

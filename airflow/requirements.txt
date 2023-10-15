@@ -6,4 +6,5 @@ requests
 pydantic==2.4.2
 pandas
 pyspark
+tensorflow
 tqdm

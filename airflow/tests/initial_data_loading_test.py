@@ -9,7 +9,7 @@ dags_folder = os.path.join(root_folder, 'dags')
 sys.path.append(dags_folder)
 
 from common.tasks.fetch_data import fetch_data
-from common.tasks.cassandra import insert_into_cassandra
+from common.tasks.cassandra import insert_into_cassandra_price_candlestick
 
 if __name__ == "__main__":
 
@@ -23,6 +23,6 @@ if __name__ == "__main__":
             start_date=datetime.now() - timedelta(days=1)
         ) as test_dag:
             ohlc_data = fetch_data(f"airflow/assets/{file_name}")
-            insert_into_cassandra(ohlc_data)
+            insert_into_cassandra_price_candlestick(ohlc_data)
 
         test_dag.test()

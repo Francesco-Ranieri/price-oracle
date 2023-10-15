@@ -1,5 +1,4 @@
 from datetime import datetime
-from typing import Any, Dict, List
 
 from pydantic import BaseModel, PositiveInt
 class PriceCandleStick(BaseModel, extra="allow"):

@@ -5,7 +5,7 @@ from typing import List
 from airflow.decorators import task
 from common.api.cryptowatch import CryptoWatchClient
 from common.entities.price_candlestick import PriceCandleStick
-from common.tasks.cassandra import insert_into_cassandra
+from common.tasks.cassandra import insert_into_cassandra_price_candlestick
 
 from airflow import DAG
 
@@ -42,4 +42,4 @@ with DAG(
     },
 ) as dag:
     ohlc_data = fetch_data()
-    insert_into_cassandra(ohlc_data)
+    insert_into_cassandra_price_candlestick(ohlc_data)
