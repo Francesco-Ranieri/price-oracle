@@ -3,10 +3,15 @@ from airflow.hooks.base import BaseHook
 from airflow.models.connection import Connection
 from cassandra.auth import PlainTextAuthProvider
 from cassandra.cluster import Cluster, Session
+from cassandra.query import BatchStatement
 
+import logging
+
+logger = logging.getLogger(__name__)
 
 class CassandraHook:
     def __init__(self, cassandra_conn_id: str = "cassandra_default") -> None:
+        self.MAX_QUERY_IN_BATCH = 16384
         self.cassandra_conn_id = cassandra_conn_id
         self.session = self.get_conn()
 
@@ -22,6 +27,7 @@ class CassandraHook:
         session = cluster.connect()
         session.set_keyspace(conn.schema)
         return session
+
 
     @classmethod
     def get_connection(cls, conn_id: str) -> Connection:
@@ -44,5 +50,33 @@ class CassandraHook:
             )
         return conn
 
+
     def run_query(self, query: str, parameters: dict = None) -> None:
-        self.session.execute(query, parameters=parameters)
+        return self.session.execute(query, parameters=parameters)
+
+
+    def run_batch_query(self, query: str, parameters: list = None) -> None:
+        """
+        Cassandra has a hard limit of 65535 queries in a batch. 
+        To avoid timeouts, we will use a batch size of 16384.
+        """
+
+        logger.info(f"Running batch query with {len(parameters)} parameters")
+        if len(parameters) > self.MAX_QUERY_IN_BATCH:
+            logger.info(f"Batch query will be split into {len(parameters) // self.MAX_QUERY_IN_BATCH} batches")
+
+        # Splice the parameters into multiple batches if it exceeds the maximum query size
+        if parameters:
+            for i in range(0, len(parameters), self.MAX_QUERY_IN_BATCH):
+                self._run_batch_query(query, parameters[i : i + self.MAX_QUERY_IN_BATCH])
+
+    
+    def _run_batch_query(self, query: str, parameters: list = None) -> None:
+        prepared = self.session.prepare(query)
+        batch = BatchStatement()
+        for param in parameters:
+            batch.add(prepared, param)
+
+        logger.info(f"Executing batch query with {len(batch)} queries")
+        self.session.execute(batch)
+        logger.info("Batch query executed successfully")
