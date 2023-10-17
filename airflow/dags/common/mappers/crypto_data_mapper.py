@@ -12,6 +12,7 @@ class CryptoDataMapper:
         return PriceCandleStick.model_validate(
             {
                 "close_time": candle.unix,
+                "close_time_date": candle.date,
                 "open_price": candle.open,
                 "high_price": candle.high,
                 "low_price": candle.low,
@@ -19,7 +20,6 @@ class CryptoDataMapper:
                 "volume": candle.volume_crypto,
                 "quote_volume": candle.volume_usd,
                 "coin": candle.symbol.replace("/", ""),
-                "period": candle.period,
-                "_close_time_date": candle.date
+                "period": candle.period
             }
         )

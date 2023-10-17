@@ -6,9 +6,7 @@ from common.entities.indicators import Indicators
 from common.hooks.cassandra_hook import CassandraHook
 
 
-@task
 def insert_into_cassandra_price_candlestick(data: List[PriceCandleStick]):
-    
 
     cassandra_hook = CassandraHook()
     insert_query = """
@@ -30,9 +28,10 @@ def insert_into_cassandra_price_candlestick(data: List[PriceCandleStick]):
             row.coin,
             row.period,
             row.period_name
-         ) for row in data
+        ) for row in data
     ]
     cassandra_hook.run_batch_query(insert_query, params)
+
 
 @task
 def insert_into_cassandra_indicators(data: List[Indicators]):
@@ -61,5 +60,4 @@ def insert_into_cassandra_indicators(data: List[Indicators]):
             row.sma_200
         ) for row in data
     ]
-    
     cassandra_hook.run_batch_query(insert_query, params)

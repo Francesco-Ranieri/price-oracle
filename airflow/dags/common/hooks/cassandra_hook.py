@@ -52,7 +52,8 @@ class CassandraHook:
 
 
     def run_query(self, query: str, parameters: dict = None) -> None:
-        return self.session.execute(query, parameters=parameters)
+        prepared = self.session.prepare(query)
+        return self.session.execute(prepared, parameters=parameters)
 
 
     def run_batch_query(self, query: str, parameters: list = None) -> None:
@@ -65,17 +66,20 @@ class CassandraHook:
         if len(parameters) > self.MAX_QUERY_IN_BATCH:
             logger.info(f"Batch query will be split into {len(parameters) // self.MAX_QUERY_IN_BATCH} batches")
 
+        prepared = self.session.prepare(query)
+
         # Splice the parameters into multiple batches if it exceeds the maximum query size
         if parameters:
             for i in range(0, len(parameters), self.MAX_QUERY_IN_BATCH):
-                self._run_batch_query(query, parameters[i : i + self.MAX_QUERY_IN_BATCH])
+                self._run_batch_query(prepared, parameters[i : i + self.MAX_QUERY_IN_BATCH])
+        else:
+            raise AirflowException("Parameters cannot be empty")
 
     
     def _run_batch_query(self, query: str, parameters: list = None) -> None:
-        prepared = self.session.prepare(query)
         batch = BatchStatement()
         for param in parameters:
-            batch.add(prepared, param)
+            batch.add(query, param)
 
         logger.info(f"Executing batch query with {len(batch)} queries")
         self.session.execute(batch)
