@@ -164,11 +164,17 @@ for file_name in file_names:
             op_args=[data_path_task.output, coin_name],
         )
 
+        insert_into_cassandra_indicators_task = PythonOperator(
+            task_id="insert_into_cassandra_indicators",
+            python_callable=insert_into_cassandra_indicators,
+            op_args=[compute_indicators_task.output]
+        )
 
         # Set up task dependencies
         external_task_sensor >> data_path_task  # Wait for the external DAG to complete
         data_path_task >> compute_indicators_task  # Fetch data before computing indicators
-        compute_indicators_task >> insert_into_cassandra_indicators(compute_indicators_task.output)
+        compute_indicators_task >> insert_into_cassandra_indicators_task
+
 
     if __name__ == "__main__":
         dag.test()
