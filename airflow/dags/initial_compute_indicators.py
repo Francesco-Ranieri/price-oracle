@@ -70,10 +70,10 @@ def compute_indicators(data_path: str, coin_name: str):
 
     # Load the data from a pickle file
     logging.info(f"Loading data from {data_path}")
-    data = pd.read_pickle(data_path)
+    df = pd.read_pickle(data_path)
 
     # Convert the data to a Spark DataFrame
-    df = spark_session.createDataFrame(data)
+    df = spark_session.createDataFrame(df)
 
     # Sort the DataFrame by date
     df = df.orderBy("close_time_date")
@@ -107,18 +107,16 @@ def compute_indicators(data_path: str, coin_name: str):
         df = df.withColumn(ema_column, F.when(F.isnull(F.col(ema_column)), F.avg("close_price").over(window_spec.rowsBetween(-window_size, -1))).otherwise(F.lit(None)))
         df = df.withColumn(ema_column, F.when(F.isnull(F.col(ema_column)), F.col("close_price") * alpha + F.col(ema_column) * (1 - alpha)).otherwise(F.lit(None)))
 
-    # Make the column close_time_date a string
-    df = df.withColumn("close_time_date", F.col("close_time_date").cast("string"))
-
     # Add the coin name to each record
     df = df.withColumn("coin", F.lit(coin_name))
 
-    # Convert the Spark DataFrame back to a Pandas DataFrame
-    data = df.toPandas().to_dict("records")
+    # Convert the Spark DataFrame back to a Pandas DataFrame and then to a list of Indicators
+    df = df.toPandas()
+    df['close_time_date'] = pd.Series(df['close_time_date'].dt.to_pydatetime(), dtype = object)
+    df = df.to_dict("records")
+    df: List[Indicators] = [Indicators.model_validate(item) for item in df]
 
-    data: List[Indicators] = [Indicators.model_validate(item) for item in data]
-
-    return data
+    return df
 
     
 file_names = [file_name for file_name in os.listdir("assets") if file_name.endswith(".csv")]
@@ -166,11 +164,17 @@ for file_name in file_names:
             op_args=[data_path_task.output, coin_name],
         )
 
+        insert_into_cassandra_indicators_task = PythonOperator(
+            task_id="insert_into_cassandra_indicators",
+            python_callable=insert_into_cassandra_indicators,
+            op_args=[compute_indicators_task.output]
+        )
 
         # Set up task dependencies
         external_task_sensor >> data_path_task  # Wait for the external DAG to complete
         data_path_task >> compute_indicators_task  # Fetch data before computing indicators
-        compute_indicators_task >> insert_into_cassandra_indicators(compute_indicators_task.output)
+        compute_indicators_task >> insert_into_cassandra_indicators_task
+
 
     if __name__ == "__main__":
         dag.test()
