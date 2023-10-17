@@ -11,3 +11,4 @@ fastdtw
 mlflow
 scikit-learn-extra
 pyspark
+tensorflow
