@@ -6,13 +6,13 @@ metadata:
 data:
   "01-init.cql": |
     
-    CREATE KEYSPACE IF NOT EXISTS mykeyspace
+    CREATE KEYSPACE IF NOT EXISTS price_oracle
     WITH replication = {
       'class': 'SimpleStrategy',
       'replication_factor': 3
     };
 
-    USE mykeyspace;
+    USE price_oracle;
 
     CREATE TABLE IF NOT EXISTS price_candlestick (
         coin text,
@@ -45,4 +45,13 @@ data:
         sma_100 double,
         sma_200 double,
         PRIMARY KEY (coin, close_time_date)
+    );
+
+
+    CREATE TABLE IF NOT EXISTS prediction (
+        close_time_date timestamp,
+        close_price double,
+        coin text,
+        model_name text,
+        PRIMARY KEY (coin, model_name, close_time_date)
     );

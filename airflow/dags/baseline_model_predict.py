@@ -6,10 +6,9 @@ from typing import List
 import pandas as pd
 from airflow.models import DagRun
 from airflow.operators.python import PythonOperator
-from common.entities.indicators import Indicators
-from common.hooks.cassandra_hook import CassandraHook
+from common.entities.prediction import Prediction
 from common.hooks.spark_hook import SparkHook
-from common.tasks.cassandra import insert_into_cassandra_indicators
+from common.tasks.cassandra import insert_into_cassandra_predictions
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
 
@@ -22,22 +21,19 @@ from airflow.sensors.external_task import ExternalTaskSensor
 
 def fetch_data(coin_name: str):
     
-    conn = CassandraHook.get_connection(conn_id="cassandra_default")
-    spark_session = SparkHook(app_name=__name__).get_spark_cassandra_session()
+    spark_hook = SparkHook(app_name=f"{__name__}:fetch_data")
+    spark_session = spark_hook.get_spark_cassandra_session()
     
     df = spark_session.read \
         .format("org.apache.spark.sql.cassandra") \
         .options(
             keyspace="price_oracle",
             table="price_candlestick",
-            url=conn.get_uri(),
+            url=spark_hook.cassandra_connection.get_uri(),
             pushdown="true",  # Enable pushdown
         )\
         .load() \
         .filter(f"coin = '{coin_name}'")
-    
-    # keep only date and close_price columns
-    df = df.select("close_time_date", "close_price", "coin")
 
     # serialize the dataframe with pickle
     data = df.toPandas()
@@ -46,9 +42,9 @@ def fetch_data(coin_name: str):
     return data_path
 
 
-def compute_indicators(data_path: str, coin_name: str):
+def predict(data_path: str) -> List[Prediction]:
 
-    spark_session = SparkHook(app_name="initial_compute_indicators").get_spark_cassandra_session()
+    spark_session = SparkHook(app_name=f"{__name__}:predict").get_spark_session()
 
     # Load the data from a pickle file
     logging.info(f"Loading data from {data_path}")
@@ -57,43 +53,20 @@ def compute_indicators(data_path: str, coin_name: str):
     # Convert the data to a Spark DataFrame
     df = spark_session.createDataFrame(df)
 
-    # Sort the DataFrame by date
-    df = df.orderBy("close_time_date")
+    # keep only date and close_price columns
+    df = df.select("close_time_date", "close_price", "coin")
 
-    # Define a window specification based on the date column
-    window_spec = Window.orderBy("close_time_date")
-    
-    # Define the window sizes for SMA
-    sma_window_sizes = [5,10,20,50,100,200]
+    # predict each day price with the price of the previous day
+    df = df.withColumn("close_price", F.lag("close_price", 1).over(Window.orderBy("close_time_date")))
 
-    # Calculate Simple Moving Average (SMA) for each window size
-    for window_size in sma_window_sizes:
-        # Define the column name for the SMA
-        sma_column = f"sma_{window_size}"
-        # Calculate the SMA using a window function
-        df = df.withColumn(sma_column, F.avg("close_price").over(window_spec.rowsBetween(-window_size, 0)))
-
-    # Define the window sizes for EMA
-    ema_window_sizes = [12, 26, 50, 100, 200]
-
-    # Calculate Exponential Moving Average (EMA) for each window size
-    for window_size in ema_window_sizes:
-        # Define the column name for the EMA
-        ema_column = f"ema_{window_size}"
-
-        # Calculate the EMA
-        alpha = 2 / (window_size + 1)  # EMA smoothing factor
-
-        # Calculate the EMA
-        df = df.withColumn(ema_column, F.lit(None))
-        df = df.withColumn(ema_column, F.when(F.isnull(F.col(ema_column)), F.avg("close_price").over(window_spec.rowsBetween(-window_size, -1))).otherwise(F.lit(None)))
-        df = df.withColumn(ema_column, F.when(F.isnull(F.col(ema_column)), F.col("close_price") * alpha + F.col(ema_column) * (1 - alpha)).otherwise(F.lit(None)))
+    # add a column with the model name
+    df = df.withColumn("model_name", F.lit("BASELINE_LAG_1"))
 
     # Convert the Spark DataFrame back to a Pandas DataFrame and then to a list of Indicators
     df = df.toPandas()
     df['close_time_date'] = pd.Series(df['close_time_date'].dt.to_pydatetime(), dtype = object)
     df = df.to_dict("records")
-    df: List[Indicators] = [Indicators.model_validate(item) for item in df]
+    df: List[Prediction] = [Prediction.model_validate(item) for item in df]
 
     return df
 
@@ -104,14 +77,14 @@ for file_name in file_names:
     coin_name = file_name.split("_")[1]
 
     with DAG(
-        f"compute_indicators_{coin_name}",
+        f"baseline_model_predict_{coin_name}",
         schedule="@once",
-        start_date=datetime.now(),
+        start_date=datetime.now(),  
         default_args={
             "owner": "ranierifr"
         },
         is_paused_upon_creation=True,
-        tags=["spark", "indicators", coin_name]
+        tags=["spark", "prediction", coin_name]
     ) as dag:
 
             
@@ -120,8 +93,8 @@ for file_name in file_names:
             dag_runs.sort(key=lambda x: x.execution_date, reverse=True)
             if dag_runs:
                 return dag_runs[0].execution_date
-            
-        
+
+
         external_task_sensor = ExternalTaskSensor(
             task_id=f"wait_for_initial_data_loading_{coin_name}",
             external_dag_id=f"initial_data_loading_{coin_name}",
@@ -138,21 +111,22 @@ for file_name in file_names:
 
 
         compute_indicators_task = PythonOperator(
-            task_id="compute_indicators",
-            python_callable=compute_indicators,
-            op_args=[data_path_task.output, coin_name],
+            task_id="predict",
+            python_callable=predict,
+            op_args=[data_path_task.output],
         )
 
-        insert_into_cassandra_indicators_task = PythonOperator(
-            task_id="insert_into_cassandra_indicators",
-            python_callable=insert_into_cassandra_indicators,
+
+        insert_into_cassandra_predictions_task = PythonOperator(
+            task_id="insert_into_cassandra_predictions",
+            python_callable=insert_into_cassandra_predictions,
             op_args=[compute_indicators_task.output]
         )
 
         # Set up task dependencies
         external_task_sensor >> data_path_task  # Wait for the external DAG to complete
         data_path_task >> compute_indicators_task  # Fetch data before computing indicators
-        compute_indicators_task >> insert_into_cassandra_indicators_task
+        compute_indicators_task >> insert_into_cassandra_predictions_task
 
 
     if __name__ == "__main__":

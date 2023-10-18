@@ -71,7 +71,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -143,7 +144,7 @@
           },
           "datasourceId": 1,
           "hide": false,
-          "keyspace": "mykeyspace",
+          "keyspace": "price_oracle",
           "queryType": "query",
           "rawQuery": true,
           "refId": "SMA_10",
@@ -169,7 +170,7 @@
     {
       "datasource": {
         "type": "hadesarchitect-cassandra-datasource",
-        "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+        "uid": "df6ad977-dd88-4842-bf94-e7c40e3259e9"
       },
       "fieldConfig": {
         "defaults": {
@@ -215,7 +216,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -239,6 +241,31 @@
                     10
                   ],
                   "fill": "dash"
+                }
+              }
+            ]
+          },
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "BTCUSD",
+                  "BASELINE_LAG_1"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
                 }
               }
             ]
@@ -287,7 +314,7 @@
           },
           "datasourceId": 1,
           "hide": false,
-          "keyspace": "mykeyspace",
+          "keyspace": "price_oracle",
           "queryType": "query",
           "rawQuery": true,
           "refId": "SMA_10",
@@ -303,8 +330,20 @@
           "hide": false,
           "queryType": "query",
           "rawQuery": true,
-          "refId": "C",
+          "refId": "SMA_200",
           "target": "SELECT textAsBlob('SMA_200'), sma_200, close_time_date FROM indicators WHERE COIN = 'BTCUSD'"
+        },
+        {
+          "datasource": {
+            "type": "hadesarchitect-cassandra-datasource",
+            "uid": "df6ad977-dd88-4842-bf94-e7c40e3259e9"
+          },
+          "datasourceId": 1,
+          "hide": false,
+          "queryType": "query",
+          "rawQuery": true,
+          "refId": "BASELINE_LAG_1",
+          "target": "SELECT model_name, close_price, close_time_date\nFROM prediction\nWHERE COIN = 'BTCUSD' AND MODEL_NAME = 'BASELINE_LAG_1';\n"
         }
       ],
       "title": "BTCUSD",
@@ -319,13 +358,13 @@
     "list": []
   },
   "time": {
-    "from": "2022-07-31T20:05:26.112Z",
-    "to": "2023-10-20T17:45:58.358Z"
+    "from": "2022-12-19T11:38:01.076Z",
+    "to": "2023-05-21T14:07:04.059Z"
   },
   "timepicker": {},
   "timezone": "",
   "title": "New dashboard",
   "uid": "fd4dcdfa-ecdb-4815-aabf-cdf6387b0a4d",
-  "version": 2,
+  "version": 1,
   "weekStart": ""
 }

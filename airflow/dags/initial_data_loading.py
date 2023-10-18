@@ -45,7 +45,7 @@ for file_name in file_names:
         default_args={
             "owner": "ranierifr"
         },
-        is_paused_upon_creation=False,
+        is_paused_upon_creation=True,
         tags=[coin_name]
     ) as dag:
         

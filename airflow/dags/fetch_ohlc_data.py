@@ -41,5 +41,6 @@ with DAG(
         "retry_delay": timedelta(minutes=5),
     },
 ) as dag:
-    ohlc_data = fetch_data()
-    insert_into_cassandra_price_candlestick(ohlc_data)
+    pass
+    # ohlc_data = fetch_data()
+    # insert_into_cassandra_price_candlestick(ohlc_data)

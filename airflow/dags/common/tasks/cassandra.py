@@ -1,8 +1,8 @@
 from typing import List
 
-from airflow.decorators import task
 from common.entities.price_candlestick import PriceCandleStick
 from common.entities.indicators import Indicators
+from common.entities.prediction import Prediction
 from common.hooks.cassandra_hook import CassandraHook
 
 
@@ -33,7 +33,6 @@ def insert_into_cassandra_price_candlestick(data: List[PriceCandleStick]):
     cassandra_hook.run_batch_query(insert_query, params)
 
 
-@task
 def insert_into_cassandra_indicators(data: List[Indicators]):
 
     cassandra_hook = CassandraHook()
@@ -58,6 +57,26 @@ def insert_into_cassandra_indicators(data: List[Indicators]):
             row.sma_50,
             row.sma_100,
             row.sma_200
+        ) for row in data
+    ]
+    cassandra_hook.run_batch_query(insert_query, params)
+
+
+def insert_into_cassandra_predictions(data: List[Prediction]):
+
+    cassandra_hook = CassandraHook()
+    insert_query = """
+        INSERT INTO
+            prediction (close_time_date, close_price, coin, model_name)
+        VALUES
+            (?, ?, ?, ?);
+    """
+    params = [
+        (
+            row.close_time_date,
+            row.close_price,
+            row.coin,
+            row.model_name
         ) for row in data
     ]
     cassandra_hook.run_batch_query(insert_query, params)

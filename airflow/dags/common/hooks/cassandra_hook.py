@@ -63,6 +63,7 @@ class CassandraHook:
         """
 
         logger.info(f"Running batch query with {len(parameters)} parameters")
+        logger.info(f"Query: {query}")
         if len(parameters) > self.MAX_QUERY_IN_BATCH:
             logger.info(f"Batch query will be split into {len(parameters) // self.MAX_QUERY_IN_BATCH} batches")
 
@@ -82,5 +83,6 @@ class CassandraHook:
             batch.add(query, param)
 
         logger.info(f"Executing batch query with {len(batch)} queries")
+        logger.info(f"Query: {query}")
         self.session.execute(batch)
         logger.info("Batch query executed successfully")

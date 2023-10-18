@@ -30,6 +30,7 @@ dags:
 
 config:
   core:
+    parallelism: 8
     test_connection: 'Enabled'
     dag_discovery_safe_mode: false
     allowed_deserialization_classes: common\.*
@@ -42,3 +43,18 @@ config:
   scheduler:
     dag_dir_list_interval: 5
 
+
+webserver:
+  livenessProbe:
+    initialDelaySeconds: 30
+    timeoutSeconds: 5
+    failureThreshold: 5
+    periodSeconds: 15
+    scheme: HTTP
+
+  readinessProbe:
+    initialDelaySeconds: 30
+    timeoutSeconds: 5
+    failureThreshold: 5
+    periodSeconds: 15
+    scheme: HTTP
