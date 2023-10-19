@@ -37,7 +37,7 @@ def fetch_data(coin_name: str):
 
     # serialize the dataframe with pickle
     data = df.toPandas()
-    data_path = f"/tmp/{coin_name}_data.pkl"
+    data_path = f"/tmp/{coin_name}_baseline_predict_data.pkl"
     data.to_pickle(data_path)
     return data_path
 
