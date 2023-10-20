@@ -1,0 +1,41 @@
+# Use an existing secret for the admin user.
+admin:
+  ## Name of the secret. Can be templated.
+  existingSecret: grafana-secret
+
+plugins: 
+  - hadesarchitect-cassandra-datasource
+
+datasources:
+ datasources.yaml:
+   apiVersion: 1
+   datasources:
+   -  name: Apache Cassandra
+      type: hadesarchitect-cassandra-datasource
+      url: price-oracle-cassandra:9042
+      keyspace: price_oracle
+      user: cassandra
+      jsonData:
+        consistency: ONE
+        keyspace: price_oracle
+        user: cassandra
+        password: cassandra
+      secureJsonData:
+        password: Y2Fzc2FuZHJh
+      access: proxy
+      isDefault: true
+
+sidecar:
+  dashboards:
+    enabled: true
+
+autoscaling:
+  enabled: true  
+
+resources:
+  requests:
+    cpu: 256m
+    memory: 256Mi
+  limits:
+    cpu: 1024m
+    memory: 1024Mi

@@ -2,6 +2,10 @@ apiVersion: skaffold/v2beta29
 kind: Config
 metadata:
   name: price-oracle-grafana
+requires:
+  - path: namespace.yaml
+  - path: secrets.yaml
+  - path: configmaps.yaml
 deploy:
   helm:
     releases:

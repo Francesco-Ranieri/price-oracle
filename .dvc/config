@@ -1,5 +1,4 @@
 [core]
-    remote = datastore
-['remote "datastore"']
-    url = s3://price-oracle
-    region = us-west-2
+    remote = origin
+['remote "origin"']
+    url = https://dagshub.com/Francesco-Ranieri/price-oracle.dvc

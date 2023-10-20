@@ -25,152 +25,7 @@
     {
       "datasource": {
         "type": "hadesarchitect-cassandra-datasource",
-        "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "fill": "solid"
-            },
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byRegexp",
-              "options": "/.*SMA/"
-            },
-            "properties": [
-              {
-                "id": "custom.lineStyle",
-                "value": {
-                  "dash": [
-                    10,
-                    10
-                  ],
-                  "fill": "dash"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 1,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "targets": [
-        {
-          "datasource": {
-            "type": "hadesarchitect-cassandra-datasource",
-            "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
-          },
-          "datasourceId": 1,
-          "queryType": "query",
-          "rawQuery": true,
-          "refId": "A",
-          "target": "SELECT coin, high_price, close_time_date FROM price_candlestick WHERE COIN = 'AAVEUSD'"
-        },
-        {
-          "alias": "my alias",
-          "columnId": "close_price",
-          "columnTime": "close_time_date",
-          "columnValue": "close_price",
-          "datasource": {
-            "type": "hadesarchitect-cassandra-datasource",
-            "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
-          },
-          "datasourceId": 1,
-          "hide": false,
-          "keyspace": "price_oracle",
-          "queryType": "query",
-          "rawQuery": true,
-          "refId": "SMA_10",
-          "table": "indicators",
-          "target": "SELECT textAsBlob('SMA_10'), sma_10, close_time_date FROM indicators WHERE COIN = 'AAVEUSD'"
-        },
-        {
-          "datasource": {
-            "type": "hadesarchitect-cassandra-datasource",
-            "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
-          },
-          "datasourceId": 1,
-          "hide": false,
-          "queryType": "query",
-          "rawQuery": true,
-          "refId": "C",
-          "target": "SELECT textAsBlob('SMA_200'), sma_200, close_time_date FROM indicators WHERE COIN = 'AAVEUSD'"
-        }
-      ],
-      "title": "AAVEUSD",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "hadesarchitect-cassandra-datasource",
-        "uid": "df6ad977-dd88-4842-bf94-e7c40e3259e9"
+        "uid": "aa00061e-f8ee-4e3e-a0c1-e5c850f2567c"
       },
       "fieldConfig": {
         "defaults": {
@@ -252,8 +107,8 @@
               "options": {
                 "mode": "exclude",
                 "names": [
-                  "BTCUSD",
-                  "BASELINE_LAG_1"
+                  "BASELINE_LAG_1",
+                  "AAVEUSD"
                 ],
                 "prefix": "All except:",
                 "readOnly": true
@@ -266,6 +121,163 @@
                   "legend": false,
                   "tooltip": false,
                   "viz": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "hadesarchitect-cassandra-datasource",
+            "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+          },
+          "datasourceId": 1,
+          "queryType": "query",
+          "rawQuery": true,
+          "refId": "A",
+          "target": "SELECT coin, close_price, close_time_date FROM price_candlestick WHERE COIN = 'AAVEUSD'"
+        },
+        {
+          "alias": "my alias",
+          "columnId": "close_price",
+          "columnTime": "close_time_date",
+          "columnValue": "close_price",
+          "datasource": {
+            "type": "hadesarchitect-cassandra-datasource",
+            "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+          },
+          "datasourceId": 1,
+          "hide": false,
+          "keyspace": "price_oracle",
+          "queryType": "query",
+          "rawQuery": true,
+          "refId": "SMA_10",
+          "table": "indicators",
+          "target": "SELECT textAsBlob('SMA_10'), sma_10, close_time_date FROM indicators WHERE COIN = 'AAVEUSD'"
+        },
+        {
+          "datasource": {
+            "type": "hadesarchitect-cassandra-datasource",
+            "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+          },
+          "datasourceId": 1,
+          "hide": false,
+          "queryType": "query",
+          "rawQuery": true,
+          "refId": "C",
+          "target": "SELECT textAsBlob('SMA_200'), sma_200, close_time_date FROM indicators WHERE COIN = 'AAVEUSD'"
+        },
+        {
+          "datasource": {
+            "type": "hadesarchitect-cassandra-datasource",
+            "uid": "aa00061e-f8ee-4e3e-a0c1-e5c850f2567c"
+          },
+          "datasourceId": 1,
+          "hide": false,
+          "queryType": "query",
+          "rawQuery": true,
+          "refId": "B",
+          "target": "SELECT model_name, close_price, close_time_date\nFROM prediction\nWHERE COIN = 'AAVEUSD' AND MODEL_NAME = 'BASELINE_LAG_1';"
+        }
+      ],
+      "title": "AAVEUSD",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "hadesarchitect-cassandra-datasource",
+        "uid": "aa00061e-f8ee-4e3e-a0c1-e5c850f2567c"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": "/.*SMA/"
+            },
+            "properties": [
+              {
+                "id": "custom.lineStyle",
+                "value": {
+                  "dash": [
+                    10,
+                    10
+                  ],
+                  "fill": "dash"
                 }
               }
             ]
@@ -301,7 +313,7 @@
           "queryType": "query",
           "rawQuery": true,
           "refId": "A",
-          "target": "SELECT coin, high_price, close_time_date FROM price_candlestick WHERE COIN = 'BTCUSD'"
+          "target": "SELECT coin, close_price, close_time_date FROM price_candlestick WHERE COIN = 'BTCUSD'"
         },
         {
           "alias": "my alias",
@@ -350,7 +362,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
+  "refresh": "5s",
   "schemaVersion": 38,
   "style": "dark",
   "tags": [],
@@ -365,6 +377,6 @@
   "timezone": "",
   "title": "New dashboard",
   "uid": "fd4dcdfa-ecdb-4815-aabf-cdf6387b0a4d",
-  "version": 1,
+  "version": 3,
   "weekStart": ""
 }
