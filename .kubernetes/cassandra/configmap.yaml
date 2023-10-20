@@ -55,3 +55,14 @@ data:
         model_name text,
         PRIMARY KEY (coin, model_name, close_time_date)
     );
+
+    
+    CREATE TABLE IF NOT EXISTS metrics (
+        date timestamp,
+        target text,
+        metric_all double,
+        metric_60_d double,
+        metric_30_d double,
+        model_name text,
+        PRIMARY KEY (target, model_name, date)
+    );
