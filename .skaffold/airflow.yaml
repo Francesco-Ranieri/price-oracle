@@ -16,6 +16,8 @@ build:
         manual:
           - src: 'dags/**/*.py'
             dest: /opt/airflow
+          - src: 'assets/**/*.csv'
+            dest: /opt/airflow
       docker:
         dockerfile: Dockerfile
 deploy:

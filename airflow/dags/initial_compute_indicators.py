@@ -101,7 +101,7 @@ def compute_indicators(data_path: str, coin_name: str):
 file_names = [file_name for file_name in os.listdir("assets") if file_name.endswith(".csv")]
 
 for file_name in file_names:
-    coin_name = file_name.split("_")[1]
+    coin_name = file_name.split(".")[0]
 
     with DAG(
         f"compute_indicators_{coin_name}",

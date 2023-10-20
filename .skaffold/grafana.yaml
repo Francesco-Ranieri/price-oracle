@@ -10,9 +10,11 @@ deploy:
         upgradeOnChange: true
         createNamespace: true
         namespace: price-oracle
+        valuesFiles:
+          - ../.helm/grafana/values.yaml
 portForward:
-- resourceType: deployment
+- resourceType: service
   resourceName: price-oracle-grafana
   namespace: price-oracle
-  port: 3000
+  port: 80
   localPort: 3000

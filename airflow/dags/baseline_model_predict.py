@@ -74,7 +74,7 @@ def predict(data_path: str) -> List[Prediction]:
 file_names = [file_name for file_name in os.listdir("assets") if file_name.endswith(".csv")]
 
 for file_name in file_names:
-    coin_name = file_name.split("_")[1]
+    coin_name = file_name.split(".")[0]
 
     with DAG(
         f"baseline_model_predict_{coin_name}",
