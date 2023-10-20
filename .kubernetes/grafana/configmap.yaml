@@ -34,7 +34,7 @@ data:
         {
           "datasource": {
             "type": "hadesarchitect-cassandra-datasource",
-            "uid": "aa00061e-f8ee-4e3e-a0c1-e5c850f2567c"
+            "uid": "JOSE3g9KVz"
           },
           "fieldConfig": {
             "defaults": {
@@ -159,7 +159,7 @@ data:
             {
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "queryType": "query",
@@ -174,7 +174,7 @@ data:
               "columnValue": "close_price",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "hide": false,
@@ -188,7 +188,7 @@ data:
             {
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "hide": false,
@@ -200,7 +200,7 @@ data:
             {
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "aa00061e-f8ee-4e3e-a0c1-e5c850f2567c"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "hide": false,
@@ -216,7 +216,7 @@ data:
         {
           "datasource": {
             "type": "hadesarchitect-cassandra-datasource",
-            "uid": "aa00061e-f8ee-4e3e-a0c1-e5c850f2567c"
+            "uid": "JOSE3g9KVz"
           },
           "fieldConfig": {
             "defaults": {
@@ -316,7 +316,7 @@ data:
             {
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "queryType": "query",
@@ -331,7 +331,7 @@ data:
               "columnValue": "close_price",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "hide": false,
@@ -345,7 +345,7 @@ data:
             {
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "f27581d6-680d-4f37-9400-89d5efed9fca"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "hide": false,
@@ -357,7 +357,7 @@ data:
             {
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
-                "uid": "df6ad977-dd88-4842-bf94-e7c40e3259e9"
+                "uid": "JOSE3g9KVz"
               },
               "datasourceId": 1,
               "hide": false,

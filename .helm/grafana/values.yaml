@@ -15,13 +15,13 @@ datasources:
       url: price-oracle-cassandra:9042
       keyspace: price_oracle
       user: cassandra
+      uid: JOSE3g9KVz
       jsonData:
         consistency: ONE
         keyspace: price_oracle
         user: cassandra
-        password: cassandra
       secureJsonData:
-        password: Y2Fzc2FuZHJh
+        password: cassandra
       access: proxy
       isDefault: true
 
