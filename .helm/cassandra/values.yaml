@@ -6,3 +6,11 @@ initDBConfigMap: init-db
 # resources:
 #   limits:
 #     memory: 4Gi
+
+resources:
+  limits:
+     memory: 4Gi
+
+jvm:
+  maxHeapSize: 2G
+  newHeapSize: 800M
