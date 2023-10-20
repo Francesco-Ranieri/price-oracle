@@ -3,14 +3,10 @@ dbUser:
   existingSecret: cassandra-secret
 initDBConfigMap: init-db
 
-# resources:
-#   limits:
-#     memory: 4Gi
-
 resources:
   limits:
-     memory: 4Gi
+     memory: 2Gi
 
 jvm:
-  maxHeapSize: 2G
+  maxHeapSize: 1G
   newHeapSize: 800M
