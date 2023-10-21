@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/f003aff12f9740e4af2f2cd660e02199/artifacts
+end_time: 1697901613541
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: f003aff12f9740e4af2f2cd660e02199
+run_name: clumsy-newt-993
+run_uuid: f003aff12f9740e4af2f2cd660e02199
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901607556
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/072ef470f0be4f818f62c4ad9a3664c9/artifacts
+deleted_time: 1697900914129
+end_time: 1697900560558
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 072ef470f0be4f818f62c4ad9a3664c9
+run_name: abundant-fish-308
+run_uuid: 072ef470f0be4f818f62c4ad9a3664c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900550709
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/425843015775834073/0d2520faa9c84647a71bf600da9c2cca/artifacts
+deleted_time: 1697900219555
+end_time: 1697900004842
+entry_point_name: ''
+experiment_id: '425843015775834073'
+lifecycle_stage: deleted
+run_id: 0d2520faa9c84647a71bf600da9c2cca
+run_name: debonair-hound-16
+run_uuid: 0d2520faa9c84647a71bf600da9c2cca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697899997300
+status: 3
+tags: []
+user_id: root

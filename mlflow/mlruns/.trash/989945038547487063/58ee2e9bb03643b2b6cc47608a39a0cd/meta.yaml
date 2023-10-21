@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/58ee2e9bb03643b2b6cc47608a39a0cd/artifacts
+deleted_time: 1697900914129
+end_time: 1697900360741
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 58ee2e9bb03643b2b6cc47608a39a0cd
+run_name: secretive-ram-274
+run_uuid: 58ee2e9bb03643b2b6cc47608a39a0cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900354246
+status: 3
+tags: []
+user_id: root

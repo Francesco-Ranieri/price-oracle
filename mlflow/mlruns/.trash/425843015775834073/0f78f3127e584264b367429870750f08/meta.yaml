@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/425843015775834073/0f78f3127e584264b367429870750f08/artifacts
+deleted_time: 1697900219555
+end_time: 1697899971984
+entry_point_name: ''
+experiment_id: '425843015775834073'
+lifecycle_stage: deleted
+run_id: 0f78f3127e584264b367429870750f08
+run_name: hilarious-slug-97
+run_uuid: 0f78f3127e584264b367429870750f08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697899971097
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/113c8aa9ad2849ff8fe662435bc41556/artifacts
+deleted_time: 1697900914129
+end_time: 1697900270171
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 113c8aa9ad2849ff8fe662435bc41556
+run_name: stylish-smelt-379
+run_uuid: 113c8aa9ad2849ff8fe662435bc41556
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900263190
+status: 3
+tags: []
+user_id: root

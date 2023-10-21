@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/c18b6f90319d45dfbc8a5c1d7f3905ec/artifacts
+end_time: 1697901601911
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: c18b6f90319d45dfbc8a5c1d7f3905ec
+run_name: worried-tern-50
+run_uuid: c18b6f90319d45dfbc8a5c1d7f3905ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901596345
+status: 3
+tags: []
+user_id: root

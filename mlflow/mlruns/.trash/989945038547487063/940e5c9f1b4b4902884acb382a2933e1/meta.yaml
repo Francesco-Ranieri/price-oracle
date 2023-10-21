@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/940e5c9f1b4b4902884acb382a2933e1/artifacts
+deleted_time: 1697900914129
+end_time: 1697900255484
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 940e5c9f1b4b4902884acb382a2933e1
+run_name: intelligent-asp-848
+run_uuid: 940e5c9f1b4b4902884acb382a2933e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900248626
+status: 3
+tags: []
+user_id: root

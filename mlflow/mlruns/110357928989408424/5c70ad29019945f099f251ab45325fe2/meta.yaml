@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/5c70ad29019945f099f251ab45325fe2/artifacts
+deleted_time: 1697903326681
+end_time: 1697903253643
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: 5c70ad29019945f099f251ab45325fe2
+run_name: languid-goose-708
+run_uuid: 5c70ad29019945f099f251ab45325fe2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697903253097
+status: 4
+tags: []
+user_id: root

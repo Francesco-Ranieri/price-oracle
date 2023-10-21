@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/fc50ae3cdf444ea8855ea6774570f10a/artifacts
+end_time: 1697901690824
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: fc50ae3cdf444ea8855ea6774570f10a
+run_name: magnificent-wasp-438
+run_uuid: fc50ae3cdf444ea8855ea6774570f10a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901684984
+status: 3
+tags: []
+user_id: root

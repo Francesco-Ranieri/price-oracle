@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/970435603126604374/1a41de2d797948eab4b73f8af039efc7/artifacts
+deleted_time: 1697901200487
+end_time: 1697901184939
+entry_point_name: ''
+experiment_id: '970435603126604374'
+lifecycle_stage: deleted
+run_id: 1a41de2d797948eab4b73f8af039efc7
+run_name: enchanting-newt-139
+run_uuid: 1a41de2d797948eab4b73f8af039efc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901180516
+status: 3
+tags: []
+user_id: root

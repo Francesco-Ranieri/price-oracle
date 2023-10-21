@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/614084a4951d4843b1124f0a2d6cf3a8/artifacts
+deleted_time: 1697900914129
+end_time: 1697900457795
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 614084a4951d4843b1124f0a2d6cf3a8
+run_name: intelligent-lynx-304
+run_uuid: 614084a4951d4843b1124f0a2d6cf3a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900450580
+status: 3
+tags: []
+user_id: root

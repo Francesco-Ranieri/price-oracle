@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/90b272019edf4e7c96ac411a57d1a77a/artifacts
+deleted_time: 1697900914129
+end_time: 1697900499865
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 90b272019edf4e7c96ac411a57d1a77a
+run_name: traveling-ant-681
+run_uuid: 90b272019edf4e7c96ac411a57d1a77a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900490434
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/6524808393c14d198af1b8d09fe97135/artifacts
+deleted_time: 1697900914129
+end_time: 1697900412978
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 6524808393c14d198af1b8d09fe97135
+run_name: gaudy-zebra-11
+run_uuid: 6524808393c14d198af1b8d09fe97135
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900406195
+status: 3
+tags: []
+user_id: root

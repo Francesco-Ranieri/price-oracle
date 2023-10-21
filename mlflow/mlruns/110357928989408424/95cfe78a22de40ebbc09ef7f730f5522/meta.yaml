@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/95cfe78a22de40ebbc09ef7f730f5522/artifacts
+end_time: 1697901661839
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: 95cfe78a22de40ebbc09ef7f730f5522
+run_name: nebulous-shrike-23
+run_uuid: 95cfe78a22de40ebbc09ef7f730f5522
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901654468
+status: 3
+tags: []
+user_id: root

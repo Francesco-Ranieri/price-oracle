@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/970435603126604374/789d34062a134f938e24473e38654ac4/artifacts
+deleted_time: 1697901200487
+end_time: 1697900919734
+entry_point_name: ''
+experiment_id: '970435603126604374'
+lifecycle_stage: deleted
+run_id: 789d34062a134f938e24473e38654ac4
+run_name: incongruous-rook-430
+run_uuid: 789d34062a134f938e24473e38654ac4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900917837
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/970435603126604374/8566480fc31c416e953ae34c2e98eb0c/artifacts
+deleted_time: 1697901200487
+end_time: 1697901040402
+entry_point_name: ''
+experiment_id: '970435603126604374'
+lifecycle_stage: deleted
+run_id: 8566480fc31c416e953ae34c2e98eb0c
+run_name: whimsical-crow-596
+run_uuid: 8566480fc31c416e953ae34c2e98eb0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901029722
+status: 3
+tags: []
+user_id: root

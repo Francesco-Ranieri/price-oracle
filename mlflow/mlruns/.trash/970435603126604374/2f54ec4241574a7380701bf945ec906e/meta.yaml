@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/970435603126604374/2f54ec4241574a7380701bf945ec906e/artifacts
+deleted_time: 1697901200487
+end_time: 1697901013110
+entry_point_name: ''
+experiment_id: '970435603126604374'
+lifecycle_stage: deleted
+run_id: 2f54ec4241574a7380701bf945ec906e
+run_name: ambitious-shad-920
+run_uuid: 2f54ec4241574a7380701bf945ec906e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901007170
+status: 3
+tags: []
+user_id: root

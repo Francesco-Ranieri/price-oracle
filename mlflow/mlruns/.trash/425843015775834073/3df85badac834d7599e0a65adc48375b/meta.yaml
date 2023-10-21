@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/425843015775834073/3df85badac834d7599e0a65adc48375b/artifacts
+deleted_time: 1697900219555
+end_time: 1697899996977
+entry_point_name: ''
+experiment_id: '425843015775834073'
+lifecycle_stage: deleted
+run_id: 3df85badac834d7599e0a65adc48375b
+run_name: welcoming-shark-631
+run_uuid: 3df85badac834d7599e0a65adc48375b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697899990565
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/1f337043051c475b9d76bcdfe79be79c/artifacts
+deleted_time: 1697900914129
+end_time: 1697900512529
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 1f337043051c475b9d76bcdfe79be79c
+run_name: powerful-bug-663
+run_uuid: 1f337043051c475b9d76bcdfe79be79c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900504691
+status: 3
+tags: []
+user_id: root

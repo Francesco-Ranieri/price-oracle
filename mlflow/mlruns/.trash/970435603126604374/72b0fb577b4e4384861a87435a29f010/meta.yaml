@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/970435603126604374/72b0fb577b4e4384861a87435a29f010/artifacts
+deleted_time: 1697901200487
+end_time: 1697901180127
+entry_point_name: ''
+experiment_id: '970435603126604374'
+lifecycle_stage: deleted
+run_id: 72b0fb577b4e4384861a87435a29f010
+run_name: burly-whale-980
+run_uuid: 72b0fb577b4e4384861a87435a29f010
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901174924
+status: 3
+tags: []
+user_id: root

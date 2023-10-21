@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/3911c3237d554e228224e8d078269d84/artifacts
+end_time: 1697901620197
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: 3911c3237d554e228224e8d078269d84
+run_name: colorful-auk-834
+run_uuid: 3911c3237d554e228224e8d078269d84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901613920
+status: 3
+tags: []
+user_id: root

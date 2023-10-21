@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/01c0df3477084163b1da7748d6b18f6c/artifacts
+end_time: 1697901596048
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: 01c0df3477084163b1da7748d6b18f6c
+run_name: respected-worm-479
+run_uuid: 01c0df3477084163b1da7748d6b18f6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901591991
+status: 3
+tags: []
+user_id: root

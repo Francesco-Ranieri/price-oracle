@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/e8eee6b70ade4b7c8c0e38e62205895d/artifacts
+end_time: 1697901728939
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: e8eee6b70ade4b7c8c0e38e62205895d
+run_name: awesome-calf-408
+run_uuid: e8eee6b70ade4b7c8c0e38e62205895d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901723361
+status: 3
+tags: []
+user_id: root

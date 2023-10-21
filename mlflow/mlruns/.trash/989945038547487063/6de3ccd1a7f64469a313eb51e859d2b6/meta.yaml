@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/6de3ccd1a7f64469a313eb51e859d2b6/artifacts
+deleted_time: 1697900914129
+end_time: 1697900368894
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 6de3ccd1a7f64469a313eb51e859d2b6
+run_name: zealous-sponge-121
+run_uuid: 6de3ccd1a7f64469a313eb51e859d2b6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900361021
+status: 3
+tags: []
+user_id: root

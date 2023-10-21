@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/75a62a229b564c5c9da5213954f99fcc/artifacts
+deleted_time: 1697900914129
+end_time: 1697900314667
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 75a62a229b564c5c9da5213954f99fcc
+run_name: upset-shark-480
+run_uuid: 75a62a229b564c5c9da5213954f99fcc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900307473
+status: 3
+tags: []
+user_id: root

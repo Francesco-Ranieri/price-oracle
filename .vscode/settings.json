@@ -10,7 +10,7 @@
             "previewLimit": 50,
             "driver": "Cassandra",
             "name": "cassandra",
-            "database": "mykeyspace",
+            "database": "price_oracle",
             "username": "cassandra",
             "password": "cassandra"
         }

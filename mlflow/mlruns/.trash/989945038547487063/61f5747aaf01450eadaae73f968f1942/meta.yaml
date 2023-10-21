@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/61f5747aaf01450eadaae73f968f1942/artifacts
+deleted_time: 1697900914129
+end_time: 1697900445593
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 61f5747aaf01450eadaae73f968f1942
+run_name: flawless-loon-524
+run_uuid: 61f5747aaf01450eadaae73f968f1942
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900437048
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/970435603126604374/3916cc177cc2408fba498af478ebf586/artifacts
+deleted_time: 1697901200487
+end_time: 1697901019928
+entry_point_name: ''
+experiment_id: '970435603126604374'
+lifecycle_stage: deleted
+run_id: 3916cc177cc2408fba498af478ebf586
+run_name: agreeable-crow-969
+run_uuid: 3916cc177cc2408fba498af478ebf586
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901013446
+status: 3
+tags: []
+user_id: root

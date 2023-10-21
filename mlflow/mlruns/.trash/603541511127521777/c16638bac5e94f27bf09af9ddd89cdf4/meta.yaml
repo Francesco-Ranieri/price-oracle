@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603541511127521777/c16638bac5e94f27bf09af9ddd89cdf4/artifacts
+deleted_time: 1697901589306
+end_time: 1697901558851
+entry_point_name: ''
+experiment_id: '603541511127521777'
+lifecycle_stage: deleted
+run_id: c16638bac5e94f27bf09af9ddd89cdf4
+run_name: kindly-stork-878
+run_uuid: c16638bac5e94f27bf09af9ddd89cdf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901552168
+status: 3
+tags: []
+user_id: root

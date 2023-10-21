@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/6287726ee0104cbaa4e9e73e056170c6/artifacts
+deleted_time: 1697903326678
+end_time: 1697903192428
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: 6287726ee0104cbaa4e9e73e056170c6
+run_name: silent-stag-657
+run_uuid: 6287726ee0104cbaa4e9e73e056170c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697903188072
+status: 3
+tags: []
+user_id: root

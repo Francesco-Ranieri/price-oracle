@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/f169519ab32f4a8e962b534f52e7b26b/artifacts
+deleted_time: 1697900914129
+end_time: 1697900323636
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: f169519ab32f4a8e962b534f52e7b26b
+run_name: fun-chimp-480
+run_uuid: f169519ab32f4a8e962b534f52e7b26b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900314985
+status: 3
+tags: []
+user_id: root

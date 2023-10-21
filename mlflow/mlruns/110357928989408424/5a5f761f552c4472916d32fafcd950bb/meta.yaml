@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/5a5f761f552c4472916d32fafcd950bb/artifacts
+end_time: 1697901668794
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: 5a5f761f552c4472916d32fafcd950bb
+run_name: sneaky-bird-378
+run_uuid: 5a5f761f552c4472916d32fafcd950bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901662118
+status: 3
+tags: []
+user_id: root

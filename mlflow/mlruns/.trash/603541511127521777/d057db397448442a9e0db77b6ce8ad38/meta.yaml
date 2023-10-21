@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603541511127521777/d057db397448442a9e0db77b6ce8ad38/artifacts
+deleted_time: 1697901589306
+end_time: 1697901269045
+entry_point_name: ''
+experiment_id: '603541511127521777'
+lifecycle_stage: deleted
+run_id: d057db397448442a9e0db77b6ce8ad38
+run_name: traveling-hog-33
+run_uuid: d057db397448442a9e0db77b6ce8ad38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901262581
+status: 3
+tags: []
+user_id: root

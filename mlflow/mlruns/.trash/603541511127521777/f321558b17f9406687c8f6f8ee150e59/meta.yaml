@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603541511127521777/f321558b17f9406687c8f6f8ee150e59/artifacts
+deleted_time: 1697901589306
+end_time: 1697901214000
+entry_point_name: ''
+experiment_id: '603541511127521777'
+lifecycle_stage: deleted
+run_id: f321558b17f9406687c8f6f8ee150e59
+run_name: incongruous-duck-960
+run_uuid: f321558b17f9406687c8f6f8ee150e59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901209480
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/3db13d9d5bc748f48788f1f4cb476d2b/artifacts
+deleted_time: 1697900914129
+end_time: 1697900521287
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 3db13d9d5bc748f48788f1f4cb476d2b
+run_name: nebulous-cow-453
+run_uuid: 3db13d9d5bc748f48788f1f4cb476d2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900512904
+status: 3
+tags: []
+user_id: root

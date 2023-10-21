@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/e86e382b89b24ac98352c8660f5d97cf/artifacts
+deleted_time: 1697900914129
+end_time: 1697900287731
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: e86e382b89b24ac98352c8660f5d97cf
+run_name: casual-ape-53
+run_uuid: e86e382b89b24ac98352c8660f5d97cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900279726
+status: 3
+tags: []
+user_id: root

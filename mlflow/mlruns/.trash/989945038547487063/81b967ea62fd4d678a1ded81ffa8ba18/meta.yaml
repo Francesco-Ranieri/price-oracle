@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/81b967ea62fd4d678a1ded81ffa8ba18/artifacts
+deleted_time: 1697900914129
+end_time: 1697900472203
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 81b967ea62fd4d678a1ded81ffa8ba18
+run_name: treasured-gnu-680
+run_uuid: 81b967ea62fd4d678a1ded81ffa8ba18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900465163
+status: 3
+tags: []
+user_id: root

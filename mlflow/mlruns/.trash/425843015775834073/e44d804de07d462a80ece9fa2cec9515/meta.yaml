@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/425843015775834073/e44d804de07d462a80ece9fa2cec9515/artifacts
+deleted_time: 1697900219555
+end_time: 1697900033346
+entry_point_name: ''
+experiment_id: '425843015775834073'
+lifecycle_stage: deleted
+run_id: e44d804de07d462a80ece9fa2cec9515
+run_name: receptive-smelt-514
+run_uuid: e44d804de07d462a80ece9fa2cec9515
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900032488
+status: 4
+tags: []
+user_id: root

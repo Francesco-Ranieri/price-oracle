@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/800d2e296e884b578f2279b5fa4698b9/artifacts
+end_time: 1697901816444
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: 800d2e296e884b578f2279b5fa4698b9
+run_name: wistful-jay-348
+run_uuid: 800d2e296e884b578f2279b5fa4698b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901811653
+status: 3
+tags: []
+user_id: root

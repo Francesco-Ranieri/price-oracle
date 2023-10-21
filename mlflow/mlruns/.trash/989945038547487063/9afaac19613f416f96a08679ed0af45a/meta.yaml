@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/9afaac19613f416f96a08679ed0af45a/artifacts
+deleted_time: 1697900914129
+end_time: 1697900420420
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 9afaac19613f416f96a08679ed0af45a
+run_name: adorable-pug-195
+run_uuid: 9afaac19613f416f96a08679ed0af45a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900413258
+status: 3
+tags: []
+user_id: root

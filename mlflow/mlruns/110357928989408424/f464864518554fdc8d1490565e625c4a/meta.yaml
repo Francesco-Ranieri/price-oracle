@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/f464864518554fdc8d1490565e625c4a/artifacts
+deleted_time: 1697903326689
+end_time: 1697903230105
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: f464864518554fdc8d1490565e625c4a
+run_name: blushing-loon-418
+run_uuid: f464864518554fdc8d1490565e625c4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697903225238
+status: 3
+tags: []
+user_id: root

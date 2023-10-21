@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/b033d90686124842a71b6d7bf443c31d/artifacts
+deleted_time: 1697900914129
+end_time: 1697900405913
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: b033d90686124842a71b6d7bf443c31d
+run_name: sneaky-flea-433
+run_uuid: b033d90686124842a71b6d7bf443c31d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900399324
+status: 3
+tags: []
+user_id: root

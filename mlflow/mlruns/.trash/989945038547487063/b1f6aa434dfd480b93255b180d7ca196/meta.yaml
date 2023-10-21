@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/b1f6aa434dfd480b93255b180d7ca196/artifacts
+deleted_time: 1697900914129
+end_time: 1697900449578
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: b1f6aa434dfd480b93255b180d7ca196
+run_name: Scores_logging
+run_uuid: b1f6aa434dfd480b93255b180d7ca196
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900445921
+status: 3
+tags: []
+user_id: root

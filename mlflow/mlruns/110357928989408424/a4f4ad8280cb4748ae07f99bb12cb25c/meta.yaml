@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/a4f4ad8280cb4748ae07f99bb12cb25c/artifacts
+end_time: 1697901704302
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: a4f4ad8280cb4748ae07f99bb12cb25c
+run_name: fun-gnat-190
+run_uuid: a4f4ad8280cb4748ae07f99bb12cb25c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901696796
+status: 3
+tags: []
+user_id: root

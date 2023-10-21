@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603541511127521777/7270bb1745174fb58984fa48ee4ffa93/artifacts
+deleted_time: 1697901589306
+end_time: 1697901256820
+entry_point_name: ''
+experiment_id: '603541511127521777'
+lifecycle_stage: deleted
+run_id: 7270bb1745174fb58984fa48ee4ffa93
+run_name: enchanting-grub-231
+run_uuid: 7270bb1745174fb58984fa48ee4ffa93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901252452
+status: 3
+tags: []
+user_id: root

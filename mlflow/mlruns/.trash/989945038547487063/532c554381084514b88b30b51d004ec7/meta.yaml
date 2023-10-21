@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/989945038547487063/532c554381084514b88b30b51d004ec7/artifacts
+deleted_time: 1697900914129
+end_time: 1697900394443
+entry_point_name: ''
+experiment_id: '989945038547487063'
+lifecycle_stage: deleted
+run_id: 532c554381084514b88b30b51d004ec7
+run_name: monumental-gull-233
+run_uuid: 532c554381084514b88b30b51d004ec7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697900385402
+status: 3
+tags: []
+user_id: root

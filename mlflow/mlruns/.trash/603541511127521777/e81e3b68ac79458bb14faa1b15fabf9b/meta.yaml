@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/603541511127521777/e81e3b68ac79458bb14faa1b15fabf9b/artifacts
+deleted_time: 1697901589306
+end_time: 1697901283725
+entry_point_name: ''
+experiment_id: '603541511127521777'
+lifecycle_stage: deleted
+run_id: e81e3b68ac79458bb14faa1b15fabf9b
+run_name: fearless-pug-931
+run_uuid: e81e3b68ac79458bb14faa1b15fabf9b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901275241
+status: 3
+tags: []
+user_id: root

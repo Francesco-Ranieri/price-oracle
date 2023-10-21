@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/36b752629d0f4523b9cffb767f9ea115/artifacts
+deleted_time: 1697903326690
+end_time: 1697903193178
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: 36b752629d0f4523b9cffb767f9ea115
+run_name: rebellious-ape-957
+run_uuid: 36b752629d0f4523b9cffb767f9ea115
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697903192708
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/970435603126604374/70e46750ff9443a5980a07765e032f08/artifacts
+deleted_time: 1697901200487
+end_time: 1697901052316
+entry_point_name: ''
+experiment_id: '970435603126604374'
+lifecycle_stage: deleted
+run_id: 70e46750ff9443a5980a07765e032f08
+run_name: upset-colt-738
+run_uuid: 70e46750ff9443a5980a07765e032f08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697901040705
+status: 3
+tags: []
+user_id: root
