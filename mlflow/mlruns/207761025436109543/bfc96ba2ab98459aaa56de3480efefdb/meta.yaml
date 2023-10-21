@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/bfc96ba2ab98459aaa56de3480efefdb/artifacts
+deleted_time: 1697932100683
+end_time: 1697931518628
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: deleted
+run_id: bfc96ba2ab98459aaa56de3480efefdb
+run_name: crawling-fowl-428
+run_uuid: bfc96ba2ab98459aaa56de3480efefdb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697931510476
+status: 3
+tags: []
+user_id: Francesco-Ranieri

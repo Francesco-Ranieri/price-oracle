@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/71a08d9d6fab4a18b0908809ca18e63d/artifacts
+deleted_time: 1697930993781
+end_time: 1697928434705
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: deleted
+run_id: 71a08d9d6fab4a18b0908809ca18e63d
+run_name: blushing-gull-801
+run_uuid: 71a08d9d6fab4a18b0908809ca18e63d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697928431790
+status: 3
+tags: []
+user_id: Francesco-Ranieri

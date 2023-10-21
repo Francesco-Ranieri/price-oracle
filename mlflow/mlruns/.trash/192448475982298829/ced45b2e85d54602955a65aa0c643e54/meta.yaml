@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/192448475982298829/ced45b2e85d54602955a65aa0c643e54/artifacts
+deleted_time: 1697925724090
+end_time: 1697925662894
+entry_point_name: ''
+experiment_id: '192448475982298829'
+lifecycle_stage: deleted
+run_id: ced45b2e85d54602955a65aa0c643e54
+run_name: angry-crane-41
+run_uuid: ced45b2e85d54602955a65aa0c643e54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697925656016
+status: 3
+tags: []
+user_id: Francesco-Ranieri

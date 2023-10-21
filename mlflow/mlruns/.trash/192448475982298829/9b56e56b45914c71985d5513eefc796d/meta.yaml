@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/192448475982298829/9b56e56b45914c71985d5513eefc796d/artifacts
+deleted_time: 1697928251977
+end_time: 1697925808957
+entry_point_name: ''
+experiment_id: '192448475982298829'
+lifecycle_stage: deleted
+run_id: 9b56e56b45914c71985d5513eefc796d
+run_name: enthused-lark-723
+run_uuid: 9b56e56b45914c71985d5513eefc796d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697925801849
+status: 3
+tags: []
+user_id: Francesco-Ranieri

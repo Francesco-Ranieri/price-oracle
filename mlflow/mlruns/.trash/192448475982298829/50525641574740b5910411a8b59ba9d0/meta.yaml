@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/192448475982298829/50525641574740b5910411a8b59ba9d0/artifacts
+deleted_time: 1697928251977
+end_time: 1697925801816
+entry_point_name: ''
+experiment_id: '192448475982298829'
+lifecycle_stage: deleted
+run_id: 50525641574740b5910411a8b59ba9d0
+run_name: unruly-elk-586
+run_uuid: 50525641574740b5910411a8b59ba9d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697925799644
+status: 3
+tags: []
+user_id: Francesco-Ranieri

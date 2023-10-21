@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/b3dc2eab8212444bab53200fb1f3dd50/artifacts
+deleted_time: 1697928547494
+end_time: 1697928500380
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: deleted
+run_id: b3dc2eab8212444bab53200fb1f3dd50
+run_name: bustling-horse-785
+run_uuid: b3dc2eab8212444bab53200fb1f3dd50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697928491923
+status: 3
+tags: []
+user_id: Francesco-Ranieri

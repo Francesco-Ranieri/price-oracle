@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/2587d0f18c1d494a949d1b95a119aaf0/artifacts
+deleted_time: 1697932100663
+end_time: 1697931589886
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: deleted
+run_id: 2587d0f18c1d494a949d1b95a119aaf0
+run_name: wise-panda-60
+run_uuid: 2587d0f18c1d494a949d1b95a119aaf0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697931588020
+status: 3
+tags: []
+user_id: Francesco-Ranieri

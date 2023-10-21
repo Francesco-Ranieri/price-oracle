@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/df258d2a8bfa4af2bf4cbb6eb12e631a/artifacts
+deleted_time: 1697931038336
+end_time: 1697931021563
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: deleted
+run_id: df258d2a8bfa4af2bf4cbb6eb12e631a
+run_name: placid-cub-901
+run_uuid: df258d2a8bfa4af2bf4cbb6eb12e631a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697931020335
+status: 4
+tags: []
+user_id: Francesco-Ranieri

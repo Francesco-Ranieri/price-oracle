@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/192448475982298829/561c78f2808345a2b552ba5857fdd31a/artifacts
+deleted_time: 1697925520041
+end_time: 1697925246746
+entry_point_name: ''
+experiment_id: '192448475982298829'
+lifecycle_stage: deleted
+run_id: 561c78f2808345a2b552ba5857fdd31a
+run_name: debonair-perch-40
+run_uuid: 561c78f2808345a2b552ba5857fdd31a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697925245686
+status: 3
+tags: []
+user_id: Francesco-Ranieri

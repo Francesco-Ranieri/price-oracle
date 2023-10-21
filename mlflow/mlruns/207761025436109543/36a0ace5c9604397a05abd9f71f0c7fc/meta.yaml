@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/36a0ace5c9604397a05abd9f71f0c7fc/artifacts
+deleted_time: 1697932100692
+end_time: 1697931510443
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: deleted
+run_id: 36a0ace5c9604397a05abd9f71f0c7fc
+run_name: amazing-penguin-301
+run_uuid: 36a0ace5c9604397a05abd9f71f0c7fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697931507788
+status: 3
+tags: []
+user_id: Francesco-Ranieri

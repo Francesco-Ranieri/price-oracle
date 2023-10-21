@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/991db2c7cdba4fe5bcc733871f10607e/artifacts
+end_time: 1697931010206
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: active
+run_id: 991db2c7cdba4fe5bcc733871f10607e
+run_name: likeable-cub-753
+run_uuid: 991db2c7cdba4fe5bcc733871f10607e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697931007566
+status: 3
+tags: []
+user_id: Francesco-Ranieri

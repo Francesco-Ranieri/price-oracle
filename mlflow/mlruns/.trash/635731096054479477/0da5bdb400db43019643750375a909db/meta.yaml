@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/635731096054479477/0da5bdb400db43019643750375a909db/artifacts
+deleted_time: 1697928428567
+end_time: 1697928260996
+entry_point_name: ''
+experiment_id: '635731096054479477'
+lifecycle_stage: deleted
+run_id: 0da5bdb400db43019643750375a909db
+run_name: sedate-lark-15
+run_uuid: 0da5bdb400db43019643750375a909db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697928259712
+status: 4
+tags: []
+user_id: Francesco-Ranieri

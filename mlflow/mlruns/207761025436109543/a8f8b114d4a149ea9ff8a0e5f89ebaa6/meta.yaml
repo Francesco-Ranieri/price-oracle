@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/207761025436109543/a8f8b114d4a149ea9ff8a0e5f89ebaa6/artifacts
+deleted_time: 1697931505096
+end_time: 1697931242083
+entry_point_name: ''
+experiment_id: '207761025436109543'
+lifecycle_stage: deleted
+run_id: a8f8b114d4a149ea9ff8a0e5f89ebaa6
+run_name: stately-shoat-336
+run_uuid: a8f8b114d4a149ea9ff8a0e5f89ebaa6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697931233852
+status: 3
+tags: []
+user_id: Francesco-Ranieri

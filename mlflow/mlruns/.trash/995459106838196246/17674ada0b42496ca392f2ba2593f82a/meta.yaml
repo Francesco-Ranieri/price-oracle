@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/995459106838196246/17674ada0b42496ca392f2ba2593f82a/artifacts
+deleted_time: 1697924809258
+end_time: null
+entry_point_name: ''
+experiment_id: '995459106838196246'
+lifecycle_stage: deleted
+run_id: 17674ada0b42496ca392f2ba2593f82a
+run_name: luxuriant-wasp-382
+run_uuid: 17674ada0b42496ca392f2ba2593f82a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697924713785
+status: 1
+tags: []
+user_id: Francesco-Ranieri

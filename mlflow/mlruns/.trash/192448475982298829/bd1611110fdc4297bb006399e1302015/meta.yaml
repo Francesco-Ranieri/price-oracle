@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/192448475982298829/bd1611110fdc4297bb006399e1302015/artifacts
+deleted_time: 1697925724089
+end_time: 1697925664935
+entry_point_name: ''
+experiment_id: '192448475982298829'
+lifecycle_stage: deleted
+run_id: bd1611110fdc4297bb006399e1302015
+run_name: sassy-robin-886
+run_uuid: bd1611110fdc4297bb006399e1302015
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697925662928
+status: 3
+tags: []
+user_id: Francesco-Ranieri

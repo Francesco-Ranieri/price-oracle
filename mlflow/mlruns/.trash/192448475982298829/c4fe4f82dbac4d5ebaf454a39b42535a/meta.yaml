@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/192448475982298829/c4fe4f82dbac4d5ebaf454a39b42535a/artifacts
+deleted_time: 1697925724087
+end_time: 1697925655978
+entry_point_name: ''
+experiment_id: '192448475982298829'
+lifecycle_stage: deleted
+run_id: c4fe4f82dbac4d5ebaf454a39b42535a
+run_name: stately-pig-434
+run_uuid: c4fe4f82dbac4d5ebaf454a39b42535a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697925653421
+status: 3
+tags: []
+user_id: Francesco-Ranieri

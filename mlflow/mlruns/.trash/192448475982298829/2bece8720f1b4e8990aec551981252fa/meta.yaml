@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/192448475982298829/2bece8720f1b4e8990aec551981252fa/artifacts
+deleted_time: 1697925520033
+end_time: 1697925348590
+entry_point_name: ''
+experiment_id: '192448475982298829'
+lifecycle_stage: deleted
+run_id: 2bece8720f1b4e8990aec551981252fa
+run_name: masked-cub-281
+run_uuid: 2bece8720f1b4e8990aec551981252fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697925344085
+status: 3
+tags: []
+user_id: Francesco-Ranieri
