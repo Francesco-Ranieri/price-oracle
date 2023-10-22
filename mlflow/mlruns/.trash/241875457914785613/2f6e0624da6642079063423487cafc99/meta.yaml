@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/241875457914785613/2f6e0624da6642079063423487cafc99/artifacts
+deleted_time: 1697991087740
+end_time: 1696789603364
+entry_point_name: ''
+experiment_id: '241875457914785613'
+lifecycle_stage: deleted
+run_id: 2f6e0624da6642079063423487cafc99
+run_name: Clustering_KMedoids_raw_5_Clusters
+run_uuid: 2f6e0624da6642079063423487cafc99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696789588788
+status: 3
+tags: []
+user_id: Francesco-Ranieri

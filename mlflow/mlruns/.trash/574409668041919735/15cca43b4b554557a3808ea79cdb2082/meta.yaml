@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/574409668041919735/15cca43b4b554557a3808ea79cdb2082/artifacts
+deleted_time: 1697991093878
+end_time: 1696790245698
+entry_point_name: ''
+experiment_id: '574409668041919735'
+lifecycle_stage: deleted
+run_id: 15cca43b4b554557a3808ea79cdb2082
+run_name: Clustering_KMedoids_cropped_min_max_scaled_4_Clusters
+run_uuid: 15cca43b4b554557a3808ea79cdb2082
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696790239035
+status: 3
+tags: []
+user_id: Francesco-Ranieri

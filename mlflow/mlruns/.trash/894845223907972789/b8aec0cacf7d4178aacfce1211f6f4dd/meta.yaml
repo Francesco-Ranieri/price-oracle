@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/894845223907972789/b8aec0cacf7d4178aacfce1211f6f4dd/artifacts
+deleted_time: 1697991078591
+end_time: 1696963497680
+entry_point_name: ''
+experiment_id: '894845223907972789'
+lifecycle_stage: deleted
+run_id: b8aec0cacf7d4178aacfce1211f6f4dd
+run_name: Clustering_KMedoids_cropped_scaled_pruned_log_scaling_7_Clusters
+run_uuid: b8aec0cacf7d4178aacfce1211f6f4dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696963492938
+status: 3
+tags: []
+user_id: gianfrancodemarco

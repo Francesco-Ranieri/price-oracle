@@ -1,6 +1,0 @@
-artifact_location: mlflow-artifacts:/876813293844273443
-creation_time: 1696789903349
-experiment_id: '876813293844273443'
-last_update_time: 1696789903349
-lifecycle_stage: active
-name: Clustering_KMeans_from_2021-06_normalized

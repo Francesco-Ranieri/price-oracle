@@ -1,6 +1,0 @@
-artifact_location: mlflow-artifacts:/797441938917271861
-creation_time: 1696791574923
-experiment_id: '797441938917271861'
-last_update_time: 1696791574923
-lifecycle_stage: active
-name: Clustering_KMeans_cropped_scaled_pruned_log_scaling
