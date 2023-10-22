@@ -9,6 +9,7 @@ from airflow.operators.python import PythonOperator
 from common.entities.prediction import Prediction
 from common.hooks.spark_hook import SparkHook
 from common.tasks.cassandra import insert_into_cassandra_predictions
+from common.constants import FILE_NAMES
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
 
@@ -71,9 +72,7 @@ def predict(data_path: str) -> List[Prediction]:
     return df
 
     
-file_names = [file_name for file_name in os.listdir("assets") if file_name.endswith(".csv")]
-
-for file_name in file_names:
+for file_name in FILE_NAMES:
     coin_name = file_name.split(".")[0]
 
     with DAG(

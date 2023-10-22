@@ -8,7 +8,7 @@ from common.dtos.binance_data_dto import BinanceDataDTO
 from common.entities.price_candlestick import PriceCandleStick
 from common.mappers.binance_data_mapper import BinanceDataMapper
 from common.tasks.cassandra import insert_into_cassandra_price_candlestick
-
+from common.constants import DATA_PATH, FILE_NAMES
 from airflow import DAG
 
 logging.basicConfig(level=logging.DEBUG)
@@ -35,8 +35,7 @@ def fetch_data(file_path: str) -> PriceCandleStick:
     return data
 
 
-file_names = [file_name for file_name in os.listdir("assets") if file_name.endswith(".csv")]
-for file_name in file_names:
+for file_name in FILE_NAMES:
     coin_name = file_name.split(".")[0]
     with DAG(
         f"initial_data_loading_{coin_name}",
@@ -54,7 +53,7 @@ for file_name in file_names:
             task_id="fetch_data",
             python_callable=fetch_data,
             op_kwargs={
-                "file_path": f"assets/{file_name}"
+                "file_path": os.path.join(DATA_PATH, {file_name})
             }
         )
 

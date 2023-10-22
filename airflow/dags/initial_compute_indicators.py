@@ -9,6 +9,7 @@ from airflow.operators.python import PythonOperator
 from common.entities.indicators import Indicators
 from common.hooks.cassandra_hook import CassandraHook
 from common.hooks.spark_hook import SparkHook
+from common.constants import FILE_NAMES
 from common.tasks.cassandra import insert_into_cassandra_indicators
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
@@ -98,9 +99,7 @@ def compute_indicators(data_path: str, coin_name: str):
     return df
 
     
-file_names = [file_name for file_name in os.listdir("assets") if file_name.endswith(".csv")]
-
-for file_name in file_names:
+for file_name in FILE_NAMES:
     coin_name = file_name.split(".")[0]
 
     with DAG(
