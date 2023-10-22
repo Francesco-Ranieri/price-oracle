@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/d5ee908eaacb4b94ba926bb398b4d1ce/artifacts
+end_time: 1697989356859
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: d5ee908eaacb4b94ba926bb398b4d1ce
+run_name: shivering-sheep-67
+run_uuid: d5ee908eaacb4b94ba926bb398b4d1ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697989352896
+status: 3
+tags: []
+user_id: gianfrancodemarco

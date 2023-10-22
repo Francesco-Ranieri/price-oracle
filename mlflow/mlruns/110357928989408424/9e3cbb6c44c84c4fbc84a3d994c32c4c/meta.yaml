@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/9e3cbb6c44c84c4fbc84a3d994c32c4c/artifacts
+end_time: 1697989349245
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: 9e3cbb6c44c84c4fbc84a3d994c32c4c
+run_name: industrious-seal-202
+run_uuid: 9e3cbb6c44c84c4fbc84a3d994c32c4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697989346521
+status: 3
+tags: []
+user_id: gianfrancodemarco

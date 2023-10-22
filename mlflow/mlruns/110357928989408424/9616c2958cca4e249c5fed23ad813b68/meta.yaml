@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/9616c2958cca4e249c5fed23ad813b68/artifacts
+deleted_time: 1697989247716
+end_time: 1697988539261
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: 9616c2958cca4e249c5fed23ad813b68
+run_name: funny-grouse-830
+run_uuid: 9616c2958cca4e249c5fed23ad813b68
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697988536625
+status: 3
+tags: []
+user_id: gianfrancodemarco

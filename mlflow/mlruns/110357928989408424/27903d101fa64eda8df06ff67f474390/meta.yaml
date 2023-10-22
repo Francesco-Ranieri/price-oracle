@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/27903d101fa64eda8df06ff67f474390/artifacts
+deleted_time: 1697989247715
+end_time: 1697988546716
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: 27903d101fa64eda8df06ff67f474390
+run_name: able-ram-175
+run_uuid: 27903d101fa64eda8df06ff67f474390
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697988543191
+status: 3
+tags: []
+user_id: gianfrancodemarco

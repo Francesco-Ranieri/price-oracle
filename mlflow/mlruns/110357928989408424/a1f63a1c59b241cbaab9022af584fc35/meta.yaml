@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/a1f63a1c59b241cbaab9022af584fc35/artifacts
+deleted_time: 1697989247669
+end_time: 1697988600222
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: a1f63a1c59b241cbaab9022af584fc35
+run_name: intrigued-hog-906
+run_uuid: a1f63a1c59b241cbaab9022af584fc35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697988595522
+status: 3
+tags: []
+user_id: gianfrancodemarco

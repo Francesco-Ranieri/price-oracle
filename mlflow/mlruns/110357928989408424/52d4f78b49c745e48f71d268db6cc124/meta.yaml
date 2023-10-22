@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/52d4f78b49c745e48f71d268db6cc124/artifacts
+end_time: 1697989361414
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: 52d4f78b49c745e48f71d268db6cc124
+run_name: amazing-snake-209
+run_uuid: 52d4f78b49c745e48f71d268db6cc124
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697989356949
+status: 3
+tags: []
+user_id: gianfrancodemarco

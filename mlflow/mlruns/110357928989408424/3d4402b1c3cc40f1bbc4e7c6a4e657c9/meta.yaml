@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/3d4402b1c3cc40f1bbc4e7c6a4e657c9/artifacts
+deleted_time: 1697989247666
+end_time: 1697988605029
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: 3d4402b1c3cc40f1bbc4e7c6a4e657c9
+run_name: hilarious-swan-8
+run_uuid: 3d4402b1c3cc40f1bbc4e7c6a4e657c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697988600386
+status: 3
+tags: []
+user_id: gianfrancodemarco

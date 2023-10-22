@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/f3757df455c4445cbed0a311618d377f/artifacts
+deleted_time: 1697989247704
+end_time: 1697988551221
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: f3757df455c4445cbed0a311618d377f
+run_name: enchanting-lynx-286
+run_uuid: f3757df455c4445cbed0a311618d377f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697988546889
+status: 3
+tags: []
+user_id: gianfrancodemarco

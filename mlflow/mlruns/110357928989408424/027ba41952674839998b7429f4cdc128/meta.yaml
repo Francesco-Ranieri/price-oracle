@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/027ba41952674839998b7429f4cdc128/artifacts
+deleted_time: 1697989247691
+end_time: 1697988583509
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: deleted
+run_id: 027ba41952674839998b7429f4cdc128
+run_name: salty-snipe-394
+run_uuid: 027ba41952674839998b7429f4cdc128
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697988580901
+status: 3
+tags: []
+user_id: gianfrancodemarco

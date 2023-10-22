@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/110357928989408424/e1606b15f66e4d02aa1117679cc12f96/artifacts
+end_time: 1697989299993
+entry_point_name: ''
+experiment_id: '110357928989408424'
+lifecycle_stage: active
+run_id: e1606b15f66e4d02aa1117679cc12f96
+run_name: stately-midge-218
+run_uuid: e1606b15f66e4d02aa1117679cc12f96
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697989296691
+status: 3
+tags: []
+user_id: gianfrancodemarco
