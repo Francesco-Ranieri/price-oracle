@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/655e846c869f4fe1a3dbad2575def304/artifacts
+deleted_time: 1697997121155
+end_time: 1697997038909
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 655e846c869f4fe1a3dbad2575def304
+run_name: nervous-mule-271
+run_uuid: 655e846c869f4fe1a3dbad2575def304
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997038842
+status: 3
+tags: []
+user_id: gianfrancodemarco

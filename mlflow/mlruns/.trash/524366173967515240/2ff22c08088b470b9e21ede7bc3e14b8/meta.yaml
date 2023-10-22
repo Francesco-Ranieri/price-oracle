@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/2ff22c08088b470b9e21ede7bc3e14b8/artifacts
+deleted_time: 1697997121155
+end_time: 1697996865139
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 2ff22c08088b470b9e21ede7bc3e14b8
+run_name: peaceful-bug-634
+run_uuid: 2ff22c08088b470b9e21ede7bc3e14b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996865113
+status: 3
+tags: []
+user_id: gianfrancodemarco

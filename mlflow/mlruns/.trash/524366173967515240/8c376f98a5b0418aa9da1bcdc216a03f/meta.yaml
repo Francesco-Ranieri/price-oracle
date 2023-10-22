@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/8c376f98a5b0418aa9da1bcdc216a03f/artifacts
+deleted_time: 1697997121155
+end_time: 1697997035424
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 8c376f98a5b0418aa9da1bcdc216a03f
+run_name: capricious-ox-818
+run_uuid: 8c376f98a5b0418aa9da1bcdc216a03f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997035335
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/b637e2ae9e3b470f866283abdfe65f71/artifacts
+deleted_time: 1697996857013
+end_time: 1697996773683
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: b637e2ae9e3b470f866283abdfe65f71
+run_name: bemused-gnu-969
+run_uuid: b637e2ae9e3b470f866283abdfe65f71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996773643
+status: 3
+tags: []
+user_id: gianfrancodemarco

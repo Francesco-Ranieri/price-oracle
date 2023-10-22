@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/e6a9139169764bdc813364360e22050e/artifacts
+deleted_time: 1697996857013
+end_time: 1697996779683
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: e6a9139169764bdc813364360e22050e
+run_name: amazing-rook-491
+run_uuid: e6a9139169764bdc813364360e22050e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996779642
+status: 3
+tags: []
+user_id: gianfrancodemarco

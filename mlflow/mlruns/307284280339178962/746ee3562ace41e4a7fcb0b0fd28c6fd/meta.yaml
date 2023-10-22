@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/307284280339178962/746ee3562ace41e4a7fcb0b0fd28c6fd/artifacts
+end_time: 1697997171842
+entry_point_name: ''
+experiment_id: '307284280339178962'
+lifecycle_stage: active
+run_id: 746ee3562ace41e4a7fcb0b0fd28c6fd
+run_name: bouncy-calf-991
+run_uuid: 746ee3562ace41e4a7fcb0b0fd28c6fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997171766
+status: 3
+tags: []
+user_id: gianfrancodemarco

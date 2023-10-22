@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/d1aef999d1714b7a9895c8858b81ee99/artifacts
+deleted_time: 1697996857013
+end_time: 1697996773088
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: d1aef999d1714b7a9895c8858b81ee99
+run_name: peaceful-mink-126
+run_uuid: d1aef999d1714b7a9895c8858b81ee99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996773051
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/57aecc129ad14d3b8336d1594b31cccf/artifacts
+deleted_time: 1697997121155
+end_time: 1697996864441
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 57aecc129ad14d3b8336d1594b31cccf
+run_name: auspicious-shoat-614
+run_uuid: 57aecc129ad14d3b8336d1594b31cccf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996864411
+status: 3
+tags: []
+user_id: gianfrancodemarco

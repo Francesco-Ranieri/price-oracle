@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/859857315724742240/63d2642d79f340f79c5bc00643839630/artifacts
+deleted_time: 1697997158930
+end_time: 1697997134828
+entry_point_name: ''
+experiment_id: '859857315724742240'
+lifecycle_stage: deleted
+run_id: 63d2642d79f340f79c5bc00643839630
+run_name: thundering-snail-867
+run_uuid: 63d2642d79f340f79c5bc00643839630
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997134757
+status: 3
+tags: []
+user_id: gianfrancodemarco

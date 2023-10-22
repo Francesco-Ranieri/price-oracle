@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/895788ec94df4f9c96e9f4a282b586f5/artifacts
+deleted_time: 1697996857013
+end_time: 1697996771029
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: 895788ec94df4f9c96e9f4a282b586f5
+run_name: bedecked-shad-975
+run_uuid: 895788ec94df4f9c96e9f4a282b586f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996770980
+status: 3
+tags: []
+user_id: gianfrancodemarco

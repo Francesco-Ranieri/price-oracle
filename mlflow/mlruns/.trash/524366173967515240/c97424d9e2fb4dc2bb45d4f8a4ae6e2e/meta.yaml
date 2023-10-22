@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/c97424d9e2fb4dc2bb45d4f8a4ae6e2e/artifacts
+deleted_time: 1697997121155
+end_time: 1697997039382
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: c97424d9e2fb4dc2bb45d4f8a4ae6e2e
+run_name: rumbling-ray-418
+run_uuid: c97424d9e2fb4dc2bb45d4f8a4ae6e2e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997039311
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/994c3fb303204c7186d799d405996236/artifacts
+deleted_time: 1697997121155
+end_time: 1697997039857
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 994c3fb303204c7186d799d405996236
+run_name: handsome-shrimp-304
+run_uuid: 994c3fb303204c7186d799d405996236
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997039773
+status: 3
+tags: []
+user_id: gianfrancodemarco

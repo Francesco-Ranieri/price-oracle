@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/ce5787036a644404aab013fe5f0a9567/artifacts
+deleted_time: 1697996857013
+end_time: 1697996193866
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: ce5787036a644404aab013fe5f0a9567
+run_name: carefree-whale-698
+run_uuid: ce5787036a644404aab013fe5f0a9567
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996193834
+status: 3
+tags: []
+user_id: gianfrancodemarco

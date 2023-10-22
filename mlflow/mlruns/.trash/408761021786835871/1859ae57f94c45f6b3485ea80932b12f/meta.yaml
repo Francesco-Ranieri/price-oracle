@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/1859ae57f94c45f6b3485ea80932b12f/artifacts
+deleted_time: 1697996857013
+end_time: 1697996197568
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: 1859ae57f94c45f6b3485ea80932b12f
+run_name: whimsical-colt-662
+run_uuid: 1859ae57f94c45f6b3485ea80932b12f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996197526
+status: 3
+tags: []
+user_id: gianfrancodemarco

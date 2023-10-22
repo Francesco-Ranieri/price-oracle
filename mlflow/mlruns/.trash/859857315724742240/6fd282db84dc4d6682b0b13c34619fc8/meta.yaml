@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/859857315724742240/6fd282db84dc4d6682b0b13c34619fc8/artifacts
+deleted_time: 1697997158930
+end_time: 1697997136020
+entry_point_name: ''
+experiment_id: '859857315724742240'
+lifecycle_stage: deleted
+run_id: 6fd282db84dc4d6682b0b13c34619fc8
+run_name: brawny-bear-637
+run_uuid: 6fd282db84dc4d6682b0b13c34619fc8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997135946
+status: 3
+tags: []
+user_id: gianfrancodemarco

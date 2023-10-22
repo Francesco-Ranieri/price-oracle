@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/307284280339178962/85f4157f5d8f474689ae4930f0f6c426/artifacts
+end_time: 1697997166146
+entry_point_name: ''
+experiment_id: '307284280339178962'
+lifecycle_stage: active
+run_id: 85f4157f5d8f474689ae4930f0f6c426
+run_name: clean-pig-752
+run_uuid: 85f4157f5d8f474689ae4930f0f6c426
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997166057
+status: 3
+tags: []
+user_id: gianfrancodemarco

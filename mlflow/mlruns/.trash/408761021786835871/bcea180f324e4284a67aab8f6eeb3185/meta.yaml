@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/bcea180f324e4284a67aab8f6eeb3185/artifacts
+deleted_time: 1697996857013
+end_time: 1697996777962
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: bcea180f324e4284a67aab8f6eeb3185
+run_name: vaunted-snake-493
+run_uuid: bcea180f324e4284a67aab8f6eeb3185
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996777909
+status: 3
+tags: []
+user_id: gianfrancodemarco

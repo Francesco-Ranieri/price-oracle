@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/859857315724742240/89af38a633cf417a87d173a6906dbf7a/artifacts
+deleted_time: 1697997158930
+end_time: 1697997141031
+entry_point_name: ''
+experiment_id: '859857315724742240'
+lifecycle_stage: deleted
+run_id: 89af38a633cf417a87d173a6906dbf7a
+run_name: dapper-hawk-513
+run_uuid: 89af38a633cf417a87d173a6906dbf7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997140906
+status: 3
+tags: []
+user_id: gianfrancodemarco

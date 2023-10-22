@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/859857315724742240/7e8b335f8aa843bd9177681c5666bcfd/artifacts
+deleted_time: 1697997158930
+end_time: 1697997134342
+entry_point_name: ''
+experiment_id: '859857315724742240'
+lifecycle_stage: deleted
+run_id: 7e8b335f8aa843bd9177681c5666bcfd
+run_name: polite-wolf-30
+run_uuid: 7e8b335f8aa843bd9177681c5666bcfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997134268
+status: 3
+tags: []
+user_id: gianfrancodemarco

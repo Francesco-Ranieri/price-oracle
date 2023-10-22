@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/ca7cc49e67a5458bb19e1cde7528ffdf/artifacts
+deleted_time: 1697997121155
+end_time: 1697997041705
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: ca7cc49e67a5458bb19e1cde7528ffdf
+run_name: enthused-bird-920
+run_uuid: ca7cc49e67a5458bb19e1cde7528ffdf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997041637
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/859857315724742240/0725fca5f587412986e9b3bb0c83f48f/artifacts
+deleted_time: 1697997158930
+end_time: 1697997133809
+entry_point_name: ''
+experiment_id: '859857315724742240'
+lifecycle_stage: deleted
+run_id: 0725fca5f587412986e9b3bb0c83f48f
+run_name: gregarious-skink-213
+run_uuid: 0725fca5f587412986e9b3bb0c83f48f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997133733
+status: 3
+tags: []
+user_id: gianfrancodemarco

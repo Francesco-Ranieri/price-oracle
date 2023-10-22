@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/90cfd56c9da448b9b4222905307355d5/artifacts
+deleted_time: 1697997121155
+end_time: 1697996870406
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 90cfd56c9da448b9b4222905307355d5
+run_name: skillful-bee-434
+run_uuid: 90cfd56c9da448b9b4222905307355d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996870358
+status: 3
+tags: []
+user_id: gianfrancodemarco

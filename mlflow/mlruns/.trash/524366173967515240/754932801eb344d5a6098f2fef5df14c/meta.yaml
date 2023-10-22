@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/754932801eb344d5a6098f2fef5df14c/artifacts
+deleted_time: 1697997121155
+end_time: 1697997043223
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 754932801eb344d5a6098f2fef5df14c
+run_name: chill-cod-220
+run_uuid: 754932801eb344d5a6098f2fef5df14c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997043099
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/fd35df6181ac418e95fc73ee740c99ab/artifacts
+deleted_time: 1697997121155
+end_time: 1697997037224
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: fd35df6181ac418e95fc73ee740c99ab
+run_name: calm-mule-208
+run_uuid: fd35df6181ac418e95fc73ee740c99ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997037153
+status: 3
+tags: []
+user_id: gianfrancodemarco

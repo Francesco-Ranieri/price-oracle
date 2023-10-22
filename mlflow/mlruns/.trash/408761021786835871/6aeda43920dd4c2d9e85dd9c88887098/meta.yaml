@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/6aeda43920dd4c2d9e85dd9c88887098/artifacts
+deleted_time: 1697996857013
+end_time: 1697996201342
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: 6aeda43920dd4c2d9e85dd9c88887098
+run_name: honorable-chimp-722
+run_uuid: 6aeda43920dd4c2d9e85dd9c88887098
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996201299
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/2242795ceee74f6497c096ec7e6b9517/artifacts
+deleted_time: 1697996857013
+end_time: 1697996199920
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: 2242795ceee74f6497c096ec7e6b9517
+run_name: rare-duck-601
+run_uuid: 2242795ceee74f6497c096ec7e6b9517
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996199874
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/66badca2f53f44419cb7f7cffe00fd3c/artifacts
+deleted_time: 1697997121155
+end_time: 1697997041254
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 66badca2f53f44419cb7f7cffe00fd3c
+run_name: magnificent-steed-58
+run_uuid: 66badca2f53f44419cb7f7cffe00fd3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997041146
+status: 3
+tags: []
+user_id: gianfrancodemarco

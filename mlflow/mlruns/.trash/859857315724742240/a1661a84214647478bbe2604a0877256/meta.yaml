@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/859857315724742240/a1661a84214647478bbe2604a0877256/artifacts
+deleted_time: 1697997158930
+end_time: 1697997140278
+entry_point_name: ''
+experiment_id: '859857315724742240'
+lifecycle_stage: deleted
+run_id: a1661a84214647478bbe2604a0877256
+run_name: aged-owl-438
+run_uuid: a1661a84214647478bbe2604a0877256
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997140131
+status: 3
+tags: []
+user_id: gianfrancodemarco

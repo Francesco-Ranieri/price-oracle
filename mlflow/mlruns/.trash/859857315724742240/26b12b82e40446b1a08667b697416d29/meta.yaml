@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/859857315724742240/26b12b82e40446b1a08667b697416d29/artifacts
+deleted_time: 1697997158930
+end_time: 1697997137698
+entry_point_name: ''
+experiment_id: '859857315724742240'
+lifecycle_stage: deleted
+run_id: 26b12b82e40446b1a08667b697416d29
+run_name: monumental-gnat-128
+run_uuid: 26b12b82e40446b1a08667b697416d29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997137618
+status: 3
+tags: []
+user_id: gianfrancodemarco

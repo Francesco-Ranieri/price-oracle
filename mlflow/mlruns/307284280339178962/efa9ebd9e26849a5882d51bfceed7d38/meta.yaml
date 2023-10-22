@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/307284280339178962/efa9ebd9e26849a5882d51bfceed7d38/artifacts
+end_time: 1697997164707
+entry_point_name: ''
+experiment_id: '307284280339178962'
+lifecycle_stage: active
+run_id: efa9ebd9e26849a5882d51bfceed7d38
+run_name: gregarious-mink-564
+run_uuid: efa9ebd9e26849a5882d51bfceed7d38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697997164632
+status: 3
+tags: []
+user_id: gianfrancodemarco

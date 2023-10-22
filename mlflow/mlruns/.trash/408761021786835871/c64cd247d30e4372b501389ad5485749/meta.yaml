@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/408761021786835871/c64cd247d30e4372b501389ad5485749/artifacts
+deleted_time: 1697996857013
+end_time: 1697996195524
+entry_point_name: ''
+experiment_id: '408761021786835871'
+lifecycle_stage: deleted
+run_id: c64cd247d30e4372b501389ad5485749
+run_name: legendary-moose-607
+run_uuid: c64cd247d30e4372b501389ad5485749
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996195493
+status: 3
+tags: []
+user_id: gianfrancodemarco

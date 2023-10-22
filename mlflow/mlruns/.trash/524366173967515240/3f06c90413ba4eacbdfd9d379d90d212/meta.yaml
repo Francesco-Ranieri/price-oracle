@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/524366173967515240/3f06c90413ba4eacbdfd9d379d90d212/artifacts
+deleted_time: 1697997121155
+end_time: 1697996871100
+entry_point_name: ''
+experiment_id: '524366173967515240'
+lifecycle_stage: deleted
+run_id: 3f06c90413ba4eacbdfd9d379d90d212
+run_name: powerful-mole-277
+run_uuid: 3f06c90413ba4eacbdfd9d379d90d212
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1697996871052
+status: 3
+tags: []
+user_id: gianfrancodemarco
