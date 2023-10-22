@@ -1,5 +1,11 @@
-import pandas as pd
 import os
+from math import sqrt
+
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
+
+import mlflow
 
 
 def get_dataframe():
@@ -45,3 +51,46 @@ def get_dataframe():
             print(f'Error on coin {ticker}: {e}')
 
     return merged_df
+
+
+def register_training_experiment(
+    model_name,
+    coin,
+    data,
+    predictions,
+    x_axis,
+    params = {}
+):
+        
+    mlflow.set_experiment(f'Training_{model_name}')
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(x_axis, data, label='original')
+    plt.plot(x_axis, predictions, label='lagged')
+    plt.legend()
+    plt.title(f"{coin}")
+    plt.show()
+
+    # calculate MSE, RMSE and MAPE for all data, last 90, 30 and 7 days
+    with mlflow.start_run():
+
+        for days in [len(data), 90, 30, 7]:
+        
+            mse = mean_squared_error(data[-days:], predictions[-days:])
+            rmse = sqrt(mse)
+            mape = mean_absolute_percentage_error(data[-days:], predictions[-days:])
+            print(f"{coin} MSE: {mse}, RMSE: {rmse}", f"MAPE: {mape}")
+
+            mlflow.log_params({
+                'model': model_name,
+                'coin': coin,
+                **params
+            })
+
+            suffix = 'all' if days == len(data) else days
+
+            mlflow.log_metrics({
+                f'mse_{suffix}': mse,
+                f'rmse_{suffix}': rmse,
+                f'mape_{suffix}': mape
+            })
