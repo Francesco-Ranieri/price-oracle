@@ -53,6 +53,40 @@ def get_dataframe():
     return merged_df
 
 
+def get_clustered_dataframes():
+
+    merged_df = get_dataframe()
+    experiment = _get_experiments_from_mlflow()
+
+    # Use eval() to convert the string to a list of tuples
+    data_list = eval(experiment["params.Cluster_Labels"].tolist()[0])
+
+    # Convert the list of tuples to a dictionary
+    data_dict = dict(data_list)
+
+    # Create a map where keys are the values from the original dictionary
+    cripto_clusters = {}
+    for key, value in data_dict.items():
+        if value in cripto_clusters:
+            cripto_clusters[value].append(key)
+        else:
+            cripto_clusters[value] = [key]
+
+    clusters_data = {}
+
+    # loop on key and value of cripto_clusters
+    for cluster, criptos in cripto_clusters.items():
+        _criptos = criptos + ['Date']
+        clusters_data[cluster] = merged_df[_criptos]
+    
+    return clusters_data
+
+
+def _get_experiments_from_mlflow(experiment_id: str = "110357928989408424", run_id: str = "35f1bb80732f433297fda78e6638feab"):
+    experiments = mlflow.search_runs(experiment_ids=experiment_id)
+    return experiments.loc[experiments['run_id'] == run_id]
+
+
 def register_training_experiment(
     model_name,
     coin,
