@@ -45,7 +45,7 @@ for file_name in FILE_NAMES:
             "owner": "ranierifr"
         },
         is_paused_upon_creation=True,
-        tags=[coin_name]
+        tags=[coin_name, "initial_data_loading"]
     ) as dag:
         
         
@@ -53,7 +53,7 @@ for file_name in FILE_NAMES:
             task_id="fetch_data",
             python_callable=fetch_data,
             op_kwargs={
-                "file_path": os.path.join(DATA_PATH, {file_name})
+                "file_path": os.path.join(DATA_PATH, file_name)
             }
         )
 
