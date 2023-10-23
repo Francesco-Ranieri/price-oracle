@@ -88,43 +88,49 @@ def _get_experiments_from_mlflow(experiment_id: str = "110357928989408424", run_
 
 
 def register_training_experiment(
-    model_name,
-    coin,
     data,
     predictions,
-    x_axis,
-    params = {}
+    model_name = None,
+    coin = None,
+    x_axis = None,
+    params = {},
+    use_mlflow: bool = True
 ):
-        
-    mlflow.set_experiment(f'Training_{model_name}')
 
+    if x_axis is None:
+        x_axis = range(len(data))
+
+    print(x_axis)
+    print(data)
+    print(predictions)
+        
     plt.figure(figsize=(10, 6))
     plt.plot(x_axis, data, label='original')
-    plt.plot(x_axis, predictions, label='lagged')
+    plt.plot(x_axis, predictions, label='predicted')
     plt.legend()
     plt.title(f"{coin}")
     plt.show()
 
-    # calculate MSE, RMSE and MAPE for all data, last 90, 30 and 7 days
-    with mlflow.start_run():
+    for days in [len(data), 90, 30, 7]:
+        mse = mean_squared_error(data[-days:], predictions[-days:])
+        rmse = sqrt(mse)
+        mape = mean_absolute_percentage_error(data[-days:], predictions[-days:])
+        print(f"Metrics for {days} days: {coin} MSE: {mse}, RMSE: {rmse}", f"MAPE: {mape}")
 
-        for days in [len(data), 90, 30, 7]:
-        
-            mse = mean_squared_error(data[-days:], predictions[-days:])
-            rmse = sqrt(mse)
-            mape = mean_absolute_percentage_error(data[-days:], predictions[-days:])
-            print(f"{coin} MSE: {mse}, RMSE: {rmse}", f"MAPE: {mape}")
+    if use_mlflow:
+        mlflow.set_experiment(f'Training_{model_name}')
+        mlflow.start_run()
+        mlflow.log_params({
+            'model': model_name,
+            'coin': coin,
+            **params
+        })
 
-            mlflow.log_params({
-                'model': model_name,
-                'coin': coin,
-                **params
-            })
+        suffix = 'all' if days == len(data) else days
+        mlflow.log_metrics({
+            f'mse_{suffix}': mse,
+            f'rmse_{suffix}': rmse,
+            f'mape_{suffix}': mape
+        })
 
-            suffix = 'all' if days == len(data) else days
-
-            mlflow.log_metrics({
-                f'mse_{suffix}': mse,
-                f'rmse_{suffix}': rmse,
-                f'mape_{suffix}': mape
-            })
+        mlflow.end_run()
