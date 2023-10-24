@@ -21,7 +21,7 @@ def create_sequences(data, sequence_length):
     return np.array(sequences), np.array(target)
 
 
-def mean_absolute_percentage_error(y_true, y_pred):
+def mean_absolute_percentage_error_keras(y_true, y_pred):
     diff = K.abs((y_true - y_pred) / K.clip(K.abs(y_true), K.epsilon(), None))
     return 100.0 * K.mean(diff, axis=-1)
 
@@ -32,7 +32,7 @@ class OptunaPruneCallback(Callback):
 
     def on_epoch_end(self, epoch, logs={}):
         if self.trial:
-            self.trial.report(logs["val_mean_absolute_percentage_error"], epoch)
+            self.trial.report(logs["val_mean_absolute_percentage_error_keras"], epoch)
             if self.trial.should_prune():
                 raise optuna.TrialPruned()
 
@@ -123,15 +123,10 @@ def register_training_experiment(
     coin = None,
     x_axis = None,
     params = {},
-    use_mlflow: bool = True
 ):
 
     if x_axis is None:
         x_axis = range(len(data))
-
-    print(x_axis)
-    print(data)
-    print(predictions)
         
     plt.figure(figsize=(10, 6))
     plt.plot(x_axis, data, label='original')
@@ -140,26 +135,22 @@ def register_training_experiment(
     plt.title(f"{coin}")
     plt.show()
 
-    for days in [len(data), 90, 30, 7]:
-        mse = mean_squared_error(data[-days:], predictions[-days:])
-        rmse = sqrt(mse)
-        mape = mean_absolute_percentage_error(data[-days:], predictions[-days:])
-        print(f"Metrics for {days} days: {coin} MSE: {mse}, RMSE: {rmse}", f"MAPE: {mape}")
-
-    if use_mlflow:
-        mlflow.set_experiment(f'Training_{model_name}')
-        mlflow.start_run()
+    with mlflow.start_run(run_name='Evaluation', nested=True):
         mlflow.log_params({
             'model': model_name,
             'coin': coin,
             **params
         })
 
-        suffix = 'all' if days == len(data) else days
-        mlflow.log_metrics({
-            f'mse_{suffix}': mse,
-            f'rmse_{suffix}': rmse,
-            f'mape_{suffix}': mape
-        })
+        for days in [len(data), 90, 30, 7]:
+            mse = mean_squared_error(data[-days:], predictions[-days:])
+            rmse = sqrt(mse)
+            mape = mean_absolute_percentage_error(data[-days:], predictions[-days:])
+            print(f"Metrics for {days} days: {coin} MSE: {mse}, RMSE: {rmse}", f"MAPE: {mape}")
 
-        mlflow.end_run()
+            suffix = 'all' if days == len(data) else days
+            mlflow.log_metrics({
+                f'mse_{suffix}': mse,
+                f'rmse_{suffix}': rmse,
+                f'mape_{suffix}': mape
+            })
