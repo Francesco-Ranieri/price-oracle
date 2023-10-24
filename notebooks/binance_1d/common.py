@@ -1,11 +1,40 @@
 import os
 from math import sqrt
 
+import keras.backend as K
 import matplotlib.pyplot as plt
+import optuna
 import pandas as pd
 from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
+from keras.callbacks import Callback
+import numpy as np
 
 import mlflow
+
+# Create sequences of data to be used for training
+def create_sequences(data, sequence_length):
+    sequences = []
+    target = []
+    for i in range(len(data) - sequence_length):
+        sequences.append(data[i:i+sequence_length])
+        target.append(data[i+sequence_length])
+    return np.array(sequences), np.array(target)
+
+
+def mean_absolute_percentage_error(y_true, y_pred):
+    diff = K.abs((y_true - y_pred) / K.clip(K.abs(y_true), K.epsilon(), None))
+    return 100.0 * K.mean(diff, axis=-1)
+
+class OptunaPruneCallback(Callback):
+    def __init__(self, trial):
+        super(Callback, self).__init__()
+        self.trial = trial
+
+    def on_epoch_end(self, epoch, logs={}):
+        if self.trial:
+            self.trial.report(logs["val_mean_absolute_percentage_error"], epoch)
+            if self.trial.should_prune():
+                raise optuna.TrialPruned()
 
 
 def get_dataframe():
