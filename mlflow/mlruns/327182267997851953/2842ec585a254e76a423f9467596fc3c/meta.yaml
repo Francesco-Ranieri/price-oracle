@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/2842ec585a254e76a423f9467596fc3c/artifacts
+end_time: 1698181085102
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 2842ec585a254e76a423f9467596fc3c
+run_name: bedecked-colt-364
+run_uuid: 2842ec585a254e76a423f9467596fc3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181081197
+status: 4
+tags: []
+user_id: gianfrancodemarco

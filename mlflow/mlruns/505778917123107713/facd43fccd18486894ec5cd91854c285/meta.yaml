@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/facd43fccd18486894ec5cd91854c285/artifacts
+deleted_time: 1698162361623
+end_time: 1698162070165
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: facd43fccd18486894ec5cd91854c285
+run_name: handsome-dove-78
+run_uuid: facd43fccd18486894ec5cd91854c285
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698162013018
+status: 3
+tags: []
+user_id: gianfrancodemarco

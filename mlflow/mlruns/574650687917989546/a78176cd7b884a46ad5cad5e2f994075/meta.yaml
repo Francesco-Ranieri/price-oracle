@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/a78176cd7b884a46ad5cad5e2f994075/artifacts
+end_time: 1698176619486
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: a78176cd7b884a46ad5cad5e2f994075
+run_name: invincible-seal-789
+run_uuid: a78176cd7b884a46ad5cad5e2f994075
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176601255
+status: 3
+tags: []
+user_id: gianfrancodemarco

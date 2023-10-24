@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b53f00d961e24a528388578efbdcb110/artifacts
+end_time: 1698188160984
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b53f00d961e24a528388578efbdcb110
+run_name: invincible-foal-718
+run_uuid: b53f00d961e24a528388578efbdcb110
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188155630
+status: 4
+tags: []
+user_id: gianfrancodemarco

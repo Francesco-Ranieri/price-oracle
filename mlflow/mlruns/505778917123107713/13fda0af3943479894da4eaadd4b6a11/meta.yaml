@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/13fda0af3943479894da4eaadd4b6a11/artifacts
+end_time: 1698150872181
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 13fda0af3943479894da4eaadd4b6a11
+run_name: intrigued-vole-816
+run_uuid: 13fda0af3943479894da4eaadd4b6a11
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698150838190
+status: 3
+tags: []
+user_id: gianfrancodemarco

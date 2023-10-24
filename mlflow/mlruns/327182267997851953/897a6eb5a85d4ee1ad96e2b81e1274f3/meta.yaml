@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/897a6eb5a85d4ee1ad96e2b81e1274f3/artifacts
+end_time: 1698182900682
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 897a6eb5a85d4ee1ad96e2b81e1274f3
+run_name: unleashed-stork-460
+run_uuid: 897a6eb5a85d4ee1ad96e2b81e1274f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182889514
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9c98a22d2b3a4c20a3bfb79978fcfd02/artifacts
+end_time: 1698182378219
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9c98a22d2b3a4c20a3bfb79978fcfd02
+run_name: smiling-cow-194
+run_uuid: 9c98a22d2b3a4c20a3bfb79978fcfd02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182371898
+status: 4
+tags: []
+user_id: gianfrancodemarco

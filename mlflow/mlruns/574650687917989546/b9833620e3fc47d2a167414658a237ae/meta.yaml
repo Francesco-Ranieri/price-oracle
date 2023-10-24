@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/b9833620e3fc47d2a167414658a237ae/artifacts
+end_time: 1698176067811
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: b9833620e3fc47d2a167414658a237ae
+run_name: peaceful-bird-65
+run_uuid: b9833620e3fc47d2a167414658a237ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176055397
+status: 3
+tags: []
+user_id: gianfrancodemarco

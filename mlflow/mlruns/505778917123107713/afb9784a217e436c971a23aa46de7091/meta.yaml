@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/afb9784a217e436c971a23aa46de7091/artifacts
+end_time: 1698155462284
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: afb9784a217e436c971a23aa46de7091
+run_name: fearless-crane-969
+run_uuid: afb9784a217e436c971a23aa46de7091
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698155359485
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/c5c953870d7e4e2985e9084c4a27e799/artifacts
+end_time: 1698176129652
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: c5c953870d7e4e2985e9084c4a27e799
+run_name: Training_best_model_close_ADAUSDT
+run_uuid: c5c953870d7e4e2985e9084c4a27e799
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176092442
+status: 3
+tags: []
+user_id: gianfrancodemarco

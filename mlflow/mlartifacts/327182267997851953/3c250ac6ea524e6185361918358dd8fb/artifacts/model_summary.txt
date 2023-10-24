@@ -1,0 +1,26 @@
+Model: "sequential_832"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_1199 (SimpleRNN  (None, 5, 160)            25920     
+ )                                                               
+                                                                 
+ dropout_1706 (Dropout)      (None, 5, 160)            0         
+                                                                 
+ simple_rnn_1200 (SimpleRNN  (None, 5, 128)            36992     
+ )                                                               
+                                                                 
+ dropout_1707 (Dropout)      (None, 5, 128)            0         
+                                                                 
+ simple_rnn_1201 (SimpleRNN  (None, 32)                5152      
+ )                                                               
+                                                                 
+ dropout_1708 (Dropout)      (None, 32)                0         
+                                                                 
+ dense_832 (Dense)           (None, 1)                 33        
+                                                                 
+=================================================================
+Total params: 68097 (266.00 KB)
+Trainable params: 68097 (266.00 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

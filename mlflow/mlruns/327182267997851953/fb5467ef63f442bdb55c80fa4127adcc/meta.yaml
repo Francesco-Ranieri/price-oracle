@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/fb5467ef63f442bdb55c80fa4127adcc/artifacts
+end_time: 1698182401755
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: fb5467ef63f442bdb55c80fa4127adcc
+run_name: thoughtful-wren-699
+run_uuid: fb5467ef63f442bdb55c80fa4127adcc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182392939
+status: 4
+tags: []
+user_id: gianfrancodemarco

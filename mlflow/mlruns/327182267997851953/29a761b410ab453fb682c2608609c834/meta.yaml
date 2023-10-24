@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/29a761b410ab453fb682c2608609c834/artifacts
+end_time: 1698180827550
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 29a761b410ab453fb682c2608609c834
+run_name: casual-fox-820
+run_uuid: 29a761b410ab453fb682c2608609c834
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180820859
+status: 3
+tags: []
+user_id: gianfrancodemarco

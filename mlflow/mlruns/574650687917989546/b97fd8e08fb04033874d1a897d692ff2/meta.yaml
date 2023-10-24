@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/b97fd8e08fb04033874d1a897d692ff2/artifacts
+end_time: 1698172860789
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: b97fd8e08fb04033874d1a897d692ff2
+run_name: dazzling-cat-105
+run_uuid: b97fd8e08fb04033874d1a897d692ff2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172846840
+status: 3
+tags: []
+user_id: gianfrancodemarco

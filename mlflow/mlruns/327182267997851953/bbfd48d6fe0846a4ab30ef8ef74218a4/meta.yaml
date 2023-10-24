@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/bbfd48d6fe0846a4ab30ef8ef74218a4/artifacts
+end_time: 1698187210495
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: bbfd48d6fe0846a4ab30ef8ef74218a4
+run_name: efficient-foal-469
+run_uuid: bbfd48d6fe0846a4ab30ef8ef74218a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187192678
+status: 3
+tags: []
+user_id: gianfrancodemarco

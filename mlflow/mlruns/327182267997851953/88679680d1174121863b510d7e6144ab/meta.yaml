@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/88679680d1174121863b510d7e6144ab/artifacts
+end_time: 1698181030312
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 88679680d1174121863b510d7e6144ab
+run_name: receptive-foal-299
+run_uuid: 88679680d1174121863b510d7e6144ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181021341
+status: 3
+tags: []
+user_id: gianfrancodemarco

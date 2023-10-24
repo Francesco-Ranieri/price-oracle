@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/dbdbd12791374e269b1b4e103975737b/artifacts
+end_time: 1698188002004
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: dbdbd12791374e269b1b4e103975737b
+run_name: indecisive-shoat-878
+run_uuid: dbdbd12791374e269b1b4e103975737b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187984030
+status: 3
+tags: []
+user_id: gianfrancodemarco

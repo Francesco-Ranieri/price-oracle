@@ -1,0 +1,27 @@
+Model: "sequential_82"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_228 (LSTM)             (None, 17, 256)           264192    
+                                                                 
+ dropout_228 (Dropout)       (None, 17, 256)           0         
+                                                                 
+ lstm_229 (LSTM)             (None, 17, 256)           525312    
+                                                                 
+ dropout_229 (Dropout)       (None, 17, 256)           0         
+                                                                 
+ lstm_230 (LSTM)             (None, 17, 32)            36992     
+                                                                 
+ dropout_230 (Dropout)       (None, 17, 32)            0         
+                                                                 
+ lstm_231 (LSTM)             (None, 17, 160)           123520    
+                                                                 
+ dropout_231 (Dropout)       (None, 17, 160)           0         
+                                                                 
+ dense_82 (Dense)            (None, 17, 1)             161       
+                                                                 
+=================================================================
+Total params: 950177 (3.62 MB)
+Trainable params: 950177 (3.62 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/4c5e6063d2184d2aa4f6a2e2f90c56f4/artifacts
+end_time: 1698162705324
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 4c5e6063d2184d2aa4f6a2e2f90c56f4
+run_name: languid-dog-254
+run_uuid: 4c5e6063d2184d2aa4f6a2e2f90c56f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698162593915
+status: 3
+tags: []
+user_id: gianfrancodemarco

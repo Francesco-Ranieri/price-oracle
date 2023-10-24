@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/7e513d83a71c48dab6a93035e3870665/artifacts
+end_time: 1698183074310
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 7e513d83a71c48dab6a93035e3870665
+run_name: thoughtful-ram-505
+run_uuid: 7e513d83a71c48dab6a93035e3870665
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183046308
+status: 3
+tags: []
+user_id: gianfrancodemarco

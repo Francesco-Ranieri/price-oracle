@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/defb2dc555f8439cbccfb350cb5c3d6d/artifacts
+end_time: 1698158414524
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: defb2dc555f8439cbccfb350cb5c3d6d
+run_name: thundering-fox-351
+run_uuid: defb2dc555f8439cbccfb350cb5c3d6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158401671
+status: 3
+tags: []
+user_id: gianfrancodemarco

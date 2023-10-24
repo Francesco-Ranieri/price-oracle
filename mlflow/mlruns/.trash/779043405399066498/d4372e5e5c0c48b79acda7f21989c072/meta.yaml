@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/d4372e5e5c0c48b79acda7f21989c072/artifacts
+deleted_time: 1698168217608
+end_time: 1698167462182
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: d4372e5e5c0c48b79acda7f21989c072
+run_name: magnificent-toad-918
+run_uuid: d4372e5e5c0c48b79acda7f21989c072
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167447152
+status: 3
+tags: []
+user_id: gianfrancodemarco

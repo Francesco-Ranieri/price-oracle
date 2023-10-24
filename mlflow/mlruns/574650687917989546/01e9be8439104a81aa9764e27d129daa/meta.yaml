@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/01e9be8439104a81aa9764e27d129daa/artifacts
+end_time: 1698174965921
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 01e9be8439104a81aa9764e27d129daa
+run_name: grandiose-horse-381
+run_uuid: 01e9be8439104a81aa9764e27d129daa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174959217
+status: 4
+tags: []
+user_id: gianfrancodemarco

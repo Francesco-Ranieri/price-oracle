@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/57d5ef068bb34800bdd148a0be5a4af5/artifacts
+end_time: 1698186212196
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 57d5ef068bb34800bdd148a0be5a4af5
+run_name: adventurous-bass-216
+run_uuid: 57d5ef068bb34800bdd148a0be5a4af5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186204525
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/b2ff7264959d4156897118afd4235939/artifacts
+end_time: 1698172390129
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: b2ff7264959d4156897118afd4235939
+run_name: learned-cow-518
+run_uuid: b2ff7264959d4156897118afd4235939
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172381074
+status: 3
+tags: []
+user_id: gianfrancodemarco

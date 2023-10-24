@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/e465c8032f954afd8549fd59b83fdae6/artifacts
+deleted_time: 1698171244534
+end_time: 1698169352193
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: e465c8032f954afd8549fd59b83fdae6
+run_name: dapper-moth-472
+run_uuid: e465c8032f954afd8549fd59b83fdae6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169347565
+status: 4
+tags: []
+user_id: gianfrancodemarco

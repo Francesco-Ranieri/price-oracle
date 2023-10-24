@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/672a740eab3e43cb90d5d11dd6141f3e/artifacts
+deleted_time: 1698172246914
+end_time: 1698171916225
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 672a740eab3e43cb90d5d11dd6141f3e
+run_name: resilient-conch-705
+run_uuid: 672a740eab3e43cb90d5d11dd6141f3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171891594
+status: 4
+tags: []
+user_id: gianfrancodemarco

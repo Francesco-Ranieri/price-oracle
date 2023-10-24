@@ -1,0 +1,27 @@
+Model: "sequential_403"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_1024 (LSTM)            (None, 10, 64)            16896     
+                                                                 
+ dropout_1024 (Dropout)      (None, 10, 64)            0         
+                                                                 
+ lstm_1025 (LSTM)            (None, 10, 32)            12416     
+                                                                 
+ dropout_1025 (Dropout)      (None, 10, 32)            0         
+                                                                 
+ lstm_1026 (LSTM)            (None, 10, 160)           123520    
+                                                                 
+ dropout_1026 (Dropout)      (None, 10, 160)           0         
+                                                                 
+ lstm_1027 (LSTM)            (None, 10, 128)           147968    
+                                                                 
+ dropout_1027 (Dropout)      (None, 10, 128)           0         
+                                                                 
+ dense_403 (Dense)           (None, 10, 1)             129       
+                                                                 
+=================================================================
+Total params: 300929 (1.15 MB)
+Trainable params: 300929 (1.15 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/607362618813694381/7cb3e64b8bf445a98f70868b295ce253/artifacts
+deleted_time: 1698171089582
+end_time: 1698170138286
+entry_point_name: ''
+experiment_id: '607362618813694381'
+lifecycle_stage: deleted
+run_id: 7cb3e64b8bf445a98f70868b295ce253
+run_name: Training_close_VETUSDT
+run_uuid: 7cb3e64b8bf445a98f70868b295ce253
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698170136168
+status: 4
+tags: []
+user_id: gianfrancodemarco

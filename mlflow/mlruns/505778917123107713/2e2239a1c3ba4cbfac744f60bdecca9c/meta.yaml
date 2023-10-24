@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/2e2239a1c3ba4cbfac744f60bdecca9c/artifacts
+deleted_time: 1698154553860
+end_time: 1698153722194
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 2e2239a1c3ba4cbfac744f60bdecca9c
+run_name: loud-toad-294
+run_uuid: 2e2239a1c3ba4cbfac744f60bdecca9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153709368
+status: 3
+tags: []
+user_id: gianfrancodemarco

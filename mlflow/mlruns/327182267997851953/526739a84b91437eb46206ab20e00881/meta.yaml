@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/526739a84b91437eb46206ab20e00881/artifacts
+end_time: 1698182037654
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 526739a84b91437eb46206ab20e00881
+run_name: gregarious-gnu-854
+run_uuid: 526739a84b91437eb46206ab20e00881
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182030227
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/25ac77c4c92d4d53a30eb9882f9ec4de/artifacts
+end_time: 1698182134630
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 25ac77c4c92d4d53a30eb9882f9ec4de
+run_name: rambunctious-dog-557
+run_uuid: 25ac77c4c92d4d53a30eb9882f9ec4de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182127603
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/72b332d56bc3477ca361ec1a109b85bb/artifacts
+end_time: 1698177417489
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 72b332d56bc3477ca361ec1a109b85bb
+run_name: intrigued-foal-970
+run_uuid: 72b332d56bc3477ca361ec1a109b85bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177394608
+status: 3
+tags: []
+user_id: gianfrancodemarco

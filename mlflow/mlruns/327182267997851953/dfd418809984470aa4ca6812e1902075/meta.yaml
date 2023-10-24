@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/dfd418809984470aa4ca6812e1902075/artifacts
+end_time: 1698180178741
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: dfd418809984470aa4ca6812e1902075
+run_name: stately-kite-496
+run_uuid: dfd418809984470aa4ca6812e1902075
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180162224
+status: 3
+tags: []
+user_id: gianfrancodemarco

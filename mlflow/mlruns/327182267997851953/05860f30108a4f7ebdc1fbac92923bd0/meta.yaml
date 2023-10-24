@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/05860f30108a4f7ebdc1fbac92923bd0/artifacts
+end_time: 1698181102744
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 05860f30108a4f7ebdc1fbac92923bd0
+run_name: gregarious-kit-966
+run_uuid: 05860f30108a4f7ebdc1fbac92923bd0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181094148
+status: 3
+tags: []
+user_id: gianfrancodemarco

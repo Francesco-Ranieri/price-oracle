@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/8295d819781c42d6b7ce35655493b7ed/artifacts
+end_time: 1698176947983
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 8295d819781c42d6b7ce35655493b7ed
+run_name: wise-crab-458
+run_uuid: 8295d819781c42d6b7ce35655493b7ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176934723
+status: 3
+tags: []
+user_id: gianfrancodemarco

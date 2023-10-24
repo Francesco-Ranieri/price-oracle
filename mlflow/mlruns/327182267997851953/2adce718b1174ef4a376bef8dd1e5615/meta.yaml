@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/2adce718b1174ef4a376bef8dd1e5615/artifacts
+end_time: 1698179701671
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 2adce718b1174ef4a376bef8dd1e5615
+run_name: merciful-robin-741
+run_uuid: 2adce718b1174ef4a376bef8dd1e5615
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179687113
+status: 3
+tags: []
+user_id: gianfrancodemarco

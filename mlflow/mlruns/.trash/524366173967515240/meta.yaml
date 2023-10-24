@@ -1,7 +1,0 @@
-artifact_location: mlflow-artifacts:/524366173967515240
-creation_time: 1697996864018
-experiment_id: '524366173967515240'
-last_update_time: 1697997121155
-lifecycle_stage: deleted
-name: Training
-tags: {}

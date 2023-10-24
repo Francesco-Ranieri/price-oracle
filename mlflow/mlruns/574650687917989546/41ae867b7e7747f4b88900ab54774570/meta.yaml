@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/41ae867b7e7747f4b88900ab54774570/artifacts
+end_time: 1698176523552
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 41ae867b7e7747f4b88900ab54774570
+run_name: worried-hog-889
+run_uuid: 41ae867b7e7747f4b88900ab54774570
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176508942
+status: 3
+tags: []
+user_id: gianfrancodemarco

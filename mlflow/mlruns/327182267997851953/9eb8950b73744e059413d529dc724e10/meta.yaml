@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9eb8950b73744e059413d529dc724e10/artifacts
+end_time: 1698180405277
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9eb8950b73744e059413d529dc724e10
+run_name: intelligent-mink-386
+run_uuid: 9eb8950b73744e059413d529dc724e10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180400688
+status: 4
+tags: []
+user_id: gianfrancodemarco

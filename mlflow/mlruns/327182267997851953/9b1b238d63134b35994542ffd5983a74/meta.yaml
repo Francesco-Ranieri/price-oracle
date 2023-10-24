@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9b1b238d63134b35994542ffd5983a74/artifacts
+end_time: 1698186077959
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9b1b238d63134b35994542ffd5983a74
+run_name: puzzled-hare-386
+run_uuid: 9b1b238d63134b35994542ffd5983a74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186066400
+status: 3
+tags: []
+user_id: gianfrancodemarco

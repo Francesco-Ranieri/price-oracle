@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/3085850a18af4ae1944dbe02ab6e56f1/artifacts
+deleted_time: 1698168217608
+end_time: 1698166889082
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: 3085850a18af4ae1944dbe02ab6e56f1
+run_name: delicate-swan-526
+run_uuid: 3085850a18af4ae1944dbe02ab6e56f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698166845119
+status: 3
+tags: []
+user_id: gianfrancodemarco

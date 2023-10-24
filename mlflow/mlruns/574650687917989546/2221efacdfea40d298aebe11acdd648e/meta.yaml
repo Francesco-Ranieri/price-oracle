@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/2221efacdfea40d298aebe11acdd648e/artifacts
+end_time: 1698172846792
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 2221efacdfea40d298aebe11acdd648e
+run_name: puzzled-squirrel-191
+run_uuid: 2221efacdfea40d298aebe11acdd648e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172832010
+status: 3
+tags: []
+user_id: gianfrancodemarco

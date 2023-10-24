@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/a64841a5b57d46fcbcf75dfc3f7895fe/artifacts
+end_time: 1698175706382
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: a64841a5b57d46fcbcf75dfc3f7895fe
+run_name: useful-kite-873
+run_uuid: a64841a5b57d46fcbcf75dfc3f7895fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175696350
+status: 3
+tags: []
+user_id: gianfrancodemarco

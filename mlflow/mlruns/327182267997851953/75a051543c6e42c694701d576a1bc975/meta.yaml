@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/75a051543c6e42c694701d576a1bc975/artifacts
+end_time: 1698186396142
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 75a051543c6e42c694701d576a1bc975
+run_name: likeable-trout-531
+run_uuid: 75a051543c6e42c694701d576a1bc975
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186346664
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/50406180b2a54308b35c19be9fda1bae/artifacts
+deleted_time: 1698154553818
+end_time: 1698154104194
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 50406180b2a54308b35c19be9fda1bae
+run_name: enchanting-sheep-765
+run_uuid: 50406180b2a54308b35c19be9fda1bae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698154099032
+status: 3
+tags: []
+user_id: gianfrancodemarco

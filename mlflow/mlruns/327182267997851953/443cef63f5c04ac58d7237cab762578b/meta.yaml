@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/443cef63f5c04ac58d7237cab762578b/artifacts
+end_time: 1698184577878
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 443cef63f5c04ac58d7237cab762578b
+run_name: welcoming-sloth-591
+run_uuid: 443cef63f5c04ac58d7237cab762578b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184564803
+status: 3
+tags: []
+user_id: gianfrancodemarco

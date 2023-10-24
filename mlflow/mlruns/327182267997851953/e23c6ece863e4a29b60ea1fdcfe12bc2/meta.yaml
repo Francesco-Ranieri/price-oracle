@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/e23c6ece863e4a29b60ea1fdcfe12bc2/artifacts
+end_time: 1698185661556
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: e23c6ece863e4a29b60ea1fdcfe12bc2
+run_name: bedecked-stork-117
+run_uuid: e23c6ece863e4a29b60ea1fdcfe12bc2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185646307
+status: 3
+tags: []
+user_id: gianfrancodemarco

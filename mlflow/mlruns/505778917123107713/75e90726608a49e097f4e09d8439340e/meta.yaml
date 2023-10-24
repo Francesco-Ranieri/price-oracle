@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/75e90726608a49e097f4e09d8439340e/artifacts
+end_time: 1698160005646
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 75e90726608a49e097f4e09d8439340e
+run_name: invincible-mouse-213
+run_uuid: 75e90726608a49e097f4e09d8439340e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698159997868
+status: 3
+tags: []
+user_id: gianfrancodemarco

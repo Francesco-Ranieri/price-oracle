@@ -1,0 +1,27 @@
+Model: "sequential_481"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_678 (SimpleRNN)  (None, 6, 224)            50624     
+                                                                 
+ dropout_944 (Dropout)       (None, 6, 224)            0         
+                                                                 
+ simple_rnn_679 (SimpleRNN)  (None, 6, 224)            100576    
+                                                                 
+ dropout_945 (Dropout)       (None, 6, 224)            0         
+                                                                 
+ simple_rnn_680 (SimpleRNN)  (None, 6, 64)             18496     
+                                                                 
+ dropout_946 (Dropout)       (None, 6, 64)             0         
+                                                                 
+ simple_rnn_681 (SimpleRNN)  (None, 192)               49344     
+                                                                 
+ dropout_947 (Dropout)       (None, 192)               0         
+                                                                 
+ dense_481 (Dense)           (None, 1)                 193       
+                                                                 
+=================================================================
+Total params: 219233 (856.38 KB)
+Trainable params: 219233 (856.38 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

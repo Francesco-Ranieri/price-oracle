@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/6183d96d680748d683ed61a086b71799/artifacts
+end_time: 1698176774035
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 6183d96d680748d683ed61a086b71799
+run_name: mercurial-mare-266
+run_uuid: 6183d96d680748d683ed61a086b71799
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176763104
+status: 3
+tags: []
+user_id: gianfrancodemarco

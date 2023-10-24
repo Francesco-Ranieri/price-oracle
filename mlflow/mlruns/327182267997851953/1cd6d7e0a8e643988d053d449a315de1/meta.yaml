@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1cd6d7e0a8e643988d053d449a315de1/artifacts
+end_time: 1698182559243
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1cd6d7e0a8e643988d053d449a315de1
+run_name: mercurial-wasp-166
+run_uuid: 1cd6d7e0a8e643988d053d449a315de1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182546339
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9d714f2dccbd4cb4a7bbe7342f82f4be/artifacts
+end_time: 1698179992811
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9d714f2dccbd4cb4a7bbe7342f82f4be
+run_name: rebellious-boar-323
+run_uuid: 9d714f2dccbd4cb4a7bbe7342f82f4be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179984185
+status: 3
+tags: []
+user_id: gianfrancodemarco

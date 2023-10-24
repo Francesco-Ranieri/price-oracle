@@ -1,0 +1,26 @@
+Model: "sequential_797"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_1124 (SimpleRNN  (None, 2, 256)            66048     
+ )                                                               
+                                                                 
+ dropout_1607 (Dropout)      (None, 2, 256)            0         
+                                                                 
+ simple_rnn_1125 (SimpleRNN  (None, 2, 224)            107744    
+ )                                                               
+                                                                 
+ dropout_1608 (Dropout)      (None, 2, 224)            0         
+                                                                 
+ simple_rnn_1126 (SimpleRNN  (None, 192)               80064     
+ )                                                               
+                                                                 
+ dropout_1609 (Dropout)      (None, 192)               0         
+                                                                 
+ dense_797 (Dense)           (None, 1)                 193       
+                                                                 
+=================================================================
+Total params: 254049 (992.38 KB)
+Trainable params: 254049 (992.38 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

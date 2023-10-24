@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/529cf85582704d3bbad70aaecf80c0f3/artifacts
+end_time: 1698182867968
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 529cf85582704d3bbad70aaecf80c0f3
+run_name: efficient-crab-335
+run_uuid: 529cf85582704d3bbad70aaecf80c0f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182860459
+status: 3
+tags: []
+user_id: gianfrancodemarco

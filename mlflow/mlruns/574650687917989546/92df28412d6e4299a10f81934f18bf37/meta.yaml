@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/92df28412d6e4299a10f81934f18bf37/artifacts
+end_time: 1698176403212
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 92df28412d6e4299a10f81934f18bf37
+run_name: efficient-grub-265
+run_uuid: 92df28412d6e4299a10f81934f18bf37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176371597
+status: 3
+tags: []
+user_id: gianfrancodemarco

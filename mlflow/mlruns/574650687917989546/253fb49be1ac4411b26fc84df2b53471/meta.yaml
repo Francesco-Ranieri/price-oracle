@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/253fb49be1ac4411b26fc84df2b53471/artifacts
+end_time: 1698175225408
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 253fb49be1ac4411b26fc84df2b53471
+run_name: enthused-robin-628
+run_uuid: 253fb49be1ac4411b26fc84df2b53471
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175176534
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/ffa08a71b2ac4b2dbda52da3471e3c80/artifacts
+deleted_time: 1698171244534
+end_time: 1698168678064
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: ffa08a71b2ac4b2dbda52da3471e3c80
+run_name: mercurial-shoat-549
+run_uuid: ffa08a71b2ac4b2dbda52da3471e3c80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698168660336
+status: 3
+tags: []
+user_id: gianfrancodemarco

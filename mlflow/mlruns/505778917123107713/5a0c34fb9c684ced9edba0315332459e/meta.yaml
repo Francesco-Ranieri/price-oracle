@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/5a0c34fb9c684ced9edba0315332459e/artifacts
+end_time: 1698152778109
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 5a0c34fb9c684ced9edba0315332459e
+run_name: defiant-sow-768
+run_uuid: 5a0c34fb9c684ced9edba0315332459e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698152761810
+status: 3
+tags: []
+user_id: gianfrancodemarco

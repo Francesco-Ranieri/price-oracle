@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/9962f8ddeff241b6a46c7e4cfaea1f5c/artifacts
+end_time: 1698174510376
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 9962f8ddeff241b6a46c7e4cfaea1f5c
+run_name: defiant-mule-419
+run_uuid: 9962f8ddeff241b6a46c7e4cfaea1f5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174493427
+status: 3
+tags: []
+user_id: gianfrancodemarco

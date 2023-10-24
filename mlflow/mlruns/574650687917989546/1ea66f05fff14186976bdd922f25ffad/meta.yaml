@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/1ea66f05fff14186976bdd922f25ffad/artifacts
+end_time: 1698175859138
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 1ea66f05fff14186976bdd922f25ffad
+run_name: unruly-lynx-640
+run_uuid: 1ea66f05fff14186976bdd922f25ffad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175847476
+status: 3
+tags: []
+user_id: gianfrancodemarco

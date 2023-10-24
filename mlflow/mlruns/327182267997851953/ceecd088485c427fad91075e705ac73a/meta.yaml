@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ceecd088485c427fad91075e705ac73a/artifacts
+end_time: 1698187594865
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ceecd088485c427fad91075e705ac73a
+run_name: angry-turtle-481
+run_uuid: ceecd088485c427fad91075e705ac73a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187581656
+status: 3
+tags: []
+user_id: gianfrancodemarco

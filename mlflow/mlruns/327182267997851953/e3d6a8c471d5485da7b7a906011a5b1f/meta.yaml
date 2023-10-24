@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/e3d6a8c471d5485da7b7a906011a5b1f/artifacts
+end_time: 1698179302017
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: e3d6a8c471d5485da7b7a906011a5b1f
+run_name: honorable-carp-742
+run_uuid: e3d6a8c471d5485da7b7a906011a5b1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179278516
+status: 3
+tags: []
+user_id: gianfrancodemarco

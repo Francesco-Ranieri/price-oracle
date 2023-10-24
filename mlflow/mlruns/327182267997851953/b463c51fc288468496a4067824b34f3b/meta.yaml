@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b463c51fc288468496a4067824b34f3b/artifacts
+end_time: 1698184654910
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b463c51fc288468496a4067824b34f3b
+run_name: abrasive-goat-52
+run_uuid: b463c51fc288468496a4067824b34f3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184647568
+status: 3
+tags: []
+user_id: gianfrancodemarco

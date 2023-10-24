@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d8aafb6dbcf145a3bb4b1e88468ac937/artifacts
+end_time: 1698183705896
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d8aafb6dbcf145a3bb4b1e88468ac937
+run_name: shivering-cub-981
+run_uuid: d8aafb6dbcf145a3bb4b1e88468ac937
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183693170
+status: 3
+tags: []
+user_id: gianfrancodemarco

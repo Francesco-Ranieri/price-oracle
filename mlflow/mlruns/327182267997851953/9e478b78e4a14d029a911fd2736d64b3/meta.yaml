@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9e478b78e4a14d029a911fd2736d64b3/artifacts
+end_time: 1698188180381
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9e478b78e4a14d029a911fd2736d64b3
+run_name: abrasive-dove-867
+run_uuid: 9e478b78e4a14d029a911fd2736d64b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188161022
+status: 3
+tags: []
+user_id: gianfrancodemarco

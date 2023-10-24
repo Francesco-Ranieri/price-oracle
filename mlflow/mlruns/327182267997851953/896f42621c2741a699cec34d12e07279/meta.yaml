@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/896f42621c2741a699cec34d12e07279/artifacts
+end_time: 1698183719960
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 896f42621c2741a699cec34d12e07279
+run_name: gentle-newt-92
+run_uuid: 896f42621c2741a699cec34d12e07279
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183705936
+status: 3
+tags: []
+user_id: gianfrancodemarco

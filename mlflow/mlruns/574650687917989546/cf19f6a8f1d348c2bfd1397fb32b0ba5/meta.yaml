@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/cf19f6a8f1d348c2bfd1397fb32b0ba5/artifacts
+end_time: 1698172719241
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: cf19f6a8f1d348c2bfd1397fb32b0ba5
+run_name: intelligent-mole-692
+run_uuid: cf19f6a8f1d348c2bfd1397fb32b0ba5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172710997
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c525d7cebfd046c39037fa0d76c91a7d/artifacts
+end_time: 1698187513930
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c525d7cebfd046c39037fa0d76c91a7d
+run_name: intelligent-wren-145
+run_uuid: c525d7cebfd046c39037fa0d76c91a7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187492639
+status: 3
+tags: []
+user_id: gianfrancodemarco

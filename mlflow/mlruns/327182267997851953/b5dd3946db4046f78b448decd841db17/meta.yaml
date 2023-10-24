@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b5dd3946db4046f78b448decd841db17/artifacts
+end_time: 1698177954239
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b5dd3946db4046f78b448decd841db17
+run_name: peaceful-snake-273
+run_uuid: b5dd3946db4046f78b448decd841db17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177943035
+status: 3
+tags: []
+user_id: gianfrancodemarco

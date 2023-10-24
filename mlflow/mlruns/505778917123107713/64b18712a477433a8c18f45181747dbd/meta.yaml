@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/64b18712a477433a8c18f45181747dbd/artifacts
+end_time: 1698153246077
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 64b18712a477433a8c18f45181747dbd
+run_name: whimsical-calf-503
+run_uuid: 64b18712a477433a8c18f45181747dbd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153234051
+status: 3
+tags: []
+user_id: gianfrancodemarco

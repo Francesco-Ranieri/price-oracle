@@ -1,0 +1,26 @@
+Model: "sequential_803"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_1138 (SimpleRNN  (None, 8, 224)            50624     
+ )                                                               
+                                                                 
+ dropout_1625 (Dropout)      (None, 8, 224)            0         
+                                                                 
+ simple_rnn_1139 (SimpleRNN  (None, 8, 224)            100576    
+ )                                                               
+                                                                 
+ dropout_1626 (Dropout)      (None, 8, 224)            0         
+                                                                 
+ simple_rnn_1140 (SimpleRNN  (None, 160)               61600     
+ )                                                               
+                                                                 
+ dropout_1627 (Dropout)      (None, 160)               0         
+                                                                 
+ dense_803 (Dense)           (None, 1)                 161       
+                                                                 
+=================================================================
+Total params: 212961 (831.88 KB)
+Trainable params: 212961 (831.88 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

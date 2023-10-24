@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/fc02f4dac1fc46a78c8e62bfa7c2585b/artifacts
+end_time: 1698177895656
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: fc02f4dac1fc46a78c8e62bfa7c2585b
+run_name: intelligent-worm-434
+run_uuid: fc02f4dac1fc46a78c8e62bfa7c2585b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177882579
+status: 3
+tags: []
+user_id: gianfrancodemarco

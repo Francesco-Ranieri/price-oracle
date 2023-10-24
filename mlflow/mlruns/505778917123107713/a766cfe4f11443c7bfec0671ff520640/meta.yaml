@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/a766cfe4f11443c7bfec0671ff520640/artifacts
+deleted_time: 1698162361733
+end_time: 1698162294756
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: a766cfe4f11443c7bfec0671ff520640
+run_name: thoughtful-newt-681
+run_uuid: a766cfe4f11443c7bfec0671ff520640
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698162278204
+status: 4
+tags: []
+user_id: gianfrancodemarco

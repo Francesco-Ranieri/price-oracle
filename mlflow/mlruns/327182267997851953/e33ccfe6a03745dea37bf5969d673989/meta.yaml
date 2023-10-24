@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/e33ccfe6a03745dea37bf5969d673989/artifacts
+end_time: 1698178042424
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: e33ccfe6a03745dea37bf5969d673989
+run_name: legendary-loon-588
+run_uuid: e33ccfe6a03745dea37bf5969d673989
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178035566
+status: 3
+tags: []
+user_id: gianfrancodemarco

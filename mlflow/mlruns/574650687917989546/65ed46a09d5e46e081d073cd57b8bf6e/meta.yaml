@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/65ed46a09d5e46e081d073cd57b8bf6e/artifacts
+end_time: 1698174959168
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 65ed46a09d5e46e081d073cd57b8bf6e
+run_name: righteous-grub-492
+run_uuid: 65ed46a09d5e46e081d073cd57b8bf6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174937670
+status: 3
+tags: []
+user_id: gianfrancodemarco

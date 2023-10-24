@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/a6f3873d5d8d42bbb086f71b0fe3a1b3/artifacts
+end_time: 1698188414234
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: a6f3873d5d8d42bbb086f71b0fe3a1b3
+run_name: big-perch-90
+run_uuid: a6f3873d5d8d42bbb086f71b0fe3a1b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188391221
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/dcfb5a8655b4466badb945635be2a5ca/artifacts
+deleted_time: 1698168217608
+end_time: 1698167229444
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: dcfb5a8655b4466badb945635be2a5ca
+run_name: funny-fawn-272
+run_uuid: dcfb5a8655b4466badb945635be2a5ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167210142
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/2c09c8bbc31d40f891fd850bdb66bf5b/artifacts
+end_time: 1698178959372
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 2c09c8bbc31d40f891fd850bdb66bf5b
+run_name: sassy-ray-924
+run_uuid: 2c09c8bbc31d40f891fd850bdb66bf5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178950793
+status: 4
+tags: []
+user_id: gianfrancodemarco

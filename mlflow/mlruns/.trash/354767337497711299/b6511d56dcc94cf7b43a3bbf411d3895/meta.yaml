@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/b6511d56dcc94cf7b43a3bbf411d3895/artifacts
+deleted_time: 1698171244534
+end_time: 1698169168505
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: b6511d56dcc94cf7b43a3bbf411d3895
+run_name: glamorous-worm-643
+run_uuid: b6511d56dcc94cf7b43a3bbf411d3895
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169149763
+status: 3
+tags: []
+user_id: gianfrancodemarco

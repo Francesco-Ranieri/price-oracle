@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c29dbbda999046d78504fe90bba47b7c/artifacts
+end_time: 1698185107052
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c29dbbda999046d78504fe90bba47b7c
+run_name: treasured-dog-937
+run_uuid: c29dbbda999046d78504fe90bba47b7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185098339
+status: 4
+tags: []
+user_id: gianfrancodemarco

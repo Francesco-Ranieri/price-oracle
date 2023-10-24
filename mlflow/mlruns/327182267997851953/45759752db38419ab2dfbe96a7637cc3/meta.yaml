@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/45759752db38419ab2dfbe96a7637cc3/artifacts
+end_time: 1698181675744
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 45759752db38419ab2dfbe96a7637cc3
+run_name: treasured-cat-643
+run_uuid: 45759752db38419ab2dfbe96a7637cc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181663529
+status: 3
+tags: []
+user_id: gianfrancodemarco

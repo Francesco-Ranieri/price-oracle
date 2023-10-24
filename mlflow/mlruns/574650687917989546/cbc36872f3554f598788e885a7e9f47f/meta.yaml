@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/cbc36872f3554f598788e885a7e9f47f/artifacts
+end_time: 1698174094272
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: cbc36872f3554f598788e885a7e9f47f
+run_name: caring-mouse-819
+run_uuid: cbc36872f3554f598788e885a7e9f47f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174070129
+status: 4
+tags: []
+user_id: gianfrancodemarco

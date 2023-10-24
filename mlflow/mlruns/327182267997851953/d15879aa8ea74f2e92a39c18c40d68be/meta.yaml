@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d15879aa8ea74f2e92a39c18c40d68be/artifacts
+end_time: 1698182097195
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d15879aa8ea74f2e92a39c18c40d68be
+run_name: puzzled-elk-208
+run_uuid: d15879aa8ea74f2e92a39c18c40d68be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182088729
+status: 3
+tags: []
+user_id: gianfrancodemarco

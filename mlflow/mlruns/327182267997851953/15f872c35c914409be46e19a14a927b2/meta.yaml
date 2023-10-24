@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/15f872c35c914409be46e19a14a927b2/artifacts
+end_time: 1698183117122
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 15f872c35c914409be46e19a14a927b2
+run_name: big-seal-824
+run_uuid: 15f872c35c914409be46e19a14a927b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183093394
+status: 3
+tags: []
+user_id: gianfrancodemarco

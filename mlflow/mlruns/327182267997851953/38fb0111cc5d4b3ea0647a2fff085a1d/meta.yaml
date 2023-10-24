@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/38fb0111cc5d4b3ea0647a2fff085a1d/artifacts
+end_time: 1698183186860
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 38fb0111cc5d4b3ea0647a2fff085a1d
+run_name: rebellious-shoat-708
+run_uuid: 38fb0111cc5d4b3ea0647a2fff085a1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183162563
+status: 3
+tags: []
+user_id: gianfrancodemarco

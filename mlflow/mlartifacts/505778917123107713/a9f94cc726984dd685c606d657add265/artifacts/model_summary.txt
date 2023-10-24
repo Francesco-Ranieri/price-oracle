@@ -1,0 +1,27 @@
+Model: "sequential_329"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_842 (LSTM)             (None, 16, 192)           148992    
+                                                                 
+ dropout_842 (Dropout)       (None, 16, 192)           0         
+                                                                 
+ lstm_843 (LSTM)             (None, 16, 96)            110976    
+                                                                 
+ dropout_843 (Dropout)       (None, 16, 96)            0         
+                                                                 
+ lstm_844 (LSTM)             (None, 16, 256)           361472    
+                                                                 
+ dropout_844 (Dropout)       (None, 16, 256)           0         
+                                                                 
+ lstm_845 (LSTM)             (None, 16, 64)            82176     
+                                                                 
+ dropout_845 (Dropout)       (None, 16, 64)            0         
+                                                                 
+ dense_329 (Dense)           (None, 16, 1)             65        
+                                                                 
+=================================================================
+Total params: 703681 (2.68 MB)
+Trainable params: 703681 (2.68 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

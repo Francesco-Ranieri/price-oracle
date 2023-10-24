@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/13cd714d2304438dadaab77339760199/artifacts
+end_time: 1698178761137
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 13cd714d2304438dadaab77339760199
+run_name: omniscient-ant-914
+run_uuid: 13cd714d2304438dadaab77339760199
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178752417
+status: 3
+tags: []
+user_id: gianfrancodemarco

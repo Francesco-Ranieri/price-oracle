@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/32efc6164c174f6c97c66867f55380c4/artifacts
+end_time: 1698184818332
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 32efc6164c174f6c97c66867f55380c4
+run_name: shivering-lark-267
+run_uuid: 32efc6164c174f6c97c66867f55380c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184783684
+status: 3
+tags: []
+user_id: gianfrancodemarco

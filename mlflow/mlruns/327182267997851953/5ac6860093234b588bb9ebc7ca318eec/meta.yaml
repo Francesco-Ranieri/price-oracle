@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/5ac6860093234b588bb9ebc7ca318eec/artifacts
+end_time: 1698180650865
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 5ac6860093234b588bb9ebc7ca318eec
+run_name: youthful-turtle-858
+run_uuid: 5ac6860093234b588bb9ebc7ca318eec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180642476
+status: 3
+tags: []
+user_id: gianfrancodemarco

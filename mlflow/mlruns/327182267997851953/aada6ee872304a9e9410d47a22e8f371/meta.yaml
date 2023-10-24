@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/aada6ee872304a9e9410d47a22e8f371/artifacts
+end_time: 1698178252450
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: aada6ee872304a9e9410d47a22e8f371
+run_name: debonair-pug-398
+run_uuid: aada6ee872304a9e9410d47a22e8f371
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178215699
+status: 3
+tags: []
+user_id: gianfrancodemarco

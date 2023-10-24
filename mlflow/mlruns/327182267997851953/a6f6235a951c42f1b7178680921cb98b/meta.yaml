@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/a6f6235a951c42f1b7178680921cb98b/artifacts
+end_time: 1698179349625
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: a6f6235a951c42f1b7178680921cb98b
+run_name: wise-calf-951
+run_uuid: a6f6235a951c42f1b7178680921cb98b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179331628
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/bb47e5c4963344689d3e01b819a0e7c3/artifacts
+end_time: 1698180820812
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: bb47e5c4963344689d3e01b819a0e7c3
+run_name: bouncy-hen-304
+run_uuid: bb47e5c4963344689d3e01b819a0e7c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180788100
+status: 3
+tags: []
+user_id: gianfrancodemarco

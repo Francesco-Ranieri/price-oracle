@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d281e3554a594b258e046130710642f9/artifacts
+end_time: 1698185098294
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d281e3554a594b258e046130710642f9
+run_name: righteous-elk-762
+run_uuid: d281e3554a594b258e046130710642f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185072965
+status: 3
+tags: []
+user_id: gianfrancodemarco

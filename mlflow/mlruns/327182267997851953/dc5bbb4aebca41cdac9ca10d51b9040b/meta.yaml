@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/dc5bbb4aebca41cdac9ca10d51b9040b/artifacts
+end_time: 1698178476205
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: dc5bbb4aebca41cdac9ca10d51b9040b
+run_name: defiant-stoat-853
+run_uuid: dc5bbb4aebca41cdac9ca10d51b9040b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178457923
+status: 3
+tags: []
+user_id: gianfrancodemarco

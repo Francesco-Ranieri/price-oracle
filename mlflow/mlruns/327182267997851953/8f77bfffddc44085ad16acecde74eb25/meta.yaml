@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/8f77bfffddc44085ad16acecde74eb25/artifacts
+end_time: 1698181855793
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 8f77bfffddc44085ad16acecde74eb25
+run_name: Training_best_model_close_TRXUSDT
+run_uuid: 8f77bfffddc44085ad16acecde74eb25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181832679
+status: 3
+tags: []
+user_id: gianfrancodemarco

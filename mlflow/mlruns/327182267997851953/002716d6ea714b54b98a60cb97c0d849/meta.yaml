@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/002716d6ea714b54b98a60cb97c0d849/artifacts
+end_time: 1698187581603
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 002716d6ea714b54b98a60cb97c0d849
+run_name: handsome-wasp-732
+run_uuid: 002716d6ea714b54b98a60cb97c0d849
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187567900
+status: 3
+tags: []
+user_id: gianfrancodemarco

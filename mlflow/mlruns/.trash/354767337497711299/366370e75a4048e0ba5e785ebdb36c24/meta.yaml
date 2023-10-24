@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/366370e75a4048e0ba5e785ebdb36c24/artifacts
+deleted_time: 1698171244534
+end_time: 1698168850035
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 366370e75a4048e0ba5e785ebdb36c24
+run_name: spiffy-sloth-454
+run_uuid: 366370e75a4048e0ba5e785ebdb36c24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698168839678
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/3cc46bd4da494355bcf2b81d47129a89/artifacts
+end_time: 1698173114213
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 3cc46bd4da494355bcf2b81d47129a89
+run_name: loud-cub-47
+run_uuid: 3cc46bd4da494355bcf2b81d47129a89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173053877
+status: 3
+tags: []
+user_id: gianfrancodemarco

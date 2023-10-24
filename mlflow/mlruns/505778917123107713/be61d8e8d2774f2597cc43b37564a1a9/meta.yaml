@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/be61d8e8d2774f2597cc43b37564a1a9/artifacts
+deleted_time: 1698154553778
+end_time: 1698154390291
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: be61d8e8d2774f2597cc43b37564a1a9
+run_name: capricious-moose-192
+run_uuid: be61d8e8d2774f2597cc43b37564a1a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698154385684
+status: 3
+tags: []
+user_id: gianfrancodemarco

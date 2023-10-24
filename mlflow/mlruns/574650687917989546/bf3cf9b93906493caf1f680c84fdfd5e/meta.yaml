@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/bf3cf9b93906493caf1f680c84fdfd5e/artifacts
+end_time: 1698177290076
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: bf3cf9b93906493caf1f680c84fdfd5e
+run_name: tasteful-stoat-623
+run_uuid: bf3cf9b93906493caf1f680c84fdfd5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177270370
+status: 3
+tags: []
+user_id: gianfrancodemarco

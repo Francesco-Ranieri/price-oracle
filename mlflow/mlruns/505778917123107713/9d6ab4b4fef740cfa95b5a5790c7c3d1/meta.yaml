@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/9d6ab4b4fef740cfa95b5a5790c7c3d1/artifacts
+deleted_time: 1698162361735
+end_time: 1698162012967
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 9d6ab4b4fef740cfa95b5a5790c7c3d1
+run_name: nimble-auk-791
+run_uuid: 9d6ab4b4fef740cfa95b5a5790c7c3d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698161962921
+status: 3
+tags: []
+user_id: gianfrancodemarco

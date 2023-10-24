@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/16a23e0b5c2144d3af3c29569e34603a/artifacts
+end_time: 1698176895985
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 16a23e0b5c2144d3af3c29569e34603a
+run_name: abrasive-lynx-692
+run_uuid: 16a23e0b5c2144d3af3c29569e34603a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176882674
+status: 3
+tags: []
+user_id: gianfrancodemarco

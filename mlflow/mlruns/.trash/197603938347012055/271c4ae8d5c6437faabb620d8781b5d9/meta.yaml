@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/271c4ae8d5c6437faabb620d8781b5d9/artifacts
+deleted_time: 1698172246914
+end_time: 1698171657943
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 271c4ae8d5c6437faabb620d8781b5d9
+run_name: silent-goat-483
+run_uuid: 271c4ae8d5c6437faabb620d8781b5d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171657883
+status: 3
+tags: []
+user_id: gianfrancodemarco

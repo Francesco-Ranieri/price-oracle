@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/f7fb0dd273b745468ed498b04561c435/artifacts
+end_time: 1698184319603
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: f7fb0dd273b745468ed498b04561c435
+run_name: intrigued-flea-404
+run_uuid: f7fb0dd273b745468ed498b04561c435
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184294659
+status: 4
+tags: []
+user_id: gianfrancodemarco

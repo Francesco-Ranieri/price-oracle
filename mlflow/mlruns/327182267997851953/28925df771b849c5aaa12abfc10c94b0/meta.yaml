@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/28925df771b849c5aaa12abfc10c94b0/artifacts
+end_time: 1698186891482
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 28925df771b849c5aaa12abfc10c94b0
+run_name: fortunate-sheep-943
+run_uuid: 28925df771b849c5aaa12abfc10c94b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186885639
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/6ff14a3482cb4ae8801775c0f0e7aed0/artifacts
+end_time: 1698181450726
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 6ff14a3482cb4ae8801775c0f0e7aed0
+run_name: calm-mole-961
+run_uuid: 6ff14a3482cb4ae8801775c0f0e7aed0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181443751
+status: 3
+tags: []
+user_id: gianfrancodemarco

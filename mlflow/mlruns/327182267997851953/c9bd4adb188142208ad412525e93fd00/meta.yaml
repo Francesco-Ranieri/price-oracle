@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c9bd4adb188142208ad412525e93fd00/artifacts
+end_time: 1698183422338
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c9bd4adb188142208ad412525e93fd00
+run_name: sincere-mole-682
+run_uuid: c9bd4adb188142208ad412525e93fd00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183411836
+status: 3
+tags: []
+user_id: gianfrancodemarco

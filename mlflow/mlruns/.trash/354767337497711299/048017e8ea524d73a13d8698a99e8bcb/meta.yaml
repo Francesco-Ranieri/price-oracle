@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/048017e8ea524d73a13d8698a99e8bcb/artifacts
+deleted_time: 1698171244534
+end_time: 1698170404513
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 048017e8ea524d73a13d8698a99e8bcb
+run_name: likeable-mule-899
+run_uuid: 048017e8ea524d73a13d8698a99e8bcb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698170401371
+status: 4
+tags: []
+user_id: gianfrancodemarco

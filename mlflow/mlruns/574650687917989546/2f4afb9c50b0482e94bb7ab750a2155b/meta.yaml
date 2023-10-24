@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/2f4afb9c50b0482e94bb7ab750a2155b/artifacts
+end_time: 1698174355952
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 2f4afb9c50b0482e94bb7ab750a2155b
+run_name: amazing-mink-149
+run_uuid: 2f4afb9c50b0482e94bb7ab750a2155b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174351557
+status: 4
+tags: []
+user_id: gianfrancodemarco

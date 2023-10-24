@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/f7e666853bb7419097c247db8c1d85ed/artifacts
+end_time: 1698177840185
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: f7e666853bb7419097c247db8c1d85ed
+run_name: exultant-sponge-110
+run_uuid: f7e666853bb7419097c247db8c1d85ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177828738
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/f18fdd49b4b94596b3f1eae2201a10fe/artifacts
+deleted_time: 1698171244534
+end_time: 1698169325238
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: f18fdd49b4b94596b3f1eae2201a10fe
+run_name: thundering-deer-671
+run_uuid: f18fdd49b4b94596b3f1eae2201a10fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169321639
+status: 4
+tags: []
+user_id: gianfrancodemarco

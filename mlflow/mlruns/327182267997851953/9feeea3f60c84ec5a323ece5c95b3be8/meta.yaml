@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9feeea3f60c84ec5a323ece5c95b3be8/artifacts
+end_time: 1698181072613
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9feeea3f60c84ec5a323ece5c95b3be8
+run_name: bald-dove-895
+run_uuid: 9feeea3f60c84ec5a323ece5c95b3be8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181067235
+status: 4
+tags: []
+user_id: gianfrancodemarco

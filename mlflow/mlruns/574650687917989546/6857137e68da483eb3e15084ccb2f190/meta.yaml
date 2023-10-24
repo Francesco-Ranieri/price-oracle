@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/6857137e68da483eb3e15084ccb2f190/artifacts
+end_time: 1698172465315
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 6857137e68da483eb3e15084ccb2f190
+run_name: angry-mole-794
+run_uuid: 6857137e68da483eb3e15084ccb2f190
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172455653
+status: 3
+tags: []
+user_id: gianfrancodemarco

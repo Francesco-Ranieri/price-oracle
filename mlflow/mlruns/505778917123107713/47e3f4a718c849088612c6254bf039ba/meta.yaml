@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/47e3f4a718c849088612c6254bf039ba/artifacts
+end_time: 1698156636522
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 47e3f4a718c849088612c6254bf039ba
+run_name: thoughtful-squid-244
+run_uuid: 47e3f4a718c849088612c6254bf039ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698156616418
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c63dea0e238c428f9c854eab26043e42/artifacts
+end_time: 1698178713440
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c63dea0e238c428f9c854eab26043e42
+run_name: defiant-kit-399
+run_uuid: c63dea0e238c428f9c854eab26043e42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178696836
+status: 3
+tags: []
+user_id: gianfrancodemarco

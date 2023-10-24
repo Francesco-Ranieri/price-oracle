@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/1eaff2bf165f4c379a2fda04759b5b24/artifacts
+end_time: 1698159751492
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 1eaff2bf165f4c379a2fda04759b5b24
+run_name: judicious-deer-865
+run_uuid: 1eaff2bf165f4c379a2fda04759b5b24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698159738800
+status: 3
+tags: []
+user_id: gianfrancodemarco

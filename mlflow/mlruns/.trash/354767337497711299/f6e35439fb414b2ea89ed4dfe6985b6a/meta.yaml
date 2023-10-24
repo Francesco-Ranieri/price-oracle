@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/f6e35439fb414b2ea89ed4dfe6985b6a/artifacts
+deleted_time: 1698171244534
+end_time: 1698169087056
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: f6e35439fb414b2ea89ed4dfe6985b6a
+run_name: tasteful-toad-22
+run_uuid: f6e35439fb414b2ea89ed4dfe6985b6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169077801
+status: 4
+tags: []
+user_id: gianfrancodemarco

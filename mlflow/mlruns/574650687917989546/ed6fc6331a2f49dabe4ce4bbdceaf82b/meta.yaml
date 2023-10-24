@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/ed6fc6331a2f49dabe4ce4bbdceaf82b/artifacts
+end_time: 1698174300095
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: ed6fc6331a2f49dabe4ce4bbdceaf82b
+run_name: suave-goose-23
+run_uuid: ed6fc6331a2f49dabe4ce4bbdceaf82b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174280556
+status: 3
+tags: []
+user_id: gianfrancodemarco

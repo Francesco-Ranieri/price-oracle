@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/df32b7aa10be4ed483123c0e94ec2015/artifacts
+end_time: 1698184122913
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: df32b7aa10be4ed483123c0e94ec2015
+run_name: nimble-pig-586
+run_uuid: df32b7aa10be4ed483123c0e94ec2015
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184116219
+status: 4
+tags: []
+user_id: gianfrancodemarco

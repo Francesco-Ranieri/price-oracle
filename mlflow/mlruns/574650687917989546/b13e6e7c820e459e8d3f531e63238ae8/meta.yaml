@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/b13e6e7c820e459e8d3f531e63238ae8/artifacts
+end_time: 1698174923984
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: b13e6e7c820e459e8d3f531e63238ae8
+run_name: handsome-deer-331
+run_uuid: b13e6e7c820e459e8d3f531e63238ae8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174901369
+status: 3
+tags: []
+user_id: gianfrancodemarco

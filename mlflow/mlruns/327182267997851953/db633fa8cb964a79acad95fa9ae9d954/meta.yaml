@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/db633fa8cb964a79acad95fa9ae9d954/artifacts
+end_time: 1698180744256
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: db633fa8cb964a79acad95fa9ae9d954
+run_name: bright-lynx-332
+run_uuid: db633fa8cb964a79acad95fa9ae9d954
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180737159
+status: 4
+tags: []
+user_id: gianfrancodemarco

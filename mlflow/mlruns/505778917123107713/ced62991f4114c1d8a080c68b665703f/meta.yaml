@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/ced62991f4114c1d8a080c68b665703f/artifacts
+deleted_time: 1698162361729
+end_time: 1698160839527
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: ced62991f4114c1d8a080c68b665703f
+run_name: unique-bass-155
+run_uuid: ced62991f4114c1d8a080c68b665703f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698160816969
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/27e1c47f001546bd9884f9e63b1f5499/artifacts
+end_time: 1698180127539
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 27e1c47f001546bd9884f9e63b1f5499
+run_name: capricious-jay-589
+run_uuid: 27e1c47f001546bd9884f9e63b1f5499
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180120415
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/65ab818a800244f283c44690edee172c/artifacts
+end_time: 1698183568328
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 65ab818a800244f283c44690edee172c
+run_name: gaudy-horse-909
+run_uuid: 65ab818a800244f283c44690edee172c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183557902
+status: 3
+tags: []
+user_id: gianfrancodemarco

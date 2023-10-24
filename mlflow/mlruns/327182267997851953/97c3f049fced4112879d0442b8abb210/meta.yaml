@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/97c3f049fced4112879d0442b8abb210/artifacts
+end_time: 1698178281403
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 97c3f049fced4112879d0442b8abb210
+run_name: dapper-flea-104
+run_uuid: 97c3f049fced4112879d0442b8abb210
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178252494
+status: 3
+tags: []
+user_id: gianfrancodemarco

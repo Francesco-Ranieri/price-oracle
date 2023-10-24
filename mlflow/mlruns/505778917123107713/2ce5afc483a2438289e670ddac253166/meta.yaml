@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/2ce5afc483a2438289e670ddac253166/artifacts
+end_time: 1698153178667
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 2ce5afc483a2438289e670ddac253166
+run_name: whimsical-conch-464
+run_uuid: 2ce5afc483a2438289e670ddac253166
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153174348
+status: 3
+tags: []
+user_id: gianfrancodemarco

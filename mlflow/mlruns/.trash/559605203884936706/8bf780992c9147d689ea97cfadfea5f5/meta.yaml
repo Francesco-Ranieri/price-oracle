@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/559605203884936706/8bf780992c9147d689ea97cfadfea5f5/artifacts
+deleted_time: 1698171087604
+end_time: 1698171039109
+entry_point_name: ''
+experiment_id: '559605203884936706'
+lifecycle_stage: deleted
+run_id: 8bf780992c9147d689ea97cfadfea5f5
+run_name: gregarious-sheep-32
+run_uuid: 8bf780992c9147d689ea97cfadfea5f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171014057
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/178f889d48cf4f7a9344e25fa6b00f23/artifacts
+end_time: 1698158354711
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 178f889d48cf4f7a9344e25fa6b00f23
+run_name: nebulous-bat-292
+run_uuid: 178f889d48cf4f7a9344e25fa6b00f23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158258698
+status: 3
+tags: []
+user_id: gianfrancodemarco

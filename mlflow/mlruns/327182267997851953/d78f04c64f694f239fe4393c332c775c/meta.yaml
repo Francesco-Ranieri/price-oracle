@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d78f04c64f694f239fe4393c332c775c/artifacts
+end_time: 1698187733330
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d78f04c64f694f239fe4393c332c775c
+run_name: treasured-croc-426
+run_uuid: d78f04c64f694f239fe4393c332c775c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187719406
+status: 4
+tags: []
+user_id: gianfrancodemarco

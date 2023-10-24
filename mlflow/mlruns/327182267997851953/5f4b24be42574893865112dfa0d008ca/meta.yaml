@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/5f4b24be42574893865112dfa0d008ca/artifacts
+end_time: 1698183137888
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 5f4b24be42574893865112dfa0d008ca
+run_name: resilient-crane-668
+run_uuid: 5f4b24be42574893865112dfa0d008ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183117175
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/3348064ce2ae4bf0a0b0814d20b5ca7b/artifacts
+end_time: 1698176437150
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 3348064ce2ae4bf0a0b0814d20b5ca7b
+run_name: rare-hen-910
+run_uuid: 3348064ce2ae4bf0a0b0814d20b5ca7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176403269
+status: 3
+tags: []
+user_id: gianfrancodemarco

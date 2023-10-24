@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/2b8fd75c8a274cfe906abcfd741f43bc/artifacts
+end_time: 1698173572191
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 2b8fd75c8a274cfe906abcfd741f43bc
+run_name: resilient-zebra-989
+run_uuid: 2b8fd75c8a274cfe906abcfd741f43bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173559975
+status: 4
+tags: []
+user_id: gianfrancodemarco

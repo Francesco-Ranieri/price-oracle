@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/abd3a303187448c388f6634be496d3e1/artifacts
+end_time: 1698183693125
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: abd3a303187448c388f6634be496d3e1
+run_name: agreeable-cow-101
+run_uuid: abd3a303187448c388f6634be496d3e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183672405
+status: 3
+tags: []
+user_id: gianfrancodemarco

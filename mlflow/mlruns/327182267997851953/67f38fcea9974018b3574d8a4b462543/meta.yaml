@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/67f38fcea9974018b3574d8a4b462543/artifacts
+end_time: 1698188374631
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 67f38fcea9974018b3574d8a4b462543
+run_name: colorful-smelt-101
+run_uuid: 67f38fcea9974018b3574d8a4b462543
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188361699
+status: 3
+tags: []
+user_id: gianfrancodemarco

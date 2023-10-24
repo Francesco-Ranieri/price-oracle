@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c6bf575950834acbb337ff2f42dc1b12/artifacts
+end_time: 1698186003683
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c6bf575950834acbb337ff2f42dc1b12
+run_name: debonair-sponge-604
+run_uuid: c6bf575950834acbb337ff2f42dc1b12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185998039
+status: 4
+tags: []
+user_id: gianfrancodemarco

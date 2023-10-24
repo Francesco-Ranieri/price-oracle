@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/34ed8507ab904225bb488812f18fcb31/artifacts
+end_time: 1698187081431
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 34ed8507ab904225bb488812f18fcb31
+run_name: valuable-lamb-491
+run_uuid: 34ed8507ab904225bb488812f18fcb31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187059128
+status: 3
+tags: []
+user_id: gianfrancodemarco

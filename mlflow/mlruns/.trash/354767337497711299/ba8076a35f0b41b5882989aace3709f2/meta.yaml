@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/ba8076a35f0b41b5882989aace3709f2/artifacts
+deleted_time: 1698171244534
+end_time: 1698170786257
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: ba8076a35f0b41b5882989aace3709f2
+run_name: nosy-sloth-266
+run_uuid: ba8076a35f0b41b5882989aace3709f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698170744424
+status: 3
+tags: []
+user_id: gianfrancodemarco

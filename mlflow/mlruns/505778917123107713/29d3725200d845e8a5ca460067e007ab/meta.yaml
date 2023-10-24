@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/29d3725200d845e8a5ca460067e007ab/artifacts
+deleted_time: 1698154553851
+end_time: 1698153744748
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 29d3725200d845e8a5ca460067e007ab
+run_name: marvelous-lark-848
+run_uuid: 29d3725200d845e8a5ca460067e007ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153722235
+status: 3
+tags: []
+user_id: gianfrancodemarco

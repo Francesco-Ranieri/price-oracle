@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c5091b0b0ad9433b86e6419e1fd86d99/artifacts
+end_time: 1698184349372
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c5091b0b0ad9433b86e6419e1fd86d99
+run_name: hilarious-conch-554
+run_uuid: c5091b0b0ad9433b86e6419e1fd86d99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184341766
+status: 4
+tags: []
+user_id: gianfrancodemarco

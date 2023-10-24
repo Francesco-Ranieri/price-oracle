@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/839fa497dccd460da1a03e9b73971d06/artifacts
+end_time: 1698155242187
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 839fa497dccd460da1a03e9b73971d06
+run_name: dazzling-stork-385
+run_uuid: 839fa497dccd460da1a03e9b73971d06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698155236083
+status: 3
+tags: []
+user_id: gianfrancodemarco

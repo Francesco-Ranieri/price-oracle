@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/921415a7eeac41578db43cd2da1c5d7a/artifacts
+end_time: 1698180452254
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 921415a7eeac41578db43cd2da1c5d7a
+run_name: thoughtful-moose-123
+run_uuid: 921415a7eeac41578db43cd2da1c5d7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180434125
+status: 3
+tags: []
+user_id: gianfrancodemarco

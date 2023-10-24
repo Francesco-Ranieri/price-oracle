@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9df3f8db7bc64b60b254b374377c045a/artifacts
+end_time: 1698180469883
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9df3f8db7bc64b60b254b374377c045a
+run_name: luxuriant-bug-783
+run_uuid: 9df3f8db7bc64b60b254b374377c045a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180458019
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1222b3f59c0d4c779621b643933e6bc3/artifacts
+end_time: 1698186304341
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1222b3f59c0d4c779621b643933e6bc3
+run_name: kindly-calf-163
+run_uuid: 1222b3f59c0d4c779621b643933e6bc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186293414
+status: 3
+tags: []
+user_id: gianfrancodemarco

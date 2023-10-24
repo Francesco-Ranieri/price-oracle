@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/180422ffca0f400494f3fd0a1770abac/artifacts
+end_time: 1698182743401
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 180422ffca0f400494f3fd0a1770abac
+run_name: stately-fawn-59
+run_uuid: 180422ffca0f400494f3fd0a1770abac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182734768
+status: 3
+tags: []
+user_id: gianfrancodemarco

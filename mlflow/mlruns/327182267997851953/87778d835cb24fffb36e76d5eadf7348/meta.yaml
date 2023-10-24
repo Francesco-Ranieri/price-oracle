@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/87778d835cb24fffb36e76d5eadf7348/artifacts
+end_time: 1698180605746
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 87778d835cb24fffb36e76d5eadf7348
+run_name: stylish-turtle-456
+run_uuid: 87778d835cb24fffb36e76d5eadf7348
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180592286
+status: 3
+tags: []
+user_id: gianfrancodemarco

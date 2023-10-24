@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/cfbdce8091cb411eb3489f51d59c3795/artifacts
+end_time: 1698173365875
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: cfbdce8091cb411eb3489f51d59c3795
+run_name: skittish-crane-105
+run_uuid: cfbdce8091cb411eb3489f51d59c3795
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173343175
+status: 3
+tags: []
+user_id: gianfrancodemarco

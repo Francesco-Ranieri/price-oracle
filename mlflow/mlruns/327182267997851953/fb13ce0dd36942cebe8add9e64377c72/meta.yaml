@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/fb13ce0dd36942cebe8add9e64377c72/artifacts
+end_time: 1698177918102
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: fb13ce0dd36942cebe8add9e64377c72
+run_name: sincere-bass-309
+run_uuid: fb13ce0dd36942cebe8add9e64377c72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177908374
+status: 3
+tags: []
+user_id: gianfrancodemarco

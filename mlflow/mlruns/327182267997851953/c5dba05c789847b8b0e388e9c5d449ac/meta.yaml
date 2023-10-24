@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c5dba05c789847b8b0e388e9c5d449ac/artifacts
+end_time: 1698178438238
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c5dba05c789847b8b0e388e9c5d449ac
+run_name: traveling-ant-896
+run_uuid: c5dba05c789847b8b0e388e9c5d449ac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178426918
+status: 3
+tags: []
+user_id: gianfrancodemarco

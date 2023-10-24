@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/69848dbd8f0e4decbf3a34a86bb4728b/artifacts
+end_time: 1698184104631
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 69848dbd8f0e4decbf3a34a86bb4728b
+run_name: gifted-gull-124
+run_uuid: 69848dbd8f0e4decbf3a34a86bb4728b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184093505
+status: 3
+tags: []
+user_id: gianfrancodemarco

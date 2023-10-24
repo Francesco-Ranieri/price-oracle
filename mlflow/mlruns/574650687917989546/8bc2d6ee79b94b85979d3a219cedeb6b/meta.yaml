@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/8bc2d6ee79b94b85979d3a219cedeb6b/artifacts
+end_time: 1698175276401
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 8bc2d6ee79b94b85979d3a219cedeb6b
+run_name: unleashed-stag-195
+run_uuid: 8bc2d6ee79b94b85979d3a219cedeb6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175246969
+status: 3
+tags: []
+user_id: gianfrancodemarco

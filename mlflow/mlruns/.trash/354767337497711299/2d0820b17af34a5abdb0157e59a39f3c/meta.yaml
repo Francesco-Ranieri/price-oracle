@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/2d0820b17af34a5abdb0157e59a39f3c/artifacts
+deleted_time: 1698171244534
+end_time: 1698169108947
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 2d0820b17af34a5abdb0157e59a39f3c
+run_name: mysterious-fish-781
+run_uuid: 2d0820b17af34a5abdb0157e59a39f3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169093056
+status: 3
+tags: []
+user_id: gianfrancodemarco

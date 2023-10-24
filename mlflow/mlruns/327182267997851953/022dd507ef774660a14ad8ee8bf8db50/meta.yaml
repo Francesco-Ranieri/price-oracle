@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/022dd507ef774660a14ad8ee8bf8db50/artifacts
+end_time: 1698183411785
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 022dd507ef774660a14ad8ee8bf8db50
+run_name: bold-sow-826
+run_uuid: 022dd507ef774660a14ad8ee8bf8db50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183399495
+status: 3
+tags: []
+user_id: gianfrancodemarco

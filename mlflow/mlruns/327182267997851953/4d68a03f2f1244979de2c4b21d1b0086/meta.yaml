@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/4d68a03f2f1244979de2c4b21d1b0086/artifacts
+end_time: 1698185444448
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 4d68a03f2f1244979de2c4b21d1b0086
+run_name: selective-shad-664
+run_uuid: 4d68a03f2f1244979de2c4b21d1b0086
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185434475
+status: 4
+tags: []
+user_id: gianfrancodemarco

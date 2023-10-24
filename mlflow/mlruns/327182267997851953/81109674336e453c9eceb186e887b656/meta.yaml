@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/81109674336e453c9eceb186e887b656/artifacts
+end_time: 1698177786394
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 81109674336e453c9eceb186e887b656
+run_name: grandiose-swan-475
+run_uuid: 81109674336e453c9eceb186e887b656
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177769526
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/7b8daff0302443eaa7e62627bcf356a7/artifacts
+end_time: 1698188391177
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 7b8daff0302443eaa7e62627bcf356a7
+run_name: resilient-eel-741
+run_uuid: 7b8daff0302443eaa7e62627bcf356a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188383987
+status: 3
+tags: []
+user_id: gianfrancodemarco

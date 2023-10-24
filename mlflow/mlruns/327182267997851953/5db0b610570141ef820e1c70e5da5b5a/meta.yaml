@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/5db0b610570141ef820e1c70e5da5b5a/artifacts
+end_time: 1698178127937
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 5db0b610570141ef820e1c70e5da5b5a
+run_name: incongruous-croc-996
+run_uuid: 5db0b610570141ef820e1c70e5da5b5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178120588
+status: 3
+tags: []
+user_id: gianfrancodemarco

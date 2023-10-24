@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/f6d9aebd8b6147a88b1c10ef238fcd5a/artifacts
+end_time: 1698176820089
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: f6d9aebd8b6147a88b1c10ef238fcd5a
+run_name: capable-hen-684
+run_uuid: f6d9aebd8b6147a88b1c10ef238fcd5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176813743
+status: 4
+tags: []
+user_id: gianfrancodemarco

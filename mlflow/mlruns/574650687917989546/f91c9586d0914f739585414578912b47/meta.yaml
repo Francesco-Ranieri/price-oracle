@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/f91c9586d0914f739585414578912b47/artifacts
+end_time: 1698176637426
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: f91c9586d0914f739585414578912b47
+run_name: bold-foal-716
+run_uuid: f91c9586d0914f739585414578912b47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176619542
+status: 3
+tags: []
+user_id: gianfrancodemarco

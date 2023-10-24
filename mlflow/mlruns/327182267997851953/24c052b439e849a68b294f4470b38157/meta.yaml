@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/24c052b439e849a68b294f4470b38157/artifacts
+end_time: 1698181600326
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 24c052b439e849a68b294f4470b38157
+run_name: gifted-wren-338
+run_uuid: 24c052b439e849a68b294f4470b38157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181591503
+status: 3
+tags: []
+user_id: gianfrancodemarco

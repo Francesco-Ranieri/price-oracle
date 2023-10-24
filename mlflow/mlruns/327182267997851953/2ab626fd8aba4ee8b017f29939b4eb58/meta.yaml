@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/2ab626fd8aba4ee8b017f29939b4eb58/artifacts
+end_time: 1698185352308
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 2ab626fd8aba4ee8b017f29939b4eb58
+run_name: calm-penguin-966
+run_uuid: 2ab626fd8aba4ee8b017f29939b4eb58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185332490
+status: 3
+tags: []
+user_id: gianfrancodemarco

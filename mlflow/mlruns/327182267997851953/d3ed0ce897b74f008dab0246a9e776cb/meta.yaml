@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d3ed0ce897b74f008dab0246a9e776cb/artifacts
+end_time: 1698186976893
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d3ed0ce897b74f008dab0246a9e776cb
+run_name: puzzled-moth-519
+run_uuid: d3ed0ce897b74f008dab0246a9e776cb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186973920
+status: 4
+tags: []
+user_id: gianfrancodemarco

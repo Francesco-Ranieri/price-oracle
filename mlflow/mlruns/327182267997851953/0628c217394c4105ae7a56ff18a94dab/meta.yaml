@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/0628c217394c4105ae7a56ff18a94dab/artifacts
+end_time: 1698181236125
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 0628c217394c4105ae7a56ff18a94dab
+run_name: intrigued-stoat-713
+run_uuid: 0628c217394c4105ae7a56ff18a94dab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181227998
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/43d8cf243d3c4fd0a97a3dd144e94f3b/artifacts
+end_time: 1698178489092
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 43d8cf243d3c4fd0a97a3dd144e94f3b
+run_name: caring-rat-749
+run_uuid: 43d8cf243d3c4fd0a97a3dd144e94f3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178476263
+status: 4
+tags: []
+user_id: gianfrancodemarco

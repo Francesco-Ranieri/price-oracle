@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/0aa4da90eb34465a9b2b7b1b405cef93/artifacts
+end_time: 1698178008544
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 0aa4da90eb34465a9b2b7b1b405cef93
+run_name: gentle-shrimp-655
+run_uuid: 0aa4da90eb34465a9b2b7b1b405cef93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178004563
+status: 4
+tags: []
+user_id: gianfrancodemarco

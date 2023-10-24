@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/a76561f7b4cc4819b0d40360d6125cca/artifacts
+deleted_time: 1698162519374
+end_time: 1698162461562
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: a76561f7b4cc4819b0d40360d6125cca
+run_name: funny-shrew-582
+run_uuid: a76561f7b4cc4819b0d40360d6125cca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698162452010
+status: 4
+tags: []
+user_id: gianfrancodemarco

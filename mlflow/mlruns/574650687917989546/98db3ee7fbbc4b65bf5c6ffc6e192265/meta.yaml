@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/98db3ee7fbbc4b65bf5c6ffc6e192265/artifacts
+end_time: 1698173471871
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 98db3ee7fbbc4b65bf5c6ffc6e192265
+run_name: flawless-stag-466
+run_uuid: 98db3ee7fbbc4b65bf5c6ffc6e192265
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173449605
+status: 3
+tags: []
+user_id: gianfrancodemarco

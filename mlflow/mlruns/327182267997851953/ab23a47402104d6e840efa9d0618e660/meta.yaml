@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ab23a47402104d6e840efa9d0618e660/artifacts
+end_time: 1698184831925
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ab23a47402104d6e840efa9d0618e660
+run_name: polite-snail-785
+run_uuid: ab23a47402104d6e840efa9d0618e660
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184818377
+status: 3
+tags: []
+user_id: gianfrancodemarco

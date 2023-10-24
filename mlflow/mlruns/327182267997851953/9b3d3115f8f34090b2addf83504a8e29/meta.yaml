@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9b3d3115f8f34090b2addf83504a8e29/artifacts
+end_time: 1698181684571
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9b3d3115f8f34090b2addf83504a8e29
+run_name: orderly-shrike-535
+run_uuid: 9b3d3115f8f34090b2addf83504a8e29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181675791
+status: 3
+tags: []
+user_id: gianfrancodemarco

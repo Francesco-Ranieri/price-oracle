@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/340414319298058222/9f8ba5cb32c04d01af8d4b86224e6a7a/artifacts
+deleted_time: 1698171528720
+end_time: 1698171499086
+entry_point_name: ''
+experiment_id: '340414319298058222'
+lifecycle_stage: deleted
+run_id: 9f8ba5cb32c04d01af8d4b86224e6a7a
+run_name: carefree-moose-36
+run_uuid: 9f8ba5cb32c04d01af8d4b86224e6a7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171499063
+status: 3
+tags: []
+user_id: gianfrancodemarco

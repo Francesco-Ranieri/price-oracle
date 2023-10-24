@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/5d9e3ab2aefe44c09b5166852b2d53ad/artifacts
+deleted_time: 1698172246914
+end_time: 1698172220175
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 5d9e3ab2aefe44c09b5166852b2d53ad
+run_name: valuable-goose-861
+run_uuid: 5d9e3ab2aefe44c09b5166852b2d53ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172173279
+status: 3
+tags: []
+user_id: gianfrancodemarco

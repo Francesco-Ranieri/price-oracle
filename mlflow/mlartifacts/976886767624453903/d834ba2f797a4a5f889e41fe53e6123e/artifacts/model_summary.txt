@@ -1,0 +1,27 @@
+Model: "sequential_47"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_116 (LSTM)             (None, 12, 160)           103680    
+                                                                 
+ dropout_116 (Dropout)       (None, 12, 160)           0         
+                                                                 
+ lstm_117 (LSTM)             (None, 12, 64)            57600     
+                                                                 
+ dropout_117 (Dropout)       (None, 12, 64)            0         
+                                                                 
+ lstm_118 (LSTM)             (None, 12, 256)           328704    
+                                                                 
+ dropout_118 (Dropout)       (None, 12, 256)           0         
+                                                                 
+ lstm_119 (LSTM)             (None, 12, 32)            36992     
+                                                                 
+ dropout_119 (Dropout)       (None, 12, 32)            0         
+                                                                 
+ dense_47 (Dense)            (None, 12, 1)             33        
+                                                                 
+=================================================================
+Total params: 527009 (2.01 MB)
+Trainable params: 527009 (2.01 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

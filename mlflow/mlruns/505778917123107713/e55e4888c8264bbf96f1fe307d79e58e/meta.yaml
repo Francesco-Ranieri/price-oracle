@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/e55e4888c8264bbf96f1fe307d79e58e/artifacts
+end_time: 1698158215511
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: e55e4888c8264bbf96f1fe307d79e58e
+run_name: fortunate-mouse-242
+run_uuid: e55e4888c8264bbf96f1fe307d79e58e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158183108
+status: 3
+tags: []
+user_id: gianfrancodemarco

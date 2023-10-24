@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/6e6898d75978492f911e13b538c70e04/artifacts
+end_time: 1698178146681
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 6e6898d75978492f911e13b538c70e04
+run_name: orderly-fish-68
+run_uuid: 6e6898d75978492f911e13b538c70e04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178144670
+status: 4
+tags: []
+user_id: gianfrancodemarco

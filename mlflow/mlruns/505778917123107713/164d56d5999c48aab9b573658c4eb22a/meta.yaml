@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/164d56d5999c48aab9b573658c4eb22a/artifacts
+end_time: 1698162838188
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 164d56d5999c48aab9b573658c4eb22a
+run_name: skittish-wolf-273
+run_uuid: 164d56d5999c48aab9b573658c4eb22a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698162783506
+status: 3
+tags: []
+user_id: gianfrancodemarco

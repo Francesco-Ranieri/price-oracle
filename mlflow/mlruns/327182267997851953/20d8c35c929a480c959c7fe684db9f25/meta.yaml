@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/20d8c35c929a480c959c7fe684db9f25/artifacts
+end_time: 1698178784775
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 20d8c35c929a480c959c7fe684db9f25
+run_name: wistful-shad-211
+run_uuid: 20d8c35c929a480c959c7fe684db9f25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178777492
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c9f0685495974a20b63d68bf03e0c634/artifacts
+end_time: 1698178035525
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c9f0685495974a20b63d68bf03e0c634
+run_name: dazzling-fish-209
+run_uuid: c9f0685495974a20b63d68bf03e0c634
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178027815
+status: 3
+tags: []
+user_id: gianfrancodemarco

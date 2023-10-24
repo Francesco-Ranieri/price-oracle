@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/3979289ecc084299b3075bfe2c8891e8/artifacts
+deleted_time: 1698171244534
+end_time: 1698168912886
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 3979289ecc084299b3075bfe2c8891e8
+run_name: funny-ape-233
+run_uuid: 3979289ecc084299b3075bfe2c8891e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698168907744
+status: 4
+tags: []
+user_id: gianfrancodemarco

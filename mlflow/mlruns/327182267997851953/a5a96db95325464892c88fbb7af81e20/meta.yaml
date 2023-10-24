@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/a5a96db95325464892c88fbb7af81e20/artifacts
+end_time: 1698178080583
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: a5a96db95325464892c88fbb7af81e20
+run_name: victorious-hound-680
+run_uuid: a5a96db95325464892c88fbb7af81e20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178078322
+status: 4
+tags: []
+user_id: gianfrancodemarco

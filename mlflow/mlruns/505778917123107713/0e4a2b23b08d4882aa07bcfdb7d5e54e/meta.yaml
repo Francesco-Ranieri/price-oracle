@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/0e4a2b23b08d4882aa07bcfdb7d5e54e/artifacts
+end_time: 1698150079903
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 0e4a2b23b08d4882aa07bcfdb7d5e54e
+run_name: secretive-donkey-162
+run_uuid: 0e4a2b23b08d4882aa07bcfdb7d5e54e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698149989593
+status: 3
+tags: []
+user_id: gianfrancodemarco

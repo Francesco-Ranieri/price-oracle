@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/57f62b94a7af442c81d7c75182fe0511/artifacts
+deleted_time: 1698171244534
+end_time: 1698169230897
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 57f62b94a7af442c81d7c75182fe0511
+run_name: luminous-turtle-183
+run_uuid: 57f62b94a7af442c81d7c75182fe0511
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169219521
+status: 4
+tags: []
+user_id: gianfrancodemarco

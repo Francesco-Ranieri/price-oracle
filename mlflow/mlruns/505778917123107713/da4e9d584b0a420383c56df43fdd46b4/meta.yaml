@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/da4e9d584b0a420383c56df43fdd46b4/artifacts
+end_time: 1698159069368
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: da4e9d584b0a420383c56df43fdd46b4
+run_name: mercurial-hog-943
+run_uuid: da4e9d584b0a420383c56df43fdd46b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698159044272
+status: 3
+tags: []
+user_id: gianfrancodemarco

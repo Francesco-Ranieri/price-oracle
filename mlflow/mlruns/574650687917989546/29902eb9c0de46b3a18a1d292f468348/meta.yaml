@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/29902eb9c0de46b3a18a1d292f468348/artifacts
+end_time: 1698177394564
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 29902eb9c0de46b3a18a1d292f468348
+run_name: amazing-cub-709
+run_uuid: 29902eb9c0de46b3a18a1d292f468348
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177381360
+status: 3
+tags: []
+user_id: gianfrancodemarco

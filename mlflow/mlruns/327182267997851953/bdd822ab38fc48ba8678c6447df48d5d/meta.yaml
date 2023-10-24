@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/bdd822ab38fc48ba8678c6447df48d5d/artifacts
+end_time: 1698186600118
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: bdd822ab38fc48ba8678c6447df48d5d
+run_name: sneaky-calf-79
+run_uuid: bdd822ab38fc48ba8678c6447df48d5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186590389
+status: 4
+tags: []
+user_id: gianfrancodemarco

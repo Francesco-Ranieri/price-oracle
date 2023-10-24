@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/fcd96c0ef27a451f8e409661c3e8af77/artifacts
+end_time: 1698172514430
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: fcd96c0ef27a451f8e409661c3e8af77
+run_name: mysterious-horse-56
+run_uuid: fcd96c0ef27a451f8e409661c3e8af77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172492315
+status: 3
+tags: []
+user_id: gianfrancodemarco

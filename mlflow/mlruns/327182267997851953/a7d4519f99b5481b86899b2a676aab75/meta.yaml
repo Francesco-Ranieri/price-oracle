@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/a7d4519f99b5481b86899b2a676aab75/artifacts
+end_time: 1698180162187
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: a7d4519f99b5481b86899b2a676aab75
+run_name: crawling-snake-170
+run_uuid: a7d4519f99b5481b86899b2a676aab75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180151740
+status: 4
+tags: []
+user_id: gianfrancodemarco

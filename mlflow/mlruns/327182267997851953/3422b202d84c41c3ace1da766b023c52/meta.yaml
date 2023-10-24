@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/3422b202d84c41c3ace1da766b023c52/artifacts
+end_time: 1698184902941
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 3422b202d84c41c3ace1da766b023c52
+run_name: tasteful-crow-268
+run_uuid: 3422b202d84c41c3ace1da766b023c52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184894325
+status: 3
+tags: []
+user_id: gianfrancodemarco

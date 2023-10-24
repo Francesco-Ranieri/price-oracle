@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d5c21ddbdce141bb8b2b08e35cb1f4b8/artifacts
+end_time: 1698180221847
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d5c21ddbdce141bb8b2b08e35cb1f4b8
+run_name: invincible-bass-163
+run_uuid: d5c21ddbdce141bb8b2b08e35cb1f4b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180214529
+status: 3
+tags: []
+user_id: gianfrancodemarco

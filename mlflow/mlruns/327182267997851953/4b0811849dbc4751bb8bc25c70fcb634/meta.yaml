@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/4b0811849dbc4751bb8bc25c70fcb634/artifacts
+end_time: 1698179331588
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 4b0811849dbc4751bb8bc25c70fcb634
+run_name: sneaky-hog-408
+run_uuid: 4b0811849dbc4751bb8bc25c70fcb634
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179302062
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/3f64ae6254db452c876f42c052491e04/artifacts
+end_time: 1698179374821
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 3f64ae6254db452c876f42c052491e04
+run_name: gifted-squid-804
+run_uuid: 3f64ae6254db452c876f42c052491e04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179349669
+status: 3
+tags: []
+user_id: gianfrancodemarco

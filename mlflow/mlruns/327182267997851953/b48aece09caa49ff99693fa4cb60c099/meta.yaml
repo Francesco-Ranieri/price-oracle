@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b48aece09caa49ff99693fa4cb60c099/artifacts
+end_time: 1698178625949
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b48aece09caa49ff99693fa4cb60c099
+run_name: lyrical-quail-47
+run_uuid: b48aece09caa49ff99693fa4cb60c099
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178619725
+status: 4
+tags: []
+user_id: gianfrancodemarco

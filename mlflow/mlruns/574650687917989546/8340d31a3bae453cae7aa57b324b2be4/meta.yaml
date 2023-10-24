@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/8340d31a3bae453cae7aa57b324b2be4/artifacts
+end_time: 1698173211165
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 8340d31a3bae453cae7aa57b324b2be4
+run_name: able-shrew-200
+run_uuid: 8340d31a3bae453cae7aa57b324b2be4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173193502
+status: 4
+tags: []
+user_id: gianfrancodemarco

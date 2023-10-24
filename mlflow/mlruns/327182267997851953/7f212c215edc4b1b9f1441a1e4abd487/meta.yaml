@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/7f212c215edc4b1b9f1441a1e4abd487/artifacts
+end_time: 1698188323012
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 7f212c215edc4b1b9f1441a1e4abd487
+run_name: handsome-conch-636
+run_uuid: 7f212c215edc4b1b9f1441a1e4abd487
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188314892
+status: 3
+tags: []
+user_id: gianfrancodemarco

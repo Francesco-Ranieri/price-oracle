@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/5ebd49b1ad484975b14ac29cd017d055/artifacts
+end_time: 1698174655585
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 5ebd49b1ad484975b14ac29cd017d055
+run_name: zealous-shark-777
+run_uuid: 5ebd49b1ad484975b14ac29cd017d055
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174637187
+status: 3
+tags: []
+user_id: gianfrancodemarco

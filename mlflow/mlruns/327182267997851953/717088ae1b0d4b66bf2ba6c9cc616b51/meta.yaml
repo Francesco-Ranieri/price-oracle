@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/717088ae1b0d4b66bf2ba6c9cc616b51/artifacts
+end_time: 1698178581607
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 717088ae1b0d4b66bf2ba6c9cc616b51
+run_name: gifted-toad-261
+run_uuid: 717088ae1b0d4b66bf2ba6c9cc616b51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178566859
+status: 4
+tags: []
+user_id: gianfrancodemarco

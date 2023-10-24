@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/a6873607bf4446078b8ce9e5755bede9/artifacts
+end_time: 1698178384546
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: a6873607bf4446078b8ce9e5755bede9
+run_name: gentle-bird-838
+run_uuid: a6873607bf4446078b8ce9e5755bede9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178357977
+status: 3
+tags: []
+user_id: gianfrancodemarco

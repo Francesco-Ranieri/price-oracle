@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/328d802ba1344297bef5660bdc741e85/artifacts
+end_time: 1698188092489
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 328d802ba1344297bef5660bdc741e85
+run_name: bouncy-deer-800
+run_uuid: 328d802ba1344297bef5660bdc741e85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188088239
+status: 4
+tags: []
+user_id: gianfrancodemarco

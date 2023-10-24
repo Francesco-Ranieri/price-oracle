@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/ea14190b967e48b08a2d9bfd82adeb01/artifacts
+end_time: 1698176752735
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: ea14190b967e48b08a2d9bfd82adeb01
+run_name: sincere-sheep-266
+run_uuid: ea14190b967e48b08a2d9bfd82adeb01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176742680
+status: 3
+tags: []
+user_id: gianfrancodemarco

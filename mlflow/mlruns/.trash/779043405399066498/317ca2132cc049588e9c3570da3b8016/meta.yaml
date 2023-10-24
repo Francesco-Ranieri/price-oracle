@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/317ca2132cc049588e9c3570da3b8016/artifacts
+deleted_time: 1698168217608
+end_time: 1698167207793
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: 317ca2132cc049588e9c3570da3b8016
+run_name: flawless-carp-849
+run_uuid: 317ca2132cc049588e9c3570da3b8016
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167203469
+status: 4
+tags: []
+user_id: gianfrancodemarco

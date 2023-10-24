@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/b67f95f866784d089ae5cdb94d828315/artifacts
+end_time: 1698176048881
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: b67f95f866784d089ae5cdb94d828315
+run_name: resilient-hog-339
+run_uuid: b67f95f866784d089ae5cdb94d828315
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176026684
+status: 3
+tags: []
+user_id: gianfrancodemarco

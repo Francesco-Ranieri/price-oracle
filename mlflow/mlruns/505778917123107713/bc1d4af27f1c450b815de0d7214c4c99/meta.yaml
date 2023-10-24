@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/bc1d4af27f1c450b815de0d7214c4c99/artifacts
+deleted_time: 1698162361722
+end_time: 1698160676172
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: bc1d4af27f1c450b815de0d7214c4c99
+run_name: invincible-chimp-799
+run_uuid: bc1d4af27f1c450b815de0d7214c4c99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698160648750
+status: 3
+tags: []
+user_id: gianfrancodemarco

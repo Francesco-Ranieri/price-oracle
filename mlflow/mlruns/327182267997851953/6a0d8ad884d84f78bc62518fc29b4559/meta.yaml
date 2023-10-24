@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/6a0d8ad884d84f78bc62518fc29b4559/artifacts
+end_time: 1698182433823
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 6a0d8ad884d84f78bc62518fc29b4559
+run_name: efficient-fawn-42
+run_uuid: 6a0d8ad884d84f78bc62518fc29b4559
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182417585
+status: 3
+tags: []
+user_id: gianfrancodemarco

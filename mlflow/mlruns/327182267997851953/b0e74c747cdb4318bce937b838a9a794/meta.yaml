@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b0e74c747cdb4318bce937b838a9a794/artifacts
+end_time: 1698182756349
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b0e74c747cdb4318bce937b838a9a794
+run_name: sedate-cow-516
+run_uuid: b0e74c747cdb4318bce937b838a9a794
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182751405
+status: 4
+tags: []
+user_id: gianfrancodemarco

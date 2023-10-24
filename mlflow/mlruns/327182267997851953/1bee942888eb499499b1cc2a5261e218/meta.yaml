@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1bee942888eb499499b1cc2a5261e218/artifacts
+end_time: 1698181436060
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1bee942888eb499499b1cc2a5261e218
+run_name: mercurial-zebra-126
+run_uuid: 1bee942888eb499499b1cc2a5261e218
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181423503
+status: 3
+tags: []
+user_id: gianfrancodemarco

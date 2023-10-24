@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/80e30c2065dd452f8ad831d283f1ad08/artifacts
+end_time: 1698180939718
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 80e30c2065dd452f8ad831d283f1ad08
+run_name: spiffy-whale-984
+run_uuid: 80e30c2065dd452f8ad831d283f1ad08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180933252
+status: 4
+tags: []
+user_id: gianfrancodemarco

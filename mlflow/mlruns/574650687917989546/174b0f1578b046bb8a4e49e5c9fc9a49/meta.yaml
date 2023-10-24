@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/174b0f1578b046bb8a4e49e5c9fc9a49/artifacts
+end_time: 1698176854345
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 174b0f1578b046bb8a4e49e5c9fc9a49
+run_name: receptive-loon-398
+run_uuid: 174b0f1578b046bb8a4e49e5c9fc9a49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176848278
+status: 4
+tags: []
+user_id: gianfrancodemarco

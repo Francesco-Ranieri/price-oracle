@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/1492ca7dd32f4a27b10ece731f905728/artifacts
+deleted_time: 1698162361696
+end_time: 1698160465866
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 1492ca7dd32f4a27b10ece731f905728
+run_name: bold-ox-438
+run_uuid: 1492ca7dd32f4a27b10ece731f905728
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698160445697
+status: 3
+tags: []
+user_id: gianfrancodemarco

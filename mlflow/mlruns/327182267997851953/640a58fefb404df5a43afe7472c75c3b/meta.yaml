@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/640a58fefb404df5a43afe7472c75c3b/artifacts
+end_time: 1698178138462
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 640a58fefb404df5a43afe7472c75c3b
+run_name: glamorous-pig-667
+run_uuid: 640a58fefb404df5a43afe7472c75c3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178131741
+status: 4
+tags: []
+user_id: gianfrancodemarco

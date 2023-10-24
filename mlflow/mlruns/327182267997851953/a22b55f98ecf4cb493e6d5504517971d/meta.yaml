@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/a22b55f98ecf4cb493e6d5504517971d/artifacts
+end_time: 1698185949442
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: a22b55f98ecf4cb493e6d5504517971d
+run_name: chill-hawk-206
+run_uuid: a22b55f98ecf4cb493e6d5504517971d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185941219
+status: 3
+tags: []
+user_id: gianfrancodemarco

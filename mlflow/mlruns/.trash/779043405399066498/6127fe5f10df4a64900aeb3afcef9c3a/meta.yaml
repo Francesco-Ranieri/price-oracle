@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/6127fe5f10df4a64900aeb3afcef9c3a/artifacts
+deleted_time: 1698168217608
+end_time: 1698167492127
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: 6127fe5f10df4a64900aeb3afcef9c3a
+run_name: charming-loon-212
+run_uuid: 6127fe5f10df4a64900aeb3afcef9c3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167484251
+status: 4
+tags: []
+user_id: gianfrancodemarco

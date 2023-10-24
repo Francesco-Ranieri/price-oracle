@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/a6eb1964bd2047948075212d794240ed/artifacts
+deleted_time: 1698171244534
+end_time: 1698169308111
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: a6eb1964bd2047948075212d794240ed
+run_name: sincere-skink-13
+run_uuid: a6eb1964bd2047948075212d794240ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169288636
+status: 3
+tags: []
+user_id: gianfrancodemarco

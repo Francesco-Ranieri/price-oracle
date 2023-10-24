@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/3610c304907a4974a0198aa5a27d5436/artifacts
+end_time: 1698176459257
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 3610c304907a4974a0198aa5a27d5436
+run_name: fortunate-gull-81
+run_uuid: 3610c304907a4974a0198aa5a27d5436
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176455326
+status: 4
+tags: []
+user_id: gianfrancodemarco

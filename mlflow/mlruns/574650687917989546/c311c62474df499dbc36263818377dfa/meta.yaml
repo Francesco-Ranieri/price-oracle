@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/c311c62474df499dbc36263818377dfa/artifacts
+end_time: 1698176344371
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: c311c62474df499dbc36263818377dfa
+run_name: aged-koi-160
+run_uuid: c311c62474df499dbc36263818377dfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176310616
+status: 3
+tags: []
+user_id: gianfrancodemarco

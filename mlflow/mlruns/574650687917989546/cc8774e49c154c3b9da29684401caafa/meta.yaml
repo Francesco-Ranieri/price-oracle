@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/cc8774e49c154c3b9da29684401caafa/artifacts
+end_time: 1698176679922
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: cc8774e49c154c3b9da29684401caafa
+run_name: merciful-stork-368
+run_uuid: cc8774e49c154c3b9da29684401caafa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176663561
+status: 3
+tags: []
+user_id: gianfrancodemarco

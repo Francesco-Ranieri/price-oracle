@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/ea59f8ac71ed499e8f28663f6b5bd1c9/artifacts
+end_time: 1698177422933
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: ea59f8ac71ed499e8f28663f6b5bd1c9
+run_name: bouncy-pig-795
+run_uuid: ea59f8ac71ed499e8f28663f6b5bd1c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177417547
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/28ddbebdfb7a4716adfb33ba9e8df821/artifacts
+end_time: 1698183455734
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 28ddbebdfb7a4716adfb33ba9e8df821
+run_name: beautiful-snail-333
+run_uuid: 28ddbebdfb7a4716adfb33ba9e8df821
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183443223
+status: 3
+tags: []
+user_id: gianfrancodemarco

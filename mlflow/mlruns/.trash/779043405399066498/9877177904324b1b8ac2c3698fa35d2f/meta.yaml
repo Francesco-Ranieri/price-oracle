@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/9877177904324b1b8ac2c3698fa35d2f/artifacts
+deleted_time: 1698168217608
+end_time: 1698166944175
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: 9877177904324b1b8ac2c3698fa35d2f
+run_name: zealous-frog-0
+run_uuid: 9877177904324b1b8ac2c3698fa35d2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698166925176
+status: 3
+tags: []
+user_id: gianfrancodemarco

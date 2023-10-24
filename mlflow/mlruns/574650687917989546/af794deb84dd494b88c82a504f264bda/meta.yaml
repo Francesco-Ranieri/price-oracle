@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/af794deb84dd494b88c82a504f264bda/artifacts
+end_time: 1698175583512
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: af794deb84dd494b88c82a504f264bda
+run_name: inquisitive-gull-469
+run_uuid: af794deb84dd494b88c82a504f264bda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175566301
+status: 3
+tags: []
+user_id: gianfrancodemarco

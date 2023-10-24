@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/ec706197df9441cab035096ea06c7a9a/artifacts
+end_time: 1698153268278
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: ec706197df9441cab035096ea06c7a9a
+run_name: useful-tern-829
+run_uuid: ec706197df9441cab035096ea06c7a9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153246133
+status: 3
+tags: []
+user_id: gianfrancodemarco

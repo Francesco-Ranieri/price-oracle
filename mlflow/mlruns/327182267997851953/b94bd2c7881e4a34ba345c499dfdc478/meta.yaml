@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b94bd2c7881e4a34ba345c499dfdc478/artifacts
+end_time: 1698184050529
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b94bd2c7881e4a34ba345c499dfdc478
+run_name: unique-toad-40
+run_uuid: b94bd2c7881e4a34ba345c499dfdc478
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184040920
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/85d3c54b7c294f24a2ee28fa86a424fd/artifacts
+end_time: 1698148919133
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 85d3c54b7c294f24a2ee28fa86a424fd
+run_name: bright-stag-611
+run_uuid: 85d3c54b7c294f24a2ee28fa86a424fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698148908682
+status: 3
+tags: []
+user_id: gianfrancodemarco

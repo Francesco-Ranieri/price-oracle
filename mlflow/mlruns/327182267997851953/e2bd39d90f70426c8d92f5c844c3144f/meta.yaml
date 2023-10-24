@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/e2bd39d90f70426c8d92f5c844c3144f/artifacts
+end_time: 1698178078288
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: e2bd39d90f70426c8d92f5c844c3144f
+run_name: glamorous-chimp-993
+run_uuid: e2bd39d90f70426c8d92f5c844c3144f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178074005
+status: 4
+tags: []
+user_id: gianfrancodemarco

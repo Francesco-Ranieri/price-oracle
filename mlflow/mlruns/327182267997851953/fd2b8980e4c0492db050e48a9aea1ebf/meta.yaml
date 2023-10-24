@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/fd2b8980e4c0492db050e48a9aea1ebf/artifacts
+end_time: 1698183399441
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: fd2b8980e4c0492db050e48a9aea1ebf
+run_name: colorful-skink-459
+run_uuid: fd2b8980e4c0492db050e48a9aea1ebf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183384463
+status: 3
+tags: []
+user_id: gianfrancodemarco

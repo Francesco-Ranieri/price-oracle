@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/cd48478564be457bb2e44cace9ea99e4/artifacts
+deleted_time: 1698168217608
+end_time: 1698167252024
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: cd48478564be457bb2e44cace9ea99e4
+run_name: caring-kit-125
+run_uuid: cd48478564be457bb2e44cace9ea99e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167233012
+status: 3
+tags: []
+user_id: gianfrancodemarco

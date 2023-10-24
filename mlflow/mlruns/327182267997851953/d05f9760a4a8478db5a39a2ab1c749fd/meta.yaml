@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d05f9760a4a8478db5a39a2ab1c749fd/artifacts
+end_time: 1698180274353
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d05f9760a4a8478db5a39a2ab1c749fd
+run_name: whimsical-rook-38
+run_uuid: d05f9760a4a8478db5a39a2ab1c749fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180261281
+status: 3
+tags: []
+user_id: gianfrancodemarco

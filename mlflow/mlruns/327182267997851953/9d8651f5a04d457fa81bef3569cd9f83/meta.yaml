@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9d8651f5a04d457fa81bef3569cd9f83/artifacts
+end_time: 1698185510193
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9d8651f5a04d457fa81bef3569cd9f83
+run_name: magnificent-cub-28
+run_uuid: 9d8651f5a04d457fa81bef3569cd9f83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185489975
+status: 3
+tags: []
+user_id: gianfrancodemarco

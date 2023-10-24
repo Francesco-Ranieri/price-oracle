@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ee285e74c84d4f819db5fb188f6844dd/artifacts
+end_time: 1698179435206
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ee285e74c84d4f819db5fb188f6844dd
+run_name: rebellious-fish-476
+run_uuid: ee285e74c84d4f819db5fb188f6844dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179413685
+status: 3
+tags: []
+user_id: gianfrancodemarco

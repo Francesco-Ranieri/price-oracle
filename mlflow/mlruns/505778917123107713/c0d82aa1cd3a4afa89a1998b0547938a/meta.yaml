@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/c0d82aa1cd3a4afa89a1998b0547938a/artifacts
+deleted_time: 1698162361702
+end_time: 1698161621371
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: c0d82aa1cd3a4afa89a1998b0547938a
+run_name: welcoming-fish-269
+run_uuid: c0d82aa1cd3a4afa89a1998b0547938a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698161600862
+status: 3
+tags: []
+user_id: gianfrancodemarco

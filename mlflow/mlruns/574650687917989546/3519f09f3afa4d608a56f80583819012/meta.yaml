@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/3519f09f3afa4d608a56f80583819012/artifacts
+end_time: 1698175633514
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 3519f09f3afa4d608a56f80583819012
+run_name: delicate-rat-163
+run_uuid: 3519f09f3afa4d608a56f80583819012
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175615230
+status: 3
+tags: []
+user_id: gianfrancodemarco

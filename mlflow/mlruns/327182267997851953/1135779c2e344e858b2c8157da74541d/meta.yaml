@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1135779c2e344e858b2c8157da74541d/artifacts
+end_time: 1698186926313
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1135779c2e344e858b2c8157da74541d
+run_name: masked-lark-140
+run_uuid: 1135779c2e344e858b2c8157da74541d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186917680
+status: 3
+tags: []
+user_id: gianfrancodemarco

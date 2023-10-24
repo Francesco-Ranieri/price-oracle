@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/563c1e13df09427fa84cbc322628b167/artifacts
+end_time: 1698175100275
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 563c1e13df09427fa84cbc322628b167
+run_name: victorious-swan-725
+run_uuid: 563c1e13df09427fa84cbc322628b167
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175089372
+status: 4
+tags: []
+user_id: gianfrancodemarco

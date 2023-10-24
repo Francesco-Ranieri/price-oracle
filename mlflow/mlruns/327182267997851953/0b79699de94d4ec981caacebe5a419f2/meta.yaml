@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/0b79699de94d4ec981caacebe5a419f2/artifacts
+end_time: 1698183207724
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 0b79699de94d4ec981caacebe5a419f2
+run_name: mysterious-bear-874
+run_uuid: 0b79699de94d4ec981caacebe5a419f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183186915
+status: 3
+tags: []
+user_id: gianfrancodemarco

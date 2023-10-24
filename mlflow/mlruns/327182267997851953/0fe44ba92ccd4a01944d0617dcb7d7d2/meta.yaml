@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/0fe44ba92ccd4a01944d0617dcb7d7d2/artifacts
+end_time: 1698183487568
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 0fe44ba92ccd4a01944d0617dcb7d7d2
+run_name: mercurial-skink-507
+run_uuid: 0fe44ba92ccd4a01944d0617dcb7d7d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183483360
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,31 @@
+Model: "sequential_806"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_1145 (SimpleRNN  (None, 8, 224)            50624     
+ )                                                               
+                                                                 
+ dropout_1634 (Dropout)      (None, 8, 224)            0         
+                                                                 
+ simple_rnn_1146 (SimpleRNN  (None, 8, 224)            100576    
+ )                                                               
+                                                                 
+ dropout_1635 (Dropout)      (None, 8, 224)            0         
+                                                                 
+ simple_rnn_1147 (SimpleRNN  (None, 8, 96)             30816     
+ )                                                               
+                                                                 
+ dropout_1636 (Dropout)      (None, 8, 96)             0         
+                                                                 
+ simple_rnn_1148 (SimpleRNN  (None, 192)               55488     
+ )                                                               
+                                                                 
+ dropout_1637 (Dropout)      (None, 192)               0         
+                                                                 
+ dense_806 (Dense)           (None, 1)                 193       
+                                                                 
+=================================================================
+Total params: 237697 (928.50 KB)
+Trainable params: 237697 (928.50 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

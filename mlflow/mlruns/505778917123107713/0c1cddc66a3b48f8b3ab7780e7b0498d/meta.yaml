@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/0c1cddc66a3b48f8b3ab7780e7b0498d/artifacts
+end_time: 1698158710283
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 0c1cddc66a3b48f8b3ab7780e7b0498d
+run_name: delightful-smelt-592
+run_uuid: 0c1cddc66a3b48f8b3ab7780e7b0498d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158688591
+status: 3
+tags: []
+user_id: gianfrancodemarco

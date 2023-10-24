@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ca88917bb5bc4582970cb22ae0b55369/artifacts
+end_time: 1698184723230
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ca88917bb5bc4582970cb22ae0b55369
+run_name: nervous-cow-868
+run_uuid: ca88917bb5bc4582970cb22ae0b55369
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184703450
+status: 3
+tags: []
+user_id: gianfrancodemarco

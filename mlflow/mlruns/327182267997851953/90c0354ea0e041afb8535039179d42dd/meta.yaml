@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/90c0354ea0e041afb8535039179d42dd/artifacts
+end_time: 1698180231332
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 90c0354ea0e041afb8535039179d42dd
+run_name: languid-pug-78
+run_uuid: 90c0354ea0e041afb8535039179d42dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180221903
+status: 3
+tags: []
+user_id: gianfrancodemarco

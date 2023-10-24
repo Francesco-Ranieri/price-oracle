@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/ff59e2ed6943465d874be12ff38e6520/artifacts
+deleted_time: 1698171244534
+end_time: 1698171144969
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: ff59e2ed6943465d874be12ff38e6520
+run_name: bustling-hawk-272
+run_uuid: ff59e2ed6943465d874be12ff38e6520
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171123157
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/274ab2fd751a47febbf56252a5c8f76c/artifacts
+end_time: 1698175998404
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 274ab2fd751a47febbf56252a5c8f76c
+run_name: unique-stoat-510
+run_uuid: 274ab2fd751a47febbf56252a5c8f76c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175973687
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/a1c4530c0981442ca9ad617ec23dfff4/artifacts
+end_time: 1698158909054
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: a1c4530c0981442ca9ad617ec23dfff4
+run_name: stately-penguin-914
+run_uuid: a1c4530c0981442ca9ad617ec23dfff4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158891924
+status: 3
+tags: []
+user_id: gianfrancodemarco

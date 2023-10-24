@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/51598efb8ea8442196d424bc417dcdcd/artifacts
+deleted_time: 1698162361644
+end_time: 1698161427418
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 51598efb8ea8442196d424bc417dcdcd
+run_name: fearless-stork-553
+run_uuid: 51598efb8ea8442196d424bc417dcdcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698161378257
+status: 3
+tags: []
+user_id: gianfrancodemarco

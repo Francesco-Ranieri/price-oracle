@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1198ae73f3ab45698b2f9f88ea5d78b6/artifacts
+end_time: 1698187463329
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1198ae73f3ab45698b2f9f88ea5d78b6
+run_name: painted-cub-756
+run_uuid: 1198ae73f3ab45698b2f9f88ea5d78b6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187440241
+status: 3
+tags: []
+user_id: gianfrancodemarco

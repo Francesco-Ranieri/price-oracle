@@ -1,0 +1,27 @@
+Model: "sequential_401"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_1017 (LSTM)            (None, 5, 160)            103680    
+                                                                 
+ dropout_1017 (Dropout)      (None, 5, 160)            0         
+                                                                 
+ lstm_1018 (LSTM)            (None, 5, 32)             24704     
+                                                                 
+ dropout_1018 (Dropout)      (None, 5, 32)             0         
+                                                                 
+ lstm_1019 (LSTM)            (None, 5, 256)            295936    
+                                                                 
+ dropout_1019 (Dropout)      (None, 5, 256)            0         
+                                                                 
+ lstm_1020 (LSTM)            (None, 5, 192)            344832    
+                                                                 
+ dropout_1020 (Dropout)      (None, 5, 192)            0         
+                                                                 
+ dense_401 (Dense)           (None, 5, 1)              193       
+                                                                 
+=================================================================
+Total params: 769345 (2.93 MB)
+Trainable params: 769345 (2.93 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

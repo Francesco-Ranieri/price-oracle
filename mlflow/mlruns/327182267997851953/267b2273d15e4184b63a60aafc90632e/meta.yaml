@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/267b2273d15e4184b63a60aafc90632e/artifacts
+end_time: 1698179609370
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 267b2273d15e4184b63a60aafc90632e
+run_name: useful-squirrel-6
+run_uuid: 267b2273d15e4184b63a60aafc90632e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179595518
+status: 3
+tags: []
+user_id: gianfrancodemarco

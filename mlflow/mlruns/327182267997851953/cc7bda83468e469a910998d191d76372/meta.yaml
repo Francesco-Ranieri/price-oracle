@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/cc7bda83468e469a910998d191d76372/artifacts
+end_time: 1698180913235
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: cc7bda83468e469a910998d191d76372
+run_name: funny-bug-747
+run_uuid: cc7bda83468e469a910998d191d76372
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180894840
+status: 3
+tags: []
+user_id: gianfrancodemarco

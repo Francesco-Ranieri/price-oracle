@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/dba796bbecd24654822056299a2579e0/artifacts
+end_time: 1698180425376
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: dba796bbecd24654822056299a2579e0
+run_name: judicious-conch-4
+run_uuid: dba796bbecd24654822056299a2579e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180415896
+status: 3
+tags: []
+user_id: gianfrancodemarco

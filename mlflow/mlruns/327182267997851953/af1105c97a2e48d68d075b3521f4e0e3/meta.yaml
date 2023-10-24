@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/af1105c97a2e48d68d075b3521f4e0e3/artifacts
+end_time: 1698183256874
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: af1105c97a2e48d68d075b3521f4e0e3
+run_name: upset-shark-382
+run_uuid: af1105c97a2e48d68d075b3521f4e0e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183232598
+status: 3
+tags: []
+user_id: gianfrancodemarco

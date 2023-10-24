@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/35a068fc22ab4b929b66fc3a1003c18f/artifacts
+end_time: 1698176922004
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 35a068fc22ab4b929b66fc3a1003c18f
+run_name: rebellious-bird-566
+run_uuid: 35a068fc22ab4b929b66fc3a1003c18f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176908440
+status: 3
+tags: []
+user_id: gianfrancodemarco

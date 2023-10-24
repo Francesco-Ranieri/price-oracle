@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c5bf8b398ab84d6fa559be61879e1347/artifacts
+end_time: 1698184209738
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c5bf8b398ab84d6fa559be61879e1347
+run_name: victorious-mink-190
+run_uuid: c5bf8b398ab84d6fa559be61879e1347
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184179619
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,7 +1,0 @@
-artifact_location: mlflow-artifacts:/951707969944457704
-creation_time: 1697370996244
-experiment_id: '951707969944457704'
-last_update_time: 1697371185282
-lifecycle_stage: deleted
-name: Clustering_KMeans_cropped_min_max_scaled_best
-tags: {}

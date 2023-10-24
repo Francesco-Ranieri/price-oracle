@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/dff68b473c3d44d992b4c94272e4b37f/artifacts
+end_time: 1698172807201
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: dff68b473c3d44d992b4c94272e4b37f
+run_name: gregarious-turtle-99
+run_uuid: dff68b473c3d44d992b4c94272e4b37f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172795757
+status: 4
+tags: []
+user_id: gianfrancodemarco

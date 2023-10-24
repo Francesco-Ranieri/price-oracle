@@ -1,0 +1,27 @@
+Model: "sequential_408"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_1041 (LSTM)            (None, 14, 128)           66560     
+                                                                 
+ dropout_1041 (Dropout)      (None, 14, 128)           0         
+                                                                 
+ lstm_1042 (LSTM)            (None, 14, 192)           246528    
+                                                                 
+ dropout_1042 (Dropout)      (None, 14, 192)           0         
+                                                                 
+ lstm_1043 (LSTM)            (None, 14, 64)            65792     
+                                                                 
+ dropout_1043 (Dropout)      (None, 14, 64)            0         
+                                                                 
+ lstm_1044 (LSTM)            (None, 14, 96)            61824     
+                                                                 
+ dropout_1044 (Dropout)      (None, 14, 96)            0         
+                                                                 
+ dense_408 (Dense)           (None, 14, 1)             97        
+                                                                 
+=================================================================
+Total params: 440801 (1.68 MB)
+Trainable params: 440801 (1.68 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

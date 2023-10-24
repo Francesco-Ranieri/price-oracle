@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/4b86c592231e4600a1d46836a800eba3/artifacts
+end_time: 1698187968803
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 4b86c592231e4600a1d46836a800eba3
+run_name: unique-skunk-516
+run_uuid: 4b86c592231e4600a1d46836a800eba3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187955881
+status: 3
+tags: []
+user_id: gianfrancodemarco

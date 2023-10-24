@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/b6deff83aca84c06ab094e20b88f212f/artifacts
+deleted_time: 1698168217608
+end_time: null
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: b6deff83aca84c06ab094e20b88f212f
+run_name: glamorous-rook-797
+run_uuid: b6deff83aca84c06ab094e20b88f212f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167560341
+status: 1
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/f381e8e2ec29463194ae228b12e7e4c7/artifacts
+end_time: 1698176246133
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: f381e8e2ec29463194ae228b12e7e4c7
+run_name: exultant-stag-536
+run_uuid: f381e8e2ec29463194ae228b12e7e4c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176223215
+status: 3
+tags: []
+user_id: gianfrancodemarco

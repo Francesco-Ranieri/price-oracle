@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/2d19b5033db1451683282dc4bfc83e62/artifacts
+deleted_time: 1698172246914
+end_time: 1698172173220
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 2d19b5033db1451683282dc4bfc83e62
+run_name: caring-toad-620
+run_uuid: 2d19b5033db1451683282dc4bfc83e62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172157222
+status: 3
+tags: []
+user_id: gianfrancodemarco

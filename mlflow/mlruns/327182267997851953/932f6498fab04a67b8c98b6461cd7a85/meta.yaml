@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/932f6498fab04a67b8c98b6461cd7a85/artifacts
+end_time: 1698182809876
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 932f6498fab04a67b8c98b6461cd7a85
+run_name: colorful-bird-326
+run_uuid: 932f6498fab04a67b8c98b6461cd7a85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182802814
+status: 3
+tags: []
+user_id: gianfrancodemarco

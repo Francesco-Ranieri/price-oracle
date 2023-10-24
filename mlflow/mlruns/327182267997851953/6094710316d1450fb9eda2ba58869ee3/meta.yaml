@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/6094710316d1450fb9eda2ba58869ee3/artifacts
+end_time: 1698181922492
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 6094710316d1450fb9eda2ba58869ee3
+run_name: adorable-panda-516
+run_uuid: 6094710316d1450fb9eda2ba58869ee3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181916125
+status: 4
+tags: []
+user_id: gianfrancodemarco

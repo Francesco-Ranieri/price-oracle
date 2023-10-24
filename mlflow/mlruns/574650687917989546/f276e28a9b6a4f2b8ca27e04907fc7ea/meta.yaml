@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/f276e28a9b6a4f2b8ca27e04907fc7ea/artifacts
+end_time: 1698176934674
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: f276e28a9b6a4f2b8ca27e04907fc7ea
+run_name: adorable-goose-125
+run_uuid: f276e28a9b6a4f2b8ca27e04907fc7ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176922053
+status: 3
+tags: []
+user_id: gianfrancodemarco

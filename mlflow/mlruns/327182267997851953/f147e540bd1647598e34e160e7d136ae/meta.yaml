@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/f147e540bd1647598e34e160e7d136ae/artifacts
+end_time: 1698178357935
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: f147e540bd1647598e34e160e7d136ae
+run_name: bright-fox-868
+run_uuid: f147e540bd1647598e34e160e7d136ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178352255
+status: 4
+tags: []
+user_id: gianfrancodemarco

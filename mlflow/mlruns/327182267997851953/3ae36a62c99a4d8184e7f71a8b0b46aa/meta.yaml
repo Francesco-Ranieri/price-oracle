@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/3ae36a62c99a4d8184e7f71a8b0b46aa/artifacts
+end_time: 1698185920101
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 3ae36a62c99a4d8184e7f71a8b0b46aa
+run_name: angry-tern-876
+run_uuid: 3ae36a62c99a4d8184e7f71a8b0b46aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185895212
+status: 3
+tags: []
+user_id: gianfrancodemarco

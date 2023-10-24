@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/4db1b1c5726c4b60acaa0311c4264943/artifacts
+deleted_time: 1698154553806
+end_time: 1698154250472
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 4db1b1c5726c4b60acaa0311c4264943
+run_name: likeable-smelt-245
+run_uuid: 4db1b1c5726c4b60acaa0311c4264943
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698154246447
+status: 3
+tags: []
+user_id: gianfrancodemarco

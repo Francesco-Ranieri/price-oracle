@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/374ba89d2200428bb629e5e5bc1fd43b/artifacts
+end_time: 1698182149196
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 374ba89d2200428bb629e5e5bc1fd43b
+run_name: mysterious-crane-199
+run_uuid: 374ba89d2200428bb629e5e5bc1fd43b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182142589
+status: 3
+tags: []
+user_id: gianfrancodemarco

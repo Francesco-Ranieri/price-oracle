@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/c86a9f028bc14f72ae1c86fef0abf8a6/artifacts
+deleted_time: 1698171244534
+end_time: 1698169093009
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: c86a9f028bc14f72ae1c86fef0abf8a6
+run_name: victorious-bass-142
+run_uuid: c86a9f028bc14f72ae1c86fef0abf8a6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169087094
+status: 4
+tags: []
+user_id: gianfrancodemarco

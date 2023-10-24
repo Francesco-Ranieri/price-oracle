@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/11123c69b18b4172ab8b59c29a5746bf/artifacts
+end_time: 1698186424211
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 11123c69b18b4172ab8b59c29a5746bf
+run_name: resilient-steed-49
+run_uuid: 11123c69b18b4172ab8b59c29a5746bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186414712
+status: 3
+tags: []
+user_id: gianfrancodemarco

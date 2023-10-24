@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/de1c3bbcf79f422e8612a60417773fba/artifacts
+end_time: 1698150769371
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: de1c3bbcf79f422e8612a60417773fba
+run_name: nebulous-quail-814
+run_uuid: de1c3bbcf79f422e8612a60417773fba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698150713382
+status: 3
+tags: []
+user_id: gianfrancodemarco

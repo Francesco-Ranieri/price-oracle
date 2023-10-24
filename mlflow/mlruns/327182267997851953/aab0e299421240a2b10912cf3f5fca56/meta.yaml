@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/aab0e299421240a2b10912cf3f5fca56/artifacts
+end_time: 1698185889049
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: aab0e299421240a2b10912cf3f5fca56
+run_name: bemused-bug-654
+run_uuid: aab0e299421240a2b10912cf3f5fca56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185871616
+status: 3
+tags: []
+user_id: gianfrancodemarco

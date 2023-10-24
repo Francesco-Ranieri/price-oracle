@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/6e4ce507009a4c88bf94be24580cea5c/artifacts
+deleted_time: 1698171244534
+end_time: 1698169341835
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 6e4ce507009a4c88bf94be24580cea5c
+run_name: intrigued-koi-993
+run_uuid: 6e4ce507009a4c88bf94be24580cea5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169333247
+status: 4
+tags: []
+user_id: gianfrancodemarco

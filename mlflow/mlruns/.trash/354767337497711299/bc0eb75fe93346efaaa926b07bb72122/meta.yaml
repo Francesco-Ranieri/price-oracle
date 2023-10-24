@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/bc0eb75fe93346efaaa926b07bb72122/artifacts
+deleted_time: 1698171244534
+end_time: 1698169288575
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: bc0eb75fe93346efaaa926b07bb72122
+run_name: vaunted-hen-200
+run_uuid: bc0eb75fe93346efaaa926b07bb72122
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169273122
+status: 3
+tags: []
+user_id: gianfrancodemarco

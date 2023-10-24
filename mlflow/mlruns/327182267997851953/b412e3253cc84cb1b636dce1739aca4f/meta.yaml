@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b412e3253cc84cb1b636dce1739aca4f/artifacts
+end_time: 1698179951524
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b412e3253cc84cb1b636dce1739aca4f
+run_name: monumental-kit-676
+run_uuid: b412e3253cc84cb1b636dce1739aca4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179936727
+status: 3
+tags: []
+user_id: gianfrancodemarco

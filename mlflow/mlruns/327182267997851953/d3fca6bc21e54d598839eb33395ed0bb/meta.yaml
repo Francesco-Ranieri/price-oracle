@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d3fca6bc21e54d598839eb33395ed0bb/artifacts
+end_time: 1698181194827
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d3fca6bc21e54d598839eb33395ed0bb
+run_name: fearless-rat-147
+run_uuid: d3fca6bc21e54d598839eb33395ed0bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181189107
+status: 4
+tags: []
+user_id: gianfrancodemarco

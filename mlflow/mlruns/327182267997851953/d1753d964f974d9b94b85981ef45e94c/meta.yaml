@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d1753d964f974d9b94b85981ef45e94c/artifacts
+end_time: 1698178985699
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d1753d964f974d9b94b85981ef45e94c
+run_name: amusing-midge-199
+run_uuid: d1753d964f974d9b94b85981ef45e94c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178982884
+status: 4
+tags: []
+user_id: gianfrancodemarco

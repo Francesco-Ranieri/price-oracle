@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/b411acad55f04a8ab285a1508123985c/artifacts
+end_time: 1698149799884
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: b411acad55f04a8ab285a1508123985c
+run_name: polite-smelt-499
+run_uuid: b411acad55f04a8ab285a1508123985c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698149784332
+status: 3
+tags: []
+user_id: gianfrancodemarco

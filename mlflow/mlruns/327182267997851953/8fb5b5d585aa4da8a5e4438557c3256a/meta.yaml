@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/8fb5b5d585aa4da8a5e4438557c3256a/artifacts
+end_time: 1698186284547
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 8fb5b5d585aa4da8a5e4438557c3256a
+run_name: painted-ox-973
+run_uuid: 8fb5b5d585aa4da8a5e4438557c3256a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186277725
+status: 3
+tags: []
+user_id: gianfrancodemarco

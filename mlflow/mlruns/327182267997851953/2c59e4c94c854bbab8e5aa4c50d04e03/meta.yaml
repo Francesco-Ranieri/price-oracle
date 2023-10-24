@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/2c59e4c94c854bbab8e5aa4c50d04e03/artifacts
+end_time: 1698182335841
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 2c59e4c94c854bbab8e5aa4c50d04e03
+run_name: intrigued-wolf-430
+run_uuid: 2c59e4c94c854bbab8e5aa4c50d04e03
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182323416
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/7962a772d2894b0cb4f2c3c5e3cd9524/artifacts
+end_time: 1698158673580
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 7962a772d2894b0cb4f2c3c5e3cd9524
+run_name: colorful-gnu-685
+run_uuid: 7962a772d2894b0cb4f2c3c5e3cd9524
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158636074
+status: 3
+tags: []
+user_id: gianfrancodemarco

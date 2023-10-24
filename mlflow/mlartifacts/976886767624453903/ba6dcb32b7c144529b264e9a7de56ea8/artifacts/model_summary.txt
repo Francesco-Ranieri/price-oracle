@@ -1,0 +1,27 @@
+Model: "sequential_206"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_508 (LSTM)             (None, 8, 192)            148992    
+                                                                 
+ dropout_508 (Dropout)       (None, 8, 192)            0         
+                                                                 
+ lstm_509 (LSTM)             (None, 8, 256)            459776    
+                                                                 
+ dropout_509 (Dropout)       (None, 8, 256)            0         
+                                                                 
+ lstm_510 (LSTM)             (None, 8, 256)            525312    
+                                                                 
+ dropout_510 (Dropout)       (None, 8, 256)            0         
+                                                                 
+ lstm_511 (LSTM)             (None, 8, 64)             82176     
+                                                                 
+ dropout_511 (Dropout)       (None, 8, 64)             0         
+                                                                 
+ dense_206 (Dense)           (None, 8, 1)              65        
+                                                                 
+=================================================================
+Total params: 1216321 (4.64 MB)
+Trainable params: 1216321 (4.64 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

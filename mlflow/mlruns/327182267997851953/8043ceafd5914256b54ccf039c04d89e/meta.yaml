@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/8043ceafd5914256b54ccf039c04d89e/artifacts
+end_time: 1698182229754
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 8043ceafd5914256b54ccf039c04d89e
+run_name: capricious-bug-919
+run_uuid: 8043ceafd5914256b54ccf039c04d89e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182222296
+status: 3
+tags: []
+user_id: gianfrancodemarco

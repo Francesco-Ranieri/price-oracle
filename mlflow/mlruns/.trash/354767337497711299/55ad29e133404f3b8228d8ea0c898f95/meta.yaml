@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/55ad29e133404f3b8228d8ea0c898f95/artifacts
+deleted_time: 1698171244534
+end_time: 1698168628281
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 55ad29e133404f3b8228d8ea0c898f95
+run_name: delightful-goose-779
+run_uuid: 55ad29e133404f3b8228d8ea0c898f95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698168566066
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/1378f6af78a54d87a4c8662894f67709/artifacts
+deleted_time: 1698171244534
+end_time: 1698168992044
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 1378f6af78a54d87a4c8662894f67709
+run_name: beautiful-grub-252
+run_uuid: 1378f6af78a54d87a4c8662894f67709
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698168968145
+status: 3
+tags: []
+user_id: gianfrancodemarco

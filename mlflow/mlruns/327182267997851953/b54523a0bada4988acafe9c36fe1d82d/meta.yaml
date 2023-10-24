@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/b54523a0bada4988acafe9c36fe1d82d/artifacts
+end_time: 1698184733180
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: b54523a0bada4988acafe9c36fe1d82d
+run_name: respected-bird-482
+run_uuid: b54523a0bada4988acafe9c36fe1d82d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184723275
+status: 3
+tags: []
+user_id: gianfrancodemarco

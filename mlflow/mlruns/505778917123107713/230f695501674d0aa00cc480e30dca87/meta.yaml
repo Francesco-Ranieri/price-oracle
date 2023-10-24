@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/230f695501674d0aa00cc480e30dca87/artifacts
+end_time: 1698150108575
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 230f695501674d0aa00cc480e30dca87
+run_name: bald-fawn-578
+run_uuid: 230f695501674d0aa00cc480e30dca87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698150088139
+status: 3
+tags: []
+user_id: gianfrancodemarco

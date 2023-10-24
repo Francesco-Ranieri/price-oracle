@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/7162a77d4edc406bbdb1ba89aa6a42f8/artifacts
+end_time: 1698178352213
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 7162a77d4edc406bbdb1ba89aa6a42f8
+run_name: thoughtful-lynx-777
+run_uuid: 7162a77d4edc406bbdb1ba89aa6a42f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178345302
+status: 3
+tags: []
+user_id: gianfrancodemarco

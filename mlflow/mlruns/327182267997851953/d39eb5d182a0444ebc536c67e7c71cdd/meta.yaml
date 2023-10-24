@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d39eb5d182a0444ebc536c67e7c71cdd/artifacts
+end_time: 1698183514216
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d39eb5d182a0444ebc536c67e7c71cdd
+run_name: vaunted-slug-85
+run_uuid: d39eb5d182a0444ebc536c67e7c71cdd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183504791
+status: 3
+tags: []
+user_id: gianfrancodemarco

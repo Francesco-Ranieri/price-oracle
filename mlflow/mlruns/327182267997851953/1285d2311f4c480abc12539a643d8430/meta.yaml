@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1285d2311f4c480abc12539a643d8430/artifacts
+end_time: 1698182171416
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1285d2311f4c480abc12539a643d8430
+run_name: mysterious-pig-794
+run_uuid: 1285d2311f4c480abc12539a643d8430
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182161086
+status: 3
+tags: []
+user_id: gianfrancodemarco

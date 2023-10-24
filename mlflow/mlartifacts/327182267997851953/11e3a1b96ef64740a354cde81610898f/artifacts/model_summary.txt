@@ -1,0 +1,21 @@
+Model: "sequential_778"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_1075 (SimpleRNN  (None, 1, 160)            25920     
+ )                                                               
+                                                                 
+ dropout_1551 (Dropout)      (None, 1, 160)            0         
+                                                                 
+ simple_rnn_1076 (SimpleRNN  (None, 160)               51360     
+ )                                                               
+                                                                 
+ dropout_1552 (Dropout)      (None, 160)               0         
+                                                                 
+ dense_778 (Dense)           (None, 1)                 161       
+                                                                 
+=================================================================
+Total params: 77441 (302.50 KB)
+Trainable params: 77441 (302.50 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

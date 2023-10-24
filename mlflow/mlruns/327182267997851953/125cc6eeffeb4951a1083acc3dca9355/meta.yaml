@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/125cc6eeffeb4951a1083acc3dca9355/artifacts
+end_time: 1698182889453
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 125cc6eeffeb4951a1083acc3dca9355
+run_name: Training_best_model_close_BTCUSDT
+run_uuid: 125cc6eeffeb4951a1083acc3dca9355
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182876214
+status: 3
+tags: []
+user_id: gianfrancodemarco

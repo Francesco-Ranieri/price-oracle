@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d0356455ecb049a3ac71bccc2091fb05/artifacts
+end_time: 1698182482177
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d0356455ecb049a3ac71bccc2091fb05
+run_name: judicious-horse-516
+run_uuid: d0356455ecb049a3ac71bccc2091fb05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182473799
+status: 4
+tags: []
+user_id: gianfrancodemarco

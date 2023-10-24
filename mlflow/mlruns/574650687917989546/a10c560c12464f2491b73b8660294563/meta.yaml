@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/a10c560c12464f2491b73b8660294563/artifacts
+end_time: 1698174427915
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: a10c560c12464f2491b73b8660294563
+run_name: popular-crow-453
+run_uuid: a10c560c12464f2491b73b8660294563
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174383425
+status: 3
+tags: []
+user_id: gianfrancodemarco

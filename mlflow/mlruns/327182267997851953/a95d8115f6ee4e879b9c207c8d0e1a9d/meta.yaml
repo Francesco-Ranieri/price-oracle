@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/a95d8115f6ee4e879b9c207c8d0e1a9d/artifacts
+end_time: 1698182720828
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: a95d8115f6ee4e879b9c207c8d0e1a9d
+run_name: youthful-doe-311
+run_uuid: a95d8115f6ee4e879b9c207c8d0e1a9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182713330
+status: 4
+tags: []
+user_id: gianfrancodemarco

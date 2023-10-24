@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/fa0c5abc646f4e9b953ea7bb17b2057a/artifacts
+deleted_time: 1698162361722
+end_time: 1698160396149
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: fa0c5abc646f4e9b953ea7bb17b2057a
+run_name: blushing-shrike-369
+run_uuid: fa0c5abc646f4e9b953ea7bb17b2057a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698160384555
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/531b19032dc44bb19e956cad1093d6dd/artifacts
+end_time: 1698180120375
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 531b19032dc44bb19e956cad1093d6dd
+run_name: nervous-perch-906
+run_uuid: 531b19032dc44bb19e956cad1093d6dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180113503
+status: 3
+tags: []
+user_id: gianfrancodemarco

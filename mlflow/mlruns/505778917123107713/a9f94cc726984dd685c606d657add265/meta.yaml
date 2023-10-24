@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/a9f94cc726984dd685c606d657add265/artifacts
+end_time: 1698157929949
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: a9f94cc726984dd685c606d657add265
+run_name: bustling-shoat-354
+run_uuid: a9f94cc726984dd685c606d657add265
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698157861390
+status: 3
+tags: []
+user_id: gianfrancodemarco

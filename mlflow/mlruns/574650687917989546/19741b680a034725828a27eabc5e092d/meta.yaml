@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/19741b680a034725828a27eabc5e092d/artifacts
+end_time: 1698174696621
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 19741b680a034725828a27eabc5e092d
+run_name: enchanting-lark-972
+run_uuid: 19741b680a034725828a27eabc5e092d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174673866
+status: 3
+tags: []
+user_id: gianfrancodemarco

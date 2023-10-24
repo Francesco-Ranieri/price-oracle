@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/c1968d2e9f804bbf93e7eff753ece6dd/artifacts
+end_time: 1698186492460
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: c1968d2e9f804bbf93e7eff753ece6dd
+run_name: righteous-rat-950
+run_uuid: c1968d2e9f804bbf93e7eff753ece6dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186472310
+status: 3
+tags: []
+user_id: gianfrancodemarco

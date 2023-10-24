@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/8719503a253a4826b534c7d6cba967ff/artifacts
+deleted_time: 1698162361693
+end_time: 1698161303758
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 8719503a253a4826b534c7d6cba967ff
+run_name: lyrical-moose-4
+run_uuid: 8719503a253a4826b534c7d6cba967ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698161255779
+status: 3
+tags: []
+user_id: gianfrancodemarco

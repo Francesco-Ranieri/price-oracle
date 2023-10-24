@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/ab9a0279569248699a5eae6de631e635/artifacts
+deleted_time: 1698168217608
+end_time: 1698166811314
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: ab9a0279569248699a5eae6de631e635
+run_name: wise-bass-801
+run_uuid: ab9a0279569248699a5eae6de631e635
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698166708777
+status: 3
+tags: []
+user_id: gianfrancodemarco

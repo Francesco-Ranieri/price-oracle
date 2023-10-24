@@ -1,0 +1,19 @@
+Model: "sequential_504"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_732 (SimpleRNN)  (None, 7, 96)             9408      
+                                                                 
+ dropout_1002 (Dropout)      (None, 7, 96)             0         
+                                                                 
+ simple_rnn_733 (SimpleRNN)  (None, 96)                18528     
+                                                                 
+ dropout_1003 (Dropout)      (None, 96)                0         
+                                                                 
+ dense_504 (Dense)           (None, 1)                 97        
+                                                                 
+=================================================================
+Total params: 28033 (109.50 KB)
+Trainable params: 28033 (109.50 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

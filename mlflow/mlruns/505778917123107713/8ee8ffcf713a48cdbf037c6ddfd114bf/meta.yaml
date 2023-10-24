@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/8ee8ffcf713a48cdbf037c6ddfd114bf/artifacts
+end_time: 1698151943304
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 8ee8ffcf713a48cdbf037c6ddfd114bf
+run_name: fearless-hawk-541
+run_uuid: 8ee8ffcf713a48cdbf037c6ddfd114bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698151934777
+status: 3
+tags: []
+user_id: gianfrancodemarco

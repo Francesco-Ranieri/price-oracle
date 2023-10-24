@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/e04a0d4e118644a38d5c6a6fd966a051/artifacts
+end_time: 1698159175851
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: e04a0d4e118644a38d5c6a6fd966a051
+run_name: sneaky-ray-123
+run_uuid: e04a0d4e118644a38d5c6a6fd966a051
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698159162933
+status: 3
+tags: []
+user_id: gianfrancodemarco

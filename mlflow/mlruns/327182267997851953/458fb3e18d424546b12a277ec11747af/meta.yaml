@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/458fb3e18d424546b12a277ec11747af/artifacts
+end_time: 1698185210567
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 458fb3e18d424546b12a277ec11747af
+run_name: mercurial-penguin-48
+run_uuid: 458fb3e18d424546b12a277ec11747af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185202467
+status: 3
+tags: []
+user_id: gianfrancodemarco

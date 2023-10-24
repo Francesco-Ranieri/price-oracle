@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/28735e921fd141b29212bc424601e773/artifacts
+deleted_time: 1698168217608
+end_time: 1698167130259
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: 28735e921fd141b29212bc424601e773
+run_name: selective-worm-6
+run_uuid: 28735e921fd141b29212bc424601e773
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167116494
+status: 3
+tags: []
+user_id: gianfrancodemarco

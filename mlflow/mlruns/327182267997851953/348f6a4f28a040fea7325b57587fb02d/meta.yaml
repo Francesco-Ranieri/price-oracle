@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/348f6a4f28a040fea7325b57587fb02d/artifacts
+end_time: 1698179715881
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 348f6a4f28a040fea7325b57587fb02d
+run_name: thundering-yak-166
+run_uuid: 348f6a4f28a040fea7325b57587fb02d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179701713
+status: 3
+tags: []
+user_id: gianfrancodemarco

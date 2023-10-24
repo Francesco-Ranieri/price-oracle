@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1c60cb68aaa945168fd52c28bf913f22/artifacts
+end_time: 1698178067230
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1c60cb68aaa945168fd52c28bf913f22
+run_name: beautiful-crow-739
+run_uuid: 1c60cb68aaa945168fd52c28bf913f22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178056199
+status: 3
+tags: []
+user_id: gianfrancodemarco

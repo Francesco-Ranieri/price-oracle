@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9d29eb595df64058aebfd074e909351b/artifacts
+end_time: 1698179202112
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9d29eb595df64058aebfd074e909351b
+run_name: aged-mole-124
+run_uuid: 9d29eb595df64058aebfd074e909351b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179162840
+status: 4
+tags: []
+user_id: gianfrancodemarco

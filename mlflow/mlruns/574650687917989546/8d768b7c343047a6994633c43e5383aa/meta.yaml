@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/8d768b7c343047a6994633c43e5383aa/artifacts
+end_time: 1698176026631
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 8d768b7c343047a6994633c43e5383aa
+run_name: secretive-fish-806
+run_uuid: 8d768b7c343047a6994633c43e5383aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176007436
+status: 3
+tags: []
+user_id: gianfrancodemarco

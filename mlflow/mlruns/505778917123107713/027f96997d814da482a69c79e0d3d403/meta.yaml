@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/027f96997d814da482a69c79e0d3d403/artifacts
+end_time: 1698159234547
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 027f96997d814da482a69c79e0d3d403
+run_name: spiffy-shrew-338
+run_uuid: 027f96997d814da482a69c79e0d3d403
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698159211160
+status: 3
+tags: []
+user_id: gianfrancodemarco

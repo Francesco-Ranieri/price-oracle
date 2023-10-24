@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/65a2dca401ed49589b8c59e41252bcf6/artifacts
+end_time: 1698188430066
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 65a2dca401ed49589b8c59e41252bcf6
+run_name: clumsy-bat-555
+run_uuid: 65a2dca401ed49589b8c59e41252bcf6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188422295
+status: 3
+tags: []
+user_id: gianfrancodemarco

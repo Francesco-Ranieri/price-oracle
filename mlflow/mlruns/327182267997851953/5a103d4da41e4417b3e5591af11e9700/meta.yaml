@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/5a103d4da41e4417b3e5591af11e9700/artifacts
+end_time: 1698187241806
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 5a103d4da41e4417b3e5591af11e9700
+run_name: selective-moth-329
+run_uuid: 5a103d4da41e4417b3e5591af11e9700
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187238566
+status: 4
+tags: []
+user_id: gianfrancodemarco

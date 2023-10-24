@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/dfe87dba9668454fb29226962a998270/artifacts
+deleted_time: 1698154553811
+end_time: 1698154120656
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: dfe87dba9668454fb29226962a998270
+run_name: languid-ant-718
+run_uuid: dfe87dba9668454fb29226962a998270
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698154104229
+status: 3
+tags: []
+user_id: gianfrancodemarco

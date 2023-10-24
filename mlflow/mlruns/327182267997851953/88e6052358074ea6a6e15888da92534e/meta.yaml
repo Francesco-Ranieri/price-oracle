@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/88e6052358074ea6a6e15888da92534e/artifacts
+end_time: 1698187898156
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 88e6052358074ea6a6e15888da92534e
+run_name: overjoyed-hawk-252
+run_uuid: 88e6052358074ea6a6e15888da92534e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187887765
+status: 4
+tags: []
+user_id: gianfrancodemarco

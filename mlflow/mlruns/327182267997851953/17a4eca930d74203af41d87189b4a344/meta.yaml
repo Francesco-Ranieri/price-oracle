@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/17a4eca930d74203af41d87189b4a344/artifacts
+end_time: 1698187678582
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 17a4eca930d74203af41d87189b4a344
+run_name: angry-bear-653
+run_uuid: 17a4eca930d74203af41d87189b4a344
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187665099
+status: 4
+tags: []
+user_id: gianfrancodemarco

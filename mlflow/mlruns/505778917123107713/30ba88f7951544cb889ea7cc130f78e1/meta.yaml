@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/30ba88f7951544cb889ea7cc130f78e1/artifacts
+end_time: 1698155571928
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 30ba88f7951544cb889ea7cc130f78e1
+run_name: capricious-stoat-783
+run_uuid: 30ba88f7951544cb889ea7cc130f78e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698155553248
+status: 3
+tags: []
+user_id: gianfrancodemarco

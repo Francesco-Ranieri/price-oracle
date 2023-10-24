@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/aaa1373a62c94872a3f8e1355fb7f56c/artifacts
+end_time: 1698186509203
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: aaa1373a62c94872a3f8e1355fb7f56c
+run_name: aged-chimp-717
+run_uuid: aaa1373a62c94872a3f8e1355fb7f56c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186492523
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/693a5fa61e694c368543b22d3cac5c86/artifacts
+end_time: 1698183991507
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 693a5fa61e694c368543b22d3cac5c86
+run_name: crawling-ram-49
+run_uuid: 693a5fa61e694c368543b22d3cac5c86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183982097
+status: 3
+tags: []
+user_id: gianfrancodemarco

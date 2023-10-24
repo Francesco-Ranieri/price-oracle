@@ -1,0 +1,23 @@
+Model: "sequential_145"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_247 (SimpleRNN)  (None, 11, 128)           16640     
+                                                                 
+ dropout_308 (Dropout)       (None, 11, 128)           0         
+                                                                 
+ simple_rnn_248 (SimpleRNN)  (None, 11, 192)           61632     
+                                                                 
+ dropout_309 (Dropout)       (None, 11, 192)           0         
+                                                                 
+ simple_rnn_249 (SimpleRNN)  (None, 32)                7200      
+                                                                 
+ dropout_310 (Dropout)       (None, 32)                0         
+                                                                 
+ dense_145 (Dense)           (None, 1)                 33        
+                                                                 
+=================================================================
+Total params: 85505 (334.00 KB)
+Trainable params: 85505 (334.00 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

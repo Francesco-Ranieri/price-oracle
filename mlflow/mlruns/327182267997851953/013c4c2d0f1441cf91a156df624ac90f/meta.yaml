@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/013c4c2d0f1441cf91a156df624ac90f/artifacts
+end_time: 1698181325632
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 013c4c2d0f1441cf91a156df624ac90f
+run_name: sneaky-gull-505
+run_uuid: 013c4c2d0f1441cf91a156df624ac90f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181295669
+status: 3
+tags: []
+user_id: gianfrancodemarco

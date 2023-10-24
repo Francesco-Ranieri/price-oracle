@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/6479a902b2d94ff6b83322f7331aa00a/artifacts
+end_time: 1698181017035
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 6479a902b2d94ff6b83322f7331aa00a
+run_name: handsome-cod-817
+run_uuid: 6479a902b2d94ff6b83322f7331aa00a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181004183
+status: 3
+tags: []
+user_id: gianfrancodemarco

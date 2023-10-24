@@ -1,0 +1,27 @@
+Model: "sequential_231"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_568 (LSTM)             (None, 9, 32)             4352      
+                                                                 
+ dropout_568 (Dropout)       (None, 9, 32)             0         
+                                                                 
+ lstm_569 (LSTM)             (None, 9, 256)            295936    
+                                                                 
+ dropout_569 (Dropout)       (None, 9, 256)            0         
+                                                                 
+ lstm_570 (LSTM)             (None, 9, 128)            197120    
+                                                                 
+ dropout_570 (Dropout)       (None, 9, 128)            0         
+                                                                 
+ lstm_571 (LSTM)             (None, 9, 160)            184960    
+                                                                 
+ dropout_571 (Dropout)       (None, 9, 160)            0         
+                                                                 
+ dense_231 (Dense)           (None, 9, 1)              161       
+                                                                 
+=================================================================
+Total params: 682529 (2.60 MB)
+Trainable params: 682529 (2.60 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

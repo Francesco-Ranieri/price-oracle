@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/53ee5ddd062d4cdeb38a056c0600da6e/artifacts
+end_time: 1698172477798
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 53ee5ddd062d4cdeb38a056c0600da6e
+run_name: calm-rook-17
+run_uuid: 53ee5ddd062d4cdeb38a056c0600da6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172465366
+status: 3
+tags: []
+user_id: gianfrancodemarco

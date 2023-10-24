@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/b48af66d22614f73a37061645e4ee6c6/artifacts
+deleted_time: 1698171244534
+end_time: 1698170791573
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: b48af66d22614f73a37061645e4ee6c6
+run_name: Evaluating_close_NULSUSDT
+run_uuid: b48af66d22614f73a37061645e4ee6c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698170786310
+status: 4
+tags: []
+user_id: gianfrancodemarco

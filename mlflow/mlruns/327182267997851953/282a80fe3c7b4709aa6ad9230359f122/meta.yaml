@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/282a80fe3c7b4709aa6ad9230359f122/artifacts
+end_time: 1698185997991
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 282a80fe3c7b4709aa6ad9230359f122
+run_name: masked-croc-668
+run_uuid: 282a80fe3c7b4709aa6ad9230359f122
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185986600
+status: 3
+tags: []
+user_id: gianfrancodemarco

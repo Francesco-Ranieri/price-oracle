@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/154abfdb5f7b47b288653412de7b728a/artifacts
+end_time: 1698180073146
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 154abfdb5f7b47b288653412de7b728a
+run_name: peaceful-shrimp-264
+run_uuid: 154abfdb5f7b47b288653412de7b728a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180066257
+status: 3
+tags: []
+user_id: gianfrancodemarco

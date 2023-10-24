@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/bf4f6b9045e44ee09e064b6297d2216b/artifacts
+end_time: 1698181501902
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: bf4f6b9045e44ee09e064b6297d2216b
+run_name: worried-grouse-814
+run_uuid: bf4f6b9045e44ee09e064b6297d2216b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181494172
+status: 3
+tags: []
+user_id: gianfrancodemarco

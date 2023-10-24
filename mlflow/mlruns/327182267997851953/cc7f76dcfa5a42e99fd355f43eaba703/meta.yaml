@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/cc7f76dcfa5a42e99fd355f43eaba703/artifacts
+end_time: 1698181832639
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: cc7f76dcfa5a42e99fd355f43eaba703
+run_name: merciful-sponge-254
+run_uuid: cc7f76dcfa5a42e99fd355f43eaba703
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181812250
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/7c95fbbfadf7456c81f5650b1e61b1eb/artifacts
+deleted_time: 1698171244534
+end_time: 1698171148646
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 7c95fbbfadf7456c81f5650b1e61b1eb
+run_name: Evaluating_close_IOTAUSDT
+run_uuid: 7c95fbbfadf7456c81f5650b1e61b1eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171145028
+status: 3
+tags: []
+user_id: gianfrancodemarco

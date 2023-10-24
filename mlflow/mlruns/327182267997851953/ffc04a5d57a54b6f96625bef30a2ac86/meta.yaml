@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ffc04a5d57a54b6f96625bef30a2ac86/artifacts
+end_time: 1698182257982
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ffc04a5d57a54b6f96625bef30a2ac86
+run_name: adventurous-ox-437
+run_uuid: ffc04a5d57a54b6f96625bef30a2ac86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182250523
+status: 3
+tags: []
+user_id: gianfrancodemarco

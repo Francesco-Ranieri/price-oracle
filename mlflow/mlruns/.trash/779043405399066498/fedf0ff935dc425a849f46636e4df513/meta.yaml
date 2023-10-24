@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/fedf0ff935dc425a849f46636e4df513/artifacts
+deleted_time: 1698168217608
+end_time: 1698167314600
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: fedf0ff935dc425a849f46636e4df513
+run_name: charming-bee-822
+run_uuid: fedf0ff935dc425a849f46636e4df513
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698167285196
+status: 3
+tags: []
+user_id: gianfrancodemarco

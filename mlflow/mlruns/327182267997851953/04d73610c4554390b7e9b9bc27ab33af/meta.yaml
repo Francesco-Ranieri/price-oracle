@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/04d73610c4554390b7e9b9bc27ab33af/artifacts
+end_time: 1698185434428
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 04d73610c4554390b7e9b9bc27ab33af
+run_name: abundant-shark-137
+run_uuid: 04d73610c4554390b7e9b9bc27ab33af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185418190
+status: 3
+tags: []
+user_id: gianfrancodemarco

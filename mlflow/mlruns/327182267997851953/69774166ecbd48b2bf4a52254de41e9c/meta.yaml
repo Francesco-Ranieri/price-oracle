@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/69774166ecbd48b2bf4a52254de41e9c/artifacts
+end_time: 1698178803914
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 69774166ecbd48b2bf4a52254de41e9c
+run_name: debonair-bird-965
+run_uuid: 69774166ecbd48b2bf4a52254de41e9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178791452
+status: 3
+tags: []
+user_id: gianfrancodemarco

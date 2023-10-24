@@ -1,7 +1,0 @@
-artifact_location: mlflow-artifacts:/829704135959862539
-creation_time: 1696789416402
-experiment_id: '829704135959862539'
-last_update_time: 1697991107821
-lifecycle_stage: deleted
-name: Clustering_KMeans_raw
-tags: {}

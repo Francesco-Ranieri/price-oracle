@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/2cb8f6234bb7439282e50471240d9184/artifacts
+end_time: 1698159313530
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 2cb8f6234bb7439282e50471240d9184
+run_name: rogue-asp-946
+run_uuid: 2cb8f6234bb7439282e50471240d9184
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698159265702
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/835bd03c9e1d411a84673ec3c2cd4624/artifacts
+end_time: 1698181524310
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 835bd03c9e1d411a84673ec3c2cd4624
+run_name: suave-ox-825
+run_uuid: 835bd03c9e1d411a84673ec3c2cd4624
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181521978
+status: 4
+tags: []
+user_id: gianfrancodemarco

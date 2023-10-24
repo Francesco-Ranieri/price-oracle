@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/23d906080ce14fb584c8a53d0ba52118/artifacts
+end_time: 1698181938243
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 23d906080ce14fb584c8a53d0ba52118
+run_name: nervous-carp-349
+run_uuid: 23d906080ce14fb584c8a53d0ba52118
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181922527
+status: 3
+tags: []
+user_id: gianfrancodemarco

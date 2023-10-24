@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/83a2fc7148824ae3ab020953c846f0a0/artifacts
+end_time: 1698186191457
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 83a2fc7148824ae3ab020953c846f0a0
+run_name: rumbling-lynx-49
+run_uuid: 83a2fc7148824ae3ab020953c846f0a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186179918
+status: 4
+tags: []
+user_id: gianfrancodemarco

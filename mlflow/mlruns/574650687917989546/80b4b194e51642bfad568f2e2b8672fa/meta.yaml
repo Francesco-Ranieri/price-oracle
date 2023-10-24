@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/80b4b194e51642bfad568f2e2b8672fa/artifacts
+end_time: 1698175438733
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 80b4b194e51642bfad568f2e2b8672fa
+run_name: marvelous-shad-596
+run_uuid: 80b4b194e51642bfad568f2e2b8672fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175427455
+status: 3
+tags: []
+user_id: gianfrancodemarco

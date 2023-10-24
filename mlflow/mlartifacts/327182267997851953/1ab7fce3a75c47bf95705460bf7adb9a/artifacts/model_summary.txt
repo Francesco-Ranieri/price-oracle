@@ -1,0 +1,21 @@
+Model: "sequential_699"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_1004 (SimpleRNN  (None, 5, 192)            37248     
+ )                                                               
+                                                                 
+ dropout_1402 (Dropout)      (None, 5, 192)            0         
+                                                                 
+ simple_rnn_1005 (SimpleRNN  (None, 224)               93408     
+ )                                                               
+                                                                 
+ dropout_1403 (Dropout)      (None, 224)               0         
+                                                                 
+ dense_699 (Dense)           (None, 1)                 225       
+                                                                 
+=================================================================
+Total params: 130881 (511.25 KB)
+Trainable params: 130881 (511.25 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

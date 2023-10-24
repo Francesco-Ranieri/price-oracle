@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/f68a01a14363430fa8a0a34c5aa4efbd/artifacts
+end_time: 1698182506348
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: f68a01a14363430fa8a0a34c5aa4efbd
+run_name: dazzling-hound-111
+run_uuid: f68a01a14363430fa8a0a34c5aa4efbd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182494792
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/186296988e954094a9d9c661cfd49d4a/artifacts
+end_time: 1698173255756
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 186296988e954094a9d9c661cfd49d4a
+run_name: merciful-chimp-432
+run_uuid: 186296988e954094a9d9c661cfd49d4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173246060
+status: 3
+tags: []
+user_id: gianfrancodemarco

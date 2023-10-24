@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/ddb178c809844494bb5be875ec93b3db/artifacts
+end_time: 1698148721624
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: ddb178c809844494bb5be875ec93b3db
+run_name: sedate-koi-132
+run_uuid: ddb178c809844494bb5be875ec93b3db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698148663932
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/579461b7882a405db06483d2b03b7003/artifacts
+end_time: 1698184703399
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 579461b7882a405db06483d2b03b7003
+run_name: fearless-gnat-105
+run_uuid: 579461b7882a405db06483d2b03b7003
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184693447
+status: 3
+tags: []
+user_id: gianfrancodemarco

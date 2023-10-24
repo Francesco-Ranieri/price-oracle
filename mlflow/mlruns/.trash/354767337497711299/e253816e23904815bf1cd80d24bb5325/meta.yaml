@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/e253816e23904815bf1cd80d24bb5325/artifacts
+deleted_time: 1698171244534
+end_time: 1698169072398
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: e253816e23904815bf1cd80d24bb5325
+run_name: thoughtful-hen-678
+run_uuid: e253816e23904815bf1cd80d24bb5325
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169055201
+status: 3
+tags: []
+user_id: gianfrancodemarco

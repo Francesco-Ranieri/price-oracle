@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/db8649b481404d4bae1f59ca20f75b24/artifacts
+deleted_time: 1698162361680
+end_time: 1698161659084
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: db8649b481404d4bae1f59ca20f75b24
+run_name: omniscient-fish-30
+run_uuid: db8649b481404d4bae1f59ca20f75b24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698161621422
+status: 3
+tags: []
+user_id: gianfrancodemarco

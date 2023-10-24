@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/5e1cc8bf68b9483785351ff9e8f88781/artifacts
+end_time: 1698175833250
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 5e1cc8bf68b9483785351ff9e8f88781
+run_name: big-gull-513
+run_uuid: 5e1cc8bf68b9483785351ff9e8f88781
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175819772
+status: 3
+tags: []
+user_id: gianfrancodemarco

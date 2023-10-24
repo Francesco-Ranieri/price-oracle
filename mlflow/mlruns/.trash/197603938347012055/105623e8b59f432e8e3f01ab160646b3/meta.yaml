@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/105623e8b59f432e8e3f01ab160646b3/artifacts
+deleted_time: 1698172246914
+end_time: 1698171866450
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 105623e8b59f432e8e3f01ab160646b3
+run_name: colorful-hen-950
+run_uuid: 105623e8b59f432e8e3f01ab160646b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171866426
+status: 3
+tags: []
+user_id: gianfrancodemarco

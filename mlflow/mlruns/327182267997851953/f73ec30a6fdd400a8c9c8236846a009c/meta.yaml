@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/f73ec30a6fdd400a8c9c8236846a009c/artifacts
+end_time: 1698186770870
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: f73ec30a6fdd400a8c9c8236846a009c
+run_name: thoughtful-flea-519
+run_uuid: f73ec30a6fdd400a8c9c8236846a009c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186756413
+status: 3
+tags: []
+user_id: gianfrancodemarco

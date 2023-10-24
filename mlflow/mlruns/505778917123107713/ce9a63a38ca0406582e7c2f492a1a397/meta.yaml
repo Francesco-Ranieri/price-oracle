@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/ce9a63a38ca0406582e7c2f492a1a397/artifacts
+deleted_time: 1698154553830
+end_time: 1698154013933
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: ce9a63a38ca0406582e7c2f492a1a397
+run_name: fortunate-crane-737
+run_uuid: ce9a63a38ca0406582e7c2f492a1a397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153994059
+status: 3
+tags: []
+user_id: gianfrancodemarco

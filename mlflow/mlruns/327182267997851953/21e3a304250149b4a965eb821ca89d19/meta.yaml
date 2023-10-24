@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/21e3a304250149b4a965eb821ca89d19/artifacts
+end_time: 1698185956844
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 21e3a304250149b4a965eb821ca89d19
+run_name: flawless-mare-179
+run_uuid: 21e3a304250149b4a965eb821ca89d19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185949500
+status: 3
+tags: []
+user_id: gianfrancodemarco

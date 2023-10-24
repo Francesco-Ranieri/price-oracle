@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/d9ff0f0c06ad40d7adb858223b6742af/artifacts
+end_time: 1698159011404
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: d9ff0f0c06ad40d7adb858223b6742af
+run_name: grandiose-ox-429
+run_uuid: d9ff0f0c06ad40d7adb858223b6742af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158997334
+status: 3
+tags: []
+user_id: gianfrancodemarco

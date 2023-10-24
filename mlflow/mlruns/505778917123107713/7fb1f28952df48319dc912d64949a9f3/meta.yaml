@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/7fb1f28952df48319dc912d64949a9f3/artifacts
+deleted_time: 1698154553797
+end_time: 1698154246404
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 7fb1f28952df48319dc912d64949a9f3
+run_name: adaptable-fawn-911
+run_uuid: 7fb1f28952df48319dc912d64949a9f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698154241570
+status: 3
+tags: []
+user_id: gianfrancodemarco

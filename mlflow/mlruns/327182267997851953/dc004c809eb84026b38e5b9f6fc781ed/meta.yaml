@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/dc004c809eb84026b38e5b9f6fc781ed/artifacts
+end_time: 1698178311144
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: dc004c809eb84026b38e5b9f6fc781ed
+run_name: delightful-snipe-498
+run_uuid: dc004c809eb84026b38e5b9f6fc781ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178304611
+status: 3
+tags: []
+user_id: gianfrancodemarco

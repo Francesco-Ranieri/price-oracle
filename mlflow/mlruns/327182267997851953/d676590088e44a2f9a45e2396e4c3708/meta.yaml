@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d676590088e44a2f9a45e2396e4c3708/artifacts
+end_time: 1698179278471
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d676590088e44a2f9a45e2396e4c3708
+run_name: capricious-dog-334
+run_uuid: d676590088e44a2f9a45e2396e4c3708
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179238006
+status: 3
+tags: []
+user_id: gianfrancodemarco

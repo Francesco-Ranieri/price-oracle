@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/c7dd23f22bc04ed9949bffc101956b79/artifacts
+end_time: 1698155155037
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: c7dd23f22bc04ed9949bffc101956b79
+run_name: unleashed-boar-466
+run_uuid: c7dd23f22bc04ed9949bffc101956b79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698155079338
+status: 3
+tags: []
+user_id: gianfrancodemarco

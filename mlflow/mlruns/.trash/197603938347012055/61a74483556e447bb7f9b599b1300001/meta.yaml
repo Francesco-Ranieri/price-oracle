@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/61a74483556e447bb7f9b599b1300001/artifacts
+deleted_time: 1698172246914
+end_time: 1698171888575
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 61a74483556e447bb7f9b599b1300001
+run_name: agreeable-kit-851
+run_uuid: 61a74483556e447bb7f9b599b1300001
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171866560
+status: 3
+tags: []
+user_id: gianfrancodemarco

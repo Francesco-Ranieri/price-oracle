@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/34c9eb3129c242168139a608bd50be03/artifacts
+end_time: 1698176577790
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 34c9eb3129c242168139a608bd50be03
+run_name: abrasive-sow-978
+run_uuid: 34c9eb3129c242168139a608bd50be03
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176543791
+status: 3
+tags: []
+user_id: gianfrancodemarco

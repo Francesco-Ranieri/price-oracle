@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/6244ae2ad0294ab08d7c60f4475cbf3c/artifacts
+deleted_time: 1698154553778
+end_time: 1698154425365
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 6244ae2ad0294ab08d7c60f4475cbf3c
+run_name: efficient-kit-292
+run_uuid: 6244ae2ad0294ab08d7c60f4475cbf3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698154390335
+status: 3
+tags: []
+user_id: gianfrancodemarco

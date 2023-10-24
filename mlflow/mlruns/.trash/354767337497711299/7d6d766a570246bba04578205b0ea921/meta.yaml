@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/7d6d766a570246bba04578205b0ea921/artifacts
+deleted_time: 1698171244534
+end_time: 1698169077749
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 7d6d766a570246bba04578205b0ea921
+run_name: merciful-calf-937
+run_uuid: 7d6d766a570246bba04578205b0ea921
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169072452
+status: 4
+tags: []
+user_id: gianfrancodemarco

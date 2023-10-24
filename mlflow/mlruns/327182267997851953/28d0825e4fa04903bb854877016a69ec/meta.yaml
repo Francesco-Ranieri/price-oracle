@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/28d0825e4fa04903bb854877016a69ec/artifacts
+end_time: 1698182314780
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 28d0825e4fa04903bb854877016a69ec
+run_name: selective-grub-432
+run_uuid: 28d0825e4fa04903bb854877016a69ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182301866
+status: 3
+tags: []
+user_id: gianfrancodemarco

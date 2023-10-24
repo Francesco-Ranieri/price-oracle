@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/7c21a2dbe529498aa098f0222dfcc14d/artifacts
+deleted_time: 1698172246914
+end_time: 1698171891491
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 7c21a2dbe529498aa098f0222dfcc14d
+run_name: indecisive-sloth-564
+run_uuid: 7c21a2dbe529498aa098f0222dfcc14d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171891466
+status: 3
+tags: []
+user_id: gianfrancodemarco

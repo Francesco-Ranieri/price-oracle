@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/d1265cd4fbf1430ab57d646cf76755f0/artifacts
+deleted_time: 1698171244534
+end_time: 1698170618496
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: d1265cd4fbf1430ab57d646cf76755f0
+run_name: auspicious-flea-523
+run_uuid: d1265cd4fbf1430ab57d646cf76755f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698170571742
+status: 3
+tags: []
+user_id: gianfrancodemarco

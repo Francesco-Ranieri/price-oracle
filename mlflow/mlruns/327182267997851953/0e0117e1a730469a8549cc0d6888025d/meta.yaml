@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/0e0117e1a730469a8549cc0d6888025d/artifacts
+end_time: 1698186607091
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 0e0117e1a730469a8549cc0d6888025d
+run_name: adorable-moth-934
+run_uuid: 0e0117e1a730469a8549cc0d6888025d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186603512
+status: 4
+tags: []
+user_id: gianfrancodemarco

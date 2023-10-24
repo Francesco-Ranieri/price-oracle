@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/0a5dba14701f436cbc2776528451cf77/artifacts
+end_time: 1698183971427
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 0a5dba14701f436cbc2776528451cf77
+run_name: learned-carp-12
+run_uuid: 0a5dba14701f436cbc2776528451cf77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183964071
+status: 3
+tags: []
+user_id: gianfrancodemarco

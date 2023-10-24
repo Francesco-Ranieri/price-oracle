@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/5df8668f03494927ad71e00a9a628c83/artifacts
+end_time: 1698182161042
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 5df8668f03494927ad71e00a9a628c83
+run_name: bouncy-flea-209
+run_uuid: 5df8668f03494927ad71e00a9a628c83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182156516
+status: 4
+tags: []
+user_id: gianfrancodemarco

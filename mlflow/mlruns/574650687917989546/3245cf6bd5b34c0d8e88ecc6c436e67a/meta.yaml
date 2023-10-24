@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/3245cf6bd5b34c0d8e88ecc6c436e67a/artifacts
+end_time: 1698174845976
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 3245cf6bd5b34c0d8e88ecc6c436e67a
+run_name: enchanting-moth-137
+run_uuid: 3245cf6bd5b34c0d8e88ecc6c436e67a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174825245
+status: 3
+tags: []
+user_id: gianfrancodemarco

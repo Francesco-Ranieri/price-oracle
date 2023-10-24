@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/5e00515462cc4fe989fad7f36c5915fe/artifacts
+end_time: 1698179056562
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 5e00515462cc4fe989fad7f36c5915fe
+run_name: gaudy-eel-940
+run_uuid: 5e00515462cc4fe989fad7f36c5915fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179035030
+status: 3
+tags: []
+user_id: gianfrancodemarco

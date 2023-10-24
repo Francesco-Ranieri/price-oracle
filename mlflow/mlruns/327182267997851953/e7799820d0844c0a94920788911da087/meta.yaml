@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/e7799820d0844c0a94920788911da087/artifacts
+end_time: 1698177908336
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: e7799820d0844c0a94920788911da087
+run_name: sincere-robin-418
+run_uuid: e7799820d0844c0a94920788911da087
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177902884
+status: 4
+tags: []
+user_id: gianfrancodemarco

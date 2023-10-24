@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/4719ef61594248e4aded2ee6e1ff3a22/artifacts
+deleted_time: 1698171244534
+end_time: 1698169258201
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 4719ef61594248e4aded2ee6e1ff3a22
+run_name: fearless-shad-427
+run_uuid: 4719ef61594248e4aded2ee6e1ff3a22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169249180
+status: 4
+tags: []
+user_id: gianfrancodemarco

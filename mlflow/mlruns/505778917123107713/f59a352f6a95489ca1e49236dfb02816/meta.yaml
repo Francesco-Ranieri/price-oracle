@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/f59a352f6a95489ca1e49236dfb02816/artifacts
+end_time: 1698152799254
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: f59a352f6a95489ca1e49236dfb02816
+run_name: peaceful-skunk-537
+run_uuid: f59a352f6a95489ca1e49236dfb02816
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698152795710
+status: 3
+tags: []
+user_id: gianfrancodemarco

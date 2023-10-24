@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/c8a8255ba4a44c0cac7e7832079b14d7/artifacts
+end_time: 1698176092401
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: c8a8255ba4a44c0cac7e7832079b14d7
+run_name: useful-bee-1000
+run_uuid: c8a8255ba4a44c0cac7e7832079b14d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176067856
+status: 3
+tags: []
+user_id: gianfrancodemarco

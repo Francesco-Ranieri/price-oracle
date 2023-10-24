@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/cde2200065ab40b58372bdf2282e9b1f/artifacts
+end_time: 1698180737102
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: cde2200065ab40b58372bdf2282e9b1f
+run_name: righteous-pig-431
+run_uuid: cde2200065ab40b58372bdf2282e9b1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180729201
+status: 3
+tags: []
+user_id: gianfrancodemarco

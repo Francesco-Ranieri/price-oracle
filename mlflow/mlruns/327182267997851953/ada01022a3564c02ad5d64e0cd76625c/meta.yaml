@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ada01022a3564c02ad5d64e0cd76625c/artifacts
+end_time: 1698188459984
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ada01022a3564c02ad5d64e0cd76625c
+run_name: burly-moth-653
+run_uuid: ada01022a3564c02ad5d64e0cd76625c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188447170
+status: 3
+tags: []
+user_id: gianfrancodemarco

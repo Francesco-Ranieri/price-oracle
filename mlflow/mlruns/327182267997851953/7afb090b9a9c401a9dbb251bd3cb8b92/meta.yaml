@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/7afb090b9a9c401a9dbb251bd3cb8b92/artifacts
+end_time: 1698179795594
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 7afb090b9a9c401a9dbb251bd3cb8b92
+run_name: masked-conch-392
+run_uuid: 7afb090b9a9c401a9dbb251bd3cb8b92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179784592
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/7ce253fc088344b58080163600033b0d/artifacts
+end_time: 1698173053827
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 7ce253fc088344b58080163600033b0d
+run_name: smiling-trout-467
+run_uuid: 7ce253fc088344b58080163600033b0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173013347
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ae6d7d3f0f6d49d98ba68c1dff7a7546/artifacts
+end_time: 1698183539070
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ae6d7d3f0f6d49d98ba68c1dff7a7546
+run_name: defiant-lynx-47
+run_uuid: ae6d7d3f0f6d49d98ba68c1dff7a7546
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183535490
+status: 4
+tags: []
+user_id: gianfrancodemarco

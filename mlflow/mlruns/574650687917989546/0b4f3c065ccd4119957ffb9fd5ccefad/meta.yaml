@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/0b4f3c065ccd4119957ffb9fd5ccefad/artifacts
+end_time: 1698175296615
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 0b4f3c065ccd4119957ffb9fd5ccefad
+run_name: overjoyed-bat-269
+run_uuid: 0b4f3c065ccd4119957ffb9fd5ccefad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175284883
+status: 3
+tags: []
+user_id: gianfrancodemarco

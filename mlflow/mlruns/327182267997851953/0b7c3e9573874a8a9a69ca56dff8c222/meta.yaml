@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/0b7c3e9573874a8a9a69ca56dff8c222/artifacts
+end_time: 1698183848609
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 0b7c3e9573874a8a9a69ca56dff8c222
+run_name: sassy-grouse-266
+run_uuid: 0b7c3e9573874a8a9a69ca56dff8c222
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698183843594
+status: 4
+tags: []
+user_id: gianfrancodemarco

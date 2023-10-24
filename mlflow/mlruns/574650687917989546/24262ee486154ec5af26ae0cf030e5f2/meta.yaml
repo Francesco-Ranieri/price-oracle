@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/24262ee486154ec5af26ae0cf030e5f2/artifacts
+end_time: 1698176527661
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 24262ee486154ec5af26ae0cf030e5f2
+run_name: melodic-steed-481
+run_uuid: 24262ee486154ec5af26ae0cf030e5f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176523598
+status: 4
+tags: []
+user_id: gianfrancodemarco

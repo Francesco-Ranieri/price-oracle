@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/779043405399066498/03d671c58605474f90a630696e376675/artifacts
+deleted_time: 1698168217608
+end_time: 1698166708731
+entry_point_name: ''
+experiment_id: '779043405399066498'
+lifecycle_stage: deleted
+run_id: 03d671c58605474f90a630696e376675
+run_name: sassy-gnat-544
+run_uuid: 03d671c58605474f90a630696e376675
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698166677151
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,27 @@
+Model: "sequential_308"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_785 (LSTM)             (None, 19, 96)            37632     
+                                                                 
+ dropout_785 (Dropout)       (None, 19, 96)            0         
+                                                                 
+ lstm_786 (LSTM)             (None, 19, 96)            74112     
+                                                                 
+ dropout_786 (Dropout)       (None, 19, 96)            0         
+                                                                 
+ lstm_787 (LSTM)             (None, 19, 160)           164480    
+                                                                 
+ dropout_787 (Dropout)       (None, 19, 160)           0         
+                                                                 
+ lstm_788 (LSTM)             (None, 19, 160)           205440    
+                                                                 
+ dropout_788 (Dropout)       (None, 19, 160)           0         
+                                                                 
+ dense_308 (Dense)           (None, 19, 1)             161       
+                                                                 
+=================================================================
+Total params: 481825 (1.84 MB)
+Trainable params: 481825 (1.84 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/c347efe191c34d59ab8f70a3dcfb6cb3/artifacts
+end_time: 1698174483423
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: c347efe191c34d59ab8f70a3dcfb6cb3
+run_name: bold-smelt-337
+run_uuid: c347efe191c34d59ab8f70a3dcfb6cb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174455120
+status: 4
+tags: []
+user_id: gianfrancodemarco

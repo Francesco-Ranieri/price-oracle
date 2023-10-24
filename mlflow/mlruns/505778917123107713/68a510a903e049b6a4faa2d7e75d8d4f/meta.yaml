@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/68a510a903e049b6a4faa2d7e75d8d4f/artifacts
+end_time: 1698155174354
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 68a510a903e049b6a4faa2d7e75d8d4f
+run_name: colorful-stag-358
+run_uuid: 68a510a903e049b6a4faa2d7e75d8d4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698155168517
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/991724f8d21a4d0d8d86046f2f7d772a/artifacts
+deleted_time: 1698162361712
+end_time: 1698161508111
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 991724f8d21a4d0d8d86046f2f7d772a
+run_name: defiant-shrew-343
+run_uuid: 991724f8d21a4d0d8d86046f2f7d772a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698161493125
+status: 3
+tags: []
+user_id: gianfrancodemarco

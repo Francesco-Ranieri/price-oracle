@@ -1,0 +1,19 @@
+Model: "sequential_552"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_813 (SimpleRNN)  (None, 3, 192)            37248     
+                                                                 
+ dropout_1106 (Dropout)      (None, 3, 192)            0         
+                                                                 
+ simple_rnn_814 (SimpleRNN)  (None, 64)                16448     
+                                                                 
+ dropout_1107 (Dropout)      (None, 64)                0         
+                                                                 
+ dense_552 (Dense)           (None, 1)                 65        
+                                                                 
+=================================================================
+Total params: 53761 (210.00 KB)
+Trainable params: 53761 (210.00 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

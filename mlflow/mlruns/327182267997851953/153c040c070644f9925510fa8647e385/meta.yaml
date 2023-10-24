@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/153c040c070644f9925510fa8647e385/artifacts
+end_time: 1698181179684
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 153c040c070644f9925510fa8647e385
+run_name: bright-carp-587
+run_uuid: 153c040c070644f9925510fa8647e385
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181169299
+status: 3
+tags: []
+user_id: gianfrancodemarco

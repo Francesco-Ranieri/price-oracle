@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/fff99f69426c4610bc1e1a76ae4c297c/artifacts
+end_time: 1698149879391
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: fff99f69426c4610bc1e1a76ae4c297c
+run_name: mysterious-roo-198
+run_uuid: fff99f69426c4610bc1e1a76ae4c297c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698149857955
+status: 3
+tags: []
+user_id: gianfrancodemarco

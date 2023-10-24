@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d0dc6feea49a45cfa9d19165e0b2e308/artifacts
+end_time: 1698181394936
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d0dc6feea49a45cfa9d19165e0b2e308
+run_name: bittersweet-ant-68
+run_uuid: d0dc6feea49a45cfa9d19165e0b2e308
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181385562
+status: 4
+tags: []
+user_id: gianfrancodemarco

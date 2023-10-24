@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/8295647e4fca496da89e495906f5df32/artifacts
+end_time: 1698185556935
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 8295647e4fca496da89e495906f5df32
+run_name: industrious-asp-205
+run_uuid: 8295647e4fca496da89e495906f5df32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185538162
+status: 3
+tags: []
+user_id: gianfrancodemarco

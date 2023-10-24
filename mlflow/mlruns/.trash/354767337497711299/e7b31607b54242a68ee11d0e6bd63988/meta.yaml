@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/e7b31607b54242a68ee11d0e6bd63988/artifacts
+deleted_time: 1698171244534
+end_time: 1698168709123
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: e7b31607b54242a68ee11d0e6bd63988
+run_name: luminous-wolf-894
+run_uuid: e7b31607b54242a68ee11d0e6bd63988
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698168678145
+status: 4
+tags: []
+user_id: gianfrancodemarco

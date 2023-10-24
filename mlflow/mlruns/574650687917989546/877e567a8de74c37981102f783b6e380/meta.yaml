@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/877e567a8de74c37981102f783b6e380/artifacts
+end_time: 1698172545861
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 877e567a8de74c37981102f783b6e380
+run_name: bouncy-ram-854
+run_uuid: 877e567a8de74c37981102f783b6e380
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172536584
+status: 4
+tags: []
+user_id: gianfrancodemarco

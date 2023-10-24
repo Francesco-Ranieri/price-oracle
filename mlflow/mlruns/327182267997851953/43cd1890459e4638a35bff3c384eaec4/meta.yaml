@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/43cd1890459e4638a35bff3c384eaec4/artifacts
+end_time: 1698182449342
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 43cd1890459e4638a35bff3c384eaec4
+run_name: auspicious-finch-6
+run_uuid: 43cd1890459e4638a35bff3c384eaec4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182433868
+status: 3
+tags: []
+user_id: gianfrancodemarco

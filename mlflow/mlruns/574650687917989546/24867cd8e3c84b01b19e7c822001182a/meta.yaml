@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/24867cd8e3c84b01b19e7c822001182a/artifacts
+end_time: 1698173589004
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 24867cd8e3c84b01b19e7c822001182a
+run_name: smiling-frog-38
+run_uuid: 24867cd8e3c84b01b19e7c822001182a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173572230
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/1b4eb1cfc5bf4cccafbb2e0164686990/artifacts
+deleted_time: 1698171244534
+end_time: 1698169347530
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: 1b4eb1cfc5bf4cccafbb2e0164686990
+run_name: delicate-shoat-358
+run_uuid: 1b4eb1cfc5bf4cccafbb2e0164686990
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698169341877
+status: 4
+tags: []
+user_id: gianfrancodemarco

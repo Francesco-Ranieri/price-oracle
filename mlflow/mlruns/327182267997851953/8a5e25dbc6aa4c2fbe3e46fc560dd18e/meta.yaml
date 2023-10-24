@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/8a5e25dbc6aa4c2fbe3e46fc560dd18e/artifacts
+end_time: 1698181957143
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 8a5e25dbc6aa4c2fbe3e46fc560dd18e
+run_name: caring-wren-808
+run_uuid: 8a5e25dbc6aa4c2fbe3e46fc560dd18e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181950746
+status: 4
+tags: []
+user_id: gianfrancodemarco

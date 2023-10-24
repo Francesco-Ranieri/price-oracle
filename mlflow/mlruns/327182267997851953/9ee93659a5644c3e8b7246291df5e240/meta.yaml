@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/9ee93659a5644c3e8b7246291df5e240/artifacts
+end_time: 1698184759801
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 9ee93659a5644c3e8b7246291df5e240
+run_name: capable-yak-196
+run_uuid: 9ee93659a5644c3e8b7246291df5e240
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184733240
+status: 3
+tags: []
+user_id: gianfrancodemarco

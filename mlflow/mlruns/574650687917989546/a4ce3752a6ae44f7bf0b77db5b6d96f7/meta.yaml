@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/a4ce3752a6ae44f7bf0b77db5b6d96f7/artifacts
+end_time: 1698173261619
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: a4ce3752a6ae44f7bf0b77db5b6d96f7
+run_name: wistful-panda-614
+run_uuid: a4ce3752a6ae44f7bf0b77db5b6d96f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698173255803
+status: 4
+tags: []
+user_id: gianfrancodemarco

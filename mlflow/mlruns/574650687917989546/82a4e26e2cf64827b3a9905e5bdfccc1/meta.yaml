@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/82a4e26e2cf64827b3a9905e5bdfccc1/artifacts
+end_time: 1698175176466
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 82a4e26e2cf64827b3a9905e5bdfccc1
+run_name: Training_best_model_close_IOTAUSDT
+run_uuid: 82a4e26e2cf64827b3a9905e5bdfccc1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175133942
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/62715d2bea22417ab8a009e053ca06d2/artifacts
+end_time: 1698185169116
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 62715d2bea22417ab8a009e053ca06d2
+run_name: brawny-hound-968
+run_uuid: 62715d2bea22417ab8a009e053ca06d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185159333
+status: 3
+tags: []
+user_id: gianfrancodemarco

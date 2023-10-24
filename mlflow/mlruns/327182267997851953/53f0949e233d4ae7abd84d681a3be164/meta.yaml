@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/53f0949e233d4ae7abd84d681a3be164/artifacts
+end_time: 1698184989720
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 53f0949e233d4ae7abd84d681a3be164
+run_name: entertaining-cat-874
+run_uuid: 53f0949e233d4ae7abd84d681a3be164
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184966654
+status: 3
+tags: []
+user_id: gianfrancodemarco

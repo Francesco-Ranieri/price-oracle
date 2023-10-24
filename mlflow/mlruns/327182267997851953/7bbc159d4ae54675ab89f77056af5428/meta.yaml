@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/7bbc159d4ae54675ab89f77056af5428/artifacts
+end_time: 1698182653100
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 7bbc159d4ae54675ab89f77056af5428
+run_name: melodic-squid-822
+run_uuid: 7bbc159d4ae54675ab89f77056af5428
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182629466
+status: 3
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/340414319298058222/43ed65d394fa422eb9cb304b51a06b73/artifacts
+deleted_time: 1698171528720
+end_time: 1698171448678
+entry_point_name: ''
+experiment_id: '340414319298058222'
+lifecycle_stage: deleted
+run_id: 43ed65d394fa422eb9cb304b51a06b73
+run_name: nosy-squirrel-948
+run_uuid: 43ed65d394fa422eb9cb304b51a06b73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171448643
+status: 3
+tags: []
+user_id: gianfrancodemarco

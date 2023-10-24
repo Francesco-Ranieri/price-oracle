@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/197603938347012055/92a198816f2444c3a0cce85f3587d092/artifacts
+deleted_time: 1698172246914
+end_time: 1698171697349
+entry_point_name: ''
+experiment_id: '197603938347012055'
+lifecycle_stage: deleted
+run_id: 92a198816f2444c3a0cce85f3587d092
+run_name: peaceful-ox-322
+run_uuid: 92a198816f2444c3a0cce85f3587d092
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171658024
+status: 4
+tags: []
+user_id: gianfrancodemarco

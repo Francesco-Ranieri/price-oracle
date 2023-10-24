@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/5a320abb505f465594052aad95aee814/artifacts
+end_time: 1698172492272
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 5a320abb505f465594052aad95aee814
+run_name: caring-snipe-175
+run_uuid: 5a320abb505f465594052aad95aee814
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172477860
+status: 4
+tags: []
+user_id: gianfrancodemarco

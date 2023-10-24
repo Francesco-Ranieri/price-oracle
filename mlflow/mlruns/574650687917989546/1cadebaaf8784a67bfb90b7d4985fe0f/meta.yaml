@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/1cadebaaf8784a67bfb90b7d4985fe0f/artifacts
+end_time: 1698174901324
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 1cadebaaf8784a67bfb90b7d4985fe0f
+run_name: secretive-newt-140
+run_uuid: 1cadebaaf8784a67bfb90b7d4985fe0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174882123
+status: 3
+tags: []
+user_id: gianfrancodemarco

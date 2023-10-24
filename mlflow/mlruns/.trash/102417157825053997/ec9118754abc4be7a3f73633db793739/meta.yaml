@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/102417157825053997/ec9118754abc4be7a3f73633db793739/artifacts
+deleted_time: 1698177687105
+end_time: 1698177623284
+entry_point_name: ''
+experiment_id: '102417157825053997'
+lifecycle_stage: deleted
+run_id: ec9118754abc4be7a3f73633db793739
+run_name: carefree-smelt-682
+run_uuid: ec9118754abc4be7a3f73633db793739
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177615872
+status: 3
+tags: []
+user_id: gianfrancodemarco

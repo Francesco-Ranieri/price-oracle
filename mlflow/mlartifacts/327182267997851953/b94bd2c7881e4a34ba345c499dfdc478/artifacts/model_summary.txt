@@ -1,0 +1,23 @@
+Model: "sequential_548"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_803 (SimpleRNN)  (None, 1, 160)            25920     
+                                                                 
+ dropout_1096 (Dropout)      (None, 1, 160)            0         
+                                                                 
+ simple_rnn_804 (SimpleRNN)  (None, 1, 64)             14400     
+                                                                 
+ dropout_1097 (Dropout)      (None, 1, 64)             0         
+                                                                 
+ simple_rnn_805 (SimpleRNN)  (None, 224)               64736     
+                                                                 
+ dropout_1098 (Dropout)      (None, 224)               0         
+                                                                 
+ dense_548 (Dense)           (None, 1)                 225       
+                                                                 
+=================================================================
+Total params: 105281 (411.25 KB)
+Trainable params: 105281 (411.25 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

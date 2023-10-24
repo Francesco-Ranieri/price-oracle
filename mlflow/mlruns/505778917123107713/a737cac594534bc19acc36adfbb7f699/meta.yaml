@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/a737cac594534bc19acc36adfbb7f699/artifacts
+end_time: 1698158937891
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: a737cac594534bc19acc36adfbb7f699
+run_name: casual-sloth-820
+run_uuid: a737cac594534bc19acc36adfbb7f699
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698158932739
+status: 3
+tags: []
+user_id: gianfrancodemarco

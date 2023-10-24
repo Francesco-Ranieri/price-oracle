@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/dc6aa21c81c7491f8a870da5b0568628/artifacts
+end_time: 1698186942767
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: dc6aa21c81c7491f8a870da5b0568628
+run_name: abrasive-panda-699
+run_uuid: dc6aa21c81c7491f8a870da5b0568628
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186934667
+status: 3
+tags: []
+user_id: gianfrancodemarco

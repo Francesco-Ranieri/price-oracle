@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/e29bf3297ee346949c75823630ce3087/artifacts
+end_time: 1698172375598
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: e29bf3297ee346949c75823630ce3087
+run_name: enchanting-crab-829
+run_uuid: e29bf3297ee346949c75823630ce3087
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172360153
+status: 3
+tags: []
+user_id: gianfrancodemarco

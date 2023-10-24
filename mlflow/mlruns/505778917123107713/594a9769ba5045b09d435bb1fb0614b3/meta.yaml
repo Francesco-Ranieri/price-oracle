@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/594a9769ba5045b09d435bb1fb0614b3/artifacts
+deleted_time: 1698154553833
+end_time: 1698153924821
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 594a9769ba5045b09d435bb1fb0614b3
+run_name: delicate-whale-928
+run_uuid: 594a9769ba5045b09d435bb1fb0614b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153901593
+status: 3
+tags: []
+user_id: gianfrancodemarco

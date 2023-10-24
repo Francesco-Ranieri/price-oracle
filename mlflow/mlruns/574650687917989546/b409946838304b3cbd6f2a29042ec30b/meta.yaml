@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/b409946838304b3cbd6f2a29042ec30b/artifacts
+end_time: 1698176371521
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: b409946838304b3cbd6f2a29042ec30b
+run_name: sassy-stork-100
+run_uuid: b409946838304b3cbd6f2a29042ec30b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176363433
+status: 3
+tags: []
+user_id: gianfrancodemarco

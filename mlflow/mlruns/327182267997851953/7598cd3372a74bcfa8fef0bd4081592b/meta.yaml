@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/7598cd3372a74bcfa8fef0bd4081592b/artifacts
+end_time: 1698187665050
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 7598cd3372a74bcfa8fef0bd4081592b
+run_name: skillful-panda-759
+run_uuid: 7598cd3372a74bcfa8fef0bd4081592b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187645286
+status: 3
+tags: []
+user_id: gianfrancodemarco

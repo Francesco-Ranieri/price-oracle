@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/6ad6f9d1bab145f7a528b39ceeff9027/artifacts
+end_time: 1698180538714
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 6ad6f9d1bab145f7a528b39ceeff9027
+run_name: orderly-bee-275
+run_uuid: 6ad6f9d1bab145f7a528b39ceeff9027
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180530616
+status: 3
+tags: []
+user_id: gianfrancodemarco

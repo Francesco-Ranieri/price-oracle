@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/ee4d540c7dc94e3a8a41de87330f6f71/artifacts
+end_time: 1698184848613
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: ee4d540c7dc94e3a8a41de87330f6f71
+run_name: delicate-dog-639
+run_uuid: ee4d540c7dc94e3a8a41de87330f6f71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698184840564
+status: 3
+tags: []
+user_id: gianfrancodemarco

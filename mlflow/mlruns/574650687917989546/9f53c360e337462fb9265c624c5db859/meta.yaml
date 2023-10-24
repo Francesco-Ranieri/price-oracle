@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/9f53c360e337462fb9265c624c5db859/artifacts
+end_time: 1698175427340
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 9f53c360e337462fb9265c624c5db859
+run_name: incongruous-bat-255
+run_uuid: 9f53c360e337462fb9265c624c5db859
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175401932
+status: 3
+tags: []
+user_id: gianfrancodemarco

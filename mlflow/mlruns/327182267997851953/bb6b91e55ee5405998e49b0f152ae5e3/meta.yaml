@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/bb6b91e55ee5405998e49b0f152ae5e3/artifacts
+end_time: 1698186647923
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: bb6b91e55ee5405998e49b0f152ae5e3
+run_name: zealous-seal-739
+run_uuid: bb6b91e55ee5405998e49b0f152ae5e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186619956
+status: 3
+tags: []
+user_id: gianfrancodemarco

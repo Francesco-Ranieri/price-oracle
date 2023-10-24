@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/8ef6fe0d3dc146218429da1a33f7479d/artifacts
+end_time: 1698182852698
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 8ef6fe0d3dc146218429da1a33f7479d
+run_name: rebellious-wasp-192
+run_uuid: 8ef6fe0d3dc146218429da1a33f7479d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182845939
+status: 4
+tags: []
+user_id: gianfrancodemarco

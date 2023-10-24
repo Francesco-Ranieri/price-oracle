@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/46a0a7c5d69e44168d7dfb8ff91e9046/artifacts
+end_time: 1698177845887
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 46a0a7c5d69e44168d7dfb8ff91e9046
+run_name: luminous-bug-82
+run_uuid: 46a0a7c5d69e44168d7dfb8ff91e9046
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177840230
+status: 4
+tags: []
+user_id: gianfrancodemarco

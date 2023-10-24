@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/91e06b557d1346f9a24aea9f43e31f79/artifacts
+end_time: 1698178936411
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 91e06b557d1346f9a24aea9f43e31f79
+run_name: rambunctious-stag-0
+run_uuid: 91e06b557d1346f9a24aea9f43e31f79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178901836
+status: 3
+tags: []
+user_id: gianfrancodemarco

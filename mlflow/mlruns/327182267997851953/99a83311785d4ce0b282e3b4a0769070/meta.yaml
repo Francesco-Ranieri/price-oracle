@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/99a83311785d4ce0b282e3b4a0769070/artifacts
+end_time: 1698188112190
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 99a83311785d4ce0b282e3b4a0769070
+run_name: suave-kit-256
+run_uuid: 99a83311785d4ce0b282e3b4a0769070
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188102385
+status: 3
+tags: []
+user_id: gianfrancodemarco

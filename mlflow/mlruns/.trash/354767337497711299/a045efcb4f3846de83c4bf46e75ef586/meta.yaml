@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/a045efcb4f3846de83c4bf46e75ef586/artifacts
+deleted_time: 1698171244534
+end_time: 1698170357070
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: a045efcb4f3846de83c4bf46e75ef586
+run_name: spiffy-jay-610
+run_uuid: a045efcb4f3846de83c4bf46e75ef586
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698170349074
+status: 4
+tags: []
+user_id: gianfrancodemarco

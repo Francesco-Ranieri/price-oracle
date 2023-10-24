@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/213973e0baf5405a8b2d826fd095010b/artifacts
+end_time: 1698182955592
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 213973e0baf5405a8b2d826fd095010b
+run_name: trusting-worm-926
+run_uuid: 213973e0baf5405a8b2d826fd095010b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182913263
+status: 3
+tags: []
+user_id: gianfrancodemarco

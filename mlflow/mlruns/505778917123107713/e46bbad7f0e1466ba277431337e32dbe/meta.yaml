@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/e46bbad7f0e1466ba277431337e32dbe/artifacts
+deleted_time: 1698162361644
+end_time: 1698161145782
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: e46bbad7f0e1466ba277431337e32dbe
+run_name: debonair-duck-554
+run_uuid: e46bbad7f0e1466ba277431337e32dbe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698161112586
+status: 3
+tags: []
+user_id: gianfrancodemarco

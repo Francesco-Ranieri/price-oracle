@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/5ebc3f69cadb46acb4436133e4ebf1e3/artifacts
+end_time: 1698156551636
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 5ebc3f69cadb46acb4436133e4ebf1e3
+run_name: calm-cod-771
+run_uuid: 5ebc3f69cadb46acb4436133e4ebf1e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698156538395
+status: 3
+tags: []
+user_id: gianfrancodemarco

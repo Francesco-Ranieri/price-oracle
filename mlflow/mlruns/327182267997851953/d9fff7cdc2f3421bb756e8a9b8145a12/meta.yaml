@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/d9fff7cdc2f3421bb756e8a9b8145a12/artifacts
+end_time: 1698185129699
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: d9fff7cdc2f3421bb756e8a9b8145a12
+run_name: marvelous-ox-592
+run_uuid: d9fff7cdc2f3421bb756e8a9b8145a12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698185121483
+status: 3
+tags: []
+user_id: gianfrancodemarco

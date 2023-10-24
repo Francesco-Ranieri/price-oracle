@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/caf57005d7e940e2898ef4bebd1a5e93/artifacts
+end_time: 1698179720843
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: caf57005d7e940e2898ef4bebd1a5e93
+run_name: awesome-shrew-696
+run_uuid: caf57005d7e940e2898ef4bebd1a5e93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179715933
+status: 4
+tags: []
+user_id: gianfrancodemarco

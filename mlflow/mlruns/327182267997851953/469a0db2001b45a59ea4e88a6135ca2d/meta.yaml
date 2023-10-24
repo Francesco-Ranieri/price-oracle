@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/469a0db2001b45a59ea4e88a6135ca2d/artifacts
+end_time: 1698178721856
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 469a0db2001b45a59ea4e88a6135ca2d
+run_name: entertaining-cod-485
+run_uuid: 469a0db2001b45a59ea4e88a6135ca2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178713485
+status: 3
+tags: []
+user_id: gianfrancodemarco

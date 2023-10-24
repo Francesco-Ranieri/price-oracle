@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/368db5e3044b40f28513d49dfb44f152/artifacts
+end_time: 1698181976469
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 368db5e3044b40f28513d49dfb44f152
+run_name: placid-elk-559
+run_uuid: 368db5e3044b40f28513d49dfb44f152
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698181965054
+status: 3
+tags: []
+user_id: gianfrancodemarco

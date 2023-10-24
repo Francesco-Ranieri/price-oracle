@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/cea4dd480cf846bb8d7ae716e13f3b01/artifacts
+end_time: 1698182529491
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: cea4dd480cf846bb8d7ae716e13f3b01
+run_name: honorable-bird-535
+run_uuid: cea4dd480cf846bb8d7ae716e13f3b01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698182522543
+status: 4
+tags: []
+user_id: gianfrancodemarco

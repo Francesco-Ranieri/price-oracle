@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/56137da2e7c34d22841bc62165d132f4/artifacts
+end_time: 1698188262262
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 56137da2e7c34d22841bc62165d132f4
+run_name: capable-squid-970
+run_uuid: 56137da2e7c34d22841bc62165d132f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698188253494
+status: 3
+tags: []
+user_id: gianfrancodemarco

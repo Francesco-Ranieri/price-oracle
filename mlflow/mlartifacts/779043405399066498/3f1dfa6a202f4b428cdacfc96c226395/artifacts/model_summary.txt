@@ -1,0 +1,27 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn (SimpleRNN)      (None, 7, 32)             1088      
+                                                                 
+ dropout (Dropout)           (None, 7, 32)             0         
+                                                                 
+ simple_rnn_1 (SimpleRNN)    (None, 7, 64)             6208      
+                                                                 
+ dropout_1 (Dropout)         (None, 7, 64)             0         
+                                                                 
+ simple_rnn_2 (SimpleRNN)    (None, 7, 32)             3104      
+                                                                 
+ dropout_2 (Dropout)         (None, 7, 32)             0         
+                                                                 
+ simple_rnn_3 (SimpleRNN)    (None, 7, 192)            43200     
+                                                                 
+ dropout_3 (Dropout)         (None, 7, 192)            0         
+                                                                 
+ dense (Dense)               (None, 7, 1)              193       
+                                                                 
+=================================================================
+Total params: 53793 (210.13 KB)
+Trainable params: 53793 (210.13 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

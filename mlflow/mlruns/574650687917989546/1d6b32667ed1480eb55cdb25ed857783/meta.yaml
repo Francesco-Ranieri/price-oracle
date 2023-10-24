@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/1d6b32667ed1480eb55cdb25ed857783/artifacts
+end_time: 1698172527468
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: 1d6b32667ed1480eb55cdb25ed857783
+run_name: auspicious-rook-291
+run_uuid: 1d6b32667ed1480eb55cdb25ed857783
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698172514492
+status: 3
+tags: []
+user_id: gianfrancodemarco

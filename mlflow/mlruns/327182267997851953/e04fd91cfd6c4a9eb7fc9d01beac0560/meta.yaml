@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/e04fd91cfd6c4a9eb7fc9d01beac0560/artifacts
+end_time: 1698178517609
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: e04fd91cfd6c4a9eb7fc9d01beac0560
+run_name: judicious-fish-226
+run_uuid: e04fd91cfd6c4a9eb7fc9d01beac0560
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178513261
+status: 4
+tags: []
+user_id: gianfrancodemarco

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/26b9ab953e0a4e799c368f24a14f364d/artifacts
+end_time: 1698179920074
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 26b9ab953e0a4e799c368f24a14f364d
+run_name: gregarious-sloth-915
+run_uuid: 26b9ab953e0a4e799c368f24a14f364d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698179909249
+status: 3
+tags: []
+user_id: gianfrancodemarco

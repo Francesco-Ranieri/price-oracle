@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/d495c85907904366961c660075679475/artifacts
+end_time: 1698175039342
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: d495c85907904366961c660075679475
+run_name: learned-fawn-681
+run_uuid: d495c85907904366961c660075679475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698175025859
+status: 3
+tags: []
+user_id: gianfrancodemarco

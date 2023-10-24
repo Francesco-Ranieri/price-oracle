@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/309e23d24b4547a1b5f2ef89622b54f1/artifacts
+deleted_time: 1698154553863
+end_time: 1698153709334
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: deleted
+run_id: 309e23d24b4547a1b5f2ef89622b54f1
+run_name: bustling-auk-897
+run_uuid: 309e23d24b4547a1b5f2ef89622b54f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698153688110
+status: 3
+tags: []
+user_id: gianfrancodemarco

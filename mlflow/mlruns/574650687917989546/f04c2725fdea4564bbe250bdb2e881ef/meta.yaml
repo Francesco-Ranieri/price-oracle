@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/f04c2725fdea4564bbe250bdb2e881ef/artifacts
+end_time: 1698174455074
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: f04c2725fdea4564bbe250bdb2e881ef
+run_name: wistful-goose-739
+run_uuid: f04c2725fdea4564bbe250bdb2e881ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698174427965
+status: 3
+tags: []
+user_id: gianfrancodemarco

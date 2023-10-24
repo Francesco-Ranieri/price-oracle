@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/42934f884ef24cbcaeaccdc747c08108/artifacts
+end_time: 1698186052452
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 42934f884ef24cbcaeaccdc747c08108
+run_name: puzzled-toad-325
+run_uuid: 42934f884ef24cbcaeaccdc747c08108
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186038294
+status: 3
+tags: []
+user_id: gianfrancodemarco

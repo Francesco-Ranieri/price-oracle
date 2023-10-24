@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/340414319298058222
+creation_time: 1698171247393
+experiment_id: '340414319298058222'
+last_update_time: 1698171528720
+lifecycle_stage: deleted
+name: Training_LSTM
+tags: {}

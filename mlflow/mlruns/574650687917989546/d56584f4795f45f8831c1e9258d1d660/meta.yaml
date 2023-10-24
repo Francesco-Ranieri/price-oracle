@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/d56584f4795f45f8831c1e9258d1d660/artifacts
+end_time: 1698176663516
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: d56584f4795f45f8831c1e9258d1d660
+run_name: monumental-shark-478
+run_uuid: d56584f4795f45f8831c1e9258d1d660
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698176637474
+status: 3
+tags: []
+user_id: gianfrancodemarco

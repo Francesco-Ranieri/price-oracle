@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/35816071e17341a3bfbb43ea6ba0c321/artifacts
+end_time: 1698186327067
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 35816071e17341a3bfbb43ea6ba0c321
+run_name: enchanting-panda-955
+run_uuid: 35816071e17341a3bfbb43ea6ba0c321
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698186311336
+status: 4
+tags: []
+user_id: gianfrancodemarco

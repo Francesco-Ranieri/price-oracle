@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/574650687917989546/d2b5299e0c4941eb9a5f26fac456be47/artifacts
+end_time: 1698177365579
+entry_point_name: ''
+experiment_id: '574650687917989546'
+lifecycle_stage: active
+run_id: d2b5299e0c4941eb9a5f26fac456be47
+run_name: tasteful-steed-979
+run_uuid: d2b5299e0c4941eb9a5f26fac456be47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698177355895
+status: 3
+tags: []
+user_id: gianfrancodemarco

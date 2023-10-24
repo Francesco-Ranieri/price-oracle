@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/354767337497711299/e00f9c4275944ae786c26c39d90c4f93/artifacts
+deleted_time: 1698171244534
+end_time: 1698171150621
+entry_point_name: ''
+experiment_id: '354767337497711299'
+lifecycle_stage: deleted
+run_id: e00f9c4275944ae786c26c39d90c4f93
+run_name: omniscient-colt-952
+run_uuid: e00f9c4275944ae786c26c39d90c4f93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698171148710
+status: 4
+tags: []
+user_id: gianfrancodemarco

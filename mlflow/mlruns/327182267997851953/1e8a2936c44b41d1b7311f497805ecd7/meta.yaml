@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1e8a2936c44b41d1b7311f497805ecd7/artifacts
+end_time: 1698178777446
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1e8a2936c44b41d1b7311f497805ecd7
+run_name: zealous-sow-742
+run_uuid: 1e8a2936c44b41d1b7311f497805ecd7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178769473
+status: 3
+tags: []
+user_id: gianfrancodemarco

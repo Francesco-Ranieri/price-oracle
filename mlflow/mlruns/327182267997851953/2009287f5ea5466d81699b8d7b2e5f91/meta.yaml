@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/2009287f5ea5466d81699b8d7b2e5f91/artifacts
+end_time: 1698178320675
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 2009287f5ea5466d81699b8d7b2e5f91
+run_name: suave-bird-942
+run_uuid: 2009287f5ea5466d81699b8d7b2e5f91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178311184
+status: 3
+tags: []
+user_id: gianfrancodemarco

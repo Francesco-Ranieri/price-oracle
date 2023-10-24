@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/f575031263dd4cac866a3285a119e9cd/artifacts
+end_time: 1698187106340
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: f575031263dd4cac866a3285a119e9cd
+run_name: handsome-bird-763
+run_uuid: f575031263dd4cac866a3285a119e9cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698187081479
+status: 3
+tags: []
+user_id: gianfrancodemarco

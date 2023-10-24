@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/babceae158ed4f599987eccc7d42d257/artifacts
+end_time: 1698178513208
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: babceae158ed4f599987eccc7d42d257
+run_name: upset-stag-718
+run_uuid: babceae158ed4f599987eccc7d42d257
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698178489126
+status: 3
+tags: []
+user_id: gianfrancodemarco

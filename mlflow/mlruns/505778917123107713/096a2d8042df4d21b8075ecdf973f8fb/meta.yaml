@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/505778917123107713/096a2d8042df4d21b8075ecdf973f8fb/artifacts
+end_time: 1698151152043
+entry_point_name: ''
+experiment_id: '505778917123107713'
+lifecycle_stage: active
+run_id: 096a2d8042df4d21b8075ecdf973f8fb
+run_name: skillful-rat-774
+run_uuid: 096a2d8042df4d21b8075ecdf973f8fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698151120974
+status: 3
+tags: []
+user_id: gianfrancodemarco

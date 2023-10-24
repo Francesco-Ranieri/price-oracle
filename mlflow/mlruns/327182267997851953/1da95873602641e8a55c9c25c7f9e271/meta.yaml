@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/327182267997851953/1da95873602641e8a55c9c25c7f9e271/artifacts
+end_time: 1698181004123
+entry_point_name: ''
+experiment_id: '327182267997851953'
+lifecycle_stage: active
+run_id: 1da95873602641e8a55c9c25c7f9e271
+run_name: honorable-moose-246
+run_uuid: 1da95873602641e8a55c9c25c7f9e271
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698180989360
+status: 3
+tags: []
+user_id: gianfrancodemarco
