@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/15a24f62c3c1468f88ee9979fa1697f2/artifacts
+end_time: 1698231256095
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 15a24f62c3c1468f88ee9979fa1697f2
+run_name: amazing-bear-833
+run_uuid: 15a24f62c3c1468f88ee9979fa1697f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698231219317
+status: 4
+tags: []
+user_id: Francesco-Ranieri

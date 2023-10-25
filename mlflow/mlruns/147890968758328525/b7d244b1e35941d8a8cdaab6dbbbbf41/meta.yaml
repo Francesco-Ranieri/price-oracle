@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/b7d244b1e35941d8a8cdaab6dbbbbf41/artifacts
+end_time: 1698227169651
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: b7d244b1e35941d8a8cdaab6dbbbbf41
+run_name: bemused-turtle-574
+run_uuid: b7d244b1e35941d8a8cdaab6dbbbbf41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698227101981
+status: 3
+tags: []
+user_id: Francesco-Ranieri

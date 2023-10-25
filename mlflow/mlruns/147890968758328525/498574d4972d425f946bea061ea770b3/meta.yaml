@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/498574d4972d425f946bea061ea770b3/artifacts
+end_time: 1698230588957
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 498574d4972d425f946bea061ea770b3
+run_name: unequaled-gnat-814
+run_uuid: 498574d4972d425f946bea061ea770b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230565814
+status: 3
+tags: []
+user_id: Francesco-Ranieri

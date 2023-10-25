@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/dc2c9fa9833545698def747863fdf8bd/artifacts
+end_time: 1698230027822
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: dc2c9fa9833545698def747863fdf8bd
+run_name: upbeat-steed-413
+run_uuid: dc2c9fa9833545698def747863fdf8bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230014504
+status: 4
+tags: []
+user_id: Francesco-Ranieri

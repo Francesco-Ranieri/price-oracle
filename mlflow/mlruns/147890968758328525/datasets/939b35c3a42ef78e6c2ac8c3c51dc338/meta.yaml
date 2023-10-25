@@ -1,0 +1,10 @@
+digest: 00088c8e
+name: dataset
+profile: '{"features_shape": [1468, 4, 3], "features_size": 17616, "features_nbytes":
+  140928, "targets_shape": [1468, 3], "targets_size": 4404, "targets_nbytes": 35232}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 4, 3]}}]", "targets": "[{\"type\": \"tensor\",
+  \"tensor-spec\": {\"dtype\": \"float64\", \"shape\": [-1, 3]}}]"}}'
+source: '{"tags": {"mlflow.user": "Francesco-Ranieri", "mlflow.source.name": "d:\\Archivio\\Anaconda3\\envs\\price-oracle\\Lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

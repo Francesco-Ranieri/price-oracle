@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/e1fa31e9274d48e58d6bdf78a7b07107/artifacts
+end_time: 1698227283313
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: e1fa31e9274d48e58d6bdf78a7b07107
+run_name: clean-horse-878
+run_uuid: e1fa31e9274d48e58d6bdf78a7b07107
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698227244169
+status: 4
+tags: []
+user_id: Francesco-Ranieri

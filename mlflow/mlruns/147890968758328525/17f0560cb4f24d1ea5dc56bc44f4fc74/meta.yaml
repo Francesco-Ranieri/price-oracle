@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/17f0560cb4f24d1ea5dc56bc44f4fc74/artifacts
+end_time: 1698230969006
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 17f0560cb4f24d1ea5dc56bc44f4fc74
+run_name: suave-snake-100
+run_uuid: 17f0560cb4f24d1ea5dc56bc44f4fc74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230931835
+status: 3
+tags: []
+user_id: Francesco-Ranieri

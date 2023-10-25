@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/d3425c9de48d45ecaad36a172b9b087e/artifacts
+end_time: 1698226777883
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: d3425c9de48d45ecaad36a172b9b087e
+run_name: merciful-hound-476
+run_uuid: d3425c9de48d45ecaad36a172b9b087e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698226760952
+status: 3
+tags: []
+user_id: Francesco-Ranieri

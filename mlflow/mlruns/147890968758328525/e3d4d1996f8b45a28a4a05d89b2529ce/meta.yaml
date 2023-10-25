@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/e3d4d1996f8b45a28a4a05d89b2529ce/artifacts
+end_time: 1698230089510
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: e3d4d1996f8b45a28a4a05d89b2529ce
+run_name: legendary-bat-87
+run_uuid: e3d4d1996f8b45a28a4a05d89b2529ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230053148
+status: 4
+tags: []
+user_id: Francesco-Ranieri

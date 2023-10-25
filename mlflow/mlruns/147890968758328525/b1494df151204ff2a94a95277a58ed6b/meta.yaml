@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/b1494df151204ff2a94a95277a58ed6b/artifacts
+end_time: 1698230318999
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: b1494df151204ff2a94a95277a58ed6b
+run_name: resilient-yak-658
+run_uuid: b1494df151204ff2a94a95277a58ed6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230256678
+status: 3
+tags: []
+user_id: Francesco-Ranieri

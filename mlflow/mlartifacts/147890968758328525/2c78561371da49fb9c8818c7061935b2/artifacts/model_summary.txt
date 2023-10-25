@@ -1,0 +1,23 @@
+Model: "sequential_218"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ simple_rnn_250 (SimpleRNN)  (None, 3, 224)            52640     
+                                                                 
+ dropout_401 (Dropout)       (None, 3, 224)            0         
+                                                                 
+ simple_rnn_251 (SimpleRNN)  (None, 3, 32)             8224      
+                                                                 
+ dropout_402 (Dropout)       (None, 3, 32)             0         
+                                                                 
+ simple_rnn_252 (SimpleRNN)  (None, 32)                2080      
+                                                                 
+ dropout_403 (Dropout)       (None, 32)                0         
+                                                                 
+ dense_218 (Dense)           (None, 10)                330       
+                                                                 
+=================================================================
+Total params: 63274 (247.16 KB)
+Trainable params: 63274 (247.16 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

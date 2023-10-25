@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/c793769f771340d1998fc6787592f767/artifacts
+end_time: 1698229569247
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: c793769f771340d1998fc6787592f767
+run_name: gaudy-shad-455
+run_uuid: c793769f771340d1998fc6787592f767
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229553252
+status: 4
+tags: []
+user_id: Francesco-Ranieri

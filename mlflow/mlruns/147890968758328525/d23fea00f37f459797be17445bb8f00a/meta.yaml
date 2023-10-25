@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/d23fea00f37f459797be17445bb8f00a/artifacts
+end_time: 1698227002757
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: d23fea00f37f459797be17445bb8f00a
+run_name: delicate-trout-682
+run_uuid: d23fea00f37f459797be17445bb8f00a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698226957392
+status: 3
+tags: []
+user_id: Francesco-Ranieri

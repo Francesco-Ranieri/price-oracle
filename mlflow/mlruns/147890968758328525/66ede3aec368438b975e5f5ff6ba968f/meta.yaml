@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/66ede3aec368438b975e5f5ff6ba968f/artifacts
+end_time: 1698229355645
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 66ede3aec368438b975e5f5ff6ba968f
+run_name: rumbling-gull-753
+run_uuid: 66ede3aec368438b975e5f5ff6ba968f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229347033
+status: 4
+tags: []
+user_id: Francesco-Ranieri

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/4bb62d3153254c60ae37a9e12a750b51/artifacts
+end_time: 1698227542637
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 4bb62d3153254c60ae37a9e12a750b51
+run_name: gentle-ox-314
+run_uuid: 4bb62d3153254c60ae37a9e12a750b51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698227494172
+status: 3
+tags: []
+user_id: Francesco-Ranieri

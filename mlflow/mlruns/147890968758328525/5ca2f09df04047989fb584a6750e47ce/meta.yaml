@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/5ca2f09df04047989fb584a6750e47ce/artifacts
+end_time: 1698229449479
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 5ca2f09df04047989fb584a6750e47ce
+run_name: burly-rat-432
+run_uuid: 5ca2f09df04047989fb584a6750e47ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229431459
+status: 3
+tags: []
+user_id: Francesco-Ranieri

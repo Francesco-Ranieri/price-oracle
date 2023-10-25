@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/031ee5b87c97456e8d9d38f16befd666/artifacts
+end_time: 1698230655866
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 031ee5b87c97456e8d9d38f16befd666
+run_name: tasteful-bird-281
+run_uuid: 031ee5b87c97456e8d9d38f16befd666
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230639628
+status: 3
+tags: []
+user_id: Francesco-Ranieri

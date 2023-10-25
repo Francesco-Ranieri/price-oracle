@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/5f5addab45934f70b3129f6bd937af76/artifacts
+end_time: 1698229008594
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 5f5addab45934f70b3129f6bd937af76
+run_name: exultant-whale-330
+run_uuid: 5f5addab45934f70b3129f6bd937af76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698228992503
+status: 3
+tags: []
+user_id: Francesco-Ranieri

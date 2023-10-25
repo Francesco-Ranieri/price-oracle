@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/8b4cd9118af046ddb5ca66543b4d2dc3/artifacts
+end_time: 1698228517550
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 8b4cd9118af046ddb5ca66543b4d2dc3
+run_name: invincible-hound-846
+run_uuid: 8b4cd9118af046ddb5ca66543b4d2dc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698228258117
+status: 3
+tags: []
+user_id: Francesco-Ranieri

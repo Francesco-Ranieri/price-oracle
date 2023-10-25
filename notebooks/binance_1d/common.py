@@ -13,6 +13,7 @@ import mlflow
 
 # Create sequences of data to be used for training
 def create_sequences(data, sequence_length):
+    data = np.array(data)
     sequences = []
     target = []
     for i in range(len(data) - sequence_length):

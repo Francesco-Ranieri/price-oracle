@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/eeef564fa7874b23a617d265f97f8c7c/artifacts
+end_time: 1698230388424
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: eeef564fa7874b23a617d265f97f8c7c
+run_name: wise-carp-825
+run_uuid: eeef564fa7874b23a617d265f97f8c7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230319235
+status: 3
+tags: []
+user_id: Francesco-Ranieri

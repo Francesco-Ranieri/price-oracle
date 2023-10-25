@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/06d5aed627484c6b85da5c466dc6a27b/artifacts
+end_time: 1698229310695
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 06d5aed627484c6b85da5c466dc6a27b
+run_name: whimsical-duck-566
+run_uuid: 06d5aed627484c6b85da5c466dc6a27b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229294931
+status: 4
+tags: []
+user_id: Francesco-Ranieri

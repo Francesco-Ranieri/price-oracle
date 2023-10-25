@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/6fb34545961143c982cbabba7c6d90ec/artifacts
+end_time: 1698230674843
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 6fb34545961143c982cbabba7c6d90ec
+run_name: rambunctious-elk-812
+run_uuid: 6fb34545961143c982cbabba7c6d90ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230656104
+status: 3
+tags: []
+user_id: Francesco-Ranieri

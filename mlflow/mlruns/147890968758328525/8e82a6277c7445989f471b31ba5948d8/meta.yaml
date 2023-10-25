@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/8e82a6277c7445989f471b31ba5948d8/artifacts
+end_time: 1698227598289
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 8e82a6277c7445989f471b31ba5948d8
+run_name: peaceful-ram-598
+run_uuid: 8e82a6277c7445989f471b31ba5948d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698227542890
+status: 3
+tags: []
+user_id: Francesco-Ranieri

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/3b556860be144e93b6d7813591fedf95/artifacts
+end_time: 1698229585696
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 3b556860be144e93b6d7813591fedf95
+run_name: sneaky-zebra-920
+run_uuid: 3b556860be144e93b6d7813591fedf95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229569459
+status: 3
+tags: []
+user_id: Francesco-Ranieri

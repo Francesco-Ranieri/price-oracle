@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/17a23f5b54ad45b08635f045a73b594c/artifacts
+end_time: 1698229680694
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 17a23f5b54ad45b08635f045a73b594c
+run_name: luminous-shark-460
+run_uuid: 17a23f5b54ad45b08635f045a73b594c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229664355
+status: 3
+tags: []
+user_id: Francesco-Ranieri

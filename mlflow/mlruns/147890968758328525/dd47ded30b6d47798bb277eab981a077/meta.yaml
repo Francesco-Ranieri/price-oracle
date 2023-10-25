@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/dd47ded30b6d47798bb277eab981a077/artifacts
+end_time: 1698230595168
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: dd47ded30b6d47798bb277eab981a077
+run_name: orderly-dog-411
+run_uuid: dd47ded30b6d47798bb277eab981a077
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230589267
+status: 4
+tags: []
+user_id: Francesco-Ranieri

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/8120c7fca5874c0c99cc6ef8993abdb2/artifacts
+end_time: 1698226346867
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 8120c7fca5874c0c99cc6ef8993abdb2
+run_name: delightful-colt-605
+run_uuid: 8120c7fca5874c0c99cc6ef8993abdb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698226280798
+status: 3
+tags: []
+user_id: Francesco-Ranieri

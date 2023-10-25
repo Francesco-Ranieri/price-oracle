@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/caec7e586b53431a9cbe47c24f7e3302/artifacts
+end_time: 1698229534280
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: caec7e586b53431a9cbe47c24f7e3302
+run_name: bright-vole-501
+run_uuid: caec7e586b53431a9cbe47c24f7e3302
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229519081
+status: 4
+tags: []
+user_id: Francesco-Ranieri

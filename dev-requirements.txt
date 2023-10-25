@@ -11,5 +11,5 @@ fastdtw
 mlflow
 scikit-learn-extra
 pyspark
-tensorflow
+tensorflow==2.13.0
 statsmodels

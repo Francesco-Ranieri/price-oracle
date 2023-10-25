@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/ffe79fc9801d4570bab649de478c5169/artifacts
+end_time: 1698227432789
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: ffe79fc9801d4570bab649de478c5169
+run_name: fearless-bear-755
+run_uuid: ffe79fc9801d4570bab649de478c5169
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698227411967
+status: 4
+tags: []
+user_id: Francesco-Ranieri

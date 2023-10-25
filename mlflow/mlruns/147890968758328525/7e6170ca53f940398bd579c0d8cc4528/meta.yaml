@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/7e6170ca53f940398bd579c0d8cc4528/artifacts
+end_time: 1698231285517
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 7e6170ca53f940398bd579c0d8cc4528
+run_name: serious-goat-392
+run_uuid: 7e6170ca53f940398bd579c0d8cc4528
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698231263654
+status: 3
+tags: []
+user_id: Francesco-Ranieri

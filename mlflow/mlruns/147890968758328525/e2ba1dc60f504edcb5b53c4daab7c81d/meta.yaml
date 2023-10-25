@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/e2ba1dc60f504edcb5b53c4daab7c81d/artifacts
+end_time: 1698229378372
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: e2ba1dc60f504edcb5b53c4daab7c81d
+run_name: bedecked-smelt-190
+run_uuid: e2ba1dc60f504edcb5b53c4daab7c81d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229355896
+status: 4
+tags: []
+user_id: Francesco-Ranieri

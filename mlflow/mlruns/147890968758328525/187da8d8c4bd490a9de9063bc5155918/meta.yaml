@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/187da8d8c4bd490a9de9063bc5155918/artifacts
+end_time: 1698231162359
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 187da8d8c4bd490a9de9063bc5155918
+run_name: salty-newt-251
+run_uuid: 187da8d8c4bd490a9de9063bc5155918
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698231145848
+status: 3
+tags: []
+user_id: Francesco-Ranieri

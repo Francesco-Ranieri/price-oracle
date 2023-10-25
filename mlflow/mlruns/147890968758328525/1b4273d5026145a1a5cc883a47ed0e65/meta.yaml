@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/1b4273d5026145a1a5cc883a47ed0e65/artifacts
+end_time: 1698229396476
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 1b4273d5026145a1a5cc883a47ed0e65
+run_name: fortunate-worm-789
+run_uuid: 1b4273d5026145a1a5cc883a47ed0e65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229379900
+status: 3
+tags: []
+user_id: Francesco-Ranieri

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/f64aeb50e008412e883a5e5490d064ce/artifacts
+end_time: 1698226727444
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: f64aeb50e008412e883a5e5490d064ce
+run_name: nimble-wasp-681
+run_uuid: f64aeb50e008412e883a5e5490d064ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698226692419
+status: 4
+tags: []
+user_id: Francesco-Ranieri

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/01c65e30b89b42fb8d9cc8f84203af22/artifacts
+end_time: 1698231263428
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 01c65e30b89b42fb8d9cc8f84203af22
+run_name: melodic-ant-69
+run_uuid: 01c65e30b89b42fb8d9cc8f84203af22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698231256322
+status: 4
+tags: []
+user_id: Francesco-Ranieri

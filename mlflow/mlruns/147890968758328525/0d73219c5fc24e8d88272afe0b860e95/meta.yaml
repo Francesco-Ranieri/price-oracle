@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/0d73219c5fc24e8d88272afe0b860e95/artifacts
+end_time: 1698226844082
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 0d73219c5fc24e8d88272afe0b860e95
+run_name: traveling-yak-499
+run_uuid: 0d73219c5fc24e8d88272afe0b860e95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698226822771
+status: 3
+tags: []
+user_id: Francesco-Ranieri

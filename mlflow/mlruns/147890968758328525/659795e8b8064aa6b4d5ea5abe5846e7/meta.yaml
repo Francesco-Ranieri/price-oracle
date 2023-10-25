@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/659795e8b8064aa6b4d5ea5abe5846e7/artifacts
+end_time: 1698226444317
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 659795e8b8064aa6b4d5ea5abe5846e7
+run_name: debonair-snipe-846
+run_uuid: 659795e8b8064aa6b4d5ea5abe5846e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698226347118
+status: 3
+tags: []
+user_id: Francesco-Ranieri

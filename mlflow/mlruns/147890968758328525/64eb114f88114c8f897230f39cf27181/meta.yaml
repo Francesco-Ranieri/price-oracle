@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/64eb114f88114c8f897230f39cf27181/artifacts
+end_time: 1698228910599
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: 64eb114f88114c8f897230f39cf27181
+run_name: peaceful-skink-298
+run_uuid: 64eb114f88114c8f897230f39cf27181
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698228889395
+status: 4
+tags: []
+user_id: Francesco-Ranieri

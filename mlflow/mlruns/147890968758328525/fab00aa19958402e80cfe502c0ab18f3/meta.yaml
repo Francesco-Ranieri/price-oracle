@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/fab00aa19958402e80cfe502c0ab18f3/artifacts
+end_time: 1698231298450
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: fab00aa19958402e80cfe502c0ab18f3
+run_name: bittersweet-hound-57
+run_uuid: fab00aa19958402e80cfe502c0ab18f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698231286452
+status: 4
+tags: []
+user_id: Francesco-Ranieri

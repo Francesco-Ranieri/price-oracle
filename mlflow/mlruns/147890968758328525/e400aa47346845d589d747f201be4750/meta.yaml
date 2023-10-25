@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/e400aa47346845d589d747f201be4750/artifacts
+end_time: 1698229505862
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: e400aa47346845d589d747f201be4750
+run_name: resilient-kit-400
+run_uuid: e400aa47346845d589d747f201be4750
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698229484713
+status: 4
+tags: []
+user_id: Francesco-Ranieri

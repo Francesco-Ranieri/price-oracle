@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/147890968758328525/d35c27f6133541229c5aa6056cb00f90/artifacts
+end_time: 1698230236706
+entry_point_name: ''
+experiment_id: '147890968758328525'
+lifecycle_stage: active
+run_id: d35c27f6133541229c5aa6056cb00f90
+run_name: rare-shoat-822
+run_uuid: d35c27f6133541229c5aa6056cb00f90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698230172015
+status: 3
+tags: []
+user_id: Francesco-Ranieri
