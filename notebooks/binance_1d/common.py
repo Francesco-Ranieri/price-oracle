@@ -3,17 +3,21 @@ from math import sqrt
 
 import keras.backend as K
 import matplotlib.pyplot as plt
-import optuna
-import pandas as pd
-from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
-from keras.callbacks import Callback
+import mlflow.keras
 import numpy as np
+import pandas as pd
+from keras.callbacks import Callback
+from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from tensorflow import keras
 
 import mlflow
+import optuna
+
 
 # Create sequences of data to be used for training
 def create_sequences(data, sequence_length):
-    data = np.array(data)
     sequences = []
     target = []
     for i in range(len(data) - sequence_length):
@@ -40,7 +44,7 @@ class OptunaPruneCallback(Callback):
 
 def get_dataframe():
         
-    folder = os.path.join("../../airflow/assets/binance_1d")
+    folder = os.path.join("../../../airflow/assets/binance_1d")
     dfs = []
     for file in os.listdir(folder):
         if file.endswith(".csv"):
@@ -155,3 +159,173 @@ def register_training_experiment(
                 f'rmse_{suffix}': rmse,
                 f'mape_{suffix}': mape
             })
+
+
+def get_splits(data, sequence_length: int):
+    X, y = create_sequences(data, sequence_length)
+    _X_train, X_val, _y_train, y_val = train_test_split(X, y, test_size=0.2, shuffle=False)
+    X_train, X_test, y_train, y_test = train_test_split(_X_train, _y_train, test_size=0.2, shuffle=False)
+    return X_train, X_test, X_val, y_train, y_test, y_val
+
+
+def build_model(
+    data,
+    units_per_layer,
+    sequence_length,
+    learning_rate,
+    dropout_rate,
+    layer_class
+):
+    # Build and compile the LSTM model
+    model = keras.Sequential()
+    for units in units_per_layer[:-1]:
+        model.add(layer_class(units, activation='relu', return_sequences=True, input_shape=(sequence_length, data.shape[1])))
+        model.add(keras.layers.Dropout(dropout_rate))
+    model.add(layer_class(units_per_layer[-1], activation='relu', input_shape=(sequence_length, data.shape[1])))
+    model.add(keras.layers.Dropout(dropout_rate))
+    model.add(keras.layers.Dense(data.shape[1]))
+
+    optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0)
+    model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=[mean_absolute_percentage_error_keras])
+
+    return model
+        
+
+def evaluate_best_coin(coin, data, best_params):
+    """
+    Evaluate the best model for a given coin
+    
+    :param coin: The coin to be used for training
+    :param data: The data to be used for training
+    :param best_params: The best hyperparameters found by Optuna
+    """
+
+    # Train the final model with the best hyperparameters
+    # Define the search space for hyperparameters
+    num_layers = best_params['num_layers']
+    units_per_layer = [best_params[f'units_layer_{i}'] for i in range(num_layers)]
+    sequence_length = best_params['sequence_length']
+    learning_rate = best_params['learning_rate']
+    dropout_rate = best_params['dropout_rate']
+    min_max_scaling = best_params['min_max_scaling']
+    layer_type = best_params['layer_type']
+
+    layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN 
+
+    if min_max_scaling == 1:
+        scaler = MinMaxScaler()
+        data = scaler.fit_transform(np.array(data))
+
+    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length)
+    X_train = np.concatenate((X_train, X_val))
+    y_train = np.concatenate((y_train, y_val))
+
+    with mlflow.start_run(run_name=f"Training_best_model_{coin}") as run:
+    
+        mlflow.log_params({
+            'coin': coin,
+            'num_layers': num_layers,
+            'units_per_layer': units_per_layer,
+            'sequence_length': sequence_length,
+            'learning_rate': learning_rate,
+            'dropout_rate': dropout_rate,
+            'min_max_scaling': min_max_scaling
+        })
+
+        model = build_model(
+            data,
+            units_per_layer,
+            sequence_length,
+            learning_rate,
+            dropout_rate,
+            layer_class
+        )
+
+        model.fit(X_train, y_train, epochs=100, batch_size=32)
+
+        preds = model.predict([X_test])
+
+        if min_max_scaling == 1:
+            preds = scaler.inverse_transform(preds)
+            y_test = scaler.inverse_transform(y_test)
+
+        register_training_experiment(y_test, preds, model_name = layer_class, coin = coin)
+
+
+
+def objective(trial, data, coins):
+    """
+    Define an objective function to be minimized by using Optuna.
+    The hyperparameters are:
+    - Number of layers
+    - Number of units per layer
+    - Sequence length
+    - Learning rate
+    - Dropout rate
+    - Min-max scaling
+    - Layer type (LSTM or RNN)
+
+    Implements the OptunaPruneCallback
+    
+    :param trial: An Optuna trial object
+    :param data: The data to be used for training
+    :param coin: The coin to be used for training
+
+    :return: The mean absolute percentage error on the validation set
+    """
+
+    with mlflow.start_run() as run:
+        mlflow.keras.autolog(log_models=False)
+
+        # Define the search space for hyperparameters
+        num_layers = trial.suggest_int('num_layers', 1, 4)
+        units_per_layer = [trial.suggest_int(f'units_layer_{i}', 32, 256, 32) for i in range(num_layers)]
+        sequence_length = trial.suggest_int('sequence_length', 1, 10)
+        learning_rate = trial.suggest_float('learning_rate', 1e-6, 1e-3)
+        dropout_rate = trial.suggest_float('dropout_rate', 0.0, 0.5)
+        min_max_scaling = trial.suggest_int('min_max_scaling', 0, 1)
+        layer_type = trial.suggest_categorical('layer_type', ['LSTM', 'RNN'])
+
+        layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN 
+
+        mlflow.log_params({
+            'coin': coins,
+            'num_layers': num_layers,
+            'units_per_layer': units_per_layer,
+            'sequence_length': sequence_length,
+            'learning_rate': learning_rate,
+            'dropout_rate': dropout_rate,
+            'min_max_scaling': min_max_scaling
+        })
+
+        if min_max_scaling == 1:
+            scaler = MinMaxScaler()
+            data = scaler.fit_transform(np.array(data))
+
+        model = build_model(
+            data,
+            units_per_layer,
+            sequence_length,
+            learning_rate,
+            dropout_rate,
+            layer_class
+        )
+
+        # Split the data into training and validation sets
+        X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length)
+
+        # Train the model with early stopping
+        history = model.fit(
+            X_train,
+            y_train,
+            epochs=50,
+            batch_size=32,
+            validation_data=(X_val, y_val), 
+            verbose=0,
+            callbacks=[OptunaPruneCallback(trial=trial)]
+        )
+
+        # Evaluate the model on the validation set
+        loss = model.evaluate(X_val, y_val)
+
+        return loss[1]
