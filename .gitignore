@@ -5,3 +5,5 @@
 elastic/elasticsearch.yaml
 elastic/kibana.yaml
 /data
+/mlflow
+/optuna

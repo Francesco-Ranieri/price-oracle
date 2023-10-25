@@ -1,0 +1,6 @@
+outs:
+- md5: 240e6528720903ea5e7beb388b5efdfd.dir
+  size: 4177920
+  nfiles: 3
+  hash: md5
+  path: optuna

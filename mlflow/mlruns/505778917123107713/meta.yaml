@@ -1,7 +1,0 @@
-artifact_location: mlflow-artifacts:/505778917123107713
-creation_time: 1698148625722
-experiment_id: '505778917123107713'
-last_update_time: 1698163447806
-lifecycle_stage: active
-name: Training_LSTM_bkp
-tags: {}
