@@ -3,3 +3,4 @@
     autostage = true
 ['remote "origin"']
     url = https://dagshub.com/Francesco-Ranieri/price-oracle.dvc
+    read_timeout = 0
