@@ -3,17 +3,17 @@ from math import sqrt
 
 import keras.backend as K
 import matplotlib.pyplot as plt
+import mlflow
 import mlflow.keras
 import numpy as np
+import optuna
 import pandas as pd
 from keras.callbacks import Callback
+from pandas import DataFrame
 from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
-
-import mlflow
-import optuna
 
 
 # Create sequences of data to be used for training
@@ -42,7 +42,7 @@ class OptunaPruneCallback(Callback):
                 raise optuna.TrialPruned()
 
 
-def get_dataframe():
+def get_dataframe(add_sma_columns: bool = False):
         
     folder = os.path.join("../../../airflow/assets/binance_1d")
     dfs = []
@@ -84,10 +84,13 @@ def get_dataframe():
         except ValueError as e:
             print(f'Error on coin {ticker}: {e}')
 
+    if add_sma_columns:
+        merged_df = pd.concat([merged_df['Date'], calculate_sma(merged_df.iloc[:, 1:])], axis=1)
+
     return merged_df
 
 
-def get_clustered_dataframes():
+def get_clustered_dataframes(add_sma_columns: bool = False):
 
     merged_df = get_dataframe()
     experiment = _get_experiments_from_mlflow()
@@ -112,8 +115,44 @@ def get_clustered_dataframes():
     for cluster, criptos in cripto_clusters.items():
         _criptos = criptos + ['Date']
         clusters_data[cluster] = merged_df[_criptos]
-    
+        if add_sma_columns:
+            clusters_data[cluster] = pd.concat([merged_df['Date'], calculate_sma(clusters_data[cluster][criptos])], axis=1)
+
     return clusters_data
+
+
+def calculate_sma(
+            cripto_data: DataFrame,
+            sma_window_sizes: list = [5,10,20,50,100,200],
+            min_periods: int = 1
+            ):
+    
+    """
+    This function calculates the Simple Moving Average (SMA) for each window size
+    and returns the indexed data.
+    
+    Parameters
+    ----------
+    cripto_data : DataFrame
+        Cripto data to be indexed.
+    sma_window_sizes : list
+        List of window sizes to calculate the SMA.
+    min_periods : int
+        Minimum number of observations in window required to have a value.
+
+    """
+
+    df = DataFrame(cripto_data)
+    # calculate rmse over 7, 30, 90 days on cripto_data
+
+    for cripto in df.columns:
+        cripto_name = cripto.split('_')[1]
+        # Calculate Simple Moving Average (SMA) for each window size
+        for window_size in sma_window_sizes:
+                sma_column = f'sma_{window_size}_{cripto_name}'
+                df[sma_column] = df[cripto].rolling(window=window_size, min_periods=1).mean()
+
+    return df
 
 
 def _get_experiments_from_mlflow(experiment_id: str = "110357928989408424", run_id: str = "35f1bb80732f433297fda78e6638feab"):
