@@ -12,6 +12,7 @@ criptos = [f.split('.')[0] for f in os.listdir('airflow/assets/binance_1d')]
 for cripto in criptos:
     data['panels'].append(json.loads(json.dumps(data['panels'][0]).replace('BTCUSDT', cripto)))
     data['panels'].append(json.loads(json.dumps(data['panels'][1]).replace('BTCUSDT', cripto)))
+    data['panels'].append(json.loads(json.dumps(data['panels'][2]).replace('BTCUSDT', cripto)))
 
 # Write the new dashboard to price-oracle-dashboard.json
 with open('grafana/price-oracle-dashboard.json', 'w') as f:

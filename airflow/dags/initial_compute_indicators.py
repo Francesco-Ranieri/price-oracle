@@ -74,22 +74,6 @@ def compute_indicators(data_path: str, coin_name: str):
         # Calculate the SMA using a window function
         df = df.withColumn(sma_column, F.avg("close_price").over(window_spec.rowsBetween(-window_size, 0)))
 
-    # Define the window sizes for EMA
-    ema_window_sizes = [12, 26, 50, 100, 200]
-
-    # Calculate Exponential Moving Average (EMA) for each window size
-    for window_size in ema_window_sizes:
-        # Define the column name for the EMA
-        ema_column = f"ema_{window_size}"
-
-        # Calculate the EMA
-        alpha = 2 / (window_size + 1)  # EMA smoothing factor
-
-        # Calculate the EMA
-        df = df.withColumn(ema_column, F.lit(None))
-        df = df.withColumn(ema_column, F.when(F.isnull(F.col(ema_column)), F.avg("close_price").over(window_spec.rowsBetween(-window_size, -1))).otherwise(F.lit(None)))
-        df = df.withColumn(ema_column, F.when(F.isnull(F.col(ema_column)), F.col("close_price") * alpha + F.col(ema_column) * (1 - alpha)).otherwise(F.lit(None)))
-
     # Convert the Spark DataFrame back to a Pandas DataFrame and then to a list of Indicators
     df = df.toPandas()
     df['close_time_date'] = pd.Series(df['close_time_date'].dt.to_pydatetime(), dtype = object)

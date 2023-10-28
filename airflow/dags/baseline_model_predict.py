@@ -1,15 +1,15 @@
 import logging
-import os
 from datetime import datetime
 from typing import List
 
 import pandas as pd
 from airflow.models import DagRun
 from airflow.operators.python import PythonOperator
+from common.constants import FILE_NAMES
 from common.entities.prediction import Prediction
 from common.hooks.spark_hook import SparkHook
-from common.tasks.cassandra import insert_into_cassandra_predictions
-from common.constants import FILE_NAMES
+from common.tasks.cassandra import insert_into_cassandra_predictions, insert_into_cassandra_metrics
+from common.tasks.metrics import compute_metrics
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
 
@@ -66,10 +66,10 @@ def predict(data_path: str) -> List[Prediction]:
     # Convert the Spark DataFrame back to a Pandas DataFrame and then to a list of Indicators
     df = df.toPandas()
     df['close_time_date'] = pd.Series(df['close_time_date'].dt.to_pydatetime(), dtype = object)
-    df = df.to_dict("records")
-    df: List[Prediction] = [Prediction.model_validate(item) for item in df]
+    data = df.to_dict("records")
+    data: List[Prediction] = [Prediction.model_validate(item) for item in data]
 
-    return df
+    return data
 
     
 for file_name in FILE_NAMES:
@@ -109,7 +109,7 @@ for file_name in FILE_NAMES:
         )
 
 
-        compute_indicators_task = PythonOperator(
+        predict_task = PythonOperator(
             task_id="predict",
             python_callable=predict,
             op_args=[data_path_task.output],
@@ -119,14 +119,30 @@ for file_name in FILE_NAMES:
         insert_into_cassandra_predictions_task = PythonOperator(
             task_id="insert_into_cassandra_predictions",
             python_callable=insert_into_cassandra_predictions,
-            op_args=[compute_indicators_task.output]
+            op_args=[predict_task.output]
         )
+
+
+        compute_metrics_task = PythonOperator(
+            task_id="compute_metrics",
+            python_callable=compute_metrics,
+            op_args=[data_path_task.output, predict_task.output, coin_name],
+        )
+
+
+        insert_into_cassandra_metrics_task = PythonOperator(
+            task_id="insert_into_cassandra_metrics",
+            python_callable=insert_into_cassandra_metrics,
+            op_args=[compute_metrics_task.output]
+        )
+
 
         # Set up task dependencies
         external_task_sensor >> data_path_task  # Wait for the external DAG to complete
-        data_path_task >> compute_indicators_task  # Fetch data before computing indicators
-        compute_indicators_task >> insert_into_cassandra_predictions_task
-
+        data_path_task >> predict_task  # Fetch data before computing indicators
+        predict_task >> insert_into_cassandra_predictions_task
+        predict_task >> compute_metrics_task
+        compute_metrics_task >> insert_into_cassandra_metrics_task
 
     if __name__ == "__main__":
         dag.test()

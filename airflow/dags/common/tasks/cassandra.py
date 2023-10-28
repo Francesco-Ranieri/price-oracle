@@ -3,6 +3,7 @@ from typing import List
 from common.entities.price_candlestick import PriceCandleStick
 from common.entities.indicators import Indicators
 from common.entities.prediction import Prediction
+from common.entities.metrics import Metrics
 from common.hooks.cassandra_hook import CassandraHook
 
 
@@ -38,19 +39,14 @@ def insert_into_cassandra_indicators(data: List[Indicators]):
     cassandra_hook = CassandraHook()
     insert_query = """
         INSERT INTO
-            indicators (close_time_date, coin, ema_12, ema_26, ema_50, ema_100, ema_200, sma_5, sma_10, sma_20, sma_50, sma_100, sma_200)
+            indicators (close_time_date, coin, sma_5, sma_10, sma_20, sma_50, sma_100, sma_200)
         VALUES
-            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            (?, ?, ?, ?, ?, ?, ?, ?)
     """
     params = [
         (
             row.close_time_date,
             row.coin,
-            row.ema_12,
-            row.ema_26,
-            row.ema_50,
-            row.ema_100,
-            row.ema_200,
             row.sma_5,
             row.sma_10,
             row.sma_20,
@@ -76,6 +72,30 @@ def insert_into_cassandra_predictions(data: List[Prediction]):
             row.close_time_date,
             row.close_price,
             row.coin,
+            row.model_name
+        ) for row in data
+    ]
+    cassandra_hook.run_batch_query(insert_query, params)
+
+
+def insert_into_cassandra_metrics(data: List[Metrics]):
+
+    cassandra_hook = CassandraHook()
+    insert_query = """
+        INSERT INTO
+            metrics (metric_name, date, target, metric_all, metric_90_d, metric_30_d, metric_7_d, model_name)
+        VALUES
+            (?, ?, ?, ?, ?, ?, ?, ?);
+    """
+    params = [
+        (
+            row.metric_name,
+            row.date,
+            row.target,
+            row.metric_all,
+            row.metric_90_d,
+            row.metric_30_d,
+            row.metric_7_d,
             row.model_name
         ) for row in data
     ]

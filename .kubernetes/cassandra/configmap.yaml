@@ -33,11 +33,6 @@ data:
     CREATE TABLE IF NOT EXISTS indicators (
         coin text,
         close_time_date timestamp,
-        ema_12 double,
-        ema_26 double,
-        ema_50 double,
-        ema_100 double,
-        ema_200 double,
         sma_5 double,
         sma_10 double,
         sma_20 double,
@@ -61,8 +56,10 @@ data:
         date timestamp,
         target text,
         metric_all double,
-        metric_60_d double,
+        metric_90_d double,
         metric_30_d double,
+        metric_7_d double,
         model_name text,
-        PRIMARY KEY (target, model_name, date)
+        metric_name text,
+        PRIMARY KEY (target, model_name, metric_name, date)
     );
