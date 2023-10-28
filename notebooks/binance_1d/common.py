@@ -3,17 +3,17 @@ from math import sqrt
 
 import keras.backend as K
 import matplotlib.pyplot as plt
+import mlflow
 import mlflow.keras
 import numpy as np
+import optuna
 import pandas as pd
 from keras.callbacks import Callback
+from pandas import DataFrame
 from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
-
-import mlflow
-import optuna
 
 
 # Create sequences of data to be used for training
@@ -42,7 +42,7 @@ class OptunaPruneCallback(Callback):
                 raise optuna.TrialPruned()
 
 
-def get_dataframe():
+def get_dataframe(add_sma_columns: bool = False):
         
     folder = os.path.join("../../../airflow/assets/binance_1d")
     dfs = []
@@ -84,10 +84,13 @@ def get_dataframe():
         except ValueError as e:
             print(f'Error on coin {ticker}: {e}')
 
+    if add_sma_columns:
+        merged_df = pd.concat([merged_df['Date'], calculate_sma(merged_df.iloc[:, 1:])], axis=1)
+
     return merged_df
 
 
-def get_clustered_dataframes():
+def get_clustered_dataframes(add_sma_columns: bool = False):
 
     merged_df = get_dataframe()
     experiment = _get_experiments_from_mlflow()
@@ -112,8 +115,44 @@ def get_clustered_dataframes():
     for cluster, criptos in cripto_clusters.items():
         _criptos = criptos + ['Date']
         clusters_data[cluster] = merged_df[_criptos]
-    
+        if add_sma_columns:
+            clusters_data[cluster] = pd.concat([merged_df['Date'], calculate_sma(clusters_data[cluster][criptos])], axis=1)
+
     return clusters_data
+
+
+def calculate_sma(
+            cripto_data: DataFrame,
+            sma_window_sizes: list = [5,10,20,50,100,200],
+            min_periods: int = 1
+            ):
+    
+    """
+    This function calculates the Simple Moving Average (SMA) for each window size
+    and returns the indexed data.
+    
+    Parameters
+    ----------
+    cripto_data : DataFrame
+        Cripto data to be indexed.
+    sma_window_sizes : list
+        List of window sizes to calculate the SMA.
+    min_periods : int
+        Minimum number of observations in window required to have a value.
+
+    """
+
+    df = DataFrame(cripto_data)
+    # calculate rmse over 7, 30, 90 days on cripto_data
+
+    for cripto in df.columns:
+        cripto_name = cripto.split('_')[1]
+        # Calculate Simple Moving Average (SMA) for each window size
+        for window_size in sma_window_sizes:
+                sma_column = f'sma_{window_size}_{cripto_name}'
+                df[sma_column] = df[cripto].rolling(window=window_size, min_periods=1).mean()
+
+    return df
 
 
 def _get_experiments_from_mlflow(experiment_id: str = "110357928989408424", run_id: str = "35f1bb80732f433297fda78e6638feab"):
@@ -161,10 +200,19 @@ def register_training_experiment(
             })
 
 
-def get_splits(data, sequence_length: int):
+def get_splits(data, sequence_length: int, output_shape: int):
+
     X, y = create_sequences(data, sequence_length)
     _X_train, X_val, _y_train, y_val = train_test_split(X, y, test_size=0.2, shuffle=False)
     X_train, X_test, y_train, y_test = train_test_split(_X_train, _y_train, test_size=0.2, shuffle=False)
+
+    if output_shape:
+        if output_shape < 1:
+            raise ValueError("Error: output_shape must be greater than 0")
+        y_train = y_train[:, output_shape - 1]
+        y_test = y_test[:, output_shape - 1]
+        y_val = y_val[:, output_shape - 1]
+
     return X_train, X_test, X_val, y_train, y_test, y_val
 
 
@@ -174,8 +222,12 @@ def build_model(
     sequence_length,
     learning_rate,
     dropout_rate,
-    layer_class
+    layer_class,
+    output_shape = None
 ):
+    if output_shape is None:
+        output_shape = data.shape[1]
+
     # Build and compile the LSTM model
     model = keras.Sequential()
     for units in units_per_layer[:-1]:
@@ -183,7 +235,7 @@ def build_model(
         model.add(keras.layers.Dropout(dropout_rate))
     model.add(layer_class(units_per_layer[-1], activation='relu', input_shape=(sequence_length, data.shape[1])))
     model.add(keras.layers.Dropout(dropout_rate))
-    model.add(keras.layers.Dense(data.shape[1]))
+    model.add(keras.layers.Dense(output_shape))
 
     optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0)
     model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=[mean_absolute_percentage_error_keras])
@@ -191,7 +243,7 @@ def build_model(
     return model
         
 
-def evaluate_best_coin(coin, data, best_params):
+def evaluate_best_coin(coin, data, best_params, output_shape = None):
     """
     Evaluate the best model for a given coin
     
@@ -216,7 +268,7 @@ def evaluate_best_coin(coin, data, best_params):
         scaler = MinMaxScaler()
         data = scaler.fit_transform(np.array(data))
 
-    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length)
+    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length, output_shape)
     X_train = np.concatenate((X_train, X_val))
     y_train = np.concatenate((y_train, y_val))
 
@@ -238,7 +290,8 @@ def evaluate_best_coin(coin, data, best_params):
             sequence_length,
             learning_rate,
             dropout_rate,
-            layer_class
+            layer_class,
+            output_shape
         )
 
         model.fit(X_train, y_train, epochs=100, batch_size=32)
@@ -253,7 +306,7 @@ def evaluate_best_coin(coin, data, best_params):
 
 
 
-def objective(trial, data, coins):
+def objective(trial, data, coins, output_shape = None):
     """
     Define an objective function to be minimized by using Optuna.
     The hyperparameters are:
@@ -308,11 +361,12 @@ def objective(trial, data, coins):
             sequence_length,
             learning_rate,
             dropout_rate,
-            layer_class
+            layer_class,
+            output_shape
         )
 
         # Split the data into training and validation sets
-        X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length)
+        X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length, output_shape)
 
         # Train the model with early stopping
         history = model.fit(
