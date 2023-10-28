@@ -200,10 +200,19 @@ def register_training_experiment(
             })
 
 
-def get_splits(data, sequence_length: int):
+def get_splits(data, sequence_length: int, output_shape: int):
+
     X, y = create_sequences(data, sequence_length)
     _X_train, X_val, _y_train, y_val = train_test_split(X, y, test_size=0.2, shuffle=False)
     X_train, X_test, y_train, y_test = train_test_split(_X_train, _y_train, test_size=0.2, shuffle=False)
+
+    if output_shape:
+        if output_shape < 1:
+            raise ValueError("Error: output_shape must be greater than 0")
+        y_train = y_train[:, output_shape - 1]
+        y_test = y_test[:, output_shape - 1]
+        y_val = y_val[:, output_shape - 1]
+
     return X_train, X_test, X_val, y_train, y_test, y_val
 
 
@@ -213,8 +222,12 @@ def build_model(
     sequence_length,
     learning_rate,
     dropout_rate,
-    layer_class
+    layer_class,
+    output_shape = None
 ):
+    if output_shape is None:
+        output_shape = data.shape[1]
+
     # Build and compile the LSTM model
     model = keras.Sequential()
     for units in units_per_layer[:-1]:
@@ -222,7 +235,7 @@ def build_model(
         model.add(keras.layers.Dropout(dropout_rate))
     model.add(layer_class(units_per_layer[-1], activation='relu', input_shape=(sequence_length, data.shape[1])))
     model.add(keras.layers.Dropout(dropout_rate))
-    model.add(keras.layers.Dense(data.shape[1]))
+    model.add(keras.layers.Dense(output_shape))
 
     optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0)
     model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=[mean_absolute_percentage_error_keras])
@@ -230,7 +243,7 @@ def build_model(
     return model
         
 
-def evaluate_best_coin(coin, data, best_params):
+def evaluate_best_coin(coin, data, best_params, output_shape = None):
     """
     Evaluate the best model for a given coin
     
@@ -255,7 +268,7 @@ def evaluate_best_coin(coin, data, best_params):
         scaler = MinMaxScaler()
         data = scaler.fit_transform(np.array(data))
 
-    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length)
+    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length, output_shape)
     X_train = np.concatenate((X_train, X_val))
     y_train = np.concatenate((y_train, y_val))
 
@@ -277,7 +290,8 @@ def evaluate_best_coin(coin, data, best_params):
             sequence_length,
             learning_rate,
             dropout_rate,
-            layer_class
+            layer_class,
+            output_shape
         )
 
         model.fit(X_train, y_train, epochs=100, batch_size=32)
@@ -292,7 +306,7 @@ def evaluate_best_coin(coin, data, best_params):
 
 
 
-def objective(trial, data, coins):
+def objective(trial, data, coins, output_shape = None):
     """
     Define an objective function to be minimized by using Optuna.
     The hyperparameters are:
@@ -347,11 +361,12 @@ def objective(trial, data, coins):
             sequence_length,
             learning_rate,
             dropout_rate,
-            layer_class
+            layer_class,
+            output_shape
         )
 
         # Split the data into training and validation sets
-        X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length)
+        X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length, output_shape)
 
         # Train the model with early stopping
         history = model.fit(
