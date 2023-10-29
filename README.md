@@ -12,7 +12,7 @@ helm repo add community-charts https://community-charts.github.io/helm-charts
 ## RUN
 skaffold dev
 skaffold dev --status-check=false
-mlflow server --backend-store-uri sqlite:///:memory -p 5001
+mlflow server --backend-store-uri sqlite:///memory -p 5001
 
 ## TO DEBUG DAGS:
 1) Install airflow on your host machine

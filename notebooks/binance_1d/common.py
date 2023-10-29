@@ -15,20 +15,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
 
+import sys
+sys.path.append("../../../airflow/dags/common/models")
 
-# Create sequences of data to be used for training
-def create_sequences(data, sequence_length):
-    sequences = []
-    target = []
-    for i in range(len(data) - sequence_length):
-        sequences.append(data[i:i+sequence_length])
-        target.append(data[i+sequence_length])
-    return np.array(sequences), np.array(target)
+from models import build_model, get_splits, mean_absolute_percentage_error_keras, create_sequences
 
-
-def mean_absolute_percentage_error_keras(y_true, y_pred):
-    diff = K.abs((y_true - y_pred) / K.clip(K.abs(y_true), K.epsilon(), None))
-    return 100.0 * K.mean(diff, axis=-1)
 
 class OptunaPruneCallback(Callback):
     def __init__(self, trial):
@@ -159,6 +150,88 @@ def _get_experiments_from_mlflow(experiment_id: str = "110357928989408424", run_
     return experiments.loc[experiments['run_id'] == run_id]
 
 
+def evaluate_best_coin(
+    coin,
+    data,
+    best_params,
+    output_shape = None
+):
+    """
+    Evaluate the best model for a given coin
+    
+    :param coin: The coin to be used for training
+    :param data: The data to be used for training
+    :param best_params: The best hyperparameters found by Optuna
+    """
+
+    # Train the final model with the best hyperparameters
+    # Define the search space for hyperparameters
+    num_layers = best_params['num_layers']
+    units_per_layer = [best_params[f'units_layer_{i}'] for i in range(num_layers)]
+    sequence_length = best_params['sequence_length']
+    learning_rate = best_params['learning_rate']
+    dropout_rate = best_params['dropout_rate']
+    min_max_scaling = best_params['min_max_scaling']
+    layer_type = best_params['layer_type']
+    optimizer = best_params['optimizer']
+    activation = best_params['activation']
+    weight_decay = best_params['weight_decay']
+    batch_size = best_params['batch_size']
+
+    layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN 
+
+    if min_max_scaling == 1:
+        scaler = MinMaxScaler()
+        data = scaler.fit_transform(np.array(data))
+
+    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length, output_shape)
+    X_train = np.concatenate((X_train, X_val))
+    y_train = np.concatenate((y_train, y_val))
+
+    with mlflow.start_run(
+        run_name=f"Training_best_model_{coin}"
+    ) as run:
+    
+        mlflow.log_params({
+            'coin': coin,
+            'num_layers': num_layers,
+            'units_per_layer': units_per_layer,
+            'sequence_length': sequence_length,
+            'learning_rate': learning_rate,
+            'dropout_rate': dropout_rate,
+            'min_max_scaling': min_max_scaling,
+            'layer_type': layer_type,
+            'optimizer': optimizer,
+            'activation': activation,
+            'weight_decay': weight_decay,
+            'batch_size': batch_size,
+            'output_shape': output_shape
+        })
+
+        model = build_model(
+            data,
+            units_per_layer,
+            sequence_length,
+            learning_rate,
+            dropout_rate,
+            layer_class,
+            optimizer,
+            activation,
+            weight_decay,
+            output_shape
+        )
+
+        model.fit(X_train, y_train, epochs=100, batch_size=batch_size)
+
+        preds = model.predict([X_test])
+
+        if min_max_scaling == 1:
+            preds = scaler.inverse_transform(preds)
+            y_test = scaler.inverse_transform(y_test)
+
+        register_training_experiment(y_test, preds, model_name = layer_class, coin = coin)
+
+
 def register_training_experiment(
     data,
     predictions,
@@ -197,132 +270,6 @@ def register_training_experiment(
                 f'rmse_{suffix}': rmse,
                 f'mape_{suffix}': mape
             })
-
-
-def get_splits(data, sequence_length: int, output_shape: int):
-
-    X, y = create_sequences(data, sequence_length)
-    _X_train, X_val, _y_train, y_val = train_test_split(X, y, test_size=0.2, shuffle=False)
-    X_train, X_test, y_train, y_test = train_test_split(_X_train, _y_train, test_size=0.2, shuffle=False)
-
-    if output_shape:
-        if output_shape < 1:
-            raise ValueError("Error: output_shape must be greater than 0")
-        y_train = y_train[:, output_shape - 1]
-        y_test = y_test[:, output_shape - 1]
-        y_val = y_val[:, output_shape - 1]
-
-    return X_train, X_test, X_val, y_train, y_test, y_val
-
-
-def build_model(
-    data,
-    units_per_layer,
-    sequence_length,
-    learning_rate,
-    dropout_rate,
-    layer_class,
-    optimizer = 'Adam',
-    activation = 'relu',
-    weight_decay = 0.01,
-    output_shape = None
-):
-    if output_shape is None:
-        output_shape = data.shape[1]
-
-    # Build and compile the LSTM model
-    model = keras.Sequential()
-    for units in units_per_layer[:-1]:
-        model.add(layer_class(units, activation=activation, return_sequences=True, input_shape=(sequence_length, data.shape[1])))
-        model.add(keras.layers.Dropout(dropout_rate))
-    model.add(layer_class(units_per_layer[-1], activation=activation, input_shape=(sequence_length, data.shape[1])))
-    model.add(keras.layers.Dropout(dropout_rate))
-    model.add(keras.layers.Dense(output_shape))
-
-    if optimizer == 'Adam':
-        optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0, weight_decay=weight_decay)
-    elif optimizer == 'SGD':
-        optimizer = keras.optimizers.SGD(learning_rate=learning_rate, clipvalue=1.0, weight_decay=weight_decay)
-    #optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0)
-    model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=[mean_absolute_percentage_error_keras])
-
-    return model
-        
-
-def evaluate_best_coin(
-    coin,
-    data,
-    best_params,
-    output_shape = None
-):
-    """
-    Evaluate the best model for a given coin
-    
-    :param coin: The coin to be used for training
-    :param data: The data to be used for training
-    :param best_params: The best hyperparameters found by Optuna
-    """
-
-    # Train the final model with the best hyperparameters
-    # Define the search space for hyperparameters
-    num_layers = best_params['num_layers']
-    units_per_layer = [best_params[f'units_layer_{i}'] for i in range(num_layers)]
-    sequence_length = best_params['sequence_length']
-    learning_rate = best_params['learning_rate']
-    dropout_rate = best_params['dropout_rate']
-    min_max_scaling = best_params['min_max_scaling']
-    layer_type = best_params['layer_type']
-    optimizer = best_params['optimizer']
-    activation = best_params['activation']
-    weight_decay = best_params['weight_decay']
-    batch_size = best_params['batch_size']
-
-
-    layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN 
-
-    if min_max_scaling == 1:
-        scaler = MinMaxScaler()
-        data = scaler.fit_transform(np.array(data))
-
-    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length, output_shape)
-    X_train = np.concatenate((X_train, X_val))
-    y_train = np.concatenate((y_train, y_val))
-
-    with mlflow.start_run(run_name=f"Training_best_model_{coin}") as run:
-    
-        mlflow.log_params({
-            'coin': coin,
-            'num_layers': num_layers,
-            'units_per_layer': units_per_layer,
-            'sequence_length': sequence_length,
-            'learning_rate': learning_rate,
-            'dropout_rate': dropout_rate,
-            'min_max_scaling': min_max_scaling
-        })
-
-        model = build_model(
-            data,
-            units_per_layer,
-            sequence_length,
-            learning_rate,
-            dropout_rate,
-            layer_class,
-            optimizer,
-            activation,
-            weight_decay,
-            output_shape
-        )
-
-        model.fit(X_train, y_train, epochs=100, batch_size=batch_size)
-
-        preds = model.predict([X_test])
-
-        if min_max_scaling == 1:
-            preds = scaler.inverse_transform(preds)
-            y_test = scaler.inverse_transform(y_test)
-
-        register_training_experiment(y_test, preds, model_name = layer_class, coin = coin)
-
 
 
 def objective(trial, data, coins, output_shape = None):
@@ -376,7 +323,8 @@ def objective(trial, data, coins, output_shape = None):
             'optimizer': optimizer,
             'activation': activation,
             'weight_decay': weight_decay,
-            'batch_size': batch_size
+            'batch_size': batch_size,
+            'output_shape': output_shape
         })
 
         if min_max_scaling == 1:

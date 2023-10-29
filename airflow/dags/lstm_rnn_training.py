@@ -1,6 +1,7 @@
 import logging
 from datetime import datetime
 
+import keras
 import numpy as np
 import pandas as pd
 from airflow.models import DagRun
@@ -8,10 +9,13 @@ from airflow.operators.python import PythonOperator
 from airflow.sensors.external_task import ExternalTaskSensor
 from common.constants import FILE_NAMES
 from common.hooks.spark_hook import SparkHook
+from common.models.models import build_model, get_splits
 from common.tasks.cassandra import (insert_into_cassandra_metrics,
                                     insert_into_cassandra_predictions)
 from common.tasks.metrics import compute_metrics
+from sklearn.preprocessing import MinMaxScaler
 
+import mlflow
 from airflow import DAG
 
 logging.basicConfig(level=logging.INFO)
@@ -40,24 +44,12 @@ def fetch_data(coin_name: str):
     return data_path
 
 
-def train(
+def get_data(
     data_path: str,
-    coin: str
+    sequence_length: int,
+    output_shape: int,
+    min_max_scaling: int = 1
 ):
-    from common.models.models import build_model, get_splits
-    from sklearn.preprocessing import MinMaxScaler
-
-    import mlflow
-
-    mlflow.set_tracking_uri("http://price-oracle-mlflow:5000")
-
-    # Mlflow search experiment by tag
-    experiment = mlflow.search_experiments(filter_string="attribute.name = 'Training BASELINE'")[0]
-    print(f"experiment id: {experiment.experiment_id}")
-    run = mlflow.search_runs(experiment_ids=experiment.experiment_id, filter_string=f"params.coin = 'close_{coin}'").iloc[0]
-
-    print(run)
-    print(dir(run))
 
     spark_session = SparkHook(
         app_name=f"{__name__}:predict").get_spark_session()
@@ -73,53 +65,114 @@ def train(
     df = df.select("close_price")
     data = np.array(df.collect())
 
-    if best_params.min_max_scaling == 1:
+    scaler = None
+    if min_max_scaling == 1:
         scaler = MinMaxScaler()
         data = scaler.fit_transform(data)
 
     # Split the data into training and validation sets
     X_train, X_test, X_val, y_train, y_test, y_val = get_splits(
-        data, best_params.sequence_length, best_params.output_shape)
+        data, sequence_length, output_shape)
     X_train = np.concatenate((X_train, X_val))
     y_train = np.concatenate((y_train, y_val))
 
+    return data, scaler, X_train, X_test, y_train, y_test
+
+
+def train(
+    data_path: str,
+    coin: str
+):
+    mlflow.set_tracking_uri("http://price-oracle-mlflow:5000")
+
+    # Mlflow search experiment by tag
+    experiment = mlflow.search_experiments(
+        filter_string="attribute.name = 'Training_LSTM_RNN'")[0]
+    run = mlflow.search_runs(experiment_ids=experiment.experiment_id,
+                             filter_string=f"attributes.run_name = 'Training_best_model_close_{coin}'").iloc[0]
+
+    # Create df from run data
+    run = pd.DataFrame(run).T
+
+    # Get only columns that start with params., then remove params. from the column name
+    run = run[run.columns[run.columns.str.startswith("params.")]]
+    run.columns = run.columns.str.replace("params.", "")
+
+    # Each column has a single row. Convert the df into a dictionary
+    best_params = run.to_dict(orient="records")[0]
+
+    # Make best_params a class so we can access its attributes
+    best_params = type("best_params", (object,), best_params)()
+
+    units_per_layer = eval(best_params.units_per_layer)
+    sequence_length = int(best_params.sequence_length)
+    learning_rate = float(best_params.learning_rate)
+    dropout_rate = float(best_params.dropout_rate)
+    layer_type = best_params.layer_type
+    optimizer = best_params.optimizer
+    activation = best_params.activation
+    weight_decay = float(best_params.weight_decay)
+    output_shape = eval(best_params.output_shape) or 1
+    min_max_scaling = int(best_params.min_max_scaling)
+    batch_size = int(best_params.batch_size)
+
+    data, scaler, X_train, X_test, y_train, y_test = get_data(
+        data_path, sequence_length, output_shape,
+        min_max_scaling=min_max_scaling
+    )
+
+    layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN
+
     model = build_model(
         data,
-        best_params.units_per_layer,
-        best_params.sequence_length,
-        best_params.learning_rate,
-        best_params.dropout_rate,
-        best_params.layer_class,
-        best_params.optimizer,
-        best_params.activation,
-        best_params.weight_decay,
-        best_params.output_shape
+        units_per_layer,
+        sequence_length,
+        learning_rate,
+        dropout_rate,
+        layer_class,
+        optimizer,
+        activation,
+        weight_decay,
+        output_shape
     )
 
     # Train the model with early stopping
-    model.fit(X_train, y_train, epochs=100, batch_size=best_params.batch_size)
+    model.fit(X_train, y_train, epochs=1, batch_size=batch_size)
 
     # Save the model on MLflow
-    mlflow.keras.log_model(model, "model")
+    model_name = f"Airflow_LSTM_RNN_{coin}"
+    mlflow.keras.log_model(
+        model,
+        artifact_path="models",
+        registered_model_name=model_name,
+    )
 
     return {
-        "best_params": best_params,
-        "model": model,
-        "scaler": scaler,
-        "X_test": X_test,
-        "y_test": y_test
+        "sequence_length": sequence_length,
+        "output_shape": output_shape,
+        "model_name": model_name,
+        "min_max_scaling": min_max_scaling,
     }
 
 
 def predict(
-    best_params,
-    model,
-    scaler,
-    X_test,
-    y_test,
-    **kwargs
+    data_path: str,
+    train_output,
 ):
-    
+
+    print(train_output)
+
+    data, scaler, X_train, X_test, y_train, y_test = get_data(
+        data_path,
+        train_output["sequence_length"],
+        train_output["output_shape"],
+        train_output["min_max_scaling"]
+    )
+
+    # Load the model from MlFlow
+    model_name = train_output["model_name"]
+    model = mlflow.pyfunc.load_model(model_uri=f"mlflow-artifacts:/{model_name}/latest")
+
     preds = model.predict([X_test])
 
     if best_params.min_max_scaling == 1:
@@ -172,11 +225,12 @@ for file_name in FILE_NAMES:
             task_id="predict",
             python_callable=predict,
             op_args=[
-                train_task.output["best_params"],
-                train_task.output["model"],
-                train_task.output["scaler"],
-                train_task.output["X_test"],
-                train_task.output["y_test"]
+                fetch_data_task.output,
+                train_task.output
+                # train_task.output["sequence_length"],
+                # train_task.output["output_shape"],
+                # train_task.output["model_name"],
+                # train_task.output["min_max_scaling"],
             ],
         )
 
@@ -199,7 +253,8 @@ for file_name in FILE_NAMES:
         )
 
         # Set up task dependencies
-        external_task_sensor >> fetch_data_task  # Wait for the external DAG to complete
+        # Wait for the external DAG to complete
+        external_task_sensor >> fetch_data_task
         fetch_data_task >> train_task  # Fetch data before computing indicators
         train_task >> predict_task
         predict_task >> insert_into_cassandra_predictions_task

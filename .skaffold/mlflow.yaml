@@ -10,6 +10,9 @@ build:
   artifacts:
     - image: price-oracle-mlflow
       context: ..
+      sync:
+          infer:
+          - '**/*'
       docker:
         dockerfile: .docker/MlFlow.Dockerfile
 deploy:
