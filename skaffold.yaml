@@ -8,3 +8,4 @@ requires:
   - path: .skaffold/spark.yaml
   - path: .skaffold/airflow.yaml
   - path: .skaffold/grafana.yaml
+  - path: .skaffold/mlflow.yaml

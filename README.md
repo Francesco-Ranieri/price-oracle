@@ -7,10 +7,12 @@ Big Data exam
 helm repo add apache-airflow https://airflow.apache.org
 helm repo add apache-cassandra oci://registry-1.docker.io/bitnamicharts
 helm repo add grafana https://grafana.github.io/helm-charts
+helm repo add community-charts https://community-charts.github.io/helm-charts
 
 ## RUN
 skaffold dev
 skaffold dev --status-check=false
+mlflow server --backend-store-uri sqlite:///:memory -p 5001
 
 ## TO DEBUG DAGS:
 1) Install airflow on your host machine

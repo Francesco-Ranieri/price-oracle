@@ -1,0 +1,31 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata:
+  name: price-oracle-mlflow
+requires:
+  - path: namespace.yaml
+  - path: secrets.yaml
+  - path: configmaps.yaml
+build:
+  artifacts:
+    - image: price-oracle-mlflow
+      context: ..
+      docker:
+        dockerfile: .docker/MlFlow.Dockerfile
+deploy:
+  helm:
+    releases:
+      - name: price-oracle-mlflow
+        remoteChart: community-charts/mlflow
+        upgradeOnChange: true
+        createNamespace: true
+        namespace: price-oracle
+        setValueTemplates:
+          image.repository: "{{.IMAGE_REPO_price_oracle_mlflow}}"
+          image.tag: "{{.IMAGE_TAG_price_oracle_mlflow}}@{{.IMAGE_DIGEST_price_oracle_mlflow}}"
+portForward:
+- resourceType: service
+  resourceName: price-oracle-mlflow
+  namespace: price-oracle
+  port: 5000
+  localPort: 5005

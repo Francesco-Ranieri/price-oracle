@@ -8,3 +8,4 @@ pandas
 pyspark
 tensorflow
 tqdm
+mlflow

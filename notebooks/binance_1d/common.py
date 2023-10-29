@@ -143,7 +143,6 @@ def calculate_sma(
     """
 
     df = DataFrame(cripto_data)
-    # calculate rmse over 7, 30, 90 days on cripto_data
 
     for cripto in df.columns:
         cripto_name = cripto.split('_')[1]
@@ -223,6 +222,9 @@ def build_model(
     learning_rate,
     dropout_rate,
     layer_class,
+    optimizer = 'Adam',
+    activation = 'relu',
+    weight_decay = 0.01,
     output_shape = None
 ):
     if output_shape is None:
@@ -231,19 +233,28 @@ def build_model(
     # Build and compile the LSTM model
     model = keras.Sequential()
     for units in units_per_layer[:-1]:
-        model.add(layer_class(units, activation='relu', return_sequences=True, input_shape=(sequence_length, data.shape[1])))
+        model.add(layer_class(units, activation=activation, return_sequences=True, input_shape=(sequence_length, data.shape[1])))
         model.add(keras.layers.Dropout(dropout_rate))
-    model.add(layer_class(units_per_layer[-1], activation='relu', input_shape=(sequence_length, data.shape[1])))
+    model.add(layer_class(units_per_layer[-1], activation=activation, input_shape=(sequence_length, data.shape[1])))
     model.add(keras.layers.Dropout(dropout_rate))
     model.add(keras.layers.Dense(output_shape))
 
-    optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0)
+    if optimizer == 'Adam':
+        optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0, weight_decay=weight_decay)
+    elif optimizer == 'SGD':
+        optimizer = keras.optimizers.SGD(learning_rate=learning_rate, clipvalue=1.0, weight_decay=weight_decay)
+    #optimizer = keras.optimizers.Adam(learning_rate=learning_rate, clipvalue=1.0)
     model.compile(optimizer=optimizer, loss='mean_squared_error', metrics=[mean_absolute_percentage_error_keras])
 
     return model
         
 
-def evaluate_best_coin(coin, data, best_params, output_shape = None):
+def evaluate_best_coin(
+    coin,
+    data,
+    best_params,
+    output_shape = None
+):
     """
     Evaluate the best model for a given coin
     
@@ -261,6 +272,11 @@ def evaluate_best_coin(coin, data, best_params, output_shape = None):
     dropout_rate = best_params['dropout_rate']
     min_max_scaling = best_params['min_max_scaling']
     layer_type = best_params['layer_type']
+    optimizer = best_params['optimizer']
+    activation = best_params['activation']
+    weight_decay = best_params['weight_decay']
+    batch_size = best_params['batch_size']
+
 
     layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN 
 
@@ -291,10 +307,13 @@ def evaluate_best_coin(coin, data, best_params, output_shape = None):
             learning_rate,
             dropout_rate,
             layer_class,
+            optimizer,
+            activation,
+            weight_decay,
             output_shape
         )
 
-        model.fit(X_train, y_train, epochs=100, batch_size=32)
+        model.fit(X_train, y_train, epochs=100, batch_size=batch_size)
 
         preds = model.predict([X_test])
 
@@ -332,12 +351,16 @@ def objective(trial, data, coins, output_shape = None):
 
         # Define the search space for hyperparameters
         num_layers = trial.suggest_int('num_layers', 1, 4)
-        units_per_layer = [trial.suggest_int(f'units_layer_{i}', 32, 256, 32) for i in range(num_layers)]
-        sequence_length = trial.suggest_int('sequence_length', 1, 10)
+        units_per_layer = [trial.suggest_int(f'units_layer_{i}', 8, 32, 8) for i in range(num_layers)]
+        sequence_length = trial.suggest_int('sequence_length', 1, 5)
         learning_rate = trial.suggest_float('learning_rate', 1e-6, 1e-3)
         dropout_rate = trial.suggest_float('dropout_rate', 0.0, 0.5)
         min_max_scaling = trial.suggest_int('min_max_scaling', 0, 1)
         layer_type = trial.suggest_categorical('layer_type', ['LSTM', 'RNN'])
+        optimizer = trial.suggest_categorical('optimizer', ['Adam', 'RMSprop'])
+        activation = trial.suggest_categorical('activation', ['relu', 'tanh', 'sigmoid'])
+        weight_decay = trial.suggest_float('weight_decay', 0.0, 0.5)
+        batch_size = trial.suggest_int('batch_size', 8, 32, 8)
 
         layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN 
 
@@ -348,7 +371,12 @@ def objective(trial, data, coins, output_shape = None):
             'sequence_length': sequence_length,
             'learning_rate': learning_rate,
             'dropout_rate': dropout_rate,
-            'min_max_scaling': min_max_scaling
+            'min_max_scaling': min_max_scaling,
+            'layer_type': layer_type,
+            'optimizer': optimizer,
+            'activation': activation,
+            'weight_decay': weight_decay,
+            'batch_size': batch_size
         })
 
         if min_max_scaling == 1:
@@ -362,6 +390,9 @@ def objective(trial, data, coins, output_shape = None):
             learning_rate,
             dropout_rate,
             layer_class,
+            optimizer,
+            activation,
+            weight_decay,
             output_shape
         )
 
@@ -373,7 +404,7 @@ def objective(trial, data, coins, output_shape = None):
             X_train,
             y_train,
             epochs=50,
-            batch_size=32,
+            batch_size=batch_size,
             validation_data=(X_val, y_val), 
             verbose=0,
             callbacks=[OptunaPruneCallback(trial=trial)]
