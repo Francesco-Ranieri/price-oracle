@@ -1,5 +1,6 @@
 import logging
 from datetime import datetime
+from typing import List
 
 import keras
 import numpy as np
@@ -8,8 +9,10 @@ from airflow.models import DagRun
 from airflow.operators.python import PythonOperator
 from airflow.sensors.external_task import ExternalTaskSensor
 from common.constants import FILE_NAMES
+from common.entities.prediction import Prediction
 from common.hooks.spark_hook import SparkHook
-from common.models.models import build_model, get_splits
+from common.models.models import (build_model, get_splits,
+                                  mean_absolute_percentage_error_keras)
 from common.tasks.cassandra import (insert_into_cassandra_metrics,
                                     insert_into_cassandra_predictions)
 from common.tasks.metrics import compute_metrics
@@ -83,13 +86,11 @@ def train(
     data_path: str,
     coin: str
 ):
-    mlflow.set_tracking_uri("http://price-oracle-mlflow:5000")
+    mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
 
     # Mlflow search experiment by tag
-    experiment = mlflow.search_experiments(
-        filter_string="attribute.name = 'Training_LSTM_RNN'")[0]
-    run = mlflow.search_runs(experiment_ids=experiment.experiment_id,
-                             filter_string=f"attributes.run_name = 'Training_best_model_close_{coin}'").iloc[0]
+    experiment = mlflow.search_experiments(filter_string="attribute.name = 'Training_LSTM_RNN'")[0]
+    run = mlflow.search_runs(experiment_ids=experiment.experiment_id, filter_string=f"attributes.run_name = 'Training_best_model_close_{coin}'").iloc[0]
 
     # Create df from run data
     run = pd.DataFrame(run).T
@@ -141,12 +142,12 @@ def train(
 
     # Save the model on MLflow
     model_name = f"Airflow_LSTM_RNN_{coin}"
-    mlflow.keras.log_model(
+    model_info = mlflow.tensorflow.log_model(
         model,
         artifact_path="models",
         registered_model_name=model_name,
     )
-
+    
     return {
         "sequence_length": sequence_length,
         "output_shape": output_shape,
@@ -159,6 +160,7 @@ def predict(
     data_path: str,
     train_output,
 ):
+    mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
 
     print(train_output)
 
@@ -169,17 +171,30 @@ def predict(
         train_output["min_max_scaling"]
     )
 
-    # Load the model from MlFlow
-    model_name = train_output["model_name"]
-    model = mlflow.pyfunc.load_model(model_uri=f"mlflow-artifacts:/{model_name}/latest")
+    # Load model as a PyFuncModel.
+    keras_model_kwargs = {
+        'custom_objects': {
+            'mean_absolute_percentage_error_keras': mean_absolute_percentage_error_keras
+        }
+    }
+    model_uri = f"models:/{train_output['model_name']}/latest"
+    loaded_model = mlflow.tensorflow.load_model(model_uri, keras_model_kwargs=keras_model_kwargs)
 
-    preds = model.predict([X_test])
+    preds = loaded_model.predict([X_test])
 
-    if best_params.min_max_scaling == 1:
+    if train_output["min_max_scaling"] == 1:
         preds = scaler.inverse_transform(preds)
         y_test = scaler.inverse_transform(y_test)
 
-    return preds
+    data: List[Prediction] = [Prediction.model_validate({
+        "close_time_date": datetime.now(),
+        "close_price": float(pred),
+        "coin": "BTC",
+        "model_name": train_output["model_name"]
+    }) for pred in preds]
+
+    return data
+
 
 
 for file_name in FILE_NAMES:
