@@ -1,0 +1,35 @@
+tracking:
+  auth:
+    enabled: false
+  
+  args:
+    - server
+    - --backend-store-uri
+    - sqlite:////app/:memory
+    - --artifacts-destination=s3://mlflow
+    - --serve-artifacts
+    - --host
+    - "0.0.0.0"
+    - --port 
+    - "5000"
+
+  containerSecurityContext:
+    #enabled: true
+    #runAsUser: 1001
+    #runAsGroup: 1001
+    #runAsNonRoot: true
+    readOnlyRootFilesystem: false
+    #allowPrivilegeEscalation: false
+    #capabilities:
+    #  drop: ["ALL"]
+
+  service:
+    ## @param tracking.service.type mlflow service type
+    ##
+    type: ClusterIP
+    ports:
+      http: 5000
+
+
+postgresql:
+  enabled: false
