@@ -14,6 +14,7 @@ def compute_metrics(
     source_data_path: str,
     predictions: List[Prediction],
     coin: str,
+    model_name: str = "BASELINE",
 ) -> Metrics:
     spark_session = SparkHook(app_name=f"{__name__}:compute_metrics").get_spark_session()
 
@@ -59,7 +60,7 @@ def compute_metrics(
                 metric_90_d=metrics[metric_name][90],
                 metric_30_d=metrics[metric_name][30],
                 metric_7_d=metrics[metric_name][7],
-                model_name='BASELINE',
+                model_name=model_name
             )
         )
 
