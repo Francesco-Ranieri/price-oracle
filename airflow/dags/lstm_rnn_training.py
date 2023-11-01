@@ -47,43 +47,7 @@ def fetch_data(coin_name: str):
     return data_path
 
 
-def get_data(
-    data_path: str,
-    sequence_length: int,
-    output_shape: int,
-    min_max_scaling: int = 1
-):
-
-    spark_session = SparkHook(
-        app_name=f"{__name__}:predict").get_spark_session()
-
-    # Load the data from a pickle file
-    logging.info(f"Loading data from {data_path}")
-    df = pd.read_pickle(data_path)
-
-    # Convert the data to a Spark DataFrame
-    df = spark_session.createDataFrame(df)
-
-    # keep only date and close_price columns
-    df = df.select("close_price")
-    data = np.array(df.collect())
-
-    scaler = None
-    if min_max_scaling == 1:
-        scaler = MinMaxScaler()
-        data = scaler.fit_transform(data)
-
-    # Split the data into training and validation sets
-    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(
-        data, sequence_length, output_shape)
-    X_train = np.concatenate((X_train, X_val))
-    y_train = np.concatenate((y_train, y_val))
-
-    return data, scaler, X_train, X_test, y_train, y_test
-
-
-def train(
-    data_path: str,
+def get_best_params(
     coin: str
 ):
     mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
@@ -105,6 +69,16 @@ def train(
     # Make best_params a class so we can access its attributes
     best_params = type("best_params", (object,), best_params)()
 
+    return best_params
+
+def train(
+    data_path: str,
+    coin: str
+):
+    mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
+
+    # Get best params from mlflow
+    best_params = get_best_params(coin)
     units_per_layer = eval(best_params.units_per_layer)
     sequence_length = int(best_params.sequence_length)
     learning_rate = float(best_params.learning_rate)
@@ -117,11 +91,28 @@ def train(
     min_max_scaling = int(best_params.min_max_scaling)
     batch_size = int(best_params.batch_size)
 
-    data, scaler, X_train, X_test, y_train, y_test = get_data(
-        data_path, sequence_length, output_shape,
-        min_max_scaling=min_max_scaling
-    )
+    # Get the data
+    spark_session = SparkHook(
+        app_name=f"{__name__}:predict").get_spark_session()
 
+    logging.info(f"Loading data from {data_path}")
+    df = pd.read_pickle(data_path)
+    df = spark_session.createDataFrame(df)
+    df = df.select("close_price")
+    data = np.array(df.collect())
+
+    scaler = None
+    if min_max_scaling == 1:
+        scaler = MinMaxScaler()
+        data = scaler.fit_transform(data)
+
+    # Split the data into training and validation sets
+    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(
+        data, sequence_length, output_shape)
+    X_train = np.concatenate((X_train, X_val))
+    y_train = np.concatenate((y_train, y_val))
+
+    # Build the model
     layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN
 
     model = build_model(
@@ -137,39 +128,59 @@ def train(
         output_shape
     )
 
-    # Train the model with early stopping
-    model.fit(X_train, y_train, epochs=1, batch_size=batch_size)
+    # TODO: Change to 100
+    model.fit(X_train, y_train, epochs=100, batch_size=batch_size)
 
     # Save the model on MLflow
     model_name = f"Airflow_LSTM_RNN_{coin}"
-    model_info = mlflow.tensorflow.log_model(
+    mlflow.tensorflow.log_model(
         model,
         artifact_path="models",
         registered_model_name=model_name,
     )
     
-    return {
-        "sequence_length": sequence_length,
-        "output_shape": output_shape,
-        "model_name": model_name,
-        "min_max_scaling": min_max_scaling,
-    }
+    return model_name
 
 
 def predict(
     data_path: str,
-    train_output,
+    coin: str,
+    model_name: str,
 ):
     mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
 
-    print(train_output)
+    # Get best params from mlflow
+    best_params = get_best_params(coin)
+    sequence_length = int(best_params.sequence_length)
+    min_max_scaling = int(best_params.min_max_scaling)
+    output_shape = eval(best_params.output_shape) or 1
 
-    data, scaler, X_train, X_test, y_train, y_test = get_data(
-        data_path,
-        train_output["sequence_length"],
-        train_output["output_shape"],
-        train_output["min_max_scaling"]
-    )
+    # Get the data
+    spark_session = SparkHook(
+        app_name=f"{__name__}:predict").get_spark_session()
+
+    logging.info(f"Loading data from {data_path}")
+    df = pd.read_pickle(data_path)
+    df = spark_session.createDataFrame(df)
+
+    # Get close price as a numpy array
+    close_price = np.array(df.select("close_price").collect())
+
+    scaler = None
+    if min_max_scaling == 1:
+        scaler = MinMaxScaler()
+        close_price = scaler.fit_transform(close_price)
+
+    # Split the data into training and validation sets
+    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(
+        close_price, sequence_length, output_shape)
+    X_train = np.concatenate((X_train, X_val))
+    y_train = np.concatenate((y_train, y_val))
+
+    # Get the close date time as a numpy array
+    close_date_time = np.array(df.select("close_time_date").collect())
+    close_date_time = close_date_time.reshape((close_date_time.shape[0],))
+    close_date_time = close_date_time[len(X_train):]
 
     # Load model as a PyFuncModel.
     keras_model_kwargs = {
@@ -177,24 +188,25 @@ def predict(
             'mean_absolute_percentage_error_keras': mean_absolute_percentage_error_keras
         }
     }
-    model_uri = f"models:/{train_output['model_name']}/latest"
+    model_uri = f"models:/{model_name}/latest"
     loaded_model = mlflow.tensorflow.load_model(model_uri, keras_model_kwargs=keras_model_kwargs)
 
-    preds = loaded_model.predict([X_test])
+    # Predict on the test set and inverse transform the predictionss
+    preds = loaded_model.predict(X_test)
 
-    if train_output["min_max_scaling"] == 1:
+    if min_max_scaling == 1:
         preds = scaler.inverse_transform(preds)
         y_test = scaler.inverse_transform(y_test)
 
+    # Convert the predictions into a list of Prediction objects
     data: List[Prediction] = [Prediction.model_validate({
-        "close_time_date": datetime.now(),
+        "close_time_date": date,
         "close_price": float(pred),
-        "coin": "BTC",
-        "model_name": train_output["model_name"]
-    }) for pred in preds]
+        "coin": coin,
+        "model_name": "LSTM_RNN"
+    }) for (date, pred) in zip(close_date_time, preds)]
 
     return data
-
 
 
 for file_name in FILE_NAMES:
@@ -241,11 +253,8 @@ for file_name in FILE_NAMES:
             python_callable=predict,
             op_args=[
                 fetch_data_task.output,
+                coin_name,
                 train_task.output
-                # train_task.output["sequence_length"],
-                # train_task.output["output_shape"],
-                # train_task.output["model_name"],
-                # train_task.output["min_max_scaling"],
             ],
         )
 
@@ -258,7 +267,12 @@ for file_name in FILE_NAMES:
         compute_metrics_task = PythonOperator(
             task_id="compute_metrics",
             python_callable=compute_metrics,
-            op_args=[fetch_data_task.output, predict_task.output, coin_name],
+            op_args=[
+                fetch_data_task.output,
+                predict_task.output,
+                coin_name,
+                "LSTM_RNN"
+            ],
         )
 
         insert_into_cassandra_metrics_task = PythonOperator(
