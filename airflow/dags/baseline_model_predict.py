@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List
 
 import pandas as pd
@@ -80,7 +80,9 @@ for file_name in FILE_NAMES:
         schedule="@once",
         start_date=datetime.now(),  
         default_args={
-            "owner": "ranierifr"
+            "owner": "ranierifr",
+            "retry_delay": timedelta(minutes=1),
+            "retries": 5
         },
         is_paused_upon_creation=True,
         tags=["spark", "prediction", coin_name]

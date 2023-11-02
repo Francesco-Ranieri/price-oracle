@@ -1,10 +1,16 @@
 from datetime import datetime
 
 from pydantic import BaseModel, PositiveInt
+from typing import Optional
 
 class PriceCandleStick(BaseModel, extra="allow"):
+
+    def __init__(self, **data):
+        super().__init__(**data)
+        self.close_time_date = datetime.fromtimestamp(self.close_time)
+
     close_time: PositiveInt
-    close_time_date: datetime
+    close_time_date: Optional[datetime] = None
     open_price: float
     high_price: float
     low_price: float
@@ -13,6 +19,7 @@ class PriceCandleStick(BaseModel, extra="allow"):
     quote_volume: float
     coin: str
     period: str
+     
 
     @property
     def period_name(self) -> str:

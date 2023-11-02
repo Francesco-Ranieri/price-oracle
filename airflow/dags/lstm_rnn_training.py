@@ -214,7 +214,7 @@ for file_name in FILE_NAMES:
 
     with DAG(
         f"lstm_rnn_training_{coin_name}",
-        schedule="@once",
+        schedule="10 8 * * 1",
         start_date=datetime.now(),
         default_args={
             "owner": "ranierifr"

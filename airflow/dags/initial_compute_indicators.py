@@ -1,15 +1,14 @@
 import logging
-import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List
 
 import pandas as pd
 from airflow.models import DagRun
 from airflow.operators.python import PythonOperator
+from common.constants import FILE_NAMES
 from common.entities.indicators import Indicators
 from common.hooks.cassandra_hook import CassandraHook
 from common.hooks.spark_hook import SparkHook
-from common.constants import FILE_NAMES
 from common.tasks.cassandra import insert_into_cassandra_indicators
 from pyspark.sql import functions as F
 from pyspark.sql.window import Window
@@ -91,7 +90,9 @@ for file_name in FILE_NAMES:
         schedule="@once",
         start_date=datetime.now(),
         default_args={
-            "owner": "ranierifr"
+            "owner": "ranierifr",
+            "retry_delay": timedelta(minutes=1),
+            "retries": 5
         },
         is_paused_upon_creation=True,
         tags=["spark", "indicators", coin_name]
