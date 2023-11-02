@@ -37,9 +37,9 @@ def get_splits(data, sequence_length: int, output_shape: int):
     if output_shape:
         if output_shape < 1:
             raise ValueError("Error: output_shape must be greater than 0")
-        y_train = y_train[:, output_shape - 1]
-        y_test = y_test[:, output_shape - 1]
-        y_val = y_val[:, output_shape - 1]
+        y_train = y_train[:, :output_shape]
+        y_test = y_test[:, :output_shape]
+        y_val = y_val[:, :output_shape]
 
     return X_train, X_test, X_val, y_train, y_test, y_val
 

@@ -14,9 +14,10 @@ from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
+from statsmodels.tsa.vector_ar.var_model import VAR
 
 import sys
-sys.path.append("../../../airflow/dags/common/models")
+sys.path.append("../../airflow/dags/common/models")
 
 from models import build_model, get_splits, mean_absolute_percentage_error_keras, create_sequences
 
@@ -35,7 +36,7 @@ class OptunaPruneCallback(Callback):
 
 def get_dataframe(add_sma_columns: bool = False):
         
-    folder = os.path.join("../../../airflow/assets/binance_1d")
+    folder = os.path.join("../../airflow/assets/binance_1d")
     dfs = []
     for file in os.listdir(folder):
         if file.endswith(".csv"):
@@ -81,24 +82,24 @@ def get_dataframe(add_sma_columns: bool = False):
     return merged_df
 
 
-def get_clustered_dataframes(add_sma_columns: bool = False):
+def get_clustered_dataframes(add_sma_columns: bool = False,
+                             experiment_id: str = "2",
+                             run_id: str = "edbac940063d4b30b72dbb162546ca29"):
 
     merged_df = get_dataframe()
-    experiment = _get_experiments_from_mlflow()
+    experiment = _get_experiments_from_mlflow(experiment_id, run_id)
 
     # Use eval() to convert the string to a list of tuples
-    data_list = eval(experiment["params.Cluster_Labels"].tolist()[0])
+    data_list = eval(experiment["params.Cluster_Labels"].iloc[0])
 
-    # Convert the list of tuples to a dictionary
-    data_dict = dict(data_list)
-
-    # Create a map where keys are the values from the original dictionary
     cripto_clusters = {}
-    for key, value in data_dict.items():
-        if value in cripto_clusters:
-            cripto_clusters[value].append(key)
-        else:
-            cripto_clusters[value] = [key]
+
+    for key, value in data_list:
+        if value not in cripto_clusters:
+            cripto_clusters[value] = []
+        cripto_clusters[value].append(key)
+
+    assert len(cripto_clusters[0] + cripto_clusters[1] + cripto_clusters[2]) == len(data_list)
 
     clusters_data = {}
 
@@ -145,7 +146,7 @@ def calculate_sma(
     return df
 
 
-def _get_experiments_from_mlflow(experiment_id: str = "110357928989408424", run_id: str = "35f1bb80732f433297fda78e6638feab"):
+def _get_experiments_from_mlflow(experiment_id: str, run_id: str):
     experiments = mlflow.search_runs(experiment_ids=experiment_id)
     return experiments.loc[experiments['run_id'] == run_id]
 
