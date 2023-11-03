@@ -19,7 +19,7 @@ from statsmodels.tsa.vector_ar.var_model import VAR
 import sys
 sys.path.append("../../airflow/dags/common/models")
 
-from models import build_model, get_splits, mean_absolute_percentage_error_keras, create_sequences
+from models import build_model, get_splits
 
 
 class OptunaPruneCallback(Callback):
@@ -346,10 +346,10 @@ def objective(trial, data, coins, output_shape = None):
         )
 
         # Split the data into training and validation sets
-        X_train, X_test, X_val, y_train, y_test, y_val = get_splits(data, sequence_length, output_shape)
+        X_train, _, X_val, y_train, _, y_val = get_splits(data, sequence_length, output_shape)
 
         # Train the model with early stopping
-        history = model.fit(
+        model.fit(
             X_train,
             y_train,
             epochs=50,
