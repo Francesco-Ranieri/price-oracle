@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List
 
 import keras
@@ -50,10 +50,10 @@ def fetch_data(coin_name: str):
 def get_best_params(
     coin: str
 ):
-    mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
+    mlflow.set_tracking_uri("http://price-oracle-mlflow:5000")
 
     # Mlflow search experiment by tag
-    experiment = mlflow.search_experiments(filter_string="attribute.name = 'Training_LSTM_RNN'")[0]
+    experiment = mlflow.search_experiments(filter_string="attribute.name = 'Training_RNN_LSTM'")[0]
     run = mlflow.search_runs(experiment_ids=experiment.experiment_id, filter_string=f"attributes.run_name = 'Training_best_model_close_{coin}'").iloc[0]
 
     # Create df from run data
@@ -75,7 +75,7 @@ def train(
     data_path: str,
     coin: str
 ):
-    mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
+    mlflow.set_tracking_uri("http://price-oracle-mlflow:5000")
 
     # Get best params from mlflow
     best_params = get_best_params(coin)
@@ -107,10 +107,9 @@ def train(
         data = scaler.fit_transform(data)
 
     # Split the data into training and validation sets
-    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(
+    X_train, _, X_val, y_train, _, y_val = get_splits(
         data, sequence_length, output_shape)
-    X_train = np.concatenate((X_train, X_val))
-    y_train = np.concatenate((y_train, y_val))
+    X_train, y_train = np.concatenate((X_train, X_val)), np.concatenate((y_train, y_val))
 
     # Build the model
     layer_class = keras.layers.LSTM if layer_type == 'LSTM' else keras.layers.SimpleRNN
@@ -128,7 +127,7 @@ def train(
         output_shape
     )
 
-    # TODO: Change to 100
+    mlflow.tensorflow.autolog()
     model.fit(X_train, y_train, epochs=100, batch_size=batch_size)
 
     # Save the model on MLflow
@@ -147,7 +146,7 @@ def predict(
     coin: str,
     model_name: str,
 ):
-    mlflow.set_tracking_uri("http://price-oracle-mlflow-tracking:5000")
+    mlflow.set_tracking_uri("http://price-oracle-mlflow:5000")
 
     # Get best params from mlflow
     best_params = get_best_params(coin)
@@ -172,15 +171,13 @@ def predict(
         close_price = scaler.fit_transform(close_price)
 
     # Split the data into training and validation sets
-    X_train, X_test, X_val, y_train, y_test, y_val = get_splits(
+    _, X_test, _, _, y_test, _ = get_splits(
         close_price, sequence_length, output_shape)
-    X_train = np.concatenate((X_train, X_val))
-    y_train = np.concatenate((y_train, y_val))
 
     # Get the close date time as a numpy array
     close_date_time = np.array(df.select("close_time_date").collect())
     close_date_time = close_date_time.reshape((close_date_time.shape[0],))
-    close_date_time = close_date_time[len(X_train):]
+    close_date_time = close_date_time[-len(X_test):]
 
     # Load model as a PyFuncModel.
     keras_model_kwargs = {
@@ -217,7 +214,9 @@ for file_name in FILE_NAMES:
         schedule="10 8 * * 1",
         start_date=datetime.now(),
         default_args={
-            "owner": "ranierifr"
+            "owner": "ranierifr",
+            "retries": 5,
+            "retry_delay": timedelta(minutes=1),
         },
         is_paused_upon_creation=True,
         tags=["spark", "prediction", coin_name]

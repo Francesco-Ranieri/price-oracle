@@ -27,7 +27,6 @@ data:
       "editable": true,
       "fiscalYearStartMonth": 0,
       "graphTooltip": 0,
-      "id": 3,
       "links": [],
       "liveNow": false,
       "panels": [
@@ -124,6 +123,31 @@ data:
                     }
                   }
                 ]
+              },
+              {
+                "__systemRef": "hideSeriesFrom",
+                "matcher": {
+                  "id": "byNames",
+                  "options": {
+                    "mode": "exclude",
+                    "names": [
+                      "BTCUSDT",
+                      "LSTM_RNN"
+                    ],
+                    "prefix": "All except:",
+                    "readOnly": true
+                  }
+                },
+                "properties": [
+                  {
+                    "id": "custom.hideFrom",
+                    "value": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": true
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -159,36 +183,6 @@ data:
               "target": "SELECT coin, close_price, close_time_date FROM price_candlestick WHERE COIN = '${coin}'"
             },
             {
-              "alias": "my alias",
-              "columnId": "close_price",
-              "columnTime": "close_time_date",
-              "columnValue": "close_price",
-              "datasource": {
-                "type": "hadesarchitect-cassandra-datasource",
-                "uid": "JOSE3g9KVz"
-              },
-              "datasourceId": 1,
-              "hide": false,
-              "keyspace": "price_oracle",
-              "queryType": "query",
-              "rawQuery": true,
-              "refId": "SMA_10",
-              "table": "indicators",
-              "target": "SELECT textAsBlob('SMA_10'), sma_10, close_time_date FROM indicators WHERE COIN = '${coin}'"
-            },
-            {
-              "datasource": {
-                "type": "hadesarchitect-cassandra-datasource",
-                "uid": "JOSE3g9KVz"
-              },
-              "datasourceId": 1,
-              "hide": false,
-              "queryType": "query",
-              "rawQuery": true,
-              "refId": "SMA_200",
-              "target": "SELECT textAsBlob('SMA_200'), sma_200, close_time_date FROM indicators WHERE COIN = '${coin}'"
-            },
-            {
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -211,6 +205,108 @@ data:
               "rawQuery": true,
               "refId": "RNN",
               "target": "SELECT model_name, close_price, close_time_date\nFROM prediction\nWHERE COIN = '${coin}' AND MODEL_NAME = 'LSTM_RNN';\n"
+            },
+            {
+              "alias": "my alias",
+              "columnId": "close_price",
+              "columnTime": "close_time_date",
+              "columnValue": "close_price",
+              "datasource": {
+                "type": "hadesarchitect-cassandra-datasource",
+                "uid": "JOSE3g9KVz"
+              },
+              "datasourceId": 1,
+              "hide": false,
+              "keyspace": "price_oracle",
+              "queryType": "query",
+              "rawQuery": true,
+              "refId": "SMA_5",
+              "table": "indicators",
+              "target": "SELECT textAsBlob('SMA_5'), sma_5, close_time_date FROM indicators WHERE COIN = '${coin}'"
+            },
+            {
+              "alias": "my alias",
+              "columnId": "close_price",
+              "columnTime": "close_time_date",
+              "columnValue": "close_price",
+              "datasource": {
+                "type": "hadesarchitect-cassandra-datasource",
+                "uid": "JOSE3g9KVz"
+              },
+              "datasourceId": 1,
+              "hide": false,
+              "keyspace": "price_oracle",
+              "queryType": "query",
+              "rawQuery": true,
+              "refId": "SMA_10",
+              "table": "indicators",
+              "target": "SELECT textAsBlob('SMA_10'), sma_10, close_time_date FROM indicators WHERE COIN = '${coin}'"
+            },
+            {
+              "alias": "my alias",
+              "columnId": "close_price",
+              "columnTime": "close_time_date",
+              "columnValue": "close_price",
+              "datasource": {
+                "type": "hadesarchitect-cassandra-datasource",
+                "uid": "JOSE3g9KVz"
+              },
+              "datasourceId": 1,
+              "hide": false,
+              "keyspace": "price_oracle",
+              "queryType": "query",
+              "rawQuery": true,
+              "refId": "SMA_20",
+              "table": "indicators",
+              "target": "SELECT textAsBlob('SMA_20'), sma_20, close_time_date FROM indicators WHERE COIN = '${coin}'"
+            },
+            {
+              "alias": "my alias",
+              "columnId": "close_price",
+              "columnTime": "close_time_date",
+              "columnValue": "close_price",
+              "datasource": {
+                "type": "hadesarchitect-cassandra-datasource",
+                "uid": "JOSE3g9KVz"
+              },
+              "datasourceId": 1,
+              "hide": false,
+              "keyspace": "price_oracle",
+              "queryType": "query",
+              "rawQuery": true,
+              "refId": "SMA_50",
+              "table": "indicators",
+              "target": "SELECT textAsBlob('SMA_50'), sma_50, close_time_date FROM indicators WHERE COIN = '${coin}'"
+            },
+            {
+              "alias": "my alias",
+              "columnId": "close_price",
+              "columnTime": "close_time_date",
+              "columnValue": "close_price",
+              "datasource": {
+                "type": "hadesarchitect-cassandra-datasource",
+                "uid": "JOSE3g9KVz"
+              },
+              "datasourceId": 1,
+              "hide": false,
+              "keyspace": "price_oracle",
+              "queryType": "query",
+              "rawQuery": true,
+              "refId": "SMA_100",
+              "table": "indicators",
+              "target": "SELECT textAsBlob('SMA_100'), sma_100, close_time_date FROM indicators WHERE COIN = '${coin}'"
+            },
+            {
+              "datasource": {
+                "type": "hadesarchitect-cassandra-datasource",
+                "uid": "JOSE3g9KVz"
+              },
+              "datasourceId": 1,
+              "hide": false,
+              "queryType": "query",
+              "rawQuery": true,
+              "refId": "SMA_200",
+              "target": "SELECT textAsBlob('SMA_200'), sma_200, close_time_date FROM indicators WHERE COIN = '${coin}'"
             }
           ],
           "title": "${coin}",
@@ -807,12 +903,12 @@ data:
         ]
       },
       "time": {
-        "from": "2016-11-17T14:55:49.000Z",
-        "to": "2025-05-11T23:12:33.000Z"
+        "from": "2016-06-21T12:03:45.892Z",
+        "to": "2025-01-02T06:53:46.382Z"
       },
       "timepicker": {},
       "timezone": "",
-      "title": "New dashboard3",
+      "title": "Price Oracle Dashboard",
       "uid": "fd4dcdfa-ecdb-4815-aabf-cdf6387b0a4d23",
       "version": 1,
       "weekStart": ""
