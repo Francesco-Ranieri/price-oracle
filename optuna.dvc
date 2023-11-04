@@ -1,6 +1,6 @@
 outs:
-- md5: f7675a018dce6d0dd91d58631fc8eabb.dir
-  size: 7446528
-  nfiles: 5
+- md5: fed0aeee67b702cd64bfe075481fff2d.dir
+  size: 8454144
+  nfiles: 4
   hash: md5
   path: optuna
