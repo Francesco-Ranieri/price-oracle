@@ -32,15 +32,6 @@ def get_splits(data, sequence_length: int, output_shape: int):
         y_test = y_test[:, :output_shape]
         y_val = y_val[:, :output_shape]
 
-        print(f"X_train shape: {X_train.shape}")
-        print(f"y_train shape: {y_train.shape}")
-        print(f"X_test shape: {X_test.shape}")
-        print(f"y_test shape: {y_test.shape}")
-        print(f"X_val shape: {X_val.shape}")
-        print(f"y_val shape: {y_val.shape}")
-        print(f"X_train: {X_train}")
-        print(f"y_train: {y_train}")
-
     return X_train, X_test, X_val, y_train, y_test, y_val
 
 

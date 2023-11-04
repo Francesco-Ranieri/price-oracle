@@ -53,7 +53,7 @@ def get_best_params(
     mlflow.set_tracking_uri("http://price-oracle-mlflow:5000")
 
     # Mlflow search experiment by tag
-    experiment = mlflow.search_experiments(filter_string="attribute.name = 'Training_RNN_LSTM'")[0]
+    experiment = mlflow.search_experiments(filter_string="attribute.name = 'Training_LSTM_RNN'")[0]
     run = mlflow.search_runs(experiment_ids=experiment.experiment_id, filter_string=f"attributes.run_name = 'Training_best_model_close_{coin}'").iloc[0]
 
     # Create df from run data
@@ -211,7 +211,7 @@ for file_name in FILE_NAMES:
 
     with DAG(
         f"lstm_rnn_training_{coin_name}",
-        schedule="10 8 * * 1",
+        schedule="10 8 * * *",
         start_date=datetime.now(),
         default_args={
             "owner": "ranierifr",
