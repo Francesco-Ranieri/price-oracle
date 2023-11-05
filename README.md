@@ -27,7 +27,10 @@
       - [4. Baseline model (baseline\_model\_predict)](#4-baseline-model-baseline_model_predict)
       - [5. Custom model training and prediction (lstm\_rnn\_training)](#5-custom-model-training-and-prediction-lstm_rnn_training)
   - [Visualization](#visualization)
-  - [Future Works](#future-works)
+  - [Issues and Future Directions](#issues-and-future-directions)
+    - [Data concerns](#data-concerns)
+    - [Models re-train and Concept Drift](#models-re-train-and-concept-drift)
+    - [Pipelines for all models](#pipelines-for-all-models)
 
 <br>
 
@@ -50,13 +53,13 @@ In these section the components will be briefly described.
 
 <br>
 
-<figure>
-  <p align="center">
+<!-- Center text and image -->
+<p align="center">
   <img src="docs/images/price-oracle.drawio.png" />
-  <figcaption align="center"><i>Architecture of the Price Oracle project</i></figcaption>
-  </p>
-</figure>
-
+  <br>
+  <i>Architecture of the Price Oracle project</i>
+</p>
+  
 
 ### Docker
 
@@ -167,12 +170,12 @@ It is composed of only 2 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-    <img src="docs/images/dag_1.png" style="width:400px;" />
-    <figcaption align="center"><i>initial_data_loading DAG composition</i></figcaption>
-  </p>
-</figure>
+
+<p align="center">
+  <img src="docs/images/dag_1.png" width="400px"/>
+  <br>
+  <i>initial_data_loading DAG composition</i>
+</p>
 
 #### 2. Fetch daily data (fetch_daily_ohlc)
 
@@ -188,13 +191,12 @@ It is composed of 2 tasks:
 - `insert_into_cassandra_price_candlestick`: 
   - inserts the data into the *price_canldestick* table of the Cassandra database
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_2.png" style="width:400px" />
-  <figcaption align="center"><i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i></figcaption>
-  </p>
-</figure>
-
+<p align="center">
+<img src="docs/images/dag_2.png" width="400px"/>
+<br>
+<i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i>
+</p>
+  
 #### 3. Compute indicators (compute_indicators)
 
 The compute indicators DAG is used to periodically compute SMA indicators on the data stored in the database.  
@@ -228,12 +230,11 @@ It is composed of 4 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_3.png" style="width:400px" />
-  <figcaption align="center"><i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i></figcaption>
-  </p>
-</figure>
+<p align="center">
+<img src="docs/images/dag_3.png" width="400px"/>
+  <br>
+  <i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i>
+</p>
 
 #### 4. Baseline model (baseline_model_predict)
 
@@ -260,13 +261,11 @@ It is composed of 6 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_4.png" style="width:450px" />
-  <figcaption align="center"><i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i></figcaption>
+<p align="center">
+<img src="docs/images/dag_4.png" width="500px"/>
+<br><i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i>
   </p>
-</figure>
-
+  
 #### 5. Custom model training and prediction (lstm_rnn_training)
 
 The custom model training and prediction DAG is used to train a custom model, perform predictions and store the results and performance metrics in the database.
@@ -301,12 +300,11 @@ It is composed of 7 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_5.png" style="width:450px" />
-  <figcaption align="center"><i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i></figcaption>
-  </p>
-</figure>
+<p align="center">
+<img src="docs/images/dag_5.png" width="500px"/>
+<br>
+<i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i>
+</p>
 
 
 ## Visualization
@@ -323,9 +321,10 @@ A select component in the top allows to select the cryptocurrency to visualize. 
 
 <figure>
   <p align="center">
-  <img src="docs/images/dashboard_1.png" style="width:800px" />
-  <figcaption align="center"><i>Price Oracle Dashboard - Default view</i></figcaption>
-</p>
+  <img src="docs/images/dashboard_1.png" />
+  <br>
+  <i>Price Oracle Dashboard - Default view</i>
+  </p>
 </figure>
 
 For each cryptocurrency, the dashboard shows 3 panels.  
@@ -336,7 +335,7 @@ This metrics are computed by taking into account the last 7, 30, 60 days of data
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_2.png" />
-  <figcaption align="center"><i>MAPE panel for BTCUSDT</i></figcaption>
+  <i>MAPE panel for BTCUSDT</i>
 </p>
 </figure>
 
@@ -345,7 +344,7 @@ This metrics are computed by taking into account the last 7, 30, 60 days of data
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_3.png" />
-  <figcaption align="center"><i>RMSE panel for BTCUSDT</i></figcaption>
+  <i>RMSE panel for BTCUSDT</i>
 </p>
 </figure>
 
@@ -361,19 +360,48 @@ Also, the predictions of the baseline model and the custom model are justaposed.
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_4.png" />
-  <figcaption align="center"><i>Price panel for BTCUSDT</i></figcaption>
+  <i>Price panel for BTCUSDT</i>
   </p>
 </figure>
 
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_5.png" />
-  <figcaption align="center"><i>Price panel for BTCUSDT. Only the actual price and the prediction lines are enabled. The time range is restricted to show the differences between the 3 lines.</i></figcaption>
+  <i>Price panel for BTCUSDT. Only the actual price and the prediction lines are enabled. The time range is restricted to show the differences between the 3 lines.</i>
   </p>
 </figure>
 
+<br>
 
-## Future Works
-- Better data
-- Models retrain based on concepts drift
-- Pipelines for all models
+## Issues and Future Directions
+
+### Data concerns
+
+During the development of the project, some problems emerged regarding the collection of data.  
+During the last years, a lot of services offering data have been shut down, and the ones that are still available offer only a limited amount of data for free.  
+For example, just during the development of the project, the Criptowatch API, that was selected as the main source of data, has been shut down (and replaced by the Kraken API).  
+However, the Kraken API doesn't offer all of the coin pairs that were used in this project, so the *daily_data_fetch* DAG works only for some of the cryptocurrencies.
+
+In general, it is becoming harder and harder to find a reliable source of data that offers a large amount of data for free, especially for some sectors like the cryptocurrency one.
+
+
+### Models re-train and Concept Drift
+
+For time related issues, the models are retrained entirely every day.  
+However, the initial plan was to retrain the models only when the performance metrics were below a certain threshold, indicating a concept drift.
+This would be easily implemented with the current architecture, editing the training DAG in this way:
+- add an initial task that reads the performance metrics from the database
+- add another task that predicts the all of the data (including the new data) and computes the performance metrics
+- add a *sensor* that checks if the performance metrics are below the threshold (e.g: the new MAPE at 7 days is worse than the previous one by a certain number of standard deviations)
+- if the *sensor* is triggered, the DAG continues with the training and prediction tasks; otherwise, there is no need to retrain the model.
+
+### Pipelines for all models
+
+For time related issues, only the pipelines for the LSTM and RNN models have been implemented, and only for the version considering the price time-series only.
+
+However, experiments have been performed also with:
+- a version considering the price time-series and the SMA indicators
+- a version considering the criptocurrency in clusters
+- a version using a VAR model.
+
+Adding the pipelines for these models would be straightforward, since the architecture is already in place.
