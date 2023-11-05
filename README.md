@@ -53,14 +53,12 @@ In these section the components will be briefly described.
 
 <br>
 
-<figure align="center">
-<p>
+<!-- Center text and image -->
+<p align="center">
   <img src="docs/images/price-oracle.drawio.png" />
-  <figcaption>
+  <br>
   <i>Architecture of the Price Oracle project</i>
-  </figcaption>
 </p>
-</figure>
   
 
 ### Docker
@@ -172,12 +170,12 @@ It is composed of only 2 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-    <img src="docs/images/dag_1.png" />
-    <figcaption><i>initial_data_loading DAG composition</i></figcaption>
-  </p>
-</figure>
+
+<p align="center">
+  <img src="docs/images/dag_1.png" width="400px"/>
+  <br>
+  <i>initial_data_loading DAG composition</i>
+</p>
 
 #### 2. Fetch daily data (fetch_daily_ohlc)
 
@@ -193,14 +191,12 @@ It is composed of 2 tasks:
 - `insert_into_cassandra_price_candlestick`: 
   - inserts the data into the *price_canldestick* table of the Cassandra database
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_2.png" />
-   <figcaption>
-  <i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i></figcaption>
-  </p>
-</figure>
-
+<p align="center">
+<img src="docs/images/dag_2.png" width="400px"/>
+<br>
+<i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i>
+</p>
+  
 #### 3. Compute indicators (compute_indicators)
 
 The compute indicators DAG is used to periodically compute SMA indicators on the data stored in the database.  
@@ -234,12 +230,11 @@ It is composed of 4 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_3.png" />
-   <figcaption><i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i></figcaption>
-  </p>
-</figure>
+<p align="center">
+<img src="docs/images/dag_3.png" width="400px"/>
+  <br>
+  <i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i>
+</p>
 
 #### 4. Baseline model (baseline_model_predict)
 
@@ -266,14 +261,11 @@ It is composed of 6 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_4.png" />
-   <figcaption><i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i>
-   </figcaption>
-   </p>
-</figure>
-
+<p align="center">
+<img src="docs/images/dag_4.png" width="500px"/>
+<br><i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i>
+  </p>
+  
 #### 5. Custom model training and prediction (lstm_rnn_training)
 
 The custom model training and prediction DAG is used to train a custom model, perform predictions and store the results and performance metrics in the database.
@@ -308,14 +300,11 @@ It is composed of 7 tasks:
 
 <br>
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_5.png" />
-  <figcaption>
-  <i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i>
-  </figcaption>
-  </p>
-</figure>
+<p align="center">
+<img src="docs/images/dag_5.png" width="500px"/>
+<br>
+<i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i>
+</p>
 
 
 ## Visualization
