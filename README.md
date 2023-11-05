@@ -27,7 +27,10 @@
       - [4. Baseline model (baseline\_model\_predict)](#4-baseline-model-baseline_model_predict)
       - [5. Custom model training and prediction (lstm\_rnn\_training)](#5-custom-model-training-and-prediction-lstm_rnn_training)
   - [Visualization](#visualization)
-  - [Future Works](#future-works)
+  - [Issues and Future Directions](#issues-and-future-directions)
+    - [Data concerns](#data-concerns)
+    - [Models re-train and Concept Drift](#models-re-train-and-concept-drift)
+    - [Pipelines for all models](#pipelines-for-all-models)
 
 <br>
 
@@ -372,8 +375,37 @@ Also, the predictions of the baseline model and the custom model are justaposed.
   </p>
 </figure>
 
+<br>
 
-## Future Works
-- Better data
-- Models retrain based on concepts drift
-- Pipelines for all models
+## Issues and Future Directions
+
+### Data concerns
+
+During the development of the project, some problems emerged regarding the collection of data.  
+During the last years, a lot of services offering data have been shut down, and the ones that are still available offer only a limited amount of data for free.  
+For example, just during the development of the project, the Criptowatch API, that was selected as the main source of data, has been shut down (and replaced by the Kraken API).  
+However, the Kraken API doesn't offer all of the coin pairs that were used in this project, so the *daily_data_fetch* DAG works only for some of the cryptocurrencies.
+
+In general, it is becoming harder and harder to find a reliable source of data that offers a large amount of data for free, especially for some sectors like the cryptocurrency one.
+
+
+### Models re-train and Concept Drift
+
+For time related issues, the models are retrained entirely every day.  
+However, the initial plan was to retrain the models only when the performance metrics were below a certain threshold, indicating a concept drift.
+This would be easily implemented with the current architecture, editing the training DAG in this way:
+- add an initial task that reads the performance metrics from the database
+- add another task that predicts the all of the data (including the new data) and computes the performance metrics
+- add a *sensor* that checks if the performance metrics are below the threshold (e.g: the new MAPE at 7 days is worse than the previous one by a certain number of standard deviations)
+- if the *sensor* is triggered, the DAG continues with the training and prediction tasks; otherwise, there is no need to retrain the model.
+
+### Pipelines for all models
+
+For time related issues, only the pipelines for the LSTM and RNN models have been implemented, and only for the version considering the price time-series only.
+
+However, experiments have been performed also with:
+- a version considering the price time-series and the SMA indicators
+- a version considering the criptocurrency in clusters
+- a version using a VAR model.
+
+Adding the pipelines for these models would be straightforward, since the architecture is already in place.
