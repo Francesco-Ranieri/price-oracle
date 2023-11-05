@@ -77,10 +77,10 @@ for file_name in FILE_NAMES:
 
     with DAG(
         f"baseline_model_predict_{coin_name}",
-        schedule="@once",
+        schedule="30 8 * * *",
         start_date=datetime.now(),  
         default_args={
-            "owner": "ranierifr",
+            "owner": "gianfranco",
             "retry_delay": timedelta(minutes=1),
             "retries": 5
         },

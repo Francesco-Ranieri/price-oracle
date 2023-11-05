@@ -87,7 +87,7 @@ for file_name in FILE_NAMES:
 
     with DAG(
         f"compute_indicators_{coin_name}",
-        schedule="@once",
+        schedule_interval="5 8 * * *",
         start_date=datetime.now(),
         default_args={
             "owner": "ranierifr",
