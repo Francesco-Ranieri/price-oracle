@@ -53,11 +53,12 @@ In these section the components will be briefly described.
 
 <br>
 
-
-<p align="center">
-<img src="docs/images/price-oracle.drawio.png" />
-<figcaption align="center"><i>Architecture of the Price Oracle project</i></figcaption>
-</p>
+<figure>
+  <p align="center">
+  <img src="docs/images/price-oracle.drawio.png" />
+  <i>Architecture of the Price Oracle project</i>
+  </p>
+</figure>
 
 
 ### Docker
@@ -172,7 +173,7 @@ It is composed of only 2 tasks:
 <figure>
   <p align="center">
     <img src="docs/images/dag_1.png" style="width:400px;" />
-    <figcaption align="center"><i>initial_data_loading DAG composition</i></figcaption>
+    <i>initial_data_loading DAG composition</i>
   </p>
 </figure>
 
@@ -190,10 +191,12 @@ It is composed of 2 tasks:
 - `insert_into_cassandra_price_candlestick`: 
   - inserts the data into the *price_canldestick* table of the Cassandra database
 
-<p align="center">
-<img src="docs/images/dag_2.png" style="width:400px" />
-<figcaption align="center"><i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i></figcaption>
-</p>
+<figure>
+  <p align="center">
+  <img src="docs/images/dag_2.png" style="width:400px" />
+  <i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i>
+  </p>
+</figure>
 
 #### 3. Compute indicators (compute_indicators)
 
@@ -231,7 +234,7 @@ It is composed of 4 tasks:
 <figure>
   <p align="center">
   <img src="docs/images/dag_3.png" style="width:400px" />
-  <figcaption align="center"><i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i></figcaption>
+  <i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i>
   </p>
 </figure>
 
@@ -263,7 +266,7 @@ It is composed of 6 tasks:
 <figure>
   <p align="center">
   <img src="docs/images/dag_4.png" style="width:450px" />
-  <figcaption align="center"><i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i></figcaption>
+  <i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i>
   </p>
 </figure>
 
@@ -304,7 +307,7 @@ It is composed of 7 tasks:
 <figure>
   <p align="center">
   <img src="docs/images/dag_5.png" style="width:450px" />
-  <figcaption align="center"><i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i></figcaption>
+  <i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i>
   </p>
 </figure>
 
@@ -324,7 +327,7 @@ A select component in the top allows to select the cryptocurrency to visualize. 
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_1.png" style="width:800px" />
-  <figcaption align="center"><i>Price Oracle Dashboard - Default view</i></figcaption>
+  <i>Price Oracle Dashboard - Default view</i>
 </p>
 </figure>
 
@@ -336,7 +339,7 @@ This metrics are computed by taking into account the last 7, 30, 60 days of data
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_2.png" />
-  <figcaption align="center"><i>MAPE panel for BTCUSDT</i></figcaption>
+  <i>MAPE panel for BTCUSDT</i>
 </p>
 </figure>
 
@@ -345,7 +348,7 @@ This metrics are computed by taking into account the last 7, 30, 60 days of data
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_3.png" />
-  <figcaption align="center"><i>RMSE panel for BTCUSDT</i></figcaption>
+  <i>RMSE panel for BTCUSDT</i>
 </p>
 </figure>
 
@@ -361,14 +364,14 @@ Also, the predictions of the baseline model and the custom model are justaposed.
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_4.png" />
-  <figcaption align="center"><i>Price panel for BTCUSDT</i></figcaption>
+  <i>Price panel for BTCUSDT</i>
   </p>
 </figure>
 
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_5.png" />
-  <figcaption align="center"><i>Price panel for BTCUSDT. Only the actual price and the prediction lines are enabled. The time range is restricted to show the differences between the 3 lines.</i></figcaption>
+  <i>Price panel for BTCUSDT. Only the actual price and the prediction lines are enabled. The time range is restricted to show the differences between the 3 lines.</i>
   </p>
 </figure>
 
