@@ -194,7 +194,8 @@ It is composed of 2 tasks:
 <figure>
   <p align="center">
   <img src="docs/images/dag_2.png" />
-  <i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i>
+   <figcaption>
+  <i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i></figcaption>
   </p>
 </figure>
 
@@ -234,7 +235,7 @@ It is composed of 4 tasks:
 <figure>
   <p align="center">
   <img src="docs/images/dag_3.png" />
-  <i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i>
+   <figcaption><i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i></figcaption>
   </p>
 </figure>
 
@@ -266,8 +267,9 @@ It is composed of 6 tasks:
 <figure>
   <p align="center">
   <img src="docs/images/dag_4.png" />
-  <i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i>
-  </p>
+   <figcaption><i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i>
+   </figcaption>
+   </p>
 </figure>
 
 #### 5. Custom model training and prediction (lstm_rnn_training)
@@ -307,7 +309,9 @@ It is composed of 7 tasks:
 <figure>
   <p align="center">
   <img src="docs/images/dag_5.png" />
+  <figcaption>
   <i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i>
+  </figcaption>
   </p>
 </figure>
 
@@ -327,8 +331,9 @@ A select component in the top allows to select the cryptocurrency to visualize. 
 <figure>
   <p align="center">
   <img src="docs/images/dashboard_1.png" />
+  <br>
   <i>Price Oracle Dashboard - Default view</i>
-</p>
+  </p>
 </figure>
 
 For each cryptocurrency, the dashboard shows 3 panels.  
