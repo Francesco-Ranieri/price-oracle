@@ -172,8 +172,8 @@ It is composed of only 2 tasks:
 
 <figure>
   <p align="center">
-    <img src="docs/images/dag_1.png" style="width:400px;" />
-    <i>initial_data_loading DAG composition</i>
+    <img src="docs/images/dag_1.png" />
+    <figcaption><i>initial_data_loading DAG composition</i></figcaption>
   </p>
 </figure>
 
@@ -193,7 +193,7 @@ It is composed of 2 tasks:
 
 <figure>
   <p align="center">
-  <img src="docs/images/dag_2.png" style="width:400px" />
+  <img src="docs/images/dag_2.png" />
   <i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i>
   </p>
 </figure>
@@ -233,7 +233,7 @@ It is composed of 4 tasks:
 
 <figure>
   <p align="center">
-  <img src="docs/images/dag_3.png" style="width:400px" />
+  <img src="docs/images/dag_3.png" />
   <i>compute_indicators DAG composition. The first task is an ExternalTaskSensor that waits for the initial_data_loading DAG to complete.</i>
   </p>
 </figure>
@@ -265,7 +265,7 @@ It is composed of 6 tasks:
 
 <figure>
   <p align="center">
-  <img src="docs/images/dag_4.png" style="width:450px" />
+  <img src="docs/images/dag_4.png" />
   <i>baseline_model_predict DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the *predict* task.</i>
   </p>
 </figure>
@@ -306,7 +306,7 @@ It is composed of 7 tasks:
 
 <figure>
   <p align="center">
-  <img src="docs/images/dag_5.png" style="width:450px" />
+  <img src="docs/images/dag_5.png" />
   <i>lstm_rnn_training DAG composition. The insert_into_cassandra_predictions and compute_metrics branches start in parallel after the predict task.</i>
   </p>
 </figure>
@@ -326,7 +326,7 @@ A select component in the top allows to select the cryptocurrency to visualize. 
 
 <figure>
   <p align="center">
-  <img src="docs/images/dashboard_1.png" style="width:800px" />
+  <img src="docs/images/dashboard_1.png" />
   <i>Price Oracle Dashboard - Default view</i>
 </p>
 </figure>
