@@ -53,12 +53,11 @@ In these section the components will be briefly described.
 
 <br>
 
-<figure>
-  <p align="center">
-  <img src="docs/images/price-oracle.drawio.png" />
-  <figcaption align="center"><i>Architecture of the Price Oracle project</i></figcaption>
-  </p>
-</figure>
+
+<p align="center">
+<img src="docs/images/price-oracle.drawio.png" />
+<figcaption align="center"><i>Architecture of the Price Oracle project</i></figcaption>
+</p>
 
 
 ### Docker
@@ -191,12 +190,10 @@ It is composed of 2 tasks:
 - `insert_into_cassandra_price_candlestick`: 
   - inserts the data into the *price_canldestick* table of the Cassandra database
 
-<figure>
-  <p align="center">
-  <img src="docs/images/dag_2.png" style="width:400px" />
-  <figcaption align="center"><i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i></figcaption>
-  </p>
-</figure>
+<p align="center">
+<img src="docs/images/dag_2.png" style="width:400px" />
+<figcaption align="center"><i>initial_data_loading DAG composition. Each of the green columns is a DAG run, automatically scheduled via the cathup option.</i></figcaption>
+</p>
 
 #### 3. Compute indicators (compute_indicators)
 
