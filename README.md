@@ -53,13 +53,15 @@ In these section the components will be briefly described.
 
 <br>
 
-<figure>
-  <p align="center">
+<figure align="center">
+<p>
   <img src="docs/images/price-oracle.drawio.png" />
+  <figcaption>
   <i>Architecture of the Price Oracle project</i>
-  </p>
+  </figcaption>
+</p>
 </figure>
-
+  
 
 ### Docker
 
