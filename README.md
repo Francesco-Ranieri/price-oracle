@@ -4,10 +4,28 @@
 - [Price Oracle](#price-oracle)
   - [Data, Experiments and Modeling](#data-experiments-and-modeling)
     - [Data](#data)
+      - [Data Sources](#data-sources)
+        - [Historical Data](#historical-data)
+        - [Live Data](#live-data)
     - [Clustering](#clustering)
+      - [DWT](#dwt)
+- [TODO: write section](#todo-write-section)
+      - [Results](#results)
+- [TODO: add image / results of best](#todo-add-image--results-of-best)
     - [Modeling](#modeling)
-      - [Mlflow \& Optuna](#mlflow--optuna)
-    - [Results](#results)
+    - [Mlflow \& Optuna](#mlflow--optuna)
+- [TODO: screen mlflow](#todo-screen-mlflow)
+- [TODO: run var with 100 trials](#todo-run-var-with-100-trials)
+      - [Baseline](#baseline)
+- [TODO: add table results](#todo-add-table-results)
+      - [VAR](#var)
+- [TODO: add theoritical description, images (to do)](#todo-add-theoritical-description-images-to-do)
+      - [Neural Networks](#neural-networks)
+- [TODO: brief discussion of LSTM](#todo-brief-discussion-of-lstm)
+- [TODO: brief discussion of RNN](#todo-brief-discussion-of-rnn)
+      - [Indicators: SMA](#indicators-sma)
+    - [Results](#results-1)
+- [TODO: final table](#todo-final-table)
   - [Architecture - Components](#architecture---components)
     - [Docker](#docker)
     - [Kubernetes](#kubernetes)
@@ -39,11 +57,160 @@ It is composed of data ingestion pipelines leveraging Apache Airflow, an Apache 
 The automated data ingestion pipelines provide real-time data, which are used to train the machine learning models and to provide real-time predictions.
 
 ## Data, Experiments and Modeling
+
 ### Data
+
+The data used in this project are **OHLCV** data for 17 different cryptocurrencies pair with the USDT stable coin.
+
+An OHLCV chart, short for open-high-low-close chart, is a type of chart used predominantly in financial trading. These charts are utilized to illustrate movements in the price of a financial instrument over time.
+
+<figure>
+  <p align="center">
+    <img src="docs/images/candle_stick_btc.png"/>
+    <br>
+    <i>OHCLV chart BTC</i>
+  </p>
+</figure>
+
+Each vertical line on the chart shows the price range (the highest and lowest prices) over one unit of time, such as an hour, a day, or a week.
+
+In this chart, four critical points of data are displayed for each time unit: 
+
+|||
+| ------------- | --- |
+| **Open Price**   | The open price is the price at which a financial instrument starts trading when the exchange opens for a specific period—like the beginning of the day for daily charts.                                                    |
+| **High Price**    | The high price is the maximum price at which the financial instrument traded during the given period. This data point is essential as it gives traders an idea about the strength of the buying activity during that period |
+| **Low Price**     | In contrast, the low price is the minimum price at which the financial instrument traded during the same period. This information reveals the selling pressure during the given time frame.                                 |
+| **Closing Price** | The closing price is the final price at which the financial instrument trades during the period before the market closes. |
+| **Volume** | The volume is the total amount of a security that was traded during a given period of time.  |
+|||
+
+<br>
+
+<figure>
+  <p align="center">
+    <img src="docs/images/candle_stick.png"/>
+    <br>
+    <i>OHCL candlestick</i>
+  </p>
+</figure>
+
+The *Closing Price* is often considered the most significant price because it determines the net change for the period and sets the price level for the start of the next period. Net change refers to the difference between the beginning and ending balances of a financial metric over a specified period. For this reason it is the main piece of information used in this project.
+
+In this project the data is represented within the daily timeframe. This means that each candlestick represents the price of the cryptocurrency for one day.
+
+The 17 criptos analyzed are the following:  
+
+|  |   | |
+| -------------------- | ---------------------  | -------------------  |
+| Cardano (ADA)        | Binance Coin (BNB)     | Bitcoin (BTC)        |
+| EOS                  | Ethereum Classic (ETC) | Ethereum (ETH)       |
+| Icon (ICX)           | IOTA                   | Litecoin (LTC)       |
+| XRP                  | NEO                    | NULS                 |
+| Ontology (ONT)       | Qtum                   | Tron (TRX)           |
+| VeChain (VET)        | Stellar (XLM)          |                      |
+||||
+
+<br>
+
+#### Data Sources
+
+The data used in this project are collected from two different sources: 
+- [CriptoDataDownload](https://www.cryptodatadownload.com/data/binance/)
+- [KRAKEN api](https://docs.kraken.com/rest/)
+
+
+##### Historical Data
+
+The website CriptoDataDownload offers historical OHLCV data from a large number of exchanges.
+The Binance exchange data was selected because it is one of the most popular and reliable exchange platforms for criptocurrencies and it offers a huge amount of cripto pairs.
+
+For the purpose of this project 286 cripto pairs have been downloaded in csv format from CriptoDataDownload. Among the initial 286 cripto pairs, the 17 pairs having data starting from 2019-01-01 were selected.
+
+
+##### Live Data
+
+Being the data statically provided with csv files, these are used for the initial loading of historical data.
+
+In order to retrived live data, the Kraken API's are queried by the system on a daily basis.  
+The fresh data are used as enrichment to the past data to evaluate the models performances and retrain them when necessary.
+
+
 ### Clustering
+
+In the scope of this project two types of model were considered:
+
+- Single-Target
+- Multi-Target
+
+Single-Target models are models that predict a single target value. In this case, these models take as input the time series data of a single criptocurrency and try to predict future values for that criptocurrency.
+
+On the other hand, Multi-Target models are models that predict a set of target values. In this case, these models take as input the time series data of multiple criptocurrencies and try to predict future values for all of them.
+
+In order to have the models with their goal, the 17 criptocurrencies have been clustered using some common algorithms.
+
+#### DWT
+
+# TODO: write section
+
+#### Results
+
+For the evaluation of the clustering results, some heuristics were taken into account:
+
+- only clustering resulting in 3 or more clusters were considered for consistency;
+- results of experiments were the data was normalized with min-max scaling were preferred because were more convincing
+
+# TODO: add image / results of best 
+
 ### Modeling
-#### Mlflow & Optuna
+
+One of the main goal of this projects was to reliable predict the *closing price* of the criptocurrencies for the following day.
+In order to achieve this goal, different models and configurations were tested.
+Also, **MLflow** was employed for experiment tracking and **Optuna** for hyperparameters optimization.
+
+### Mlflow & Optuna
+
+MLFLow is a software that allows to track Machine Learning experiments and models. It stores the metrics of the experiments, allowing the developer to compare different models and parameters. Also, allows to store the models and retrieve them when needed. In this project MLflow tracks every experiment, params and metrics which are available for consultation in a convenient GUI.
+
+# TODO: screen mlflow
+
+Optuna is an open source hyperparameter optimization framework to automate hyperparameter search. The main features of Optuna that were used in this project are:
+- *Systematic exploration of hyper-parameters space*: using a TPE sampler, which is an indipendent sampler, the exploration of the hyper-parameters space was conducted in order to minimize the value of the mean squared error metric;
+- *Early Pruing*: by using a Median Pruner, unpromising trials are stopped after few iterations, in order to spend more time exploring proming configurations. The median pruner prunes a trial if its results are worse than the median of the previous trials results.
+
+By using Optuna, 100 configurations of hyper-paramters were tested for each model.
+
+# TODO: run var with 100 trials
+
+#### Baseline
+
+When predicting time series and in particular financial data, it is easy to achieve result that seem to good to be true. This is because prices are strongly related to their previous values and next values don't deviate too much.
+
+For this reason, a very simple algorithmic model was evaluated, to be used as **baseline**, against which machine learning models performance are measured.
+
+The algorithm simply predict, for the next day, the closing price of the previous day.
+
+As expected, the MAPE and RMSE metrics for this approach are low:
+
+# TODO: add table results
+
+#### VAR
+
+# TODO: add theoritical description, images (to do)
+
+Being the Vector Autoregression a linear model, it fails to represent the great variation of the data that has been considered. 
+
+#### Neural Networks
+
+# TODO: brief discussion of LSTM
+# TODO: brief discussion of RNN
+
+#### Indicators: SMA
+
+
 ### Results
+
+# TODO: final table
 
 ## Architecture - Components
 
