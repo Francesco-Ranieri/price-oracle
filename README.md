@@ -14,8 +14,6 @@
 - [TODO: add image / results of best](#todo-add-image--results-of-best)
     - [Modeling](#modeling)
       - [Mlflow \& Optuna](#mlflow--optuna)
-- [TODO: screen mlflow](#todo-screen-mlflow)
-- [TODO: run var with 100 trials](#todo-run-var-with-100-trials)
       - [Baseline](#baseline)
 - [TODO: add table results](#todo-add-table-results)
       - [VAR](#var)
@@ -173,15 +171,37 @@ Also, **MLflow** was employed for experiment tracking and **Optuna** for hyperpa
 
 MLFLow is a software that allows to track Machine Learning experiments and models. It stores the metrics of the experiments, allowing the developer to compare different models and parameters. Also, allows to store the models and retrieve them when needed. In this project MLflow tracks every experiment, params and metrics which are available for consultation in a convenient GUI.
 
-# TODO: screen mlflow
+<br>
+
+<figure>
+  <p align="center">
+    <img src="docs/images/mlflow.png"/>
+    <br>
+    <i>MLflow GUI. On the right, all of the runs are listed. Each run is associated with its parameters and metrics. Runs are grouped by experiments, which are listed on the left. MLflow allows to compare the metrics of different runs.</i>
+  </p>
+</figure>
+
+<br>
 
 Optuna is an open source hyperparameter optimization framework to automate hyperparameter search. The main features of Optuna that were used in this project are:
 - *Systematic exploration of hyper-parameters space*: using a TPE sampler, which is an indipendent sampler, the exploration of the hyper-parameters space was conducted in order to minimize the value of the mean squared error metric;
 - *Early Pruing*: by using a Median Pruner, unpromising trials are stopped after few iterations, in order to spend more time exploring proming configurations. The median pruner prunes a trial if its results are worse than the median of the previous trials results.
 
-By using Optuna, 100 configurations of hyper-paramters were tested for each model.
+By using Optuna, 100 configurations of hyper-paramters were tested for each model.  
 
-# TODO: run var with 100 trials
+Optuna experiments are grouped by *study*, and each of them is tracked by MLflow.  
+
+Optuna also provides a convenient GUI, called *Optuna Dashboard*, which allows to visualize the results of the hyper-parameters optimization.
+
+<br>
+<figure>
+  <p align="center">
+    <img src="docs/images/optuna.png"/>
+    <br>
+    <i>The study view in Optuna Dashboard. Top-left shows all of the runs, with the evolution of the metrics for each epoch. Bottom-left shows the timeline of runs. The color scheme indicates if a run has been completed or pruned. Top-right reports the importance of each hyper-parameter. Bottom-right shows the best run and the associated hyper-parameters.</i>
+  </p>
+</figure>
+
 
 #### Baseline
 
