@@ -2,7 +2,7 @@
 
 
 - [Price Oracle](#price-oracle)
-  - [Data, Experiments and Modeling](#data-experiments-and-modeling)
+  - [Data, Modeling and Experiments](#data-modeling-and-experiments)
     - [Data](#data)
       - [Data Sources](#data-sources)
         - [Historical Data](#historical-data)
@@ -13,13 +13,14 @@
       - [Results](#results)
 - [TODO: add image / results of best](#todo-add-image--results-of-best)
     - [Modeling](#modeling)
-    - [Mlflow \& Optuna](#mlflow--optuna)
+      - [Mlflow \& Optuna](#mlflow--optuna)
 - [TODO: screen mlflow](#todo-screen-mlflow)
 - [TODO: run var with 100 trials](#todo-run-var-with-100-trials)
       - [Baseline](#baseline)
 - [TODO: add table results](#todo-add-table-results)
       - [VAR](#var)
-- [TODO: add theoritical description, images (to do)](#todo-add-theoritical-description-images-to-do)
+        - [Optimization](#optimization)
+        - [Evaluation](#evaluation)
       - [Neural Networks](#neural-networks)
 - [TODO: brief discussion of LSTM](#todo-brief-discussion-of-lstm)
 - [TODO: brief discussion of RNN](#todo-brief-discussion-of-rnn)
@@ -56,7 +57,7 @@ Price Oracle is an end-to-end solution for monitoring and predicting the price o
 It is composed of data ingestion pipelines leveraging Apache Airflow, an Apache Cassandra database, machine learning models built with TensorFlow and a front-end built with Grafana.  
 The automated data ingestion pipelines provide real-time data, which are used to train the machine learning models and to provide real-time predictions.
 
-## Data, Experiments and Modeling
+## Data, Modeling and Experiments
 
 ### Data
 
@@ -168,7 +169,7 @@ One of the main goal of this projects was to reliable predict the *closing price
 In order to achieve this goal, different models and configurations were tested.
 Also, **MLflow** was employed for experiment tracking and **Optuna** for hyperparameters optimization.
 
-### Mlflow & Optuna
+#### Mlflow & Optuna
 
 MLFLow is a software that allows to track Machine Learning experiments and models. It stores the metrics of the experiments, allowing the developer to compare different models and parameters. Also, allows to store the models and retrieve them when needed. In this project MLflow tracks every experiment, params and metrics which are available for consultation in a convenient GUI.
 
@@ -196,9 +197,47 @@ As expected, the MAPE and RMSE metrics for this approach are low:
 
 #### VAR
 
-# TODO: add theoritical description, images (to do)
+Vector Autoregression (VAR) models are a class of time series models commonly used in econometrics and statistics to analyze and forecast multivariate time series data.  
+VAR models are a natural extension of univariate autoregressive models (AR), allowing for the simultaneous modeling of multiple related time series variables.
 
-Being the Vector Autoregression a linear model, it fails to represent the great variation of the data that has been considered. 
+In VAR models, each variable is regressed on its own past values and the past values of all the other variables in the system. This captures the interdependencies between the variables over time.
+
+##### Optimization
+
+For the VAR modeling, the following hyper-parameters were optimized:
+
+| **Hyper-parameter** | **Legal values** |
+| -------------------- | ---------------------  |
+| Trend | n, c, t, ct |
+| Sequence Length | 1 to 5 |
+| Min Max Scaling | True, False |
+
+##### Evaluation
+
+Detailed results of VAR models evaluation can be found [here](./docs/Price_Oracle_Experiments.xlsx).
+
+In general, the VAR model **underfits** data, being unable to model the non-linearities, and the predictions are not accurate.  
+MAPE metrics range from 60% to 160%.
+
+<br>
+
+<figure>
+  <p align="center">
+    <img src="docs/images/var_1.png"/>
+    <br>
+    <i>VAR model predictions for a cluster of coins. The model underfits the data</i>
+  </p>
+</figure>
+
+<br>
+
+<figure>
+  <p align="center">
+    <img src="docs/images/var_2.png"/>
+    <br>
+    <i>VAR model predictions for a cluster of coins. The model underfits the data</i>
+  </p>
+</figure>
 
 #### Neural Networks
 
