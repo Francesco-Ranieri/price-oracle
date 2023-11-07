@@ -8,10 +8,9 @@
         - [Historical Data](#historical-data)
         - [Live Data](#live-data)
     - [Clustering](#clustering)
-      - [DWT](#dwt)
-- [TODO: write section](#todo-write-section)
+      - [Dynamic Time Warping (DTW)](#dynamic-time-warping-dtw)
+      - [Cluster Metrics and Heuristics](#cluster-metrics-and-heuristics)
       - [Results](#results)
-- [TODO: add image / results of best](#todo-add-image--results-of-best)
     - [Modeling](#modeling)
     - [Mlflow \& Optuna](#mlflow--optuna)
 - [TODO: screen mlflow](#todo-screen-mlflow)
@@ -149,18 +148,71 @@ On the other hand, Multi-Target models are models that predict a set of target v
 
 In order to have the models with their goal, the 17 criptocurrencies have been clustered using some common algorithms.
 
-#### DWT
+#### Dynamic Time Warping (DTW)
 
-# TODO: write section
+For the purpose of clustering the criptocurrencies, the DWT algorithm was used to extract distances between the time series. The algorithm was applied to the closing price of the criptocurrencies. This step is crucial for the clustering phase because DWT distances are then used as input for the clustering algorithm.
 
-#### Results
+In time series analysis, dynamic time warping (DTW) is an algorithm for measuring similarity between two temporal sequences, which may vary in speed.
+
+In general, DTW is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules:
+- Every index from the first sequence must be matched with one or more indices from the other sequence, and vice versa
+- The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
+- The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
+- In the process of matching indices between two sequences, it is imperative to maintain the condition that when one index in the first sequence is smaller than another, the corresponding indices in the second sequence must follow the same order, and this requirement holds true in both directions, ensuring a monotonically increasing relationship between the indices.
+
+In contrast, the Euclidean distance, a more traditional distance metric, does not account for variations in time or phase shifts and directly compares the values of corresponding data points. It assumes that both sequences are aligned and have the same length. Therefore, DTW is a more flexible and robust approach for comparing time series with variable time or speed, making it suitable for cryptocurrency time series clustering.
+
+<br>
+<figure>
+  <p align="center">
+    <img src="docs/images/dtw.png"/>
+    <br>
+    <i>Comparison between DTW and Euclidean distance</i>
+  </p>
+</figure>
+
+#### Cluster Metrics and Heuristics
 
 For the evaluation of the clustering results, some heuristics were taken into account:
 
 - only clustering resulting in 3 or more clusters were considered for consistency;
 - results of experiments were the data was normalized with min-max scaling were preferred because were more convincing
 
-# TODO: add image / results of best 
+In additional to the heuristics above, the results of the clustering were evaluated on the **Silhouette score** and the **Inertia score**.
+
+The *Silhouette score* is a metric that measures how similar an object is to its own cluster (*cohesion*) compared to other clusters (separation). The Shilouette score ranges from -1 to 1, where a higher value indicates that the object is better matched to its own cluster and worse matched to neighboring clusters. If many points have a high shilouette value, the clustering configuration is good. If many points have a low or negative shilouette value, the clustering configuration may have too many or too few clusters.
+
+On the other hand the *Intertia score* is a metric that measures how spread out the clusters are (lower is better). The inertia score is calculated as the sum of squared distance for each point to it's closest centroid, and the lower the inertia score, the more uniform the clusters are (clusters are tight).
+
+
+#### Results
+
+For the clustering experiments, the following algorithms were tested:
+
+- K-Means
+- K-Medoids
+
+After some experiments, the K-Means algorithm was selected as the best algorithm and the chosen experiments was the one with the number of clusters equal to 3 and the cluster separtion looks like the following:
+
+<br>
+<figure>
+  <p align="center">
+    <img src="docs/images/clustering.png"/>
+    <br>
+    <i>Comparison between DTW and Euclidean distance</i>
+  </p>
+</figure>
+<br>
+
+The following table shows the cluster of each criptocurrency:
+
+| Cluster | Symbols                                     |
+|---------|---------------------------------------------|
+| 0       | ADAUSDT, ETCUSDT, ICXUSDT, IOTAUSDT, ...    |
+| 1       | BNBUSDT, BTCUSDT, ETHUSDT, TRXUSDT          |
+| 2       | EOSUSDT, NULSUSDT, ONTUSDT                  |
+
+<br>
 
 ### Modeling
 
