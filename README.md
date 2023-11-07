@@ -7,6 +7,7 @@
       - [Data Sources](#data-sources)
         - [Historical Data](#historical-data)
         - [Live Data](#live-data)
+        - [SMA](#sma)
     - [Clustering](#clustering)
       - [Dynamic Time Warping (DTW)](#dynamic-time-warping-dtw)
       - [Cluster Metrics and Heuristics](#cluster-metrics-and-heuristics)
@@ -14,16 +15,13 @@
     - [Modeling](#modeling)
       - [Mlflow \& Optuna](#mlflow--optuna)
       - [Baseline](#baseline)
-- [TODO: add table results](#todo-add-table-results)
+        - [Evaluation](#evaluation)
       - [VAR](#var)
         - [Optimization](#optimization)
-        - [Evaluation](#evaluation)
+        - [Evaluation](#evaluation-1)
       - [Neural Networks](#neural-networks)
-- [TODO: brief discussion of LSTM](#todo-brief-discussion-of-lstm)
-- [TODO: brief discussion of RNN](#todo-brief-discussion-of-rnn)
-      - [Indicators: SMA](#indicators-sma)
+        - [Optimization](#optimization-1)
     - [Results](#results-1)
-- [TODO: final table](#todo-final-table)
   - [Architecture - Components](#architecture---components)
     - [Docker](#docker)
     - [Kubernetes](#kubernetes)
@@ -47,6 +45,7 @@
     - [Data concerns](#data-concerns)
     - [Models re-train and Concept Drift](#models-re-train-and-concept-drift)
     - [Pipelines for all models](#pipelines-for-all-models)
+
 
 <br>
 
@@ -132,6 +131,9 @@ Being the data statically provided with csv files, these are used for the initia
 
 In order to retrived live data, the Kraken API's are queried by the system on a daily basis.  
 The fresh data are used as enrichment to the past data to evaluate the models performances and retrain them when necessary.
+
+##### SMA
+
 
 
 ### Clustering
@@ -261,11 +263,13 @@ When predicting time series and in particular financial data, it is easy to achi
 
 For this reason, a very simple algorithmic model was evaluated, to be used as **baseline**, against which machine learning models performance are measured.
 
-The algorithm simply predict, for the next day, the closing price of the previous day.
+The algorithm simply predicts, for the next day, the closing price of the previous day.
 
-As expected, the MAPE and RMSE metrics for this approach are low:
+##### Evaluation
 
-# TODO: add table results
+As expected, the MAPE for this approach is low, ranging from 2.38% to 4.37% for the different cryptocurrencies.
+
+The complete results of the baseline model evaluation can be found [here](./docs/Price_Oracle_Experiments.xlsx).
 
 #### VAR
 
@@ -313,15 +317,51 @@ MAPE metrics range from 60% to 160%.
 
 #### Neural Networks
 
-# TODO: brief discussion of LSTM
-# TODO: brief discussion of RNN
+Neural Networks are a class of machine learning models that are inspired by the structure of the brain.  
+They are composed of layers of neurons, which are connected to each other.
+Many architectures of neural networks have been developed.
 
-#### Indicators: SMA
+When dealing with time series, LSTM and RNN are the most common architectures used.
 
+RNN (Recurrent Neural Network) are a class of neural networks that are able to process sequences of inputs.
+The main feature of RNN is that they have a *memory*, which allows them to process sequences of inputs.   
+The memory is achieved by using the output of a neuron at time *t* as an input for the same neuron at time *t+1*.
+
+LSTM (Long Short-Term Memory) networks are a type of recurrent neural network capable of learning order dependence in sequence prediction problems.
+LSTM networks have memory blocks that are connected through layers.  
+A block contains gates that manage the block’s state and output.  
+A block operates upon an input sequence and each gate within a block uses the sigmoid activation units to control whether they are triggered or not, making the change of state and addition of information flowing through the block conditional.
+
+All of these features make these types of networks particularly suitable for time series prediction.
+
+##### Optimization
+
+Neural Networks are very complex models, and they have a lot of hyper-parameters that can be optimized.  
+Also, in this project, the choice of using LSTM or RNN was also considered a hyper-parameter and optimized with Optuna.
+
+A diffrent optimization was performed for each of the following configurations:
+- criptocurrency or cluster of criptocurrencies (17 criptocurrencies, 3 clusters)
+- price time-series only or price time-series and SMA indicators
+
+This means that 20 * 2 = 40 optimizations were performed.
+
+The following hyper-parameters were optimized:
+
+| **Hyper-parameter** | **Legal values** |
+| -------------------- | ---------------------  |
+| Number of layers | 1 to 4 |
+| Units per layer | 8 to 32, step 8 |
+| Sequence Length | 1 to 5 |
+| Learning Rate | 1e-6 to 1e-3 |
+| Dropout Rate | 0.0 to 0.5 |
+| Min Max Scaling | True, False |
+| Layer Type | LSTM, RNN |
+| Optimizer | Adam, RMSprop |
+| Activation | relu, tanh, sigmoid |
+| Weight Decay | 0.0 to 0.5 |
+| Batch Size | 8 to 32, step 8 |
 
 ### Results
-
-# TODO: final table
 
 ## Architecture - Components
 
