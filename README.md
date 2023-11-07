@@ -15,14 +15,14 @@
     - [Modeling](#modeling)
       - [Mlflow \& Optuna](#mlflow--optuna)
       - [Baseline](#baseline)
-        - [Evaluation](#evaluation)
+        - [Results](#results-1)
       - [VAR](#var)
         - [Optimization](#optimization)
-        - [Evaluation](#evaluation-1)
+        - [Results](#results-2)
       - [Neural Networks](#neural-networks)
         - [Optimization](#optimization-1)
-    - [Results](#results-1)
-  - [Architecture - Components](#architecture---components)
+        - [Results](#results-3)
+  - [Architecture components](#architecture-components)
     - [Docker](#docker)
     - [Kubernetes](#kubernetes)
     - [Helm](#helm)
@@ -132,8 +132,15 @@ Being the data statically provided with csv files, these are used for the initia
 In order to retrived live data, the Kraken API's are queried by the system on a daily basis.  
 The fresh data are used as enrichment to the past data to evaluate the models performances and retrain them when necessary.
 
+
 ##### SMA
 
+In order to try to improve the models performances, some indicators were computed on the data.
+These indicators are the **Simple Moving Average** (SMA) with different window sizes.  
+SMA is a technical analysis indicator that smooths out price data by creating a constantly updated average price. This provides the model with insights on the trend of the price further than the single day price or the chosen sequence lenght fed to the model.
+
+SMA are computed with the following window sizes: 5, 10, 20, 50, 100, 200.  
+In this case, the window size represent days.
 
 
 ### Clustering
@@ -265,7 +272,7 @@ For this reason, a very simple algorithmic model was evaluated, to be used as **
 
 The algorithm simply predicts, for the next day, the closing price of the previous day.
 
-##### Evaluation
+##### Results
 
 As expected, the MAPE for this approach is low, ranging from 2.38% to 4.37% for the different cryptocurrencies.
 
@@ -288,7 +295,7 @@ For the VAR modeling, the following hyper-parameters were optimized:
 | Sequence Length | 1 to 5 |
 | Min Max Scaling | True, False |
 
-##### Evaluation
+##### Results
 
 Detailed results of VAR models evaluation can be found [here](./docs/Price_Oracle_Experiments.xlsx).
 
@@ -361,9 +368,25 @@ The following hyper-parameters were optimized:
 | Weight Decay | 0.0 to 0.5 |
 | Batch Size | 8 to 32, step 8 |
 
-### Results
+##### Results
 
-## Architecture - Components
+Detailed results of Neural Networks models evaluation can be found [here](./docs/Price_Oracle_Experiments.xlsx).
+
+In general, the Neural Networks models have good performances, with MAPE metrics ranging from 1.58% to 5.68%.
+In many cases the models are able to overperform the baseline model.
+
+However, some criptocurrencies present a very high MAPE, in one case even over 20%.
+
+The metrics for single-target models are generally better than the metrics for multi-target models, except for the cases described above.  
+In fact, it is possible that the multi-target models metrics are affected by the outliers with high MAPE. 
+
+After investigating and resolving the issues with the outliers, it could be possible that the multi-target models will have better metrics than the single-target models.
+
+
+
+
+
+## Architecture components
 
 Price Oracle is developed in a fully containerized environment, composed of various components.  
 The application flow is entirely run on a Kubernetes cluster, which is deployed locally using Kind.  

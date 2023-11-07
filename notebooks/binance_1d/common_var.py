@@ -1,16 +1,10 @@
-
-import os
-from math import sqrt
-
-import keras.backend as K
 import numpy as np
 import pandas as pd
-from pandas import DataFrame
-from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
-from sklearn.preprocessing import MinMaxScaler
-from statsmodels.tsa.vector_ar.var_model import VAR
 from common import register_training_experiment
 from models import mean_absolute_percentage_error_keras
+from pandas import DataFrame
+from sklearn.preprocessing import MinMaxScaler
+from statsmodels.tsa.vector_ar.var_model import VAR
 
 import mlflow
 import optuna
