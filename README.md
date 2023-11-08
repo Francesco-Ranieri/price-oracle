@@ -382,8 +382,37 @@ In fact, it is possible that the multi-target models metrics are affected by the
 
 After investigating and resolving the issues with the outliers, it could be possible that the multi-target models will have better metrics than the single-target models.
 
+<figure>
+  <p align="center">
+    <img src="docs/images/nn1.png"/>
+    <br>
+    <i>Optimized Neural Network model predictions for ETHUSDT</i>
+  </p>
+</figure>
 
+<br>
 
+<figure>
+  <p align="center">
+    <img src="docs/images/nn2.png"/>
+    <br>
+    <i>Optimized Neural Network model predictions for BTCUSDT</i>
+  </p>
+</figure>
+
+<br>
+
+<figure>
+  <p align="center">
+    <img src="docs/images/nn_cluster.png"/>
+    <br>
+    <i>Optimized Neural Network model predictions for cluster</i>
+  </p>
+</figure>
+
+Experiments were also conducted by enanching the time series data with Simple Moving Averages indicators.  
+The results are similar to the models trained without SMA; for some criptos, there are better, for other these are worse.  
+However, there is a lot of space for improvement, as indicators can be computed for different/more time windows, or different indicators like EMA could be computed.
 
 
 ## Architecture components
