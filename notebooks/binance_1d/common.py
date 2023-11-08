@@ -226,10 +226,19 @@ def evaluate_best_coin(
 
         preds = model.predict([X_test])
 
+        # Min max scaling first column
         if min_max_scaling == 1:
-            preds = scaler.inverse_transform(preds)
-            y_test = scaler.inverse_transform(y_test)
+            # The min-max scaler needs the same number of columns that it was fitted on
+            # So we create a new array with the same shape as the predictions array
+            # and then we replace the first column with the predictions
+            _preds = np.zeros(shape=(len(y_test), data.shape[1]))
+            _preds[:,0] = preds[:, 0]
+            preds = scaler.inverse_transform(_preds)[:, 0]
 
+            _y_test = np.zeros(shape=(len(y_test), data.shape[1]))
+            _y_test[:,0] = y_test[:, 0]
+            y_test = scaler.inverse_transform(_y_test)[:, 0]
+            
         register_training_experiment(y_test, preds, model_name = layer_class, coin = coin)
 
 
