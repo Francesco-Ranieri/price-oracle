@@ -123,31 +123,6 @@ data:
                     }
                   }
                 ]
-              },
-              {
-                "__systemRef": "hideSeriesFrom",
-                "matcher": {
-                  "id": "byNames",
-                  "options": {
-                    "mode": "exclude",
-                    "names": [
-                      "BTCUSDT",
-                      "LSTM_RNN"
-                    ],
-                    "prefix": "All except:",
-                    "readOnly": true
-                  }
-                },
-                "properties": [
-                  {
-                    "id": "custom.hideFrom",
-                    "value": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": true
-                    }
-                  }
-                ]
               }
             ]
           },
@@ -172,6 +147,7 @@ data:
           },
           "targets": [
             {
+              "alias": "CLOSE_PRICE",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -183,6 +159,7 @@ data:
               "target": "SELECT coin, close_price, close_time_date FROM price_candlestick WHERE COIN = '${coin}'"
             },
             {
+              "alias": "BASELINE_LAG_1",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -195,6 +172,7 @@ data:
               "target": "SELECT model_name, close_price, close_time_date\nFROM prediction\nWHERE COIN = '${coin}' AND MODEL_NAME = 'BASELINE_LAG_1';\n"
             },
             {
+              "alias": "LSTM_RNN",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -207,7 +185,7 @@ data:
               "target": "SELECT model_name, close_price, close_time_date\nFROM prediction\nWHERE COIN = '${coin}' AND MODEL_NAME = 'LSTM_RNN';\n"
             },
             {
-              "alias": "my alias",
+              "alias": "SMA_5",
               "columnId": "close_price",
               "columnTime": "close_time_date",
               "columnValue": "close_price",
@@ -222,10 +200,10 @@ data:
               "rawQuery": true,
               "refId": "SMA_5",
               "table": "indicators",
-              "target": "SELECT textAsBlob('SMA_5'), sma_5, close_time_date FROM indicators WHERE COIN = '${coin}'"
+              "target": "SELECT blobAsText(textAsBlob('SMA_5')), sma_5, close_time_date FROM indicators WHERE COIN = '${coin}'"
             },
             {
-              "alias": "my alias",
+              "alias": "SMA_10",
               "columnId": "close_price",
               "columnTime": "close_time_date",
               "columnValue": "close_price",
@@ -240,10 +218,10 @@ data:
               "rawQuery": true,
               "refId": "SMA_10",
               "table": "indicators",
-              "target": "SELECT textAsBlob('SMA_10'), sma_10, close_time_date FROM indicators WHERE COIN = '${coin}'"
+              "target": "SELECT blobAsText(textAsBlob('SMA_10')), sma_10, close_time_date FROM indicators WHERE COIN = '${coin}'"
             },
             {
-              "alias": "my alias",
+              "alias": "SMA_20",
               "columnId": "close_price",
               "columnTime": "close_time_date",
               "columnValue": "close_price",
@@ -258,10 +236,10 @@ data:
               "rawQuery": true,
               "refId": "SMA_20",
               "table": "indicators",
-              "target": "SELECT textAsBlob('SMA_20'), sma_20, close_time_date FROM indicators WHERE COIN = '${coin}'"
+              "target": "SELECT blobAsText(textAsBlob('SMA_20')), sma_20, close_time_date FROM indicators WHERE COIN = '${coin}'"
             },
             {
-              "alias": "my alias",
+              "alias": "SMA_50",
               "columnId": "close_price",
               "columnTime": "close_time_date",
               "columnValue": "close_price",
@@ -276,10 +254,10 @@ data:
               "rawQuery": true,
               "refId": "SMA_50",
               "table": "indicators",
-              "target": "SELECT textAsBlob('SMA_50'), sma_50, close_time_date FROM indicators WHERE COIN = '${coin}'"
+              "target": "SELECT blobAsText(textAsBlob('SMA_50')), sma_50, close_time_date FROM indicators WHERE COIN = '${coin}'"
             },
             {
-              "alias": "my alias",
+              "alias": "SMA_100",
               "columnId": "close_price",
               "columnTime": "close_time_date",
               "columnValue": "close_price",
@@ -294,9 +272,10 @@ data:
               "rawQuery": true,
               "refId": "SMA_100",
               "table": "indicators",
-              "target": "SELECT textAsBlob('SMA_100'), sma_100, close_time_date FROM indicators WHERE COIN = '${coin}'"
+              "target": "SELECT blobAsText(textAsBlob('SMA_100')), sma_100, close_time_date FROM indicators WHERE COIN = '${coin}'"
             },
             {
+              "alias": "SMA_200",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -306,7 +285,7 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "SMA_200",
-              "target": "SELECT textAsBlob('SMA_200'), sma_200, close_time_date FROM indicators WHERE COIN = '${coin}'"
+              "target": "SELECT blobAsText(textAsBlob('SMA_200')), sma_200, close_time_date FROM indicators WHERE COIN = '${coin}'"
             }
           ],
           "title": "${coin}",
@@ -328,6 +307,7 @@ data:
                 "cellOptions": {
                   "type": "auto"
                 },
+                "filterable": false,
                 "inspect": false
               },
               "decimals": 2,
@@ -346,34 +326,7 @@ data:
                 ]
               }
             },
-            "overrides": [
-              {
-                "matcher": {
-                  "id": "byName",
-                  "options": "MODEL NAME"
-                },
-                "properties": [
-                  {
-                    "id": "mappings",
-                    "value": [
-                      {
-                        "options": {
-                          "1": {
-                            "index": 0,
-                            "text": "BASELINE"
-                          },
-                          "2": {
-                            "index": 1,
-                            "text": "NEURAL NETWORK"
-                          }
-                        },
-                        "type": "value"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "overrides": []
           },
           "gridPos": {
             "h": 8,
@@ -397,13 +350,14 @@ data:
             "sortBy": [
               {
                 "desc": true,
-                "displayName": "MODEL NAME"
+                "displayName": "90 days"
               }
             ]
           },
           "pluginVersion": "10.1.5",
           "targets": [
             {
+              "alias": "MODEL_NAME",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -413,9 +367,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "G",
-              "target": "SELECT textAsBlob('MODEL NAME'), CAST(blobAsBigInt(bigintAsBlob(1)) as double), date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE';\n"
+              "target": "SELECT model_name, date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE';\n"
             },
             {
+              "alias": "7 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -425,9 +380,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "D",
-              "target": "SELECT textAsBlob('7 days'), metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
             },
             {
+              "alias": "30 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -437,9 +393,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "B",
-              "target": "SELECT textAsBlob('30 days'), metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
             },
             {
+              "alias": "90 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -449,9 +406,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "A",
-              "target": "SELECT textAsBlob('60 days'), metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
             },
             {
+              "alias": "All",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -461,9 +419,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "C",
-              "target": "SELECT textAsBlob('All'), metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'mape';\n"
             },
             {
+              "alias": "MODEL NAME",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -473,9 +432,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "E",
-              "target": "SELECT textAsBlob('MODEL NAME'), CAST(blobAsBigInt(bigintAsBlob(2)) as double), date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN';\n"
+              "target": "SELECT model_name, date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN';\n"
             },
             {
+              "alias": "7 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -485,9 +445,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "J",
-              "target": "SELECT textAsBlob('7 days'), metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
             },
             {
+              "alias": "30 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -497,9 +458,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "F",
-              "target": "SELECT textAsBlob('30 days'), metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
             },
             {
+              "alias": "90 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -509,9 +471,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "H",
-              "target": "SELECT textAsBlob('60 days'), metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
             },
             {
+              "alias": "All",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -521,7 +484,7 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "I",
-              "target": "SELECT textAsBlob('All'), metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
+              "target": "SELECT metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'mape';\n"
             }
           ],
           "title": "${coin} MAPE",
@@ -535,11 +498,11 @@ data:
               "options": {
                 "include": {
                   "names": [
-                    "30 days",
-                    "60 days",
-                    "All",
+                    "model_name",
                     "7 days",
-                    "MODEL NAME"
+                    "30 days",
+                    "90 days",
+                    "All"
                   ]
                 }
               }
@@ -638,6 +601,7 @@ data:
           "pluginVersion": "10.1.5",
           "targets": [
             {
+              "alias": "MODEL NAME",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -647,9 +611,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "G",
-              "target": "SELECT textAsBlob('MODEL NAME'), CAST(blobAsBigInt(bigintAsBlob(1)) as double), date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE';\n"
+              "target": "SELECT model_name, date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE';\n"
             },
             {
+              "alias": "7 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -659,9 +624,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "D",
-              "target": "SELECT textAsBlob('7 days'), metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
             },
             {
+              "alias": "30 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -671,9 +637,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "B",
-              "target": "SELECT textAsBlob('30 days'), metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
             },
             {
+              "alias": "90 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -683,9 +650,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "A",
-              "target": "SELECT textAsBlob('60 days'), metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
             },
             {
+              "alias": "All",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -695,9 +663,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "C",
-              "target": "SELECT textAsBlob('All'), metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'BASELINE' AND metric_name = 'rmse';\n"
             },
             {
+              "alias": "MODEL NAME",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -707,9 +676,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "E",
-              "target": "SELECT textAsBlob('MODEL NAME'), CAST(blobAsBigInt(bigintAsBlob(2)) as double), date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN';\n"
+              "target": "SELECT model_name, date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN';\n"
             },
             {
+              "alias": "7 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -719,9 +689,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "J",
-              "target": "SELECT textAsBlob('7 days'), metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_7_d, date FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
             },
             {
+              "alias": "30 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -731,9 +702,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "F",
-              "target": "SELECT textAsBlob('30 days'), metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_30_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
             },
             {
+              "alias": "90 days",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -743,9 +715,10 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "H",
-              "target": "SELECT textAsBlob('60 days'), metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_90_d, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
             },
             {
+              "alias": "All",
               "datasource": {
                 "type": "hadesarchitect-cassandra-datasource",
                 "uid": "JOSE3g9KVz"
@@ -755,7 +728,7 @@ data:
               "queryType": "query",
               "rawQuery": true,
               "refId": "I",
-              "target": "SELECT textAsBlob('All'), metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
+              "target": "SELECT metric_all, date  FROM metrics WHERE target = '${coin}' AND model_name = 'LSTM_RNN' AND metric_name = 'rmse';\n"
             }
           ],
           "title": "${coin} RMSE",
@@ -769,11 +742,11 @@ data:
               "options": {
                 "include": {
                   "names": [
-                    "30 days",
-                    "60 days",
-                    "All",
+                    "model_name",
                     "7 days",
-                    "MODEL NAME"
+                    "30 days",
+                    "90 days",
+                    "All"
                   ]
                 }
               }
@@ -782,7 +755,7 @@ data:
           "type": "table"
         }
       ],
-      "refresh": false,
+      "refresh": "5s",
       "schemaVersion": 38,
       "style": "dark",
       "tags": [],
@@ -903,8 +876,8 @@ data:
         ]
       },
       "time": {
-        "from": "2016-06-21T12:03:45.892Z",
-        "to": "2025-01-02T06:53:46.382Z"
+        "from": "2019-01-01T00:00:00.000Z",
+        "to": "now"
       },
       "timepicker": {},
       "timezone": "",
